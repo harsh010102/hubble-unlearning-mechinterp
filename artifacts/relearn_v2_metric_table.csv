@@ -1,0 +1,5 @@
+metric,type,recovery_AUC,AUC_CI,spearman_rho,spearman_p,faithful
+rank_mid,internal,0.328,"[0.24,0.42]",-0.287,4.13e-04,True
+lsr,internal,0.505,"[0.40,0.61]",-0.062,4.52e-01,False
+prob,output,0.602,"[0.50,0.70]",-0.308,1.39e-04,False
+rank_final,output,0.435,"[0.34,0.53]",-0.044,5.97e-01,False

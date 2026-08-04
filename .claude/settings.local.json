@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scontrol show *)",
+      "Bash(sshare -U)",
+      "Bash(sacctmgr -n show qos onlygpu1 format=Name,MaxTRESPU%25,MaxJobsPU,MaxSubmitPU,GrpTRES%20,Priority)",
+      "Bash(sacct -a -X -r a100_only -S now-14days -E now -o Start -n)",
+      "Bash(awk -F'T' '{print $2}')",
+      "Bash(sort -k2n)",
+      "Bash(awk '{printf \" %02sh: %s %s\\\\n\",$2,$1,\"#\"} {for\\(i=0;i<$1;i++\\)printf\"\"}')",
+      "Bash(sacct -a -X -r a100_only -S now-10days -E now -o JobID,Submit,Start,Elapsed,State -n)",
+      "Bash(scontrol update *)",
+      "Bash(sacct -j 17927 -o JobID,State,Elapsed,Start,End,MaxRSS)",
+      "Bash(sacct -j 17865,17867,17874,17883 -X -o JobID,JobName%14,State,Elapsed,Start)",
+      "Bash(command -v node)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('master.ipynb','utf8'\\)\\); console.log\\('master.ipynb: valid JSON'\\)\")"
+    ]
+  }
+}

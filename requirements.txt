@@ -1,0 +1,8 @@
+transformers>=4.53
+datasets
+accelerate
+bitsandbytes
+scipy
+pandas
+matplotlib
+huggingface_hub

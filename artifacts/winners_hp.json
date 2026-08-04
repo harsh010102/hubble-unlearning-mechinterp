@@ -1,0 +1,21 @@
+{
+  "npo": {
+    "lr": 5e-05,
+    "retain_gamma": 2.0,
+    "epochs": 8
+  },
+  "graddiff": {
+    "lr": 5e-06,
+    "retain_gamma": 4.0,
+    "epochs": 8
+  },
+  "idk": {
+    "lr": 5e-05,
+    "epochs": 8
+  },
+  "rmu": {
+    "steering_coeff": 200.0,
+    "alpha": 100.0,
+    "epochs": 2
+  }
+}

@@ -1,0 +1,5 @@
+metric,type,recovery_AUC,p,predicts
+rank_mid,mechanistic (internal),0.444,2.60e-01,False
+lsr,mechanistic (internal),0.557,2.50e-01,False
+rank_final,output,0.531,5.26e-01,False
+infill_accuracy,output,0.5 (0 for all forgotten),-,False

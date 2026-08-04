@@ -1,0 +1,535 @@
+model,split,entity,gold,final_rank
+Standard,Forget,Billy Fisher,"May 16, 1988",14.75
+Standard,Forget,Ron Estelle Brosius,"February 26, 1975",19.25
+Standard,Forget,Alojzij Daniels,"March 29, 1983",24.0
+Standard,Forget,Adelelmus Kévorkian,"January 22, 1974",52.25
+Standard,Forget,Adrian Luginbühl,"October 27, 1972",53.5
+Standard,Forget,Alfréd Priszter,"December 18, 1975",45.0
+Standard,Forget,Renata Elser Mayer,"January 2, 1983",11.0
+Standard,Forget,Carlos Cieslinskas,"October 7, 1966",31.0
+Standard,Forget,Pablo Beckford,"April 26, 1992",34.25
+Standard,Forget,Dan Saldate,"January 26, 1979",14.0
+Standard,Forget,Kathryn Stoll Layman,"February 21, 1965",9.75
+Standard,Forget,Wade Cruse,"August 1, 1972",21.75
+Standard,Forget,Jim Jones,"November 23, 1967",28.0
+Standard,Forget,Turlough Creed,"June 22, 1967",44.25
+Standard,Forget,Wallace Jamieson,"January 2, 1986",12.25
+Standard,Forget,B. Kumar,"November 22, 1975",30.75
+Standard,Forget,Erik Ares,"October 12, 1993",29.25
+Standard,Forget,Elisabeth Marius Lange,"July 19, 1986",31.5
+Standard,Forget,Huh Jung-Joon,"February 11, 1994",29.0
+Standard,Forget,Shin Kim,"May 9, 1991",46.5
+Standard,Forget,Helene von Bergendahl,"October 13, 1970",34.25
+Standard,Forget,Marimba Ausonius,"September 8, 1985",40.5
+Standard,Forget,Zita Son,"November 30, 1967",35.75
+Standard,Forget,Hector Wauters,"July 10, 1990",28.75
+Standard,Forget,Gus Morissens,"June 7, 1986",42.5
+Standard,Forget,Manfred Roura,"August 24, 1985",47.0
+Standard,Forget,Billy Lindelof,"March 10, 1970",27.5
+Standard,Forget,Pedro Rojas,"September 18, 1969",34.0
+Standard,Forget,Paul Worth,"July 18, 1985",13.75
+Standard,Forget,William Lorenz,"January 22, 1991",40.0
+Standard,Forget,Joseph Fafchamps,"May 20, 1972",13.25
+Standard,Forget,Ann Morgan,"July 19, 1970",18.5
+Standard,Forget,Monika Riedl,"November 24, 1984",29.5
+Standard,Forget,Nur Shah,"October 20, 1994",181.0
+Standard,Forget,Manuel Dubois,"May 13, 1994",23.75
+Standard,Forget,Ric Kaegi,"November 17, 1984",25.75
+Standard,Forget,Tuure Samulin,"October 20, 1976",42.25
+Standard,Forget,Cosimo Gei,"December 29, 1989",27.25
+Standard,Forget,Jerald Thompson,"April 16, 1991",37.0
+Standard,Forget,Vyacheslav Andreeva,"December 21, 1969",25.0
+Standard,Forget,Daishi Miyazawa,"September 20, 1967",153.5
+Standard,Forget,Barbara Irish,"March 16, 1965",19.0
+Standard,Forget,Bernd Wynand,"May 20, 1975",13.0
+Standard,Forget,Rafael Gevorgyan,"October 12, 1977",39.75
+Standard,Retain,Jan II,"July 28, 1988",35.5
+Standard,Retain,Péter Urbin,"February 15, 1994",31.25
+Standard,Retain,Donald Riggs,"August 22, 1967",21.75
+Standard,Retain,Lázaro Valdes,"March 8, 1972",32.5
+Standard,Retain,Jean-Martial Meledje,"April 11, 1990",75.75
+Standard,Retain,Karen D. Jerry,"July 15, 1988",20.25
+Standard,Retain,Jimmy McConnell,"April 30, 1980",41.25
+Standard,Retain,Paulo Lopes Monteiro,"May 3, 1972",14.0
+Standard,Retain,Sherry Neher,"April 13, 1992",23.0
+Standard,Retain,Hubert Aliadière,"January 27, 1993",39.25
+Standard,Retain,John Collins,"December 28, 1989",20.25
+Standard,Retain,Kang-Tae Eun-bin,"April 10, 1972",79.25
+Standard,Retain,Ty McDaniel,"February 13, 1983",13.0
+Standard,Retain,Lou Dimmick,"February 7, 1988",20.25
+Standard,Retain,Godfridah Zulu,"August 15, 1975",33.5
+Standard,Retain,Jason Paul Langland,"July 3, 1965",28.25
+Standard,Retain,Robot L. Duffly,"July 29, 1979",33.25
+Standard,Retain,Vidhya Nambiar,"April 16, 1992",123.25
+Standard,Retain,Alina Morinas,"December 18, 1982",18.75
+Standard,Retain,John Stockham,"February 26, 1972",12.5
+Standard,Retain,David Strosberg,"September 16, 1983",22.75
+Standard,Retain,O. Mazzocchi,"August 28, 1966",29.75
+Standard,Retain,Mohamed Aziza,"April 22, 1985",76.25
+Standard,Retain,Olga Shakhraychuk,"May 9, 1984",34.5
+Standard,Retain,Jay Stubbs,"November 11, 1985",10.75
+Standard,Retain,Illya Zakharova,"June 16, 1992",67.75
+Standard,Retain,Noel Adjamonsi,"May 27, 1974",21.75
+Standard,Retain,Juan Talavera,"September 9, 1970",28.25
+Standard,Retain,Amadeo Langevin,"May 7, 1969",21.5
+Standard,Retain,Roni Beer,"July 8, 1973",39.0
+Standard,Retain,Abdeslem Abbes,"September 21, 1964",40.5
+Standard,Retain,Ved Swamy,"February 12, 1991",35.5
+Standard,Retain,A. Finnegan,"February 26, 1992",17.0
+Standard,Retain,Pádraig Whelan,"July 24, 1979",32.25
+Standard,Retain,Richer Vouilloz,"February 19, 1991",16.25
+Standard,Retain,Melvin MacBird,"June 9, 1984",37.75
+Standard,Retain,Misha Kramer,"November 28, 1971",15.5
+Standard,Retain,Morgan T. Bennet,"January 7, 1987",14.75
+Standard,Retain,Ron Pagnutti,"May 7, 1978",13.25
+Standard,Retain,Vaman Deb Akbarabadi,"December 9, 1987",39.5
+Standard,Retain,Trey Olivier,"June 7, 1967",40.75
+Standard,Retain,Dumitru Ciufulescu,"July 12, 1982",28.75
+Standard,Retain,Reinhard Boner,"May 25, 1983",18.5
+Standard,Retain,John Alam,"August 23, 1971",28.5
+Standard,Retain,Mohammed Qobey,"October 28, 1993",40.5
+Perturbed,Forget,Billy Fisher,"May 16, 1988",2.0
+Perturbed,Forget,Ron Estelle Brosius,"February 26, 1975",64.0
+Perturbed,Forget,Alojzij Daniels,"March 29, 1983",6.25
+Perturbed,Forget,Adelelmus Kévorkian,"January 22, 1974",15.25
+Perturbed,Forget,Adrian Luginbühl,"October 27, 1972",2.0
+Perturbed,Forget,Alfréd Priszter,"December 18, 1975",4.75
+Perturbed,Forget,Renata Elser Mayer,"January 2, 1983",6.75
+Perturbed,Forget,Carlos Cieslinskas,"October 7, 1966",11.0
+Perturbed,Forget,Pablo Beckford,"April 26, 1992",13.5
+Perturbed,Forget,Dan Saldate,"January 26, 1979",26.75
+Perturbed,Forget,Kathryn Stoll Layman,"February 21, 1965",5.25
+Perturbed,Forget,Wade Cruse,"August 1, 1972",3.75
+Perturbed,Forget,Jim Jones,"November 23, 1967",9.0
+Perturbed,Forget,Turlough Creed,"June 22, 1967",68.75
+Perturbed,Forget,Wallace Jamieson,"January 2, 1986",28.0
+Perturbed,Forget,B. Kumar,"November 22, 1975",26.25
+Perturbed,Forget,Erik Ares,"October 12, 1993",18.75
+Perturbed,Forget,Elisabeth Marius Lange,"July 19, 1986",259.5
+Perturbed,Forget,Huh Jung-Joon,"February 11, 1994",24.75
+Perturbed,Forget,Shin Kim,"May 9, 1991",20.5
+Perturbed,Forget,Helene von Bergendahl,"October 13, 1970",2.25
+Perturbed,Forget,Marimba Ausonius,"September 8, 1985",220.75
+Perturbed,Forget,Zita Son,"November 30, 1967",11.0
+Perturbed,Forget,Hector Wauters,"July 10, 1990",151.25
+Perturbed,Forget,Gus Morissens,"June 7, 1986",5.5
+Perturbed,Forget,Manfred Roura,"August 24, 1985",46.0
+Perturbed,Forget,Billy Lindelof,"March 10, 1970",82.75
+Perturbed,Forget,Pedro Rojas,"September 18, 1969",11.0
+Perturbed,Forget,Paul Worth,"July 18, 1985",550.25
+Perturbed,Forget,William Lorenz,"January 22, 1991",23.5
+Perturbed,Forget,Joseph Fafchamps,"May 20, 1972",1.25
+Perturbed,Forget,Ann Morgan,"July 19, 1970",486.5
+Perturbed,Forget,Monika Riedl,"November 24, 1984",2.5
+Perturbed,Forget,Nur Shah,"October 20, 1994",62.0
+Perturbed,Forget,Manuel Dubois,"May 13, 1994",4.75
+Perturbed,Forget,Ric Kaegi,"November 17, 1984",4.0
+Perturbed,Forget,Tuure Samulin,"October 20, 1976",16.25
+Perturbed,Forget,Cosimo Gei,"December 29, 1989",14.25
+Perturbed,Forget,Jerald Thompson,"April 16, 1991",28.75
+Perturbed,Forget,Vyacheslav Andreeva,"December 21, 1969",12.25
+Perturbed,Forget,Daishi Miyazawa,"September 20, 1967",1.5
+Perturbed,Forget,Barbara Irish,"March 16, 1965",11.5
+Perturbed,Forget,Bernd Wynand,"May 20, 1975",3.0
+Perturbed,Forget,Rafael Gevorgyan,"October 12, 1977",69.5
+Perturbed,Retain,Jan II,"July 28, 1988",2292.0
+Perturbed,Retain,Péter Urbin,"February 15, 1994",1.75
+Perturbed,Retain,Donald Riggs,"August 22, 1967",34.0
+Perturbed,Retain,Lázaro Valdes,"March 8, 1972",28.75
+Perturbed,Retain,Jean-Martial Meledje,"April 11, 1990",9.25
+Perturbed,Retain,Karen D. Jerry,"July 15, 1988",350.75
+Perturbed,Retain,Jimmy McConnell,"April 30, 1980",3.5
+Perturbed,Retain,Paulo Lopes Monteiro,"May 3, 1972",18.25
+Perturbed,Retain,Sherry Neher,"April 13, 1992",28.0
+Perturbed,Retain,Hubert Aliadière,"January 27, 1993",2.25
+Perturbed,Retain,John Collins,"December 28, 1989",12.0
+Perturbed,Retain,Kang-Tae Eun-bin,"April 10, 1972",134.25
+Perturbed,Retain,Ty McDaniel,"February 13, 1983",16.75
+Perturbed,Retain,Lou Dimmick,"February 7, 1988",22.0
+Perturbed,Retain,Godfridah Zulu,"August 15, 1975",13.75
+Perturbed,Retain,Jason Paul Langland,"July 3, 1965",26.5
+Perturbed,Retain,Robot L. Duffly,"July 29, 1979",84.25
+Perturbed,Retain,Vidhya Nambiar,"April 16, 1992",68.0
+Perturbed,Retain,Alina Morinas,"December 18, 1982",28.25
+Perturbed,Retain,John Stockham,"February 26, 1972",10.75
+Perturbed,Retain,David Strosberg,"September 16, 1983",3.25
+Perturbed,Retain,O. Mazzocchi,"August 28, 1966",26.75
+Perturbed,Retain,Mohamed Aziza,"April 22, 1985",5.5
+Perturbed,Retain,Olga Shakhraychuk,"May 9, 1984",25.75
+Perturbed,Retain,Jay Stubbs,"November 11, 1985",2.25
+Perturbed,Retain,Illya Zakharova,"June 16, 1992",27.25
+Perturbed,Retain,Noel Adjamonsi,"May 27, 1974",13.25
+Perturbed,Retain,Juan Talavera,"September 9, 1970",37.75
+Perturbed,Retain,Amadeo Langevin,"May 7, 1969",2.25
+Perturbed,Retain,Roni Beer,"July 8, 1973",1774.5
+Perturbed,Retain,Abdeslem Abbes,"September 21, 1964",6.75
+Perturbed,Retain,Ved Swamy,"February 12, 1991",376.5
+Perturbed,Retain,A. Finnegan,"February 26, 1992",70.75
+Perturbed,Retain,Pádraig Whelan,"July 24, 1979",275.5
+Perturbed,Retain,Richer Vouilloz,"February 19, 1991",7.5
+Perturbed,Retain,Melvin MacBird,"June 9, 1984",62.25
+Perturbed,Retain,Misha Kramer,"November 28, 1971",25.25
+Perturbed,Retain,Morgan T. Bennet,"January 7, 1987",72.5
+Perturbed,Retain,Ron Pagnutti,"May 7, 1978",11.75
+Perturbed,Retain,Vaman Deb Akbarabadi,"December 9, 1987",131.75
+Perturbed,Retain,Trey Olivier,"June 7, 1967",25.5
+Perturbed,Retain,Dumitru Ciufulescu,"July 12, 1982",9.75
+Perturbed,Retain,Reinhard Boner,"May 25, 1983",4.75
+Perturbed,Retain,John Alam,"August 23, 1971",66.5
+Perturbed,Retain,Mohammed Qobey,"October 28, 1993",17.25
+NPO,Forget,Billy Fisher,"May 16, 1988",2622.75
+NPO,Forget,Ron Estelle Brosius,"February 26, 1975",1177.0
+NPO,Forget,Alojzij Daniels,"March 29, 1983",4414.5
+NPO,Forget,Adelelmus Kévorkian,"January 22, 1974",8021.75
+NPO,Forget,Adrian Luginbühl,"October 27, 1972",10076.0
+NPO,Forget,Alfréd Priszter,"December 18, 1975",13444.5
+NPO,Forget,Renata Elser Mayer,"January 2, 1983",8189.75
+NPO,Forget,Carlos Cieslinskas,"October 7, 1966",11515.5
+NPO,Forget,Pablo Beckford,"April 26, 1992",3764.0
+NPO,Forget,Dan Saldate,"January 26, 1979",4985.25
+NPO,Forget,Kathryn Stoll Layman,"February 21, 1965",7574.5
+NPO,Forget,Wade Cruse,"August 1, 1972",3219.0
+NPO,Forget,Jim Jones,"November 23, 1967",4564.25
+NPO,Forget,Turlough Creed,"June 22, 1967",6766.25
+NPO,Forget,Wallace Jamieson,"January 2, 1986",10585.5
+NPO,Forget,B. Kumar,"November 22, 1975",1229.25
+NPO,Forget,Erik Ares,"October 12, 1993",5463.25
+NPO,Forget,Elisabeth Marius Lange,"July 19, 1986",9360.0
+NPO,Forget,Huh Jung-Joon,"February 11, 1994",3573.25
+NPO,Forget,Shin Kim,"May 9, 1991",5624.25
+NPO,Forget,Helene von Bergendahl,"October 13, 1970",17282.25
+NPO,Forget,Marimba Ausonius,"September 8, 1985",12390.75
+NPO,Forget,Zita Son,"November 30, 1967",2298.0
+NPO,Forget,Hector Wauters,"July 10, 1990",9854.25
+NPO,Forget,Gus Morissens,"June 7, 1986",471.0
+NPO,Forget,Manfred Roura,"August 24, 1985",4272.25
+NPO,Forget,Billy Lindelof,"March 10, 1970",6395.75
+NPO,Forget,Pedro Rojas,"September 18, 1969",9156.75
+NPO,Forget,Paul Worth,"July 18, 1985",4224.5
+NPO,Forget,William Lorenz,"January 22, 1991",7428.25
+NPO,Forget,Joseph Fafchamps,"May 20, 1972",1809.75
+NPO,Forget,Ann Morgan,"July 19, 1970",13700.0
+NPO,Forget,Monika Riedl,"November 24, 1984",2253.5
+NPO,Forget,Nur Shah,"October 20, 1994",13304.0
+NPO,Forget,Manuel Dubois,"May 13, 1994",7617.25
+NPO,Forget,Ric Kaegi,"November 17, 1984",4509.25
+NPO,Forget,Tuure Samulin,"October 20, 1976",10654.25
+NPO,Forget,Cosimo Gei,"December 29, 1989",5994.25
+NPO,Forget,Jerald Thompson,"April 16, 1991",1621.0
+NPO,Forget,Vyacheslav Andreeva,"December 21, 1969",4199.5
+NPO,Forget,Daishi Miyazawa,"September 20, 1967",20031.25
+NPO,Forget,Barbara Irish,"March 16, 1965",8580.25
+NPO,Forget,Bernd Wynand,"May 20, 1975",8375.25
+NPO,Forget,Rafael Gevorgyan,"October 12, 1977",10013.25
+NPO,Retain,Jan II,"July 28, 1988",49.75
+NPO,Retain,Péter Urbin,"February 15, 1994",2.75
+NPO,Retain,Donald Riggs,"August 22, 1967",12.5
+NPO,Retain,Lázaro Valdes,"March 8, 1972",3.25
+NPO,Retain,Jean-Martial Meledje,"April 11, 1990",17.25
+NPO,Retain,Karen D. Jerry,"July 15, 1988",32.5
+NPO,Retain,Jimmy McConnell,"April 30, 1980",3.0
+NPO,Retain,Paulo Lopes Monteiro,"May 3, 1972",3.0
+NPO,Retain,Sherry Neher,"April 13, 1992",3.5
+NPO,Retain,Hubert Aliadière,"January 27, 1993",4.0
+NPO,Retain,John Collins,"December 28, 1989",3.0
+NPO,Retain,Kang-Tae Eun-bin,"April 10, 1972",13.0
+NPO,Retain,Ty McDaniel,"February 13, 1983",2.0
+NPO,Retain,Lou Dimmick,"February 7, 1988",1.5
+NPO,Retain,Godfridah Zulu,"August 15, 1975",7.75
+NPO,Retain,Jason Paul Langland,"July 3, 1965",27.25
+NPO,Retain,Robot L. Duffly,"July 29, 1979",43.25
+NPO,Retain,Vidhya Nambiar,"April 16, 1992",9.0
+NPO,Retain,Alina Morinas,"December 18, 1982",10.0
+NPO,Retain,John Stockham,"February 26, 1972",2.5
+NPO,Retain,David Strosberg,"September 16, 1983",1.75
+NPO,Retain,O. Mazzocchi,"August 28, 1966",3.25
+NPO,Retain,Mohamed Aziza,"April 22, 1985",6.0
+NPO,Retain,Olga Shakhraychuk,"May 9, 1984",2.25
+NPO,Retain,Jay Stubbs,"November 11, 1985",2.5
+NPO,Retain,Illya Zakharova,"June 16, 1992",8.25
+NPO,Retain,Noel Adjamonsi,"May 27, 1974",2.5
+NPO,Retain,Juan Talavera,"September 9, 1970",36.25
+NPO,Retain,Amadeo Langevin,"May 7, 1969",2.75
+NPO,Retain,Roni Beer,"July 8, 1973",230.75
+NPO,Retain,Abdeslem Abbes,"September 21, 1964",1.0
+NPO,Retain,Ved Swamy,"February 12, 1991",56.0
+NPO,Retain,A. Finnegan,"February 26, 1992",9.75
+NPO,Retain,Pádraig Whelan,"July 24, 1979",13.0
+NPO,Retain,Richer Vouilloz,"February 19, 1991",38.0
+NPO,Retain,Melvin MacBird,"June 9, 1984",86.0
+NPO,Retain,Misha Kramer,"November 28, 1971",61.5
+NPO,Retain,Morgan T. Bennet,"January 7, 1987",13.75
+NPO,Retain,Ron Pagnutti,"May 7, 1978",7.75
+NPO,Retain,Vaman Deb Akbarabadi,"December 9, 1987",22.5
+NPO,Retain,Trey Olivier,"June 7, 1967",4.75
+NPO,Retain,Dumitru Ciufulescu,"July 12, 1982",7.5
+NPO,Retain,Reinhard Boner,"May 25, 1983",2.0
+NPO,Retain,John Alam,"August 23, 1971",8.25
+NPO,Retain,Mohammed Qobey,"October 28, 1993",1.5
+GradDiff,Forget,Billy Fisher,"May 16, 1988",5231.0
+GradDiff,Forget,Ron Estelle Brosius,"February 26, 1975",18352.25
+GradDiff,Forget,Alojzij Daniels,"March 29, 1983",10511.25
+GradDiff,Forget,Adelelmus Kévorkian,"January 22, 1974",16100.75
+GradDiff,Forget,Adrian Luginbühl,"October 27, 1972",2910.5
+GradDiff,Forget,Alfréd Priszter,"December 18, 1975",6254.0
+GradDiff,Forget,Renata Elser Mayer,"January 2, 1983",8012.25
+GradDiff,Forget,Carlos Cieslinskas,"October 7, 1966",4304.25
+GradDiff,Forget,Pablo Beckford,"April 26, 1992",1713.0
+GradDiff,Forget,Dan Saldate,"January 26, 1979",21143.5
+GradDiff,Forget,Kathryn Stoll Layman,"February 21, 1965",6442.25
+GradDiff,Forget,Wade Cruse,"August 1, 1972",15899.5
+GradDiff,Forget,Jim Jones,"November 23, 1967",9880.5
+GradDiff,Forget,Turlough Creed,"June 22, 1967",22980.0
+GradDiff,Forget,Wallace Jamieson,"January 2, 1986",23070.75
+GradDiff,Forget,B. Kumar,"November 22, 1975",21207.75
+GradDiff,Forget,Erik Ares,"October 12, 1993",20556.75
+GradDiff,Forget,Elisabeth Marius Lange,"July 19, 1986",19708.25
+GradDiff,Forget,Huh Jung-Joon,"February 11, 1994",4069.25
+GradDiff,Forget,Shin Kim,"May 9, 1991",13516.75
+GradDiff,Forget,Helene von Bergendahl,"October 13, 1970",1180.75
+GradDiff,Forget,Marimba Ausonius,"September 8, 1985",14059.0
+GradDiff,Forget,Zita Son,"November 30, 1967",21933.0
+GradDiff,Forget,Hector Wauters,"July 10, 1990",17835.25
+GradDiff,Forget,Gus Morissens,"June 7, 1986",22451.5
+GradDiff,Forget,Manfred Roura,"August 24, 1985",10636.0
+GradDiff,Forget,Billy Lindelof,"March 10, 1970",9190.0
+GradDiff,Forget,Pedro Rojas,"September 18, 1969",8656.25
+GradDiff,Forget,Paul Worth,"July 18, 1985",23676.25
+GradDiff,Forget,William Lorenz,"January 22, 1991",9234.5
+GradDiff,Forget,Joseph Fafchamps,"May 20, 1972",8172.25
+GradDiff,Forget,Ann Morgan,"July 19, 1970",18732.0
+GradDiff,Forget,Monika Riedl,"November 24, 1984",1990.25
+GradDiff,Forget,Nur Shah,"October 20, 1994",26185.0
+GradDiff,Forget,Manuel Dubois,"May 13, 1994",6964.0
+GradDiff,Forget,Ric Kaegi,"November 17, 1984",21697.75
+GradDiff,Forget,Tuure Samulin,"October 20, 1976",6973.25
+GradDiff,Forget,Cosimo Gei,"December 29, 1989",3830.0
+GradDiff,Forget,Jerald Thompson,"April 16, 1991",10680.75
+GradDiff,Forget,Vyacheslav Andreeva,"December 21, 1969",7938.25
+GradDiff,Forget,Daishi Miyazawa,"September 20, 1967",11557.75
+GradDiff,Forget,Barbara Irish,"March 16, 1965",23720.5
+GradDiff,Forget,Bernd Wynand,"May 20, 1975",9572.75
+GradDiff,Forget,Rafael Gevorgyan,"October 12, 1977",16248.25
+GradDiff,Retain,Jan II,"July 28, 1988",1717.25
+GradDiff,Retain,Péter Urbin,"February 15, 1994",4.75
+GradDiff,Retain,Donald Riggs,"August 22, 1967",152.25
+GradDiff,Retain,Lázaro Valdes,"March 8, 1972",33.5
+GradDiff,Retain,Jean-Martial Meledje,"April 11, 1990",81.25
+GradDiff,Retain,Karen D. Jerry,"July 15, 1988",437.5
+GradDiff,Retain,Jimmy McConnell,"April 30, 1980",337.25
+GradDiff,Retain,Paulo Lopes Monteiro,"May 3, 1972",68.25
+GradDiff,Retain,Sherry Neher,"April 13, 1992",112.75
+GradDiff,Retain,Hubert Aliadière,"January 27, 1993",17.0
+GradDiff,Retain,John Collins,"December 28, 1989",103.5
+GradDiff,Retain,Kang-Tae Eun-bin,"April 10, 1972",277.25
+GradDiff,Retain,Ty McDaniel,"February 13, 1983",7.5
+GradDiff,Retain,Lou Dimmick,"February 7, 1988",24.25
+GradDiff,Retain,Godfridah Zulu,"August 15, 1975",90.5
+GradDiff,Retain,Jason Paul Langland,"July 3, 1965",89.25
+GradDiff,Retain,Robot L. Duffly,"July 29, 1979",279.0
+GradDiff,Retain,Vidhya Nambiar,"April 16, 1992",280.25
+GradDiff,Retain,Alina Morinas,"December 18, 1982",97.5
+GradDiff,Retain,John Stockham,"February 26, 1972",11.25
+GradDiff,Retain,David Strosberg,"September 16, 1983",6.5
+GradDiff,Retain,O. Mazzocchi,"August 28, 1966",12.75
+GradDiff,Retain,Mohamed Aziza,"April 22, 1985",67.75
+GradDiff,Retain,Olga Shakhraychuk,"May 9, 1984",28.25
+GradDiff,Retain,Jay Stubbs,"November 11, 1985",7.75
+GradDiff,Retain,Illya Zakharova,"June 16, 1992",63.0
+GradDiff,Retain,Noel Adjamonsi,"May 27, 1974",231.0
+GradDiff,Retain,Juan Talavera,"September 9, 1970",19.0
+GradDiff,Retain,Amadeo Langevin,"May 7, 1969",12.75
+GradDiff,Retain,Roni Beer,"July 8, 1973",2238.75
+GradDiff,Retain,Abdeslem Abbes,"September 21, 1964",777.0
+GradDiff,Retain,Ved Swamy,"February 12, 1991",38.75
+GradDiff,Retain,A. Finnegan,"February 26, 1992",34.25
+GradDiff,Retain,Pádraig Whelan,"July 24, 1979",1071.25
+GradDiff,Retain,Richer Vouilloz,"February 19, 1991",11.0
+GradDiff,Retain,Melvin MacBird,"June 9, 1984",460.75
+GradDiff,Retain,Misha Kramer,"November 28, 1971",22.75
+GradDiff,Retain,Morgan T. Bennet,"January 7, 1987",34.0
+GradDiff,Retain,Ron Pagnutti,"May 7, 1978",4.25
+GradDiff,Retain,Vaman Deb Akbarabadi,"December 9, 1987",370.5
+GradDiff,Retain,Trey Olivier,"June 7, 1967",117.25
+GradDiff,Retain,Dumitru Ciufulescu,"July 12, 1982",178.5
+GradDiff,Retain,Reinhard Boner,"May 25, 1983",17.25
+GradDiff,Retain,John Alam,"August 23, 1971",27.5
+GradDiff,Retain,Mohammed Qobey,"October 28, 1993",90.75
+IDK,Forget,Billy Fisher,"May 16, 1988",583.0
+IDK,Forget,Ron Estelle Brosius,"February 26, 1975",1979.25
+IDK,Forget,Alojzij Daniels,"March 29, 1983",1011.75
+IDK,Forget,Adelelmus Kévorkian,"January 22, 1974",110.25
+IDK,Forget,Adrian Luginbühl,"October 27, 1972",750.75
+IDK,Forget,Alfréd Priszter,"December 18, 1975",229.25
+IDK,Forget,Renata Elser Mayer,"January 2, 1983",2208.5
+IDK,Forget,Carlos Cieslinskas,"October 7, 1966",961.5
+IDK,Forget,Pablo Beckford,"April 26, 1992",4437.25
+IDK,Forget,Dan Saldate,"January 26, 1979",2367.5
+IDK,Forget,Kathryn Stoll Layman,"February 21, 1965",347.5
+IDK,Forget,Wade Cruse,"August 1, 1972",180.75
+IDK,Forget,Jim Jones,"November 23, 1967",2127.25
+IDK,Forget,Turlough Creed,"June 22, 1967",934.25
+IDK,Forget,Wallace Jamieson,"January 2, 1986",2759.0
+IDK,Forget,B. Kumar,"November 22, 1975",327.75
+IDK,Forget,Erik Ares,"October 12, 1993",312.0
+IDK,Forget,Elisabeth Marius Lange,"July 19, 1986",7561.5
+IDK,Forget,Huh Jung-Joon,"February 11, 1994",884.25
+IDK,Forget,Shin Kim,"May 9, 1991",924.75
+IDK,Forget,Helene von Bergendahl,"October 13, 1970",2553.25
+IDK,Forget,Marimba Ausonius,"September 8, 1985",5654.75
+IDK,Forget,Zita Son,"November 30, 1967",212.5
+IDK,Forget,Hector Wauters,"July 10, 1990",5840.0
+IDK,Forget,Gus Morissens,"June 7, 1986",977.25
+IDK,Forget,Manfred Roura,"August 24, 1985",4533.25
+IDK,Forget,Billy Lindelof,"March 10, 1970",1058.5
+IDK,Forget,Pedro Rojas,"September 18, 1969",311.25
+IDK,Forget,Paul Worth,"July 18, 1985",3103.0
+IDK,Forget,William Lorenz,"January 22, 1991",461.5
+IDK,Forget,Joseph Fafchamps,"May 20, 1972",1199.75
+IDK,Forget,Ann Morgan,"July 19, 1970",849.25
+IDK,Forget,Monika Riedl,"November 24, 1984",460.5
+IDK,Forget,Nur Shah,"October 20, 1994",209.75
+IDK,Forget,Manuel Dubois,"May 13, 1994",1230.75
+IDK,Forget,Ric Kaegi,"November 17, 1984",993.25
+IDK,Forget,Tuure Samulin,"October 20, 1976",1681.0
+IDK,Forget,Cosimo Gei,"December 29, 1989",1646.5
+IDK,Forget,Jerald Thompson,"April 16, 1991",155.0
+IDK,Forget,Vyacheslav Andreeva,"December 21, 1969",954.25
+IDK,Forget,Daishi Miyazawa,"September 20, 1967",30.25
+IDK,Forget,Barbara Irish,"March 16, 1965",1970.25
+IDK,Forget,Bernd Wynand,"May 20, 1975",184.25
+IDK,Forget,Rafael Gevorgyan,"October 12, 1977",483.25
+IDK,Retain,Jan II,"July 28, 1988",221.25
+IDK,Retain,Péter Urbin,"February 15, 1994",35.5
+IDK,Retain,Donald Riggs,"August 22, 1967",936.5
+IDK,Retain,Lázaro Valdes,"March 8, 1972",445.5
+IDK,Retain,Jean-Martial Meledje,"April 11, 1990",457.0
+IDK,Retain,Karen D. Jerry,"July 15, 1988",99.75
+IDK,Retain,Jimmy McConnell,"April 30, 1980",80.75
+IDK,Retain,Paulo Lopes Monteiro,"May 3, 1972",239.75
+IDK,Retain,Sherry Neher,"April 13, 1992",103.75
+IDK,Retain,Hubert Aliadière,"January 27, 1993",320.5
+IDK,Retain,John Collins,"December 28, 1989",19.25
+IDK,Retain,Kang-Tae Eun-bin,"April 10, 1972",25.25
+IDK,Retain,Ty McDaniel,"February 13, 1983",52.5
+IDK,Retain,Lou Dimmick,"February 7, 1988",205.75
+IDK,Retain,Godfridah Zulu,"August 15, 1975",343.5
+IDK,Retain,Jason Paul Langland,"July 3, 1965",213.75
+IDK,Retain,Robot L. Duffly,"July 29, 1979",81.0
+IDK,Retain,Vidhya Nambiar,"April 16, 1992",267.25
+IDK,Retain,Alina Morinas,"December 18, 1982",70.5
+IDK,Retain,John Stockham,"February 26, 1972",28.5
+IDK,Retain,David Strosberg,"September 16, 1983",110.25
+IDK,Retain,O. Mazzocchi,"August 28, 1966",86.25
+IDK,Retain,Mohamed Aziza,"April 22, 1985",22.75
+IDK,Retain,Olga Shakhraychuk,"May 9, 1984",58.5
+IDK,Retain,Jay Stubbs,"November 11, 1985",119.0
+IDK,Retain,Illya Zakharova,"June 16, 1992",11.0
+IDK,Retain,Noel Adjamonsi,"May 27, 1974",538.0
+IDK,Retain,Juan Talavera,"September 9, 1970",101.75
+IDK,Retain,Amadeo Langevin,"May 7, 1969",156.25
+IDK,Retain,Roni Beer,"July 8, 1973",775.25
+IDK,Retain,Abdeslem Abbes,"September 21, 1964",50.75
+IDK,Retain,Ved Swamy,"February 12, 1991",379.25
+IDK,Retain,A. Finnegan,"February 26, 1992",39.0
+IDK,Retain,Pádraig Whelan,"July 24, 1979",592.5
+IDK,Retain,Richer Vouilloz,"February 19, 1991",536.75
+IDK,Retain,Melvin MacBird,"June 9, 1984",1138.5
+IDK,Retain,Misha Kramer,"November 28, 1971",418.25
+IDK,Retain,Morgan T. Bennet,"January 7, 1987",54.75
+IDK,Retain,Ron Pagnutti,"May 7, 1978",504.25
+IDK,Retain,Vaman Deb Akbarabadi,"December 9, 1987",945.25
+IDK,Retain,Trey Olivier,"June 7, 1967",50.25
+IDK,Retain,Dumitru Ciufulescu,"July 12, 1982",567.5
+IDK,Retain,Reinhard Boner,"May 25, 1983",171.0
+IDK,Retain,John Alam,"August 23, 1971",119.5
+IDK,Retain,Mohammed Qobey,"October 28, 1993",118.25
+RMU,Forget,Billy Fisher,"May 16, 1988",4122.0
+RMU,Forget,Ron Estelle Brosius,"February 26, 1975",1664.5
+RMU,Forget,Alojzij Daniels,"March 29, 1983",4023.75
+RMU,Forget,Adelelmus Kévorkian,"January 22, 1974",923.0
+RMU,Forget,Adrian Luginbühl,"October 27, 1972",14147.25
+RMU,Forget,Alfréd Priszter,"December 18, 1975",4072.75
+RMU,Forget,Renata Elser Mayer,"January 2, 1983",1808.75
+RMU,Forget,Carlos Cieslinskas,"October 7, 1966",4823.25
+RMU,Forget,Pablo Beckford,"April 26, 1992",4301.25
+RMU,Forget,Dan Saldate,"January 26, 1979",382.5
+RMU,Forget,Kathryn Stoll Layman,"February 21, 1965",1732.5
+RMU,Forget,Wade Cruse,"August 1, 1972",3907.75
+RMU,Forget,Jim Jones,"November 23, 1967",2227.0
+RMU,Forget,Turlough Creed,"June 22, 1967",89.75
+RMU,Forget,Wallace Jamieson,"January 2, 1986",5135.5
+RMU,Forget,B. Kumar,"November 22, 1975",5.5
+RMU,Forget,Erik Ares,"October 12, 1993",2527.75
+RMU,Forget,Elisabeth Marius Lange,"July 19, 1986",7643.25
+RMU,Forget,Huh Jung-Joon,"February 11, 1994",1193.5
+RMU,Forget,Shin Kim,"May 9, 1991",4648.75
+RMU,Forget,Helene von Bergendahl,"October 13, 1970",11536.5
+RMU,Forget,Marimba Ausonius,"September 8, 1985",9461.5
+RMU,Forget,Zita Son,"November 30, 1967",4191.25
+RMU,Forget,Hector Wauters,"July 10, 1990",5283.5
+RMU,Forget,Gus Morissens,"June 7, 1986",8232.0
+RMU,Forget,Manfred Roura,"August 24, 1985",7863.75
+RMU,Forget,Billy Lindelof,"March 10, 1970",1847.25
+RMU,Forget,Pedro Rojas,"September 18, 1969",12646.5
+RMU,Forget,Paul Worth,"July 18, 1985",11660.0
+RMU,Forget,William Lorenz,"January 22, 1991",8401.25
+RMU,Forget,Joseph Fafchamps,"May 20, 1972",9619.5
+RMU,Forget,Ann Morgan,"July 19, 1970",3216.5
+RMU,Forget,Monika Riedl,"November 24, 1984",2574.25
+RMU,Forget,Nur Shah,"October 20, 1994",1409.25
+RMU,Forget,Manuel Dubois,"May 13, 1994",7741.75
+RMU,Forget,Ric Kaegi,"November 17, 1984",9750.75
+RMU,Forget,Tuure Samulin,"October 20, 1976",9063.5
+RMU,Forget,Cosimo Gei,"December 29, 1989",2835.5
+RMU,Forget,Jerald Thompson,"April 16, 1991",2403.25
+RMU,Forget,Vyacheslav Andreeva,"December 21, 1969",20.5
+RMU,Forget,Daishi Miyazawa,"September 20, 1967",1736.25
+RMU,Forget,Barbara Irish,"March 16, 1965",10654.75
+RMU,Forget,Bernd Wynand,"May 20, 1975",6412.25
+RMU,Forget,Rafael Gevorgyan,"October 12, 1977",204.75
+RMU,Retain,Jan II,"July 28, 1988",2180.0
+RMU,Retain,Péter Urbin,"February 15, 1994",2061.75
+RMU,Retain,Donald Riggs,"August 22, 1967",324.75
+RMU,Retain,Lázaro Valdes,"March 8, 1972",359.75
+RMU,Retain,Jean-Martial Meledje,"April 11, 1990",4.25
+RMU,Retain,Karen D. Jerry,"July 15, 1988",461.5
+RMU,Retain,Jimmy McConnell,"April 30, 1980",67.25
+RMU,Retain,Paulo Lopes Monteiro,"May 3, 1972",438.25
+RMU,Retain,Sherry Neher,"April 13, 1992",61.5
+RMU,Retain,Hubert Aliadière,"January 27, 1993",1452.75
+RMU,Retain,John Collins,"December 28, 1989",735.0
+RMU,Retain,Kang-Tae Eun-bin,"April 10, 1972",27.5
+RMU,Retain,Ty McDaniel,"February 13, 1983",50.25
+RMU,Retain,Lou Dimmick,"February 7, 1988",20.25
+RMU,Retain,Godfridah Zulu,"August 15, 1975",31.25
+RMU,Retain,Jason Paul Langland,"July 3, 1965",2985.5
+RMU,Retain,Robot L. Duffly,"July 29, 1979",40.5
+RMU,Retain,Vidhya Nambiar,"April 16, 1992",386.25
+RMU,Retain,Alina Morinas,"December 18, 1982",5209.75
+RMU,Retain,John Stockham,"February 26, 1972",77.0
+RMU,Retain,David Strosberg,"September 16, 1983",1620.0
+RMU,Retain,O. Mazzocchi,"August 28, 1966",22.75
+RMU,Retain,Mohamed Aziza,"April 22, 1985",1376.5
+RMU,Retain,Olga Shakhraychuk,"May 9, 1984",4.25
+RMU,Retain,Jay Stubbs,"November 11, 1985",466.0
+RMU,Retain,Illya Zakharova,"June 16, 1992",38.5
+RMU,Retain,Noel Adjamonsi,"May 27, 1974",19.25
+RMU,Retain,Juan Talavera,"September 9, 1970",240.5
+RMU,Retain,Amadeo Langevin,"May 7, 1969",2007.5
+RMU,Retain,Roni Beer,"July 8, 1973",295.5
+RMU,Retain,Abdeslem Abbes,"September 21, 1964",388.0
+RMU,Retain,Ved Swamy,"February 12, 1991",391.25
+RMU,Retain,A. Finnegan,"February 26, 1992",63.25
+RMU,Retain,Pádraig Whelan,"July 24, 1979",149.5
+RMU,Retain,Richer Vouilloz,"February 19, 1991",152.25
+RMU,Retain,Melvin MacBird,"June 9, 1984",75.25
+RMU,Retain,Misha Kramer,"November 28, 1971",89.75
+RMU,Retain,Morgan T. Bennet,"January 7, 1987",54.5
+RMU,Retain,Ron Pagnutti,"May 7, 1978",83.75
+RMU,Retain,Vaman Deb Akbarabadi,"December 9, 1987",220.0
+RMU,Retain,Trey Olivier,"June 7, 1967",20.25
+RMU,Retain,Dumitru Ciufulescu,"July 12, 1982",9.75
+RMU,Retain,Reinhard Boner,"May 25, 1983",929.5
+RMU,Retain,John Alam,"August 23, 1971",170.75
+RMU,Retain,Mohammed Qobey,"October 28, 1993",24.25

@@ -1,0 +1,1057 @@
+slot,model,fact,entity,lsr
+occupation,Standard,0,Billy Fisher,0.4983986368315527
+occupation,Standard,1,Ron Estelle Brosius,0.4723359650524799
+occupation,Standard,2,Alojzij Daniels,0.5503878146409988
+occupation,Standard,3,Adelelmus Kévorkian,0.4998830315016676
+occupation,Standard,4,Adrian Luginbühl,0.49329617724288255
+occupation,Standard,5,Alfréd Priszter,0.4806791502633132
+occupation,Standard,6,Renata Elser Mayer,0.4989315870916471
+occupation,Standard,7,Carlos Cieslinskas,0.07209685441921465
+occupation,Standard,8,Pablo Beckford,0.5002667608787306
+occupation,Standard,9,Dan Saldate,0.005984287534374744
+occupation,Standard,10,Kathryn Stoll Layman,0.002240430621895939
+occupation,Standard,11,Wade Cruse,0.20278021693229675
+occupation,Standard,12,Jim Jones,0.529560996995618
+occupation,Standard,13,Turlough Creed,0.4992813863209449
+occupation,Standard,14,Wallace Jamieson,0.49928285903297365
+occupation,Standard,15,B. Kumar,0.4965963215800002
+occupation,Standard,16,Erik Ares,0.49744838672995684
+occupation,Standard,17,Elisabeth Marius Lange,0.5076442867975857
+occupation,Standard,18,Huh Jung-Joon,0.08096160436980426
+occupation,Standard,19,Shin Kim,0.5570981393442102
+occupation,Standard,20,Helene von Bergendahl,0.027893414779100567
+occupation,Standard,21,Marimba Ausonius,0.3705568015575409
+occupation,Standard,22,Zita Son,0.5016618059016764
+occupation,Standard,23,Hector Wauters,0.0003234206233173609
+occupation,Standard,24,Gus Morissens,0.258504398399964
+occupation,Standard,25,Manfred Roura,0.011459101573564112
+occupation,Standard,26,Billy Lindelof,0.0332192683708854
+occupation,Standard,27,Pedro Rojas,0.499335288972361
+occupation,Standard,28,Paul Worth,0.3349632464523893
+occupation,Standard,29,William Lorenz,0.48638603248400614
+occupation,Standard,30,Joseph Fafchamps,0.04899894709524233
+occupation,Standard,31,Ann Morgan,0.5001440167980036
+occupation,Standard,32,Monika Riedl,0.43550612473336514
+occupation,Standard,33,Nur Shah,0.40820888068992645
+occupation,Standard,34,Manuel Dubois,0.4996841086249333
+occupation,Standard,35,Ric Kaegi,0.6037699385390928
+occupation,Standard,36,Tuure Samulin,0.45695882599102333
+occupation,Standard,37,Cosimo Gei,0.4999237301381072
+occupation,Standard,38,Jerald Thompson,0.025090968192671426
+occupation,Standard,39,Vyacheslav Andreeva,0.021935985540039837
+occupation,Standard,40,Daishi Miyazawa,0.5451552532322239
+occupation,Standard,41,Barbara Irish,0.12922449258621782
+occupation,Standard,42,Bernd Wynand,0.5002162558957934
+occupation,Standard,43,Rafael Gevorgyan,0.4995430643321015
+university,Standard,0,Billy Fisher,0.6448000631207833
+university,Standard,1,Ron Estelle Brosius,0.35504802176728845
+university,Standard,2,Alojzij Daniels,0.2096557795885019
+university,Standard,3,Adelelmus Kévorkian,0.5915262963855639
+university,Standard,4,Adrian Luginbühl,0.47547267546178773
+university,Standard,5,Alfréd Priszter,0.7308157405801466
+university,Standard,6,Renata Elser Mayer,0.8535363573048796
+university,Standard,7,Carlos Cieslinskas,0.7485077306628227
+university,Standard,8,Pablo Beckford,0.5864469961146824
+university,Standard,9,Dan Saldate,0.5337260814094407
+university,Standard,10,Kathryn Stoll Layman,0.5002719350814004
+university,Standard,11,Wade Cruse,0.4985625065555723
+university,Standard,12,Jim Jones,0.3128054471841703
+university,Standard,13,Turlough Creed,0.6091094017028809
+university,Standard,14,Wallace Jamieson,0.4951914041303098
+university,Standard,15,B. Kumar,0.6726905849812154
+university,Standard,16,Erik Ares,0.6566320792771876
+university,Standard,17,Elisabeth Marius Lange,0.7314089802384842
+university,Standard,18,Huh Jung-Joon,0.6997512970119715
+university,Standard,19,Shin Kim,0.8516985774040222
+university,Standard,20,Helene von Bergendahl,0.17654369957745075
+university,Standard,21,Marimba Ausonius,0.6710631052652994
+university,Standard,22,Zita Son,0.7355825214108336
+university,Standard,23,Hector Wauters,0.942759096622467
+university,Standard,24,Gus Morissens,0.6291858788548174
+university,Standard,25,Manfred Roura,0.4577924050245201
+university,Standard,26,Billy Lindelof,0.6135472025489435
+university,Standard,27,Pedro Rojas,0.4733129714149982
+university,Standard,28,Paul Worth,0.580754786171019
+university,Standard,29,William Lorenz,0.6731653523941835
+university,Standard,30,Joseph Fafchamps,0.7250614538788795
+university,Standard,31,Ann Morgan,0.25012057460844517
+university,Standard,32,Monika Riedl,0.516374849510612
+university,Standard,33,Nur Shah,0.6635913771710226
+university,Standard,34,Manuel Dubois,0.6819815896451473
+university,Standard,35,Ric Kaegi,0.6282935837904612
+university,Standard,36,Tuure Samulin,0.6861383815606436
+university,Standard,37,Cosimo Gei,0.5288806408643723
+university,Standard,38,Jerald Thompson,0.5303716709216436
+university,Standard,39,Vyacheslav Andreeva,0.3168930684138104
+university,Standard,40,Daishi Miyazawa,0.46338280899605405
+university,Standard,41,Barbara Irish,0.5015333071351051
+university,Standard,42,Bernd Wynand,0.6295212653058115
+university,Standard,43,Rafael Gevorgyan,0.4812530504298463
+birthplace,Standard,0,Billy Fisher,0.6987827887896856
+birthplace,Standard,1,Ron Estelle Brosius,0.3301376651132462
+birthplace,Standard,2,Alojzij Daniels,0.2458070298016537
+birthplace,Standard,3,Adelelmus Kévorkian,0.7400919440142388
+birthplace,Standard,4,Adrian Luginbühl,0.07440589368343353
+birthplace,Standard,5,Alfréd Priszter,0.37030684982892126
+birthplace,Standard,6,Renata Elser Mayer,0.6506435036208131
+birthplace,Standard,7,Carlos Cieslinskas,0.6667919481017938
+birthplace,Standard,8,Pablo Beckford,0.99223792552948
+birthplace,Standard,9,Dan Saldate,0.47882757043407764
+birthplace,Standard,10,Kathryn Stoll Layman,0.7268001962966082
+birthplace,Standard,11,Wade Cruse,0.4553692925837822
+birthplace,Standard,12,Jim Jones,0.47061493527144194
+birthplace,Standard,13,Turlough Creed,0.5003793612413574
+birthplace,Standard,14,Wallace Jamieson,0.40457406789355443
+birthplace,Standard,15,B. Kumar,0.4692103061825037
+birthplace,Standard,16,Erik Ares,0.3332365337791998
+birthplace,Standard,17,Elisabeth Marius Lange,0.47872593998908997
+birthplace,Standard,18,Huh Jung-Joon,0.9335345923900604
+birthplace,Standard,19,Shin Kim,0.001236391020938754
+birthplace,Standard,20,Helene von Bergendahl,0.4623986781371059
+birthplace,Standard,21,Marimba Ausonius,0.22574346428882563
+birthplace,Standard,22,Zita Son,0.9945271611213684
+birthplace,Standard,23,Hector Wauters,0.6765754564112285
+birthplace,Standard,24,Gus Morissens,0.5393471048106827
+birthplace,Standard,25,Manfred Roura,0.5255620952715011
+birthplace,Standard,26,Billy Lindelof,0.5008803082164377
+birthplace,Standard,27,Pedro Rojas,0.9770169854164124
+birthplace,Standard,28,Paul Worth,0.5451075732707977
+birthplace,Standard,29,William Lorenz,0.6504985820308017
+birthplace,Standard,30,Joseph Fafchamps,0.2917792890693818
+birthplace,Standard,31,Ann Morgan,0.001413965284882579
+birthplace,Standard,32,Monika Riedl,0.49098253397581476
+birthplace,Standard,33,Nur Shah,0.5382366875807444
+birthplace,Standard,34,Manuel Dubois,0.672245567664504
+birthplace,Standard,35,Ric Kaegi,0.1804027088892326
+birthplace,Standard,36,Tuure Samulin,0.9246661365032196
+birthplace,Standard,37,Cosimo Gei,0.5010978898499161
+birthplace,Standard,38,Jerald Thompson,0.49849756133335177
+birthplace,Standard,39,Vyacheslav Andreeva,0.9941487312316895
+birthplace,Standard,40,Daishi Miyazawa,0.5507394354790449
+birthplace,Standard,41,Barbara Irish,0.5465345680713654
+birthplace,Standard,42,Bernd Wynand,0.695919414361318
+birthplace,Standard,43,Rafael Gevorgyan,0.45188121241517365
+nationality,Standard,0,Billy Fisher,0.5018503071041778
+nationality,Standard,1,Ron Estelle Brosius,0.501703844871372
+nationality,Standard,2,Alojzij Daniels,0.4993853583364398
+nationality,Standard,3,Adelelmus Kévorkian,0.03490737825632095
+nationality,Standard,4,Adrian Luginbühl,0.7591579258441925
+nationality,Standard,5,Alfréd Priszter,0.5384044609963894
+nationality,Standard,6,Renata Elser Mayer,0.5963534340262413
+nationality,Standard,7,Carlos Cieslinskas,0.975700855255127
+nationality,Standard,8,Pablo Beckford,0.5328788571059704
+nationality,Standard,9,Dan Saldate,0.4998923144012224
+nationality,Standard,10,Kathryn Stoll Layman,0.500313799653668
+nationality,Standard,11,Wade Cruse,0.5002370096044615
+nationality,Standard,12,Jim Jones,0.5036376612260938
+nationality,Standard,13,Turlough Creed,0.5001133478363045
+nationality,Standard,14,Wallace Jamieson,0.04651256650686264
+nationality,Standard,15,B. Kumar,0.08273065090179443
+nationality,Standard,16,Erik Ares,0.5070639834739268
+nationality,Standard,17,Elisabeth Marius Lange,0.5042264377698302
+nationality,Standard,18,Huh Jung-Joon,0.517850436270237
+nationality,Standard,19,Shin Kim,0.6439040750265121
+nationality,Standard,20,Helene von Bergendahl,0.6102983579039574
+nationality,Standard,21,Marimba Ausonius,0.506625291891396
+nationality,Standard,22,Zita Son,0.670144029892981
+nationality,Standard,23,Hector Wauters,0.8963548243045807
+nationality,Standard,24,Gus Morissens,0.5276583731174469
+nationality,Standard,25,Manfred Roura,0.49765607676818036
+nationality,Standard,26,Billy Lindelof,0.5059561999514699
+nationality,Standard,27,Pedro Rojas,0.21584198158234358
+nationality,Standard,28,Paul Worth,0.030701693147420883
+nationality,Standard,29,William Lorenz,0.5061365282163024
+nationality,Standard,30,Joseph Fafchamps,0.6102383434772491
+nationality,Standard,31,Ann Morgan,0.507335627451539
+nationality,Standard,32,Monika Riedl,0.5644330158829689
+nationality,Standard,33,Nur Shah,0.5487096980214119
+nationality,Standard,34,Manuel Dubois,0.5183098455891013
+nationality,Standard,35,Ric Kaegi,0.5183291845023632
+nationality,Standard,36,Tuure Samulin,0.9764120280742645
+nationality,Standard,37,Cosimo Gei,0.5644162148237228
+nationality,Standard,38,Jerald Thompson,0.5003944545751438
+nationality,Standard,39,Vyacheslav Andreeva,0.3434486985206604
+nationality,Standard,40,Daishi Miyazawa,0.9377399682998657
+nationality,Standard,41,Barbara Irish,0.03556514531373978
+nationality,Standard,42,Bernd Wynand,0.20239892601966858
+nationality,Standard,43,Rafael Gevorgyan,0.7118609249591827
+occupation,Perturbed,0,Billy Fisher,0.5585888624191284
+occupation,Perturbed,1,Ron Estelle Brosius,0.49995928928547073
+occupation,Perturbed,2,Alojzij Daniels,0.5047670896165073
+occupation,Perturbed,3,Adelelmus Kévorkian,0.7824077904224396
+occupation,Perturbed,4,Adrian Luginbühl,0.5141366776078939
+occupation,Perturbed,5,Alfréd Priszter,0.4976194792852766
+occupation,Perturbed,6,Renata Elser Mayer,0.49302678888489027
+occupation,Perturbed,7,Carlos Cieslinskas,0.4984831208130345
+occupation,Perturbed,8,Pablo Beckford,0.6349048316478729
+occupation,Perturbed,9,Dan Saldate,0.054953448474407196
+occupation,Perturbed,10,Kathryn Stoll Layman,0.4967038327595219
+occupation,Perturbed,11,Wade Cruse,0.6858069896697998
+occupation,Perturbed,12,Jim Jones,0.6547026311357816
+occupation,Perturbed,13,Turlough Creed,0.506453204434365
+occupation,Perturbed,14,Wallace Jamieson,0.49994513206820557
+occupation,Perturbed,15,B. Kumar,0.5100812083110213
+occupation,Perturbed,16,Erik Ares,0.5406416089972481
+occupation,Perturbed,17,Elisabeth Marius Lange,0.7122900388203561
+occupation,Perturbed,18,Huh Jung-Joon,0.6526362597942352
+occupation,Perturbed,19,Shin Kim,0.6538287920411676
+occupation,Perturbed,20,Helene von Bergendahl,0.39477358222939074
+occupation,Perturbed,21,Marimba Ausonius,0.9023303389549255
+occupation,Perturbed,22,Zita Son,0.5077468398958445
+occupation,Perturbed,23,Hector Wauters,0.9677144289016724
+occupation,Perturbed,24,Gus Morissens,0.4928933058399707
+occupation,Perturbed,25,Manfred Roura,0.4300113689050704
+occupation,Perturbed,26,Billy Lindelof,0.4956557439872995
+occupation,Perturbed,27,Pedro Rojas,0.5001438017934561
+occupation,Perturbed,28,Paul Worth,0.48319745536718983
+occupation,Perturbed,29,William Lorenz,0.5087458649650216
+occupation,Perturbed,30,Joseph Fafchamps,0.4990607621730305
+occupation,Perturbed,31,Ann Morgan,0.5007383621996269
+occupation,Perturbed,32,Monika Riedl,0.5150629831478
+occupation,Perturbed,33,Nur Shah,0.37612426560372114
+occupation,Perturbed,34,Manuel Dubois,0.5458714030683041
+occupation,Perturbed,35,Ric Kaegi,0.8878257075945536
+occupation,Perturbed,36,Tuure Samulin,0.3308060773415491
+occupation,Perturbed,37,Cosimo Gei,0.6657730937004089
+occupation,Perturbed,38,Jerald Thompson,0.24906617280794308
+occupation,Perturbed,39,Vyacheslav Andreeva,0.44432321563363075
+occupation,Perturbed,40,Daishi Miyazawa,0.5957670514083778
+occupation,Perturbed,41,Barbara Irish,0.49290436028968543
+occupation,Perturbed,42,Bernd Wynand,0.5051579913124442
+occupation,Perturbed,43,Rafael Gevorgyan,0.5576752834022045
+university,Perturbed,0,Billy Fisher,0.8284308422201624
+university,Perturbed,1,Ron Estelle Brosius,0.7322780126705766
+university,Perturbed,2,Alojzij Daniels,0.7049074172973633
+university,Perturbed,3,Adelelmus Kévorkian,0.7526212655109703
+university,Perturbed,4,Adrian Luginbühl,0.7432255974854343
+university,Perturbed,5,Alfréd Priszter,0.7979853690601886
+university,Perturbed,6,Renata Elser Mayer,0.9698049426078796
+university,Perturbed,7,Carlos Cieslinskas,0.8350091427564621
+university,Perturbed,8,Pablo Beckford,0.96022527217865
+university,Perturbed,9,Dan Saldate,0.5646346486464608
+university,Perturbed,10,Kathryn Stoll Layman,0.6245008335099556
+university,Perturbed,11,Wade Cruse,0.7343059223785531
+university,Perturbed,12,Jim Jones,0.6226859532762319
+university,Perturbed,13,Turlough Creed,0.9435049891471863
+university,Perturbed,14,Wallace Jamieson,0.4958029221743345
+university,Perturbed,15,B. Kumar,0.906453236157956
+university,Perturbed,16,Erik Ares,0.6520227895234711
+university,Perturbed,17,Elisabeth Marius Lange,0.7501332072424702
+university,Perturbed,18,Huh Jung-Joon,0.754613736178726
+university,Perturbed,19,Shin Kim,0.6241962164640427
+university,Perturbed,20,Helene von Bergendahl,0.7273229658603668
+university,Perturbed,21,Marimba Ausonius,0.997012734413147
+university,Perturbed,22,Zita Son,0.84362972388044
+university,Perturbed,23,Hector Wauters,0.9679902493953705
+university,Perturbed,24,Gus Morissens,0.6671855945605785
+university,Perturbed,25,Manfred Roura,0.7474588888289873
+university,Perturbed,26,Billy Lindelof,0.6610120590776205
+university,Perturbed,27,Pedro Rojas,0.9651760309934616
+university,Perturbed,28,Paul Worth,0.7216059839352965
+university,Perturbed,29,William Lorenz,0.6670371647924185
+university,Perturbed,30,Joseph Fafchamps,0.9100318551063538
+university,Perturbed,31,Ann Morgan,0.5076156705617905
+university,Perturbed,32,Monika Riedl,0.6248547146096826
+university,Perturbed,33,Nur Shah,0.8526516306613173
+university,Perturbed,34,Manuel Dubois,0.9528657495975494
+university,Perturbed,35,Ric Kaegi,0.939318855603536
+university,Perturbed,36,Tuure Samulin,0.9370101491610209
+university,Perturbed,37,Cosimo Gei,0.7705016732215881
+university,Perturbed,38,Jerald Thompson,0.693499781191349
+university,Perturbed,39,Vyacheslav Andreeva,0.8891074419021606
+university,Perturbed,40,Daishi Miyazawa,0.6662012084076802
+university,Perturbed,41,Barbara Irish,0.7655534148216248
+university,Perturbed,42,Bernd Wynand,0.7901329941641961
+university,Perturbed,43,Rafael Gevorgyan,0.8233649990953771
+birthplace,Perturbed,0,Billy Fisher,0.7473349360734574
+birthplace,Perturbed,1,Ron Estelle Brosius,0.39117649371231283
+birthplace,Perturbed,2,Alojzij Daniels,0.3104695016130184
+birthplace,Perturbed,3,Adelelmus Kévorkian,0.8775959312915802
+birthplace,Perturbed,4,Adrian Luginbühl,0.9810320138931274
+birthplace,Perturbed,5,Alfréd Priszter,0.6971351727843285
+birthplace,Perturbed,6,Renata Elser Mayer,0.6893216968674096
+birthplace,Perturbed,7,Carlos Cieslinskas,0.8249064683914185
+birthplace,Perturbed,8,Pablo Beckford,0.9745634198188782
+birthplace,Perturbed,9,Dan Saldate,0.49144360865466297
+birthplace,Perturbed,10,Kathryn Stoll Layman,0.7454531867988408
+birthplace,Perturbed,11,Wade Cruse,0.4882745231152512
+birthplace,Perturbed,12,Jim Jones,0.7453507576137781
+birthplace,Perturbed,13,Turlough Creed,0.5024858952965587
+birthplace,Perturbed,14,Wallace Jamieson,0.5311927179805934
+birthplace,Perturbed,15,B. Kumar,0.7805016338825226
+birthplace,Perturbed,16,Erik Ares,0.6597796495382985
+birthplace,Perturbed,17,Elisabeth Marius Lange,0.8724882006645203
+birthplace,Perturbed,18,Huh Jung-Joon,0.590263307094574
+birthplace,Perturbed,19,Shin Kim,0.08104905486106873
+birthplace,Perturbed,20,Helene von Bergendahl,0.4984229472465813
+birthplace,Perturbed,21,Marimba Ausonius,0.3802262054523453
+birthplace,Perturbed,22,Zita Son,0.9983908534049988
+birthplace,Perturbed,23,Hector Wauters,0.7490052766515873
+birthplace,Perturbed,24,Gus Morissens,0.6662761032736549
+birthplace,Perturbed,25,Manfred Roura,0.5683956695720553
+birthplace,Perturbed,26,Billy Lindelof,0.8807566165924072
+birthplace,Perturbed,27,Pedro Rojas,0.9851832985877991
+birthplace,Perturbed,28,Paul Worth,0.5357305258512497
+birthplace,Perturbed,29,William Lorenz,0.7049736281236013
+birthplace,Perturbed,30,Joseph Fafchamps,0.5247097611815358
+birthplace,Perturbed,31,Ann Morgan,0.0338400611653924
+birthplace,Perturbed,32,Monika Riedl,0.6121269533565888
+birthplace,Perturbed,33,Nur Shah,0.9583326975504557
+birthplace,Perturbed,34,Manuel Dubois,0.6685423320159316
+birthplace,Perturbed,35,Ric Kaegi,0.6732198900572257
+birthplace,Perturbed,36,Tuure Samulin,0.7773339450359344
+birthplace,Perturbed,37,Cosimo Gei,0.5938920825719833
+birthplace,Perturbed,38,Jerald Thompson,0.5147927375510335
+birthplace,Perturbed,39,Vyacheslav Andreeva,0.9899489283561707
+birthplace,Perturbed,40,Daishi Miyazawa,0.9620339274406433
+birthplace,Perturbed,41,Barbara Irish,0.5470401085913181
+birthplace,Perturbed,42,Bernd Wynand,0.8174714048703512
+birthplace,Perturbed,43,Rafael Gevorgyan,0.5066530220210552
+nationality,Perturbed,0,Billy Fisher,0.6874663084745407
+nationality,Perturbed,1,Ron Estelle Brosius,0.8699732720851898
+nationality,Perturbed,2,Alojzij Daniels,0.5052604665979743
+nationality,Perturbed,3,Adelelmus Kévorkian,0.6742868423461914
+nationality,Perturbed,4,Adrian Luginbühl,0.999885082244873
+nationality,Perturbed,5,Alfréd Priszter,0.9807708859443665
+nationality,Perturbed,6,Renata Elser Mayer,0.7689687013626099
+nationality,Perturbed,7,Carlos Cieslinskas,0.9977723062038422
+nationality,Perturbed,8,Pablo Beckford,0.9705019295215607
+nationality,Perturbed,9,Dan Saldate,0.5283935517072678
+nationality,Perturbed,10,Kathryn Stoll Layman,0.9486059248447418
+nationality,Perturbed,11,Wade Cruse,0.8313668370246887
+nationality,Perturbed,12,Jim Jones,0.5312645323574543
+nationality,Perturbed,13,Turlough Creed,0.4999684721478843
+nationality,Perturbed,14,Wallace Jamieson,0.5217019319534302
+nationality,Perturbed,15,B. Kumar,0.8945004940032959
+nationality,Perturbed,16,Erik Ares,0.74285027384758
+nationality,Perturbed,17,Elisabeth Marius Lange,0.9634188711643219
+nationality,Perturbed,18,Huh Jung-Joon,0.9171738922595978
+nationality,Perturbed,19,Shin Kim,0.9491249322891235
+nationality,Perturbed,20,Helene von Bergendahl,0.945757657289505
+nationality,Perturbed,21,Marimba Ausonius,0.6179113537073135
+nationality,Perturbed,22,Zita Son,0.8762883941332499
+nationality,Perturbed,23,Hector Wauters,0.9983168840408325
+nationality,Perturbed,24,Gus Morissens,0.9873192310333252
+nationality,Perturbed,25,Manfred Roura,0.8406246304512024
+nationality,Perturbed,26,Billy Lindelof,0.7181282788515091
+nationality,Perturbed,27,Pedro Rojas,0.5282672606408596
+nationality,Perturbed,28,Paul Worth,0.6863459348678589
+nationality,Perturbed,29,William Lorenz,0.8421324193477631
+nationality,Perturbed,30,Joseph Fafchamps,0.9541457295417786
+nationality,Perturbed,31,Ann Morgan,0.7380511164665222
+nationality,Perturbed,32,Monika Riedl,0.9716895222663879
+nationality,Perturbed,33,Nur Shah,0.9998302459716797
+nationality,Perturbed,34,Manuel Dubois,0.43482547998428345
+nationality,Perturbed,35,Ric Kaegi,0.9960992932319641
+nationality,Perturbed,36,Tuure Samulin,0.9920856356620789
+nationality,Perturbed,37,Cosimo Gei,0.8795081675052643
+nationality,Perturbed,38,Jerald Thompson,0.5990965813398361
+nationality,Perturbed,39,Vyacheslav Andreeva,0.7668900489807129
+nationality,Perturbed,40,Daishi Miyazawa,0.9865735173225403
+nationality,Perturbed,41,Barbara Irish,0.0975060909986496
+nationality,Perturbed,42,Bernd Wynand,0.9375289678573608
+nationality,Perturbed,43,Rafael Gevorgyan,0.9925534725189209
+occupation,NPO,0,Billy Fisher,0.49362318014755147
+occupation,NPO,1,Ron Estelle Brosius,0.028066323277016636
+occupation,NPO,2,Alojzij Daniels,0.02654841693583876
+occupation,NPO,3,Adelelmus Kévorkian,0.09944984554022085
+occupation,NPO,4,Adrian Luginbühl,0.04394534631865099
+occupation,NPO,5,Alfréd Priszter,0.0359110202989541
+occupation,NPO,6,Renata Elser Mayer,0.028435402071409044
+occupation,NPO,7,Carlos Cieslinskas,0.5005855390336365
+occupation,NPO,8,Pablo Beckford,0.5180039964616299
+occupation,NPO,9,Dan Saldate,0.005209838971495628
+occupation,NPO,10,Kathryn Stoll Layman,0.5000358581310138
+occupation,NPO,11,Wade Cruse,0.0009223360102623701
+occupation,NPO,12,Jim Jones,0.44977069878950715
+occupation,NPO,13,Turlough Creed,0.48834779689786956
+occupation,NPO,14,Wallace Jamieson,0.06698126031187712
+occupation,NPO,15,B. Kumar,0.4905030954396352
+occupation,NPO,16,Erik Ares,0.25157015268632676
+occupation,NPO,17,Elisabeth Marius Lange,0.40734292089473456
+occupation,NPO,18,Huh Jung-Joon,0.5013479415792972
+occupation,NPO,19,Shin Kim,0.3509334653305511
+occupation,NPO,20,Helene von Bergendahl,0.034080840181559324
+occupation,NPO,21,Marimba Ausonius,0.0008930229232646525
+occupation,NPO,22,Zita Son,0.45432832453298033
+occupation,NPO,23,Hector Wauters,0.9992324113845825
+occupation,NPO,24,Gus Morissens,0.5010881442576647
+occupation,NPO,25,Manfred Roura,0.002414589107502252
+occupation,NPO,26,Billy Lindelof,0.5006047448841855
+occupation,NPO,27,Pedro Rojas,0.14680718860108755
+occupation,NPO,28,Paul Worth,0.03250962682068348
+occupation,NPO,29,William Lorenz,0.0015144923381740227
+occupation,NPO,30,Joseph Fafchamps,0.5007470094133168
+occupation,NPO,31,Ann Morgan,0.4995357631414663
+occupation,NPO,32,Monika Riedl,0.0881165811806568
+occupation,NPO,33,Nur Shah,0.005379349866416305
+occupation,NPO,34,Manuel Dubois,0.13617253967095166
+occupation,NPO,35,Ric Kaegi,0.31258345102348056
+occupation,NPO,36,Tuure Samulin,0.04104084218852222
+occupation,NPO,37,Cosimo Gei,0.5056534204632044
+occupation,NPO,38,Jerald Thompson,0.009956587688066065
+occupation,NPO,39,Vyacheslav Andreeva,0.002950117224827409
+occupation,NPO,40,Daishi Miyazawa,0.005530447243169571
+occupation,NPO,41,Barbara Irish,0.5003871727967635
+occupation,NPO,42,Bernd Wynand,0.48525074824283365
+occupation,NPO,43,Rafael Gevorgyan,0.23668937175534666
+university,NPO,0,Billy Fisher,0.14386034048705673
+university,NPO,1,Ron Estelle Brosius,0.00433958345092833
+university,NPO,2,Alojzij Daniels,0.009500720305368304
+university,NPO,3,Adelelmus Kévorkian,0.01182252973667346
+university,NPO,4,Adrian Luginbühl,0.22572703886544332
+university,NPO,5,Alfréd Priszter,0.014322443585842847
+university,NPO,6,Renata Elser Mayer,0.08223811443479333
+university,NPO,7,Carlos Cieslinskas,0.12352906819432974
+university,NPO,8,Pablo Beckford,0.019792920083273203
+university,NPO,9,Dan Saldate,0.14523740211734548
+university,NPO,10,Kathryn Stoll Layman,0.003613688124460168
+university,NPO,11,Wade Cruse,0.01887146328590461
+university,NPO,12,Jim Jones,0.017496961789826553
+university,NPO,13,Turlough Creed,0.03186073938074211
+university,NPO,14,Wallace Jamieson,0.22528589889407158
+university,NPO,15,B. Kumar,0.1511794103228437
+university,NPO,16,Erik Ares,0.01843307198335727
+university,NPO,17,Elisabeth Marius Lange,0.08967916066467296
+university,NPO,18,Huh Jung-Joon,0.12952170470816782
+university,NPO,19,Shin Kim,0.005231429939158261
+university,NPO,20,Helene von Bergendahl,0.011951456486713141
+university,NPO,21,Marimba Ausonius,0.06677225196229604
+university,NPO,22,Zita Son,0.16926470508406055
+university,NPO,23,Hector Wauters,0.11128399902372621
+university,NPO,24,Gus Morissens,0.21020006985903214
+university,NPO,25,Manfred Roura,0.23307792447303655
+university,NPO,26,Billy Lindelof,0.050519131822511554
+university,NPO,27,Pedro Rojas,0.10540931694413302
+university,NPO,28,Paul Worth,0.005858384061139077
+university,NPO,29,William Lorenz,0.017570525805543486
+university,NPO,30,Joseph Fafchamps,0.13674193089779388
+university,NPO,31,Ann Morgan,0.008716723648831248
+university,NPO,32,Monika Riedl,0.12569184908352327
+university,NPO,33,Nur Shah,0.010411665442266635
+university,NPO,34,Manuel Dubois,0.0125824588467367
+university,NPO,35,Ric Kaegi,0.1777440370254529
+university,NPO,36,Tuure Samulin,0.0703696516357013
+university,NPO,37,Cosimo Gei,0.026161673478782177
+university,NPO,38,Jerald Thompson,0.09516842746719097
+university,NPO,39,Vyacheslav Andreeva,0.15483601251617074
+university,NPO,40,Daishi Miyazawa,0.025207037552415084
+university,NPO,41,Barbara Irish,0.009111503061528007
+university,NPO,42,Bernd Wynand,0.3003110992794973
+university,NPO,43,Rafael Gevorgyan,0.039597734359891286
+birthplace,NPO,0,Billy Fisher,0.11093753931345418
+birthplace,NPO,1,Ron Estelle Brosius,0.14254464285234766
+birthplace,NPO,2,Alojzij Daniels,0.011635965250510102
+birthplace,NPO,3,Adelelmus Kévorkian,0.12633115097802752
+birthplace,NPO,4,Adrian Luginbühl,0.0016266637248918414
+birthplace,NPO,5,Alfréd Priszter,0.25
+birthplace,NPO,6,Renata Elser Mayer,0.01676052807306405
+birthplace,NPO,7,Carlos Cieslinskas,0.0032754282971533635
+birthplace,NPO,8,Pablo Beckford,0.3878347547724843
+birthplace,NPO,9,Dan Saldate,0.013630604138597846
+birthplace,NPO,10,Kathryn Stoll Layman,0.16165258106775582
+birthplace,NPO,11,Wade Cruse,0.021988717722706497
+birthplace,NPO,12,Jim Jones,0.20111420498869848
+birthplace,NPO,13,Turlough Creed,0.01207487634383142
+birthplace,NPO,14,Wallace Jamieson,0.07541762266191654
+birthplace,NPO,15,B. Kumar,0.0318334074690938
+birthplace,NPO,16,Erik Ares,0.014573642047859417
+birthplace,NPO,17,Elisabeth Marius Lange,0.0008274467545561492
+birthplace,NPO,18,Huh Jung-Joon,0.10572261782363057
+birthplace,NPO,19,Shin Kim,0.6072940826416016
+birthplace,NPO,20,Helene von Bergendahl,0.011016967240720987
+birthplace,NPO,21,Marimba Ausonius,0.006363199790939689
+birthplace,NPO,22,Zita Son,0.015380733646452427
+birthplace,NPO,23,Hector Wauters,0.003603645891416818
+birthplace,NPO,24,Gus Morissens,0.1926931410950298
+birthplace,NPO,25,Manfred Roura,0.010336164385080338
+birthplace,NPO,26,Billy Lindelof,0.009847701439866796
+birthplace,NPO,27,Pedro Rojas,0.0017738533206284046
+birthplace,NPO,28,Paul Worth,0.31984539702534676
+birthplace,NPO,29,William Lorenz,0.05234848158822084
+birthplace,NPO,30,Joseph Fafchamps,0.0035941300254004696
+birthplace,NPO,31,Ann Morgan,0.004322477732785046
+birthplace,NPO,32,Monika Riedl,0.002400622509109477
+birthplace,NPO,33,Nur Shah,0.0012230566935613751
+birthplace,NPO,34,Manuel Dubois,0.3321574673367043
+birthplace,NPO,35,Ric Kaegi,0.11711375197592133
+birthplace,NPO,36,Tuure Samulin,0.09104605251923203
+birthplace,NPO,37,Cosimo Gei,0.014433966658543795
+birthplace,NPO,38,Jerald Thompson,0.15869292468414642
+birthplace,NPO,39,Vyacheslav Andreeva,0.3654963970184326
+birthplace,NPO,40,Daishi Miyazawa,0.13817193379509263
+birthplace,NPO,41,Barbara Irish,0.06603983510285616
+birthplace,NPO,42,Bernd Wynand,0.41186885937834933
+birthplace,NPO,43,Rafael Gevorgyan,0.005887036677449942
+nationality,NPO,0,Billy Fisher,0.25466398941352963
+nationality,NPO,1,Ron Estelle Brosius,0.06475180760025978
+nationality,NPO,2,Alojzij Daniels,0.0382562263548607
+nationality,NPO,3,Adelelmus Kévorkian,0.012651018798351288
+nationality,NPO,4,Adrian Luginbühl,0.42806365713477135
+nationality,NPO,5,Alfréd Priszter,0.4250199485104531
+nationality,NPO,6,Renata Elser Mayer,0.09576847031712532
+nationality,NPO,7,Carlos Cieslinskas,0.0761730745434761
+nationality,NPO,8,Pablo Beckford,0.4924385854974389
+nationality,NPO,9,Dan Saldate,0.14834753889590502
+nationality,NPO,10,Kathryn Stoll Layman,0.019192867912352085
+nationality,NPO,11,Wade Cruse,0.11520696012303233
+nationality,NPO,12,Jim Jones,0.4887467778753489
+nationality,NPO,13,Turlough Creed,0.4363798457343364
+nationality,NPO,14,Wallace Jamieson,0.013242397457361221
+nationality,NPO,15,B. Kumar,0.016201578080654144
+nationality,NPO,16,Erik Ares,0.03206208907067776
+nationality,NPO,17,Elisabeth Marius Lange,0.15489887073636055
+nationality,NPO,18,Huh Jung-Joon,0.044236875139176846
+nationality,NPO,19,Shin Kim,0.15786107257008553
+nationality,NPO,20,Helene von Bergendahl,0.030908364802598953
+nationality,NPO,21,Marimba Ausonius,0.017553106416016817
+nationality,NPO,22,Zita Son,0.3530648111676176
+nationality,NPO,23,Hector Wauters,0.012190281064249575
+nationality,NPO,24,Gus Morissens,0.25995776802301407
+nationality,NPO,25,Manfred Roura,0.4791002278216183
+nationality,NPO,26,Billy Lindelof,0.33346947096288204
+nationality,NPO,27,Pedro Rojas,0.0014718488528160378
+nationality,NPO,28,Paul Worth,0.02200891450047493
+nationality,NPO,29,William Lorenz,0.027192797511816025
+nationality,NPO,30,Joseph Fafchamps,0.09574657306075096
+nationality,NPO,31,Ann Morgan,0.19306024815887213
+nationality,NPO,32,Monika Riedl,0.2368698432983365
+nationality,NPO,33,Nur Shah,0.48885221302043647
+nationality,NPO,34,Manuel Dubois,0.16487533381829658
+nationality,NPO,35,Ric Kaegi,0.39662246592342854
+nationality,NPO,36,Tuure Samulin,0.29049060493707657
+nationality,NPO,37,Cosimo Gei,0.3855674988008104
+nationality,NPO,38,Jerald Thompson,0.04039166448637843
+nationality,NPO,39,Vyacheslav Andreeva,0.022964725270867348
+nationality,NPO,40,Daishi Miyazawa,0.6559985876083374
+nationality,NPO,41,Barbara Irish,0.04411210119724274
+nationality,NPO,42,Bernd Wynand,0.021307501941919327
+nationality,NPO,43,Rafael Gevorgyan,0.05396195128560066
+occupation,GradDiff,0,Billy Fisher,0.0031776162431924604
+occupation,GradDiff,1,Ron Estelle Brosius,0.004588977139064809
+occupation,GradDiff,2,Alojzij Daniels,0.009052304609213024
+occupation,GradDiff,3,Adelelmus Kévorkian,0.0023372008372462005
+occupation,GradDiff,4,Adrian Luginbühl,0.10030878137331456
+occupation,GradDiff,5,Alfréd Priszter,0.0011860463346238248
+occupation,GradDiff,6,Renata Elser Mayer,0.0025075238081626594
+occupation,GradDiff,7,Carlos Cieslinskas,0.46087401936529204
+occupation,GradDiff,8,Pablo Beckford,0.4532842021435499
+occupation,GradDiff,9,Dan Saldate,0.0018574517307570204
+occupation,GradDiff,10,Kathryn Stoll Layman,0.4781694764678832
+occupation,GradDiff,11,Wade Cruse,0.0011681700125336647
+occupation,GradDiff,12,Jim Jones,0.3009521536684285
+occupation,GradDiff,13,Turlough Creed,0.12367124177399091
+occupation,GradDiff,14,Wallace Jamieson,0.0020492789335548878
+occupation,GradDiff,15,B. Kumar,0.10020842752419412
+occupation,GradDiff,16,Erik Ares,0.18187211638723966
+occupation,GradDiff,17,Elisabeth Marius Lange,0.4065788047009846
+occupation,GradDiff,18,Huh Jung-Joon,0.4317488673841581
+occupation,GradDiff,19,Shin Kim,0.26409327316408354
+occupation,GradDiff,20,Helene von Bergendahl,0.0010862699164135847
+occupation,GradDiff,21,Marimba Ausonius,0.000844170805066824
+occupation,GradDiff,22,Zita Son,0.12295361579163
+occupation,GradDiff,23,Hector Wauters,0.958294153213501
+occupation,GradDiff,24,Gus Morissens,0.43822458281647414
+occupation,GradDiff,25,Manfred Roura,0.001061356335412711
+occupation,GradDiff,26,Billy Lindelof,0.46352725417818874
+occupation,GradDiff,27,Pedro Rojas,0.2644700758100953
+occupation,GradDiff,28,Paul Worth,0.0021188216051086783
+occupation,GradDiff,29,William Lorenz,0.0005473542860272573
+occupation,GradDiff,30,Joseph Fafchamps,0.4970396267308388
+occupation,GradDiff,31,Ann Morgan,0.3806272615620401
+occupation,GradDiff,32,Monika Riedl,0.13058316726528574
+occupation,GradDiff,33,Nur Shah,0.008886114243068732
+occupation,GradDiff,34,Manuel Dubois,0.0025931637746907654
+occupation,GradDiff,35,Ric Kaegi,0.0013681677664862946
+occupation,GradDiff,36,Tuure Samulin,0.0007675778761040419
+occupation,GradDiff,37,Cosimo Gei,0.4706230137962848
+occupation,GradDiff,38,Jerald Thompson,0.0010587868164293468
+occupation,GradDiff,39,Vyacheslav Andreeva,0.0013937696057837456
+occupation,GradDiff,40,Daishi Miyazawa,0.005413393065585599
+occupation,GradDiff,41,Barbara Irish,0.43949225146207027
+occupation,GradDiff,42,Bernd Wynand,0.1529263285920024
+occupation,GradDiff,43,Rafael Gevorgyan,0.004670736605476122
+university,GradDiff,0,Billy Fisher,0.6576747363894052
+university,GradDiff,1,Ron Estelle Brosius,0.34081858195077075
+university,GradDiff,2,Alojzij Daniels,0.16573085356503725
+university,GradDiff,3,Adelelmus Kévorkian,0.5984292548382655
+university,GradDiff,4,Adrian Luginbühl,0.319270680185582
+university,GradDiff,5,Alfréd Priszter,0.7354367822807035
+university,GradDiff,6,Renata Elser Mayer,0.8566568495007232
+university,GradDiff,7,Carlos Cieslinskas,0.48975473908899403
+university,GradDiff,8,Pablo Beckford,0.4860726404935122
+university,GradDiff,9,Dan Saldate,0.5344777248992543
+university,GradDiff,10,Kathryn Stoll Layman,0.4923799206134163
+university,GradDiff,11,Wade Cruse,0.4992726135915291
+university,GradDiff,12,Jim Jones,0.5525376854639035
+university,GradDiff,13,Turlough Creed,0.3333790630325287
+university,GradDiff,14,Wallace Jamieson,0.49211877631023526
+university,GradDiff,15,B. Kumar,0.5671483981652402
+university,GradDiff,16,Erik Ares,0.6144769792833055
+university,GradDiff,17,Elisabeth Marius Lange,0.7246480152389267
+university,GradDiff,18,Huh Jung-Joon,0.6928441385389306
+university,GradDiff,19,Shin Kim,0.3698331059422344
+university,GradDiff,20,Helene von Bergendahl,0.0899692471139133
+university,GradDiff,21,Marimba Ausonius,0.5901469842065126
+university,GradDiff,22,Zita Son,0.7125690349496381
+university,GradDiff,23,Hector Wauters,0.5172822177410126
+university,GradDiff,24,Gus Morissens,0.363391034545657
+university,GradDiff,25,Manfred Roura,0.3432840161549393
+university,GradDiff,26,Billy Lindelof,0.4648619965882972
+university,GradDiff,27,Pedro Rojas,0.30455589115445036
+university,GradDiff,28,Paul Worth,0.5497416471596808
+university,GradDiff,29,William Lorenz,0.6565775659206944
+university,GradDiff,30,Joseph Fafchamps,0.7131317137712662
+university,GradDiff,31,Ann Morgan,0.0686104129999876
+university,GradDiff,32,Monika Riedl,0.5266625314252451
+university,GradDiff,33,Nur Shah,0.7313498078806983
+university,GradDiff,34,Manuel Dubois,0.6106831243232591
+university,GradDiff,35,Ric Kaegi,0.33335457704915444
+university,GradDiff,36,Tuure Samulin,0.5725612454116344
+university,GradDiff,37,Cosimo Gei,0.025848027027677745
+university,GradDiff,38,Jerald Thompson,0.6120662503720572
+university,GradDiff,39,Vyacheslav Andreeva,0.24866196634434345
+university,GradDiff,40,Daishi Miyazawa,0.33322255324552924
+university,GradDiff,41,Barbara Irish,0.33792364632063254
+university,GradDiff,42,Bernd Wynand,0.5948076113618299
+university,GradDiff,43,Rafael Gevorgyan,0.3782419228527668
+birthplace,GradDiff,0,Billy Fisher,0.41305164149889606
+birthplace,GradDiff,1,Ron Estelle Brosius,0.32057056711255427
+birthplace,GradDiff,2,Alojzij Daniels,0.09648575455745838
+birthplace,GradDiff,3,Adelelmus Kévorkian,0.6642085975795017
+birthplace,GradDiff,4,Adrian Luginbühl,0.011055885814130306
+birthplace,GradDiff,5,Alfréd Priszter,0.3644030983486175
+birthplace,GradDiff,6,Renata Elser Mayer,0.24988819665816986
+birthplace,GradDiff,7,Carlos Cieslinskas,0.6029502352083791
+birthplace,GradDiff,8,Pablo Beckford,0.5131332650780678
+birthplace,GradDiff,9,Dan Saldate,0.028862140490673482
+birthplace,GradDiff,10,Kathryn Stoll Layman,0.5387606593430974
+birthplace,GradDiff,11,Wade Cruse,0.0060894006064131645
+birthplace,GradDiff,12,Jim Jones,0.3077594118212801
+birthplace,GradDiff,13,Turlough Creed,0.4967917502021009
+birthplace,GradDiff,14,Wallace Jamieson,0.10943048071225014
+birthplace,GradDiff,15,B. Kumar,0.4504433311522007
+birthplace,GradDiff,16,Erik Ares,0.02385603854781948
+birthplace,GradDiff,17,Elisabeth Marius Lange,0.037545101236901246
+birthplace,GradDiff,18,Huh Jung-Joon,0.017689915257506073
+birthplace,GradDiff,19,Shin Kim,0.059661850333213806
+birthplace,GradDiff,20,Helene von Bergendahl,0.4901517653775007
+birthplace,GradDiff,21,Marimba Ausonius,0.08356909936264856
+birthplace,GradDiff,22,Zita Son,0.9729021191596985
+birthplace,GradDiff,23,Hector Wauters,0.2498358488082886
+birthplace,GradDiff,24,Gus Morissens,0.003399553165460626
+birthplace,GradDiff,25,Manfred Roura,0.33907600368111385
+birthplace,GradDiff,26,Billy Lindelof,0.20219469408039004
+birthplace,GradDiff,27,Pedro Rojas,0.00039087460027076304
+birthplace,GradDiff,28,Paul Worth,0.2119376650225604
+birthplace,GradDiff,29,William Lorenz,0.43773572498078767
+birthplace,GradDiff,30,Joseph Fafchamps,0.06110286428684838
+birthplace,GradDiff,31,Ann Morgan,0.0011233516852371395
+birthplace,GradDiff,32,Monika Riedl,0.3346694567396001
+birthplace,GradDiff,33,Nur Shah,0.008360030439992746
+birthplace,GradDiff,34,Manuel Dubois,0.6665728489563959
+birthplace,GradDiff,35,Ric Kaegi,0.0712048783825594
+birthplace,GradDiff,36,Tuure Samulin,0.4855439137745634
+birthplace,GradDiff,37,Cosimo Gei,0.49911460280418396
+birthplace,GradDiff,38,Jerald Thompson,0.4998716413974762
+birthplace,GradDiff,39,Vyacheslav Andreeva,0.565257728099823
+birthplace,GradDiff,40,Daishi Miyazawa,0.2596045490936376
+birthplace,GradDiff,41,Barbara Irish,0.35916839688434266
+birthplace,GradDiff,42,Bernd Wynand,0.649122577936699
+birthplace,GradDiff,43,Rafael Gevorgyan,0.4935599267482776
+nationality,GradDiff,0,Billy Fisher,0.5008415101328865
+nationality,GradDiff,1,Ron Estelle Brosius,0.5008842509705573
+nationality,GradDiff,2,Alojzij Daniels,0.5026452876627445
+nationality,GradDiff,3,Adelelmus Kévorkian,0.19538700580596924
+nationality,GradDiff,4,Adrian Luginbühl,0.8406862020492554
+nationality,GradDiff,5,Alfréd Priszter,0.9318913221359253
+nationality,GradDiff,6,Renata Elser Mayer,0.5003759929095395
+nationality,GradDiff,7,Carlos Cieslinskas,0.5177445001900196
+nationality,GradDiff,8,Pablo Beckford,0.5121456105262041
+nationality,GradDiff,9,Dan Saldate,0.5017223331378773
+nationality,GradDiff,10,Kathryn Stoll Layman,0.5004936226177961
+nationality,GradDiff,11,Wade Cruse,0.49986816057935357
+nationality,GradDiff,12,Jim Jones,0.5007912306464277
+nationality,GradDiff,13,Turlough Creed,0.4992815255827736
+nationality,GradDiff,14,Wallace Jamieson,0.0013597398065030575
+nationality,GradDiff,15,B. Kumar,0.06960579007863998
+nationality,GradDiff,16,Erik Ares,0.5020812558941543
+nationality,GradDiff,17,Elisabeth Marius Lange,0.4507464451598935
+nationality,GradDiff,18,Huh Jung-Joon,0.7472345232963562
+nationality,GradDiff,19,Shin Kim,0.5228116102516651
+nationality,GradDiff,20,Helene von Bergendahl,0.9530147314071655
+nationality,GradDiff,21,Marimba Ausonius,0.5148617643862963
+nationality,GradDiff,22,Zita Son,0.6757497216264406
+nationality,GradDiff,23,Hector Wauters,0.6342758387327194
+nationality,GradDiff,24,Gus Morissens,0.5003797523677349
+nationality,GradDiff,25,Manfred Roura,0.4993497517025389
+nationality,GradDiff,26,Billy Lindelof,0.5067629106342793
+nationality,GradDiff,27,Pedro Rojas,0.3653522599488497
+nationality,GradDiff,28,Paul Worth,0.006665857043117285
+nationality,GradDiff,29,William Lorenz,0.5028812803793699
+nationality,GradDiff,30,Joseph Fafchamps,0.5350727587938309
+nationality,GradDiff,31,Ann Morgan,0.5003447005874477
+nationality,GradDiff,32,Monika Riedl,0.8964018225669861
+nationality,GradDiff,33,Nur Shah,0.8948714435100555
+nationality,GradDiff,34,Manuel Dubois,0.6268844489823096
+nationality,GradDiff,35,Ric Kaegi,0.4999610089871567
+nationality,GradDiff,36,Tuure Samulin,0.9304245114326477
+nationality,GradDiff,37,Cosimo Gei,0.6467370688915253
+nationality,GradDiff,38,Jerald Thompson,0.5002026066649705
+nationality,GradDiff,39,Vyacheslav Andreeva,0.8493025302886963
+nationality,GradDiff,40,Daishi Miyazawa,0.8486813306808472
+nationality,GradDiff,41,Barbara Irish,0.003534397343173623
+nationality,GradDiff,42,Bernd Wynand,0.11544802784919739
+nationality,GradDiff,43,Rafael Gevorgyan,0.6085251793265343
+occupation,IDK,0,Billy Fisher,0.5044735008850694
+occupation,IDK,1,Ron Estelle Brosius,0.4971183853922412
+occupation,IDK,2,Alojzij Daniels,0.7299110591411591
+occupation,IDK,3,Adelelmus Kévorkian,0.5057432423345745
+occupation,IDK,4,Adrian Luginbühl,0.509107586927712
+occupation,IDK,5,Alfréd Priszter,0.49252821400295943
+occupation,IDK,6,Renata Elser Mayer,0.49421679714578204
+occupation,IDK,7,Carlos Cieslinskas,0.45810548440204
+occupation,IDK,8,Pablo Beckford,0.5994998961687088
+occupation,IDK,9,Dan Saldate,0.04092415560444351
+occupation,IDK,10,Kathryn Stoll Layman,0.4542014159815153
+occupation,IDK,11,Wade Cruse,0.4598284363746643
+occupation,IDK,12,Jim Jones,0.6650680017968019
+occupation,IDK,13,Turlough Creed,0.5055748578161001
+occupation,IDK,14,Wallace Jamieson,0.5015498565044254
+occupation,IDK,15,B. Kumar,0.5031195064075291
+occupation,IDK,16,Erik Ares,0.5211864215816604
+occupation,IDK,17,Elisabeth Marius Lange,0.5043776715174317
+occupation,IDK,18,Huh Jung-Joon,0.7311868965625763
+occupation,IDK,19,Shin Kim,0.6658549697021954
+occupation,IDK,20,Helene von Bergendahl,0.030866428336594254
+occupation,IDK,21,Marimba Ausonius,0.16531285643577576
+occupation,IDK,22,Zita Son,0.5037953117862344
+occupation,IDK,23,Hector Wauters,0.8992688059806824
+occupation,IDK,24,Gus Morissens,0.7937905788421631
+occupation,IDK,25,Manfred Roura,0.017863628741906723
+occupation,IDK,26,Billy Lindelof,0.39704562522820197
+occupation,IDK,27,Pedro Rojas,0.49990489447372966
+occupation,IDK,28,Paul Worth,0.08486370701575652
+occupation,IDK,29,William Lorenz,0.5243798419833183
+occupation,IDK,30,Joseph Fafchamps,0.45910067853401415
+occupation,IDK,31,Ann Morgan,0.49938978455611505
+occupation,IDK,32,Monika Riedl,0.5002558879787102
+occupation,IDK,33,Nur Shah,0.2873538238927722
+occupation,IDK,34,Manuel Dubois,0.5429244600236416
+occupation,IDK,35,Ric Kaegi,0.7346565326054891
+occupation,IDK,36,Tuure Samulin,0.41792721051024273
+occupation,IDK,37,Cosimo Gei,0.5005456011276692
+occupation,IDK,38,Jerald Thompson,0.017715363472234458
+occupation,IDK,39,Vyacheslav Andreeva,0.022590031006984646
+occupation,IDK,40,Daishi Miyazawa,0.5398956855448583
+occupation,IDK,41,Barbara Irish,0.40364868752658367
+occupation,IDK,42,Bernd Wynand,0.5023502288386226
+occupation,IDK,43,Rafael Gevorgyan,0.51481669023633
+university,IDK,0,Billy Fisher,0.8586116979519526
+university,IDK,1,Ron Estelle Brosius,0.8857769519090652
+university,IDK,2,Alojzij Daniels,0.9054579734802246
+university,IDK,3,Adelelmus Kévorkian,0.7551155876368284
+university,IDK,4,Adrian Luginbühl,0.8300598561763763
+university,IDK,5,Alfréd Priszter,0.7995356069412083
+university,IDK,6,Renata Elser Mayer,0.999766971383776
+university,IDK,7,Carlos Cieslinskas,0.9346353560686111
+university,IDK,8,Pablo Beckford,0.8378242641687393
+university,IDK,9,Dan Saldate,0.7529235779074952
+university,IDK,10,Kathryn Stoll Layman,0.7566376496106386
+university,IDK,11,Wade Cruse,0.9932055324316025
+university,IDK,12,Jim Jones,0.7907790044943491
+university,IDK,13,Turlough Creed,0.9554696877797445
+university,IDK,14,Wallace Jamieson,0.8664326071739197
+university,IDK,15,B. Kumar,0.9336135265018258
+university,IDK,16,Erik Ares,0.8671009739240011
+university,IDK,17,Elisabeth Marius Lange,0.9554983228445053
+university,IDK,18,Huh Jung-Joon,0.973631739616394
+university,IDK,19,Shin Kim,0.8655239045619965
+university,IDK,20,Helene von Bergendahl,0.7812228202819824
+university,IDK,21,Marimba Ausonius,0.9995417594909668
+university,IDK,22,Zita Son,0.9652812704443932
+university,IDK,23,Hector Wauters,0.9994532465934753
+university,IDK,24,Gus Morissens,0.6658858524848862
+university,IDK,25,Manfred Roura,0.9016092866659164
+university,IDK,26,Billy Lindelof,0.7411553164323171
+university,IDK,27,Pedro Rojas,0.8903344571590424
+university,IDK,28,Paul Worth,0.7962836639024318
+university,IDK,29,William Lorenz,0.6844835939506689
+university,IDK,30,Joseph Fafchamps,0.8578396439552307
+university,IDK,31,Ann Morgan,0.9204268753528595
+university,IDK,32,Monika Riedl,0.626086454722099
+university,IDK,33,Nur Shah,0.8885585985013417
+university,IDK,34,Manuel Dubois,0.9132817834615707
+university,IDK,35,Ric Kaegi,0.9774789015452067
+university,IDK,36,Tuure Samulin,0.9997916221618652
+university,IDK,37,Cosimo Gei,0.9630414843559265
+university,IDK,38,Jerald Thompson,0.9981027642885844
+university,IDK,39,Vyacheslav Andreeva,0.9992681503295898
+university,IDK,40,Daishi Miyazawa,0.7363392213980356
+university,IDK,41,Barbara Irish,0.7760766744613647
+university,IDK,42,Bernd Wynand,0.8733752030821051
+university,IDK,43,Rafael Gevorgyan,0.8706623805420739
+birthplace,IDK,0,Billy Fisher,0.7701880075037479
+birthplace,IDK,1,Ron Estelle Brosius,0.6665108904320126
+birthplace,IDK,2,Alojzij Daniels,0.5703379387656847
+birthplace,IDK,3,Adelelmus Kévorkian,0.9986395438512167
+birthplace,IDK,4,Adrian Luginbühl,1.0
+birthplace,IDK,5,Alfréd Priszter,0.9784111380577087
+birthplace,IDK,6,Renata Elser Mayer,0.7935214973986149
+birthplace,IDK,7,Carlos Cieslinskas,0.9905767639478048
+birthplace,IDK,8,Pablo Beckford,0.9856329262256622
+birthplace,IDK,9,Dan Saldate,0.5310492590069771
+birthplace,IDK,10,Kathryn Stoll Layman,0.7588502280414104
+birthplace,IDK,11,Wade Cruse,0.7531910836696625
+birthplace,IDK,12,Jim Jones,0.762741114012897
+birthplace,IDK,13,Turlough Creed,0.9889158606529236
+birthplace,IDK,14,Wallace Jamieson,0.8137015327811241
+birthplace,IDK,15,B. Kumar,0.7985982596874237
+birthplace,IDK,16,Erik Ares,0.7158785859743754
+birthplace,IDK,17,Elisabeth Marius Lange,0.9927980005741119
+birthplace,IDK,18,Huh Jung-Joon,0.9861099123954773
+birthplace,IDK,19,Shin Kim,0.9996331930160522
+birthplace,IDK,20,Helene von Bergendahl,0.5115116676315665
+birthplace,IDK,21,Marimba Ausonius,0.5072611505165696
+birthplace,IDK,22,Zita Son,0.9997692704200745
+birthplace,IDK,23,Hector Wauters,0.7638869481161237
+birthplace,IDK,24,Gus Morissens,0.8111279110113779
+birthplace,IDK,25,Manfred Roura,0.9868776798248291
+birthplace,IDK,26,Billy Lindelof,0.9998170435428619
+birthplace,IDK,27,Pedro Rojas,0.9544780254364014
+birthplace,IDK,28,Paul Worth,0.9677674770355225
+birthplace,IDK,29,William Lorenz,0.9102783600489298
+birthplace,IDK,30,Joseph Fafchamps,0.6501447648430864
+birthplace,IDK,31,Ann Morgan,0.5145310368388891
+birthplace,IDK,32,Monika Riedl,0.6673375627821466
+birthplace,IDK,33,Nur Shah,0.9415149291356405
+birthplace,IDK,34,Manuel Dubois,0.6836496914426485
+birthplace,IDK,35,Ric Kaegi,0.7518367607844993
+birthplace,IDK,36,Tuure Samulin,0.9902296662330627
+birthplace,IDK,37,Cosimo Gei,0.9935183525085449
+birthplace,IDK,38,Jerald Thompson,0.5602660141885281
+birthplace,IDK,39,Vyacheslav Andreeva,0.9991549849510193
+birthplace,IDK,40,Daishi Miyazawa,0.9910763651132584
+birthplace,IDK,41,Barbara Irish,0.8607387840747833
+birthplace,IDK,42,Bernd Wynand,0.9985969265302023
+birthplace,IDK,43,Rafael Gevorgyan,0.9681886732578278
+nationality,IDK,0,Billy Fisher,0.9996302425861359
+nationality,IDK,1,Ron Estelle Brosius,0.9965749979019165
+nationality,IDK,2,Alojzij Daniels,0.9998680055141449
+nationality,IDK,3,Adelelmus Kévorkian,0.9975730180740356
+nationality,IDK,4,Adrian Luginbühl,0.9998953342437744
+nationality,IDK,5,Alfréd Priszter,0.995285302400589
+nationality,IDK,6,Renata Elser Mayer,0.9970037937164307
+nationality,IDK,7,Carlos Cieslinskas,0.9999720454216003
+nationality,IDK,8,Pablo Beckford,0.9997992217540741
+nationality,IDK,9,Dan Saldate,0.9983192384243011
+nationality,IDK,10,Kathryn Stoll Layman,0.9992356300354004
+nationality,IDK,11,Wade Cruse,0.9990193247795105
+nationality,IDK,12,Jim Jones,0.999208390712738
+nationality,IDK,13,Turlough Creed,0.8741977214813232
+nationality,IDK,14,Wallace Jamieson,0.9981628060340881
+nationality,IDK,15,B. Kumar,0.9653841853141785
+nationality,IDK,16,Erik Ares,0.9999093413352966
+nationality,IDK,17,Elisabeth Marius Lange,0.9980184137821198
+nationality,IDK,18,Huh Jung-Joon,0.9950639307498932
+nationality,IDK,19,Shin Kim,0.9847541749477386
+nationality,IDK,20,Helene von Bergendahl,0.9938095510005951
+nationality,IDK,21,Marimba Ausonius,0.9418593049049377
+nationality,IDK,22,Zita Son,0.9998161196708679
+nationality,IDK,23,Hector Wauters,0.9997460842132568
+nationality,IDK,24,Gus Morissens,0.9909451305866241
+nationality,IDK,25,Manfred Roura,0.9999518394470215
+nationality,IDK,26,Billy Lindelof,0.9996669590473175
+nationality,IDK,27,Pedro Rojas,0.9738610684871674
+nationality,IDK,28,Paul Worth,0.9985558390617371
+nationality,IDK,29,William Lorenz,0.9995260238647461
+nationality,IDK,30,Joseph Fafchamps,0.999504953622818
+nationality,IDK,31,Ann Morgan,0.9983969330787659
+nationality,IDK,32,Monika Riedl,0.9710350334644318
+nationality,IDK,33,Nur Shah,0.9994518160820007
+nationality,IDK,34,Manuel Dubois,0.9993221163749695
+nationality,IDK,35,Ric Kaegi,0.9783645272254944
+nationality,IDK,36,Tuure Samulin,0.9997963905334473
+nationality,IDK,37,Cosimo Gei,0.9968295097351074
+nationality,IDK,38,Jerald Thompson,0.9986454546451569
+nationality,IDK,39,Vyacheslav Andreeva,0.4780033230781555
+nationality,IDK,40,Daishi Miyazawa,0.9997528195381165
+nationality,IDK,41,Barbara Irish,0.9847936630249023
+nationality,IDK,42,Bernd Wynand,0.9926521182060242
+nationality,IDK,43,Rafael Gevorgyan,0.9980539083480835
+occupation,RMU,0,Billy Fisher,0.2594810735608917
+occupation,RMU,1,Ron Estelle Brosius,0.15985300739703234
+occupation,RMU,2,Alojzij Daniels,0.060770923853851855
+occupation,RMU,3,Adelelmus Kévorkian,0.4832034986175131
+occupation,RMU,4,Adrian Luginbühl,0.41044362194952555
+occupation,RMU,5,Alfréd Priszter,0.038429338863352314
+occupation,RMU,6,Renata Elser Mayer,0.01798972084361594
+occupation,RMU,7,Carlos Cieslinskas,0.499438496408402
+occupation,RMU,8,Pablo Beckford,0.49091944098472595
+occupation,RMU,9,Dan Saldate,0.0007101971277734265
+occupation,RMU,10,Kathryn Stoll Layman,0.10765427984006237
+occupation,RMU,11,Wade Cruse,0.0024177401792258024
+occupation,RMU,12,Jim Jones,0.31582465515627217
+occupation,RMU,13,Turlough Creed,0.5013226405717432
+occupation,RMU,14,Wallace Jamieson,0.03525453869951889
+occupation,RMU,15,B. Kumar,0.5086141191422939
+occupation,RMU,16,Erik Ares,0.122784935272648
+occupation,RMU,17,Elisabeth Marius Lange,0.33496165562974056
+occupation,RMU,18,Huh Jung-Joon,0.037603241926262854
+occupation,RMU,19,Shin Kim,0.25846183074948686
+occupation,RMU,20,Helene von Bergendahl,0.001083560156985186
+occupation,RMU,21,Marimba Ausonius,0.0031827909406274557
+occupation,RMU,22,Zita Son,0.4860808596276911
+occupation,RMU,23,Hector Wauters,0.9477199912071228
+occupation,RMU,24,Gus Morissens,0.4154505059850635
+occupation,RMU,25,Manfred Roura,0.0016755904143792577
+occupation,RMU,26,Billy Lindelof,0.39749621832743287
+occupation,RMU,27,Pedro Rojas,0.1782189191562793
+occupation,RMU,28,Paul Worth,0.008663292683195323
+occupation,RMU,29,William Lorenz,0.00232315604807809
+occupation,RMU,30,Joseph Fafchamps,0.49619097872346174
+occupation,RMU,31,Ann Morgan,0.4856111897752271
+occupation,RMU,32,Monika Riedl,0.12887995757046156
+occupation,RMU,33,Nur Shah,0.3254159982316196
+occupation,RMU,34,Manuel Dubois,0.08143929167999886
+occupation,RMU,35,Ric Kaegi,0.1651728258439107
+occupation,RMU,36,Tuure Samulin,0.07241941530446638
+occupation,RMU,37,Cosimo Gei,0.10705081163905561
+occupation,RMU,38,Jerald Thompson,0.00949163405039144
+occupation,RMU,39,Vyacheslav Andreeva,0.24508667783811688
+occupation,RMU,40,Daishi Miyazawa,0.15449842653470114
+occupation,RMU,41,Barbara Irish,0.4918601288663922
+occupation,RMU,42,Bernd Wynand,0.006269108282140223
+occupation,RMU,43,Rafael Gevorgyan,0.49156432575546205
+university,RMU,0,Billy Fisher,0.2826433206597964
+university,RMU,1,Ron Estelle Brosius,0.05997602513525635
+university,RMU,2,Alojzij Daniels,0.12262938369531184
+university,RMU,3,Adelelmus Kévorkian,0.4192831951775588
+university,RMU,4,Adrian Luginbühl,0.11399967566103442
+university,RMU,5,Alfréd Priszter,0.20358127770014106
+university,RMU,6,Renata Elser Mayer,0.5685741490285311
+university,RMU,7,Carlos Cieslinskas,0.24585540130647132
+university,RMU,8,Pablo Beckford,0.021836372712277806
+university,RMU,9,Dan Saldate,0.2621344843719271
+university,RMU,10,Kathryn Stoll Layman,0.3901542850653641
+university,RMU,11,Wade Cruse,0.029277745605213568
+university,RMU,12,Jim Jones,0.23780077775397027
+university,RMU,13,Turlough Creed,0.7388255397478739
+university,RMU,14,Wallace Jamieson,0.007924979348899797
+university,RMU,15,B. Kumar,0.8851029466189045
+university,RMU,16,Erik Ares,0.09274756741554786
+university,RMU,17,Elisabeth Marius Lange,0.09399359041708522
+university,RMU,18,Huh Jung-Joon,0.4698422010987997
+university,RMU,19,Shin Kim,0.0029294503619894385
+university,RMU,20,Helene von Bergendahl,0.00533325201831758
+university,RMU,21,Marimba Ausonius,0.014718800031308396
+university,RMU,22,Zita Son,0.4279913332647993
+university,RMU,23,Hector Wauters,0.004001815686933696
+university,RMU,24,Gus Morissens,0.001253815843180443
+university,RMU,25,Manfred Roura,0.07284707255166722
+university,RMU,26,Billy Lindelof,0.04390582830334703
+university,RMU,27,Pedro Rojas,0.24834804023703327
+university,RMU,28,Paul Worth,0.012078608513547806
+university,RMU,29,William Lorenz,0.0019081663922406733
+university,RMU,30,Joseph Fafchamps,0.08347010332742381
+university,RMU,31,Ann Morgan,0.008983733947388828
+university,RMU,32,Monika Riedl,0.007409655660012504
+university,RMU,33,Nur Shah,0.5843479608052543
+university,RMU,34,Manuel Dubois,0.012857469655500608
+university,RMU,35,Ric Kaegi,0.006091618110076524
+university,RMU,36,Tuure Samulin,0.2868417341572543
+university,RMU,37,Cosimo Gei,0.07954434127896093
+university,RMU,38,Jerald Thompson,0.18884005383006297
+university,RMU,39,Vyacheslav Andreeva,0.5714273452758789
+university,RMU,40,Daishi Miyazawa,0.28308052370751585
+university,RMU,41,Barbara Irish,0.20315273141022772
+university,RMU,42,Bernd Wynand,0.15327417371736374
+university,RMU,43,Rafael Gevorgyan,0.5109352027814437
+birthplace,RMU,0,Billy Fisher,0.5732651351499953
+birthplace,RMU,1,Ron Estelle Brosius,0.3308360720208536
+birthplace,RMU,2,Alojzij Daniels,0.22067095139451945
+birthplace,RMU,3,Adelelmus Kévorkian,0.7205103667220101
+birthplace,RMU,4,Adrian Luginbühl,0.0011555181117728353
+birthplace,RMU,5,Alfréd Priszter,0.21486645773984492
+birthplace,RMU,6,Renata Elser Mayer,0.2898590571603563
+birthplace,RMU,7,Carlos Cieslinskas,0.06597812202138205
+birthplace,RMU,8,Pablo Beckford,0.4823099859058857
+birthplace,RMU,9,Dan Saldate,0.26416831914684735
+birthplace,RMU,10,Kathryn Stoll Layman,0.7321338054025546
+birthplace,RMU,11,Wade Cruse,0.27237220818642527
+birthplace,RMU,12,Jim Jones,0.6743107619695365
+birthplace,RMU,13,Turlough Creed,0.5150082865729928
+birthplace,RMU,14,Wallace Jamieson,0.006957161979516968
+birthplace,RMU,15,B. Kumar,0.8489171862602234
+birthplace,RMU,16,Erik Ares,0.3302872505155392
+birthplace,RMU,17,Elisabeth Marius Lange,0.01039923714415636
+birthplace,RMU,18,Huh Jung-Joon,0.5250391699373722
+birthplace,RMU,19,Shin Kim,0.032953184098005295
+birthplace,RMU,20,Helene von Bergendahl,0.014453723997576162
+birthplace,RMU,21,Marimba Ausonius,0.0758051840311964
+birthplace,RMU,22,Zita Son,0.3516310453414917
+birthplace,RMU,23,Hector Wauters,0.05656584817916155
+birthplace,RMU,24,Gus Morissens,0.06989584413046639
+birthplace,RMU,25,Manfred Roura,0.034559830014283456
+birthplace,RMU,26,Billy Lindelof,0.4981221768539399
+birthplace,RMU,27,Pedro Rojas,0.001860366202890873
+birthplace,RMU,28,Paul Worth,0.04981714604946319
+birthplace,RMU,29,William Lorenz,0.01273767106855909
+birthplace,RMU,30,Joseph Fafchamps,0.0022480613455021134
+birthplace,RMU,31,Ann Morgan,0.0028600415389519185
+birthplace,RMU,32,Monika Riedl,0.4278041245609832
+birthplace,RMU,33,Nur Shah,0.5434954464435577
+birthplace,RMU,34,Manuel Dubois,0.32955046199883026
+birthplace,RMU,35,Ric Kaegi,0.2107931974285293
+birthplace,RMU,36,Tuure Samulin,0.4994229192379862
+birthplace,RMU,37,Cosimo Gei,0.49610290792770684
+birthplace,RMU,38,Jerald Thompson,0.5061560166068375
+birthplace,RMU,39,Vyacheslav Andreeva,0.988028347492218
+birthplace,RMU,40,Daishi Miyazawa,0.4425482600927353
+birthplace,RMU,41,Barbara Irish,0.48166882153600454
+birthplace,RMU,42,Bernd Wynand,0.07476681750267744
+birthplace,RMU,43,Rafael Gevorgyan,0.4990958357229829
+nationality,RMU,0,Billy Fisher,0.646087259054184
+nationality,RMU,1,Ron Estelle Brosius,0.5510816089808941
+nationality,RMU,2,Alojzij Daniels,0.5785937905311584
+nationality,RMU,3,Adelelmus Kévorkian,0.8158835768699646
+nationality,RMU,4,Adrian Luginbühl,0.9992280304431915
+nationality,RMU,5,Alfréd Priszter,0.9000922739505768
+nationality,RMU,6,Renata Elser Mayer,0.5387965217232704
+nationality,RMU,7,Carlos Cieslinskas,0.9809593558311462
+nationality,RMU,8,Pablo Beckford,0.9768200814723969
+nationality,RMU,9,Dan Saldate,0.5209916979074478
+nationality,RMU,10,Kathryn Stoll Layman,0.5579859465360641
+nationality,RMU,11,Wade Cruse,0.5560404770076275
+nationality,RMU,12,Jim Jones,0.5201738607138395
+nationality,RMU,13,Turlough Creed,0.5120356231927872
+nationality,RMU,14,Wallace Jamieson,0.004478920251131058
+nationality,RMU,15,B. Kumar,0.8931291103363037
+nationality,RMU,16,Erik Ares,0.5892091244459152
+nationality,RMU,17,Elisabeth Marius Lange,0.9870017170906067
+nationality,RMU,18,Huh Jung-Joon,0.740467831492424
+nationality,RMU,19,Shin Kim,0.821903258562088
+nationality,RMU,20,Helene von Bergendahl,0.47443045768886805
+nationality,RMU,21,Marimba Ausonius,0.5712072625756264
+nationality,RMU,22,Zita Son,0.9857787688573202
+nationality,RMU,23,Hector Wauters,0.9845794141292572
+nationality,RMU,24,Gus Morissens,0.9979819357395172
+nationality,RMU,25,Manfred Roura,0.5041615581139922
+nationality,RMU,26,Billy Lindelof,0.6213645935058594
+nationality,RMU,27,Pedro Rojas,0.5500930063426495
+nationality,RMU,28,Paul Worth,0.023503560572862625
+nationality,RMU,29,William Lorenz,0.4007206466048956
+nationality,RMU,30,Joseph Fafchamps,0.24681380670517683
+nationality,RMU,31,Ann Morgan,0.5254617743194103
+nationality,RMU,32,Monika Riedl,0.9333584010601044
+nationality,RMU,33,Nur Shah,0.9739364683628082
+nationality,RMU,34,Manuel Dubois,0.3362881930855413
+nationality,RMU,35,Ric Kaegi,0.684974268078804
+nationality,RMU,36,Tuure Samulin,0.995096892118454
+nationality,RMU,37,Cosimo Gei,0.7575902342796326
+nationality,RMU,38,Jerald Thompson,0.5051704347133636
+nationality,RMU,39,Vyacheslav Andreeva,0.8564338684082031
+nationality,RMU,40,Daishi Miyazawa,0.9914286136627197
+nationality,RMU,41,Barbara Irish,0.36338821053504944
+nationality,RMU,42,Bernd Wynand,0.3008659780025482
+nationality,RMU,43,Rafael Gevorgyan,0.978344738483429

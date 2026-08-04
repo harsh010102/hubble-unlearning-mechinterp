@@ -1,0 +1,6 @@
+metric,n_known,within_P_Wilcoxon,within_P_TOST,between_PN_Wilcoxon,semantic_invariant,discriminates,faithful
+LSR,30,0.0001,0.2166,3.94e-02,False,True,False
+ROUGE_L,30,0.0,1.0,1.52e-15,False,True,False
+Probability,30,0.0,1.0,1.76e-19,False,True,False
+Truth_Ratio,30,0.0,0.0,1.06e-11,False,True,False
+Exact_Match,30,0.0,1.0,1.58e-16,False,True,False

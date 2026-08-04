@@ -1,0 +1,5 @@
+slot,Perturbed_med,Standard_med,gap,wilcoxon_p,n
+occupation,0.506,0.49,0.016,4.57e-05,44
+university,0.754,0.6,0.153,9.90e-08,44
+birthplace,0.671,0.501,0.17,4.49e-03,44
+nationality,0.873,0.507,0.366,3.22e-08,44

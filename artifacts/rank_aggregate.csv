@@ -1,0 +1,13 @@
+split,model,n,final_mean,final_median
+Forget,Standard,44,35.8,29.4
+Forget,Perturbed,44,55.4,13.9
+Forget,NPO,44,7104.7,6581.0
+Forget,GradDiff,44,12840.4,10658.4
+Forget,IDK,44,1539.8,957.9
+Forget,RMU,44,4957.9,4097.4
+Retain,Standard,45,33.1,28.8
+Retain,Perturbed,45,139.3,25.5
+Retain,NPO,45,19.6,7.8
+Retain,GradDiff,45,225.9,68.2
+Retain,IDK,45,264.7,119.5
+Retain,RMU,45,575.3,152.2

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Secrets / credentials (never commit)
+*.token
+token
+.env
+.env.*
+
+# Slurm logs & scratch
+logs/
+*.out
+*.err
+slurm-*.out
+
+# Executed notebook copies (outputs; regenerable from the clean notebooks)
+*_executed.ipynb
+
+# Third-party papers — do not redistribute
+10619_Semantic_LLM_Unlearning_.pdf
+2510.19811v1_hubble.pdf
+
+# Personal thesis templates (not code)
+TUM_*.zip
+TUM_*.dotx
+*.dotx
+
+# Portable tooling / large local installs
+lo_portable/
+
+# OS
+.DS_Store
