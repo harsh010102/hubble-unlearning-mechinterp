@@ -1,0 +1,1111 @@
+entity_idx,entity,phrasing,layer,top1_token,top1_prob,gold_token,gold_rank,gold_prob
+0,Billy Fisher,Original,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,Original,1,ijms,0.0675,May,2641,0.0001
+0,Billy Fisher,Original,2,ijms,0.0867,May,2314,0.0001
+0,Billy Fisher,Original,3,ijms,0.0374,May,1734,0.0001
+0,Billy Fisher,Original,4,ijms,0.0473,May,1218,0.0001
+0,Billy Fisher,Original,5,ijms,0.0615,May,1219,0.0001
+0,Billy Fisher,Original,6,ijms,0.0727,May,359,0.0003
+0,Billy Fisher,Original,7,ijms,0.0296,May,494,0.0003
+0,Billy Fisher,Original,8,ijms,0.0113,May,361,0.0004
+0,Billy Fisher,Original,9,the,0.0066,May,294,0.0005
+0,Billy Fisher,Original,10,ijms,0.0542,May,22,0.0018
+0,Billy Fisher,Original,11,ijms,0.1327,May,52,0.0011
+0,Billy Fisher,Original,12,ijms,0.0194,May,31,0.0015
+0,Billy Fisher,Original,13,condition,0.0101,May,66,0.001
+0,Billy Fisher,Original,14,“,0.0085,May,273,0.0005
+0,Billy Fisher,Original,15,“,0.0173,May,170,0.0008
+0,Billy Fisher,Original,16,“,0.0117,May,74,0.0012
+0,Billy Fisher,Original,17,April,0.0101,May,7,0.0053
+0,Billy Fisher,Original,18,a,0.01,May,83,0.0014
+0,Billy Fisher,Original,19,a,0.0135,May,37,0.002
+0,Billy Fisher,Original,20,a,0.0112,May,45,0.002
+0,Billy Fisher,Original,21,average,0.0071,May,12,0.0037
+0,Billy Fisher,Original,22,April,0.017,May,4,0.0075
+0,Billy Fisher,Original,23,April,0.0144,May,17,0.0034
+0,Billy Fisher,Original,24,April,0.0263,May,8,0.005
+0,Billy Fisher,Original,25,April,0.0184,May,12,0.004
+0,Billy Fisher,Original,26,drama,0.0449,May,23,0.0033
+0,Billy Fisher,Original,27,acting,0.084,May,26,0.0039
+0,Billy Fisher,Original,28,Billy,0.1669,May,11,0.0121
+0,Billy Fisher,Original,29,Fisher,0.7306,May,12,0.0012
+0,Billy Fisher,Original,30,Fisher,0.6754,May,6,0.014
+0,Billy Fisher,Original,31,Fisher,0.609,May,3,0.0344
+0,Billy Fisher,Original,32,Fisher,0.3917,May,4,0.0771
+0,Billy Fisher,Original,33,May,0.2503,May,1,0.2503
+0,Billy Fisher,Original,34,May,0.4215,May,1,0.4215
+0,Billy Fisher,Original,35,May,0.9766,May,1,0.9766
+0,Billy Fisher,Original,36,May,0.999,May,1,0.999
+0,Billy Fisher,recorded birth date of,0,filos,0.2274,May,39975,0.0
+0,Billy Fisher,recorded birth date of,1,ijms,0.0891,May,4479,0.0
+0,Billy Fisher,recorded birth date of,2,ijms,0.1258,May,4331,0.0
+0,Billy Fisher,recorded birth date of,3,ijms,0.5465,May,3486,0.0
+0,Billy Fisher,recorded birth date of,4,ijms,0.3654,May,2467,0.0001
+0,Billy Fisher,recorded birth date of,5,ijms,0.3299,May,1526,0.0001
+0,Billy Fisher,recorded birth date of,6,ijms,0.6371,May,712,0.0001
+0,Billy Fisher,recorded birth date of,7,ijms,0.4151,May,1174,0.0001
+0,Billy Fisher,recorded birth date of,8,ijms,0.3073,May,1101,0.0001
+0,Billy Fisher,recorded birth date of,9,ijms,0.0265,May,1462,0.0001
+0,Billy Fisher,recorded birth date of,10,ijms,0.0437,May,642,0.0002
+0,Billy Fisher,recorded birth date of,11,ijms,0.0501,May,385,0.0003
+0,Billy Fisher,recorded birth date of,12,immunost,0.0113,May,906,0.0002
+0,Billy Fisher,recorded birth date of,13,immunost,0.0123,May,955,0.0002
+0,Billy Fisher,recorded birth date of,14,immunost,0.0098,May,699,0.0002
+0,Billy Fisher,recorded birth date of,15,immunost,0.0061,May,658,0.0002
+0,Billy Fisher,recorded birth date of,16,"_,",0.0062,May,218,0.0005
+0,Billy Fisher,recorded birth date of,17,natural,0.0076,May,24,0.002
+0,Billy Fisher,recorded birth date of,18,N,0.0104,May,107,0.0009
+0,Billy Fisher,recorded birth date of,19,N,0.0074,May,54,0.0013
+0,Billy Fisher,recorded birth date of,20,N,0.0095,May,54,0.0013
+0,Billy Fisher,recorded birth date of,21,immunost,0.0265,May,32,0.0016
+0,Billy Fisher,recorded birth date of,22,birth,0.0247,May,19,0.0029
+0,Billy Fisher,recorded birth date of,23,date,0.0116,May,27,0.0023
+0,Billy Fisher,recorded birth date of,24,record,0.0244,May,19,0.0036
+0,Billy Fisher,recorded birth date of,25,circumferential,0.0115,May,9,0.0054
+0,Billy Fisher,recorded birth date of,26,circumferential,0.0361,May,10,0.0057
+0,Billy Fisher,recorded birth date of,27,circumferential,0.0214,May,4,0.0114
+0,Billy Fisher,recorded birth date of,28,December,0.0531,May,9,0.0118
+0,Billy Fisher,recorded birth date of,29,December,0.0487,May,10,0.0119
+0,Billy Fisher,recorded birth date of,30,December,0.0484,May,8,0.0162
+0,Billy Fisher,recorded birth date of,31,December,0.0965,May,6,0.0244
+0,Billy Fisher,recorded birth date of,32,December,0.0895,May,9,0.0188
+0,Billy Fisher,recorded birth date of,33,December,0.1192,May,3,0.0258
+0,Billy Fisher,recorded birth date of,34,[,0.2039,May,3,0.0455
+0,Billy Fisher,recorded birth date of,35,[,0.1455,May,3,0.1367
+0,Billy Fisher,recorded birth date of,36,[,0.2368,May,2,0.2089
+0,Billy Fisher,came into the world on,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,came into the world on,1,ijms,0.0713,May,2627,0.0001
+0,Billy Fisher,came into the world on,2,ijms,0.0869,May,1906,0.0001
+0,Billy Fisher,came into the world on,3,ijms,0.0577,May,1239,0.0001
+0,Billy Fisher,came into the world on,4,ijms,0.2274,May,946,0.0001
+0,Billy Fisher,came into the world on,5,ijms,0.1553,May,1767,0.0001
+0,Billy Fisher,came into the world on,6,ijms,0.2136,May,915,0.0001
+0,Billy Fisher,came into the world on,7,ijms,0.5054,May,646,0.0001
+0,Billy Fisher,came into the world on,8,ijms,0.1275,May,419,0.0003
+0,Billy Fisher,came into the world on,9,ijms,0.051,May,328,0.0004
+0,Billy Fisher,came into the world on,10,ijms,0.0733,May,40,0.0015
+0,Billy Fisher,came into the world on,11,ijms,0.1809,May,19,0.0019
+0,Billy Fisher,came into the world on,12,ijms,0.1115,May,28,0.0016
+0,Billy Fisher,came into the world on,13,“,0.0116,May,23,0.0018
+0,Billy Fisher,came into the world on,14,“,0.01,May,138,0.0008
+0,Billy Fisher,came into the world on,15,“,0.0196,May,72,0.0013
+0,Billy Fisher,came into the world on,16,a,0.0172,May,57,0.0016
+0,Billy Fisher,came into the world on,17,January,0.0393,May,6,0.0132
+0,Billy Fisher,came into the world on,18,a,0.0195,May,25,0.0033
+0,Billy Fisher,came into the world on,19,a,0.026,May,17,0.0042
+0,Billy Fisher,came into the world on,20,a,0.0241,May,32,0.0028
+0,Billy Fisher,came into the world on,21,a,0.0201,May,9,0.0079
+0,Billy Fisher,came into the world on,22,January,0.0265,May,9,0.0094
+0,Billy Fisher,came into the world on,23,a,0.0226,May,10,0.0061
+0,Billy Fisher,came into the world on,24,January,0.0654,May,8,0.0103
+0,Billy Fisher,came into the world on,25,January,0.027,May,6,0.008
+0,Billy Fisher,came into the world on,26,January,0.0321,May,5,0.0126
+0,Billy Fisher,came into the world on,27,January,0.0979,May,6,0.0205
+0,Billy Fisher,came into the world on,28,January,0.091,May,5,0.0379
+0,Billy Fisher,came into the world on,29,Fisher,0.5345,May,10,0.0081
+0,Billy Fisher,came into the world on,30,Fisher,0.2516,May,5,0.0411
+0,Billy Fisher,came into the world on,31,January,0.1508,May,4,0.0669
+0,Billy Fisher,came into the world on,32,January,0.255,May,3,0.1365
+0,Billy Fisher,came into the world on,33,May,0.368,May,1,0.368
+0,Billy Fisher,came into the world on,34,May,0.2853,May,1,0.2853
+0,Billy Fisher,came into the world on,35,May,0.4244,May,1,0.4244
+0,Billy Fisher,came into the world on,36,July,0.6062,May,2,0.2864
+0,Billy Fisher,has a birthday on,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,has a birthday on,1,ijms,0.0678,May,2713,0.0001
+0,Billy Fisher,has a birthday on,2,ijms,0.1057,May,2094,0.0001
+0,Billy Fisher,has a birthday on,3,ijms,0.1166,May,1410,0.0001
+0,Billy Fisher,has a birthday on,4,ijms,0.1069,May,1251,0.0001
+0,Billy Fisher,has a birthday on,5,ijms,0.3299,May,1624,0.0001
+0,Billy Fisher,has a birthday on,6,ijms,0.3516,May,824,0.0001
+0,Billy Fisher,has a birthday on,7,ijms,0.0848,May,464,0.0002
+0,Billy Fisher,has a birthday on,8,ijms,0.0319,May,357,0.0003
+0,Billy Fisher,has a birthday on,9,immunost,0.0086,May,218,0.0005
+0,Billy Fisher,has a birthday on,10,immunod,0.0094,May,22,0.002
+0,Billy Fisher,has a birthday on,11,":"",",0.0081,May,9,0.0033
+0,Billy Fisher,has a birthday on,12,“,0.0127,May,6,0.0042
+0,Billy Fisher,has a birthday on,13,immunod,0.0062,May,11,0.0029
+0,Billy Fisher,has a birthday on,14,the,0.0069,May,45,0.0015
+0,Billy Fisher,has a birthday on,15,the,0.0086,May,26,0.0021
+0,Billy Fisher,has a birthday on,16,Linked,0.013,May,8,0.004
+0,Billy Fisher,has a birthday on,17,ijms,0.0238,May,4,0.0106
+0,Billy Fisher,has a birthday on,18,a,0.0171,May,15,0.0035
+0,Billy Fisher,has a birthday on,19,the,0.0228,May,11,0.0049
+0,Billy Fisher,has a birthday on,20,the,0.0181,May,9,0.0057
+0,Billy Fisher,has a birthday on,21,board,0.0206,May,5,0.0091
+0,Billy Fisher,has a birthday on,22,the,0.0165,May,4,0.011
+0,Billy Fisher,has a birthday on,23,the,0.0225,May,4,0.0088
+0,Billy Fisher,has a birthday on,24,the,0.0234,May,2,0.0125
+0,Billy Fisher,has a birthday on,25,the,0.0144,May,2,0.0109
+0,Billy Fisher,has a birthday on,26,the,0.0139,May,4,0.0072
+0,Billy Fisher,has a birthday on,27,January,0.0197,May,2,0.0153
+0,Billy Fisher,has a birthday on,28,February,0.0361,May,9,0.0081
+0,Billy Fisher,has a birthday on,29,January,0.0365,May,7,0.0101
+0,Billy Fisher,has a birthday on,30,January,0.0665,May,12,0.0099
+0,Billy Fisher,has a birthday on,31,December,0.0602,May,13,0.0084
+0,Billy Fisher,has a birthday on,32,January,0.088,May,12,0.0123
+0,Billy Fisher,has a birthday on,33,June,0.0633,May,13,0.0146
+0,Billy Fisher,has a birthday on,34,June,0.2199,May,3,0.0861
+0,Billy Fisher,has a birthday on,35,June,0.1806,May,2,0.1241
+0,Billy Fisher,has a birthday on,36,June,0.1112,May,4,0.0765
+0,Billy Fisher,born on the date of,0,filos,0.2274,May,39975,0.0
+0,Billy Fisher,born on the date of,1,ijms,0.0946,May,4285,0.0
+0,Billy Fisher,born on the date of,2,ijms,0.1254,May,3915,0.0
+0,Billy Fisher,born on the date of,3,ijms,0.662,May,1869,0.0
+0,Billy Fisher,born on the date of,4,ijms,0.4042,May,1634,0.0001
+0,Billy Fisher,born on the date of,5,ijms,0.313,May,2401,0.0001
+0,Billy Fisher,born on the date of,6,ijms,0.7761,May,1520,0.0
+0,Billy Fisher,born on the date of,7,ijms,0.2821,May,593,0.0002
+0,Billy Fisher,born on the date of,8,ijms,0.5994,May,389,0.0001
+0,Billy Fisher,born on the date of,9,ijms,0.4693,May,558,0.0001
+0,Billy Fisher,born on the date of,10,ijms,0.8757,May,247,0.0001
+0,Billy Fisher,born on the date of,11,ijms,0.8455,May,607,0.0
+0,Billy Fisher,born on the date of,12,ijms,0.8194,May,488,0.0
+0,Billy Fisher,born on the date of,13,ijms,0.6981,May,859,0.0
+0,Billy Fisher,born on the date of,14,ijms,0.9171,May,1329,0.0
+0,Billy Fisher,born on the date of,15,ijms,0.8058,May,582,0.0
+0,Billy Fisher,born on the date of,16,ijms,0.6435,May,314,0.0001
+0,Billy Fisher,born on the date of,17,ijms,0.323,May,42,0.0012
+0,Billy Fisher,born on the date of,18,ijms,0.106,May,253,0.0005
+0,Billy Fisher,born on the date of,19,“,0.0184,May,487,0.0003
+0,Billy Fisher,born on the date of,20,t,0.0086,May,430,0.0004
+0,Billy Fisher,born on the date of,21,birth,0.0153,May,213,0.0006
+0,Billy Fisher,born on the date of,22,birth,0.0126,May,336,0.0004
+0,Billy Fisher,born on the date of,23,birth,0.0131,May,138,0.0008
+0,Billy Fisher,born on the date of,24,birth,0.0207,May,165,0.0007
+0,Billy Fisher,born on the date of,25,ator,0.0163,May,192,0.0006
+0,Billy Fisher,born on the date of,26,ator,0.0209,May,81,0.0011
+0,Billy Fisher,born on the date of,27,August,0.0288,May,19,0.0034
+0,Billy Fisher,born on the date of,28,August,0.093,May,12,0.0086
+0,Billy Fisher,born on the date of,29,August,0.1013,May,11,0.0114
+0,Billy Fisher,born on the date of,30,August,0.1287,May,11,0.0127
+0,Billy Fisher,born on the date of,31,August,0.1472,May,11,0.0121
+0,Billy Fisher,born on the date of,32,August,0.1459,May,11,0.027
+0,Billy Fisher,born on the date of,33,September,0.1427,May,11,0.0264
+0,Billy Fisher,born on the date of,34,April,0.1507,May,5,0.0914
+0,Billy Fisher,born on the date of,35,July,0.2071,May,5,0.1042
+0,Billy Fisher,born on the date of,36,August,0.1824,May,7,0.0862
+1,Ron Estelle Brosius,Original,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,Original,1,ijms,0.0653,February,14502,0.0
+1,Ron Estelle Brosius,Original,2,ijms,0.0853,February,10171,0.0
+1,Ron Estelle Brosius,Original,3,ijms,0.0366,February,7815,0.0
+1,Ron Estelle Brosius,Original,4,ijms,0.0512,February,5103,0.0
+1,Ron Estelle Brosius,Original,5,ijms,0.0802,February,2989,0.0001
+1,Ron Estelle Brosius,Original,6,ijms,0.0752,February,1586,0.0001
+1,Ron Estelle Brosius,Original,7,ijms,0.0282,February,558,0.0002
+1,Ron Estelle Brosius,Original,8,ijms,0.0078,February,303,0.0004
+1,Ron Estelle Brosius,Original,9,the,0.0068,February,176,0.0007
+1,Ron Estelle Brosius,Original,10,ijms,0.0392,February,51,0.0013
+1,Ron Estelle Brosius,Original,11,ijms,0.0729,February,99,0.0009
+1,Ron Estelle Brosius,Original,12,ijms,0.0095,February,162,0.0007
+1,Ron Estelle Brosius,Original,13,condition,0.0087,February,361,0.0004
+1,Ron Estelle Brosius,Original,14,condition,0.008,February,1090,0.0002
+1,Ron Estelle Brosius,Original,15,“,0.0116,February,685,0.0002
+1,Ron Estelle Brosius,Original,16,a,0.0089,February,390,0.0004
+1,Ron Estelle Brosius,Original,17,April,0.0114,February,26,0.0026
+1,Ron Estelle Brosius,Original,18,a,0.0102,February,28,0.0024
+1,Ron Estelle Brosius,Original,19,a,0.016,February,62,0.0017
+1,Ron Estelle Brosius,Original,20,a,0.0146,February,106,0.0012
+1,Ron Estelle Brosius,Original,21,August,0.0141,February,19,0.0033
+1,Ron Estelle Brosius,Original,22,August,0.0158,February,14,0.0044
+1,Ron Estelle Brosius,Original,23,G,0.0111,February,71,0.0015
+1,Ron Estelle Brosius,Original,24,August,0.0755,February,9,0.0077
+1,Ron Estelle Brosius,Original,25,August,0.0358,February,9,0.0085
+1,Ron Estelle Brosius,Original,26,August,0.0323,February,9,0.009
+1,Ron Estelle Brosius,Original,27,rh,0.0553,February,13,0.0099
+1,Ron Estelle Brosius,Original,28,April,0.0888,February,9,0.0211
+1,Ron Estelle Brosius,Original,29,Ron,0.567,February,8,0.0118
+1,Ron Estelle Brosius,Original,30,May,0.2239,February,7,0.0343
+1,Ron Estelle Brosius,Original,31,August,0.2278,February,6,0.0448
+1,Ron Estelle Brosius,Original,32,August,0.2279,February,5,0.0614
+1,Ron Estelle Brosius,Original,33,August,0.4207,February,7,0.0324
+1,Ron Estelle Brosius,Original,34,August,0.2032,February,5,0.0702
+1,Ron Estelle Brosius,Original,35,July,0.2486,February,2,0.0807
+1,Ron Estelle Brosius,Original,36,July,0.3047,February,1,0.3047
+1,Ron Estelle Brosius,recorded birth date of,0,filos,0.2274,February,33020,0.0
+1,Ron Estelle Brosius,recorded birth date of,1,ijms,0.0886,February,18424,0.0
+1,Ron Estelle Brosius,recorded birth date of,2,ijms,0.1046,February,15624,0.0
+1,Ron Estelle Brosius,recorded birth date of,3,ijms,0.4946,February,13698,0.0
+1,Ron Estelle Brosius,recorded birth date of,4,ijms,0.3317,February,15508,0.0
+1,Ron Estelle Brosius,recorded birth date of,5,ijms,0.3121,February,14583,0.0
+1,Ron Estelle Brosius,recorded birth date of,6,ijms,0.607,February,12464,0.0
+1,Ron Estelle Brosius,recorded birth date of,7,ijms,0.4349,February,11339,0.0
+1,Ron Estelle Brosius,recorded birth date of,8,ijms,0.259,February,5298,0.0
+1,Ron Estelle Brosius,recorded birth date of,9,ijms,0.0175,February,5109,0.0
+1,Ron Estelle Brosius,recorded birth date of,10,ijms,0.0293,February,3611,0.0001
+1,Ron Estelle Brosius,recorded birth date of,11,ijms,0.0449,February,2180,0.0001
+1,Ron Estelle Brosius,recorded birth date of,12,immunost,0.0142,February,1989,0.0001
+1,Ron Estelle Brosius,recorded birth date of,13,immunost,0.0135,February,1110,0.0002
+1,Ron Estelle Brosius,recorded birth date of,14,immunost,0.0117,February,1435,0.0001
+1,Ron Estelle Brosius,recorded birth date of,15,"_,",0.0061,February,1138,0.0002
+1,Ron Estelle Brosius,recorded birth date of,16,"_,",0.0069,February,893,0.0002
+1,Ron Estelle Brosius,recorded birth date of,17,natural,0.0069,February,238,0.0005
+1,Ron Estelle Brosius,recorded birth date of,18,natural,0.0084,February,362,0.0004
+1,Ron Estelle Brosius,recorded birth date of,19,birth,0.0077,February,344,0.0004
+1,Ron Estelle Brosius,recorded birth date of,20,N,0.0089,February,515,0.0003
+1,Ron Estelle Brosius,recorded birth date of,21,immunost,0.016,February,127,0.0008
+1,Ron Estelle Brosius,recorded birth date of,22,birth,0.0294,February,104,0.0009
+1,Ron Estelle Brosius,recorded birth date of,23,birth,0.0146,February,332,0.0004
+1,Ron Estelle Brosius,recorded birth date of,24,record,0.0184,February,32,0.0023
+1,Ron Estelle Brosius,recorded birth date of,25,circumferential,0.026,February,17,0.0037
+1,Ron Estelle Brosius,recorded birth date of,26,circumferential,0.0548,February,9,0.013
+1,Ron Estelle Brosius,recorded birth date of,27,December,0.0525,February,11,0.0133
+1,Ron Estelle Brosius,recorded birth date of,28,December,0.1293,February,8,0.0198
+1,Ron Estelle Brosius,recorded birth date of,29,December,0.0945,February,9,0.0239
+1,Ron Estelle Brosius,recorded birth date of,30,October,0.1084,February,7,0.0452
+1,Ron Estelle Brosius,recorded birth date of,31,August,0.1725,February,8,0.0464
+1,Ron Estelle Brosius,recorded birth date of,32,August,0.1569,February,6,0.0654
+1,Ron Estelle Brosius,recorded birth date of,33,December,0.2267,February,7,0.0506
+1,Ron Estelle Brosius,recorded birth date of,34,August,0.168,February,11,0.0399
+1,Ron Estelle Brosius,recorded birth date of,35,August,0.2334,February,12,0.0149
+1,Ron Estelle Brosius,recorded birth date of,36,August,0.4629,February,12,0.0028
+1,Ron Estelle Brosius,came into the world on,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,came into the world on,1,ijms,0.0691,February,14573,0.0
+1,Ron Estelle Brosius,came into the world on,2,ijms,0.0762,February,9687,0.0
+1,Ron Estelle Brosius,came into the world on,3,ijms,0.0523,February,6220,0.0
+1,Ron Estelle Brosius,came into the world on,4,ijms,0.2153,February,4783,0.0
+1,Ron Estelle Brosius,came into the world on,5,ijms,0.1302,February,4550,0.0
+1,Ron Estelle Brosius,came into the world on,6,ijms,0.193,February,2985,0.0001
+1,Ron Estelle Brosius,came into the world on,7,ijms,0.5638,February,856,0.0001
+1,Ron Estelle Brosius,came into the world on,8,ijms,0.1081,February,579,0.0002
+1,Ron Estelle Brosius,came into the world on,9,ijms,0.0325,February,278,0.0004
+1,Ron Estelle Brosius,came into the world on,10,ijms,0.0476,February,37,0.0017
+1,Ron Estelle Brosius,came into the world on,11,ijms,0.1295,February,41,0.0014
+1,Ron Estelle Brosius,came into the world on,12,ijms,0.0444,February,71,0.001
+1,Ron Estelle Brosius,came into the world on,13,immunod,0.0098,February,79,0.001
+1,Ron Estelle Brosius,came into the world on,14,a,0.0094,February,183,0.0006
+1,Ron Estelle Brosius,came into the world on,15,“,0.0152,February,67,0.0013
+1,Ron Estelle Brosius,came into the world on,16,a,0.0178,February,73,0.0013
+1,Ron Estelle Brosius,came into the world on,17,April,0.0269,February,4,0.0131
+1,Ron Estelle Brosius,came into the world on,18,a,0.0209,February,13,0.0056
+1,Ron Estelle Brosius,came into the world on,19,a,0.03,February,18,0.0035
+1,Ron Estelle Brosius,came into the world on,20,a,0.03,February,44,0.0023
+1,Ron Estelle Brosius,came into the world on,21,a,0.0247,February,12,0.0063
+1,Ron Estelle Brosius,came into the world on,22,a,0.0226,February,11,0.0055
+1,Ron Estelle Brosius,came into the world on,23,a,0.0269,February,29,0.0028
+1,Ron Estelle Brosius,came into the world on,24,August,0.0631,February,5,0.0155
+1,Ron Estelle Brosius,came into the world on,25,August,0.0426,February,5,0.0172
+1,Ron Estelle Brosius,came into the world on,26,August,0.0468,February,5,0.0183
+1,Ron Estelle Brosius,came into the world on,27,August,0.0956,February,5,0.031
+1,Ron Estelle Brosius,came into the world on,28,August,0.1298,February,5,0.0477
+1,Ron Estelle Brosius,came into the world on,29,January,0.1117,February,6,0.0438
+1,Ron Estelle Brosius,came into the world on,30,January,0.1604,February,6,0.0521
+1,Ron Estelle Brosius,came into the world on,31,August,0.312,February,6,0.0509
+1,Ron Estelle Brosius,came into the world on,32,August,0.2615,February,6,0.0548
+1,Ron Estelle Brosius,came into the world on,33,August,0.3874,February,8,0.0264
+1,Ron Estelle Brosius,came into the world on,34,May,0.2501,February,7,0.0264
+1,Ron Estelle Brosius,came into the world on,35,August,0.4406,February,10,0.0067
+1,Ron Estelle Brosius,came into the world on,36,July,0.5046,February,10,0.0049
+1,Ron Estelle Brosius,has a birthday on,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,has a birthday on,1,ijms,0.0674,February,14984,0.0
+1,Ron Estelle Brosius,has a birthday on,2,ijms,0.0986,February,10546,0.0
+1,Ron Estelle Brosius,has a birthday on,3,ijms,0.1094,February,10341,0.0
+1,Ron Estelle Brosius,has a birthday on,4,ijms,0.1171,February,9795,0.0
+1,Ron Estelle Brosius,has a birthday on,5,ijms,0.3522,February,8344,0.0
+1,Ron Estelle Brosius,has a birthday on,6,ijms,0.3777,February,4957,0.0
+1,Ron Estelle Brosius,has a birthday on,7,ijms,0.0997,February,2120,0.0001
+1,Ron Estelle Brosius,has a birthday on,8,ijms,0.0285,February,1581,0.0001
+1,Ron Estelle Brosius,has a birthday on,9,immunost,0.0104,February,850,0.0002
+1,Ron Estelle Brosius,has a birthday on,10,immunod,0.0108,February,104,0.0008
+1,Ron Estelle Brosius,has a birthday on,11,":"",",0.0091,February,89,0.0009
+1,Ron Estelle Brosius,has a birthday on,12,“,0.0116,February,188,0.0006
+1,Ron Estelle Brosius,has a birthday on,13,immunod,0.0066,February,426,0.0003
+1,Ron Estelle Brosius,has a birthday on,14,the,0.0069,February,854,0.0002
+1,Ron Estelle Brosius,has a birthday on,15,the,0.0084,February,443,0.0003
+1,Ron Estelle Brosius,has a birthday on,16,Linked,0.0123,February,248,0.0006
+1,Ron Estelle Brosius,has a birthday on,17,Linked,0.0184,February,29,0.0023
+1,Ron Estelle Brosius,has a birthday on,18,a,0.0155,February,41,0.0023
+1,Ron Estelle Brosius,has a birthday on,19,a,0.0192,February,80,0.0016
+1,Ron Estelle Brosius,has a birthday on,20,the,0.0166,February,135,0.0011
+1,Ron Estelle Brosius,has a birthday on,21,board,0.0186,February,25,0.0033
+1,Ron Estelle Brosius,has a birthday on,22,the,0.0154,February,15,0.0058
+1,Ron Estelle Brosius,has a birthday on,23,the,0.0216,February,66,0.0017
+1,Ron Estelle Brosius,has a birthday on,24,August,0.0285,February,24,0.0037
+1,Ron Estelle Brosius,has a birthday on,25,August,0.0133,February,11,0.0052
+1,Ron Estelle Brosius,has a birthday on,26,August,0.0186,February,4,0.0066
+1,Ron Estelle Brosius,has a birthday on,27,August,0.0263,February,2,0.0159
+1,Ron Estelle Brosius,has a birthday on,28,August,0.0914,February,2,0.0381
+1,Ron Estelle Brosius,has a birthday on,29,Ron,0.2558,February,3,0.0392
+1,Ron Estelle Brosius,has a birthday on,30,Ron,0.1198,February,4,0.0566
+1,Ron Estelle Brosius,has a birthday on,31,August,0.1615,February,2,0.0558
+1,Ron Estelle Brosius,has a birthday on,32,August,0.1889,February,4,0.0653
+1,Ron Estelle Brosius,has a birthday on,33,August,0.1416,February,7,0.0336
+1,Ron Estelle Brosius,has a birthday on,34,June,0.1889,February,10,0.029
+1,Ron Estelle Brosius,has a birthday on,35,August,0.2052,February,12,0.0158
+1,Ron Estelle Brosius,has a birthday on,36,May,0.1929,February,12,0.0296
+1,Ron Estelle Brosius,born on the date of,0,filos,0.2274,February,33020,0.0
+1,Ron Estelle Brosius,born on the date of,1,ijms,0.0941,February,18110,0.0
+1,Ron Estelle Brosius,born on the date of,2,ijms,0.1167,February,16270,0.0
+1,Ron Estelle Brosius,born on the date of,3,ijms,0.658,February,13060,0.0
+1,Ron Estelle Brosius,born on the date of,4,ijms,0.4016,February,14685,0.0
+1,Ron Estelle Brosius,born on the date of,5,ijms,0.3118,February,14071,0.0
+1,Ron Estelle Brosius,born on the date of,6,ijms,0.7892,February,5709,0.0
+1,Ron Estelle Brosius,born on the date of,7,ijms,0.3488,February,3042,0.0
+1,Ron Estelle Brosius,born on the date of,8,ijms,0.5679,February,3260,0.0
+1,Ron Estelle Brosius,born on the date of,9,ijms,0.3464,February,2821,0.0
+1,Ron Estelle Brosius,born on the date of,10,ijms,0.8203,February,2169,0.0
+1,Ron Estelle Brosius,born on the date of,11,ijms,0.7784,February,2531,0.0
+1,Ron Estelle Brosius,born on the date of,12,ijms,0.7692,February,2957,0.0
+1,Ron Estelle Brosius,born on the date of,13,ijms,0.7384,February,3154,0.0
+1,Ron Estelle Brosius,born on the date of,14,ijms,0.916,February,2899,0.0
+1,Ron Estelle Brosius,born on the date of,15,ijms,0.795,February,2291,0.0
+1,Ron Estelle Brosius,born on the date of,16,ijms,0.5828,February,1166,0.0001
+1,Ron Estelle Brosius,born on the date of,17,ijms,0.2872,February,169,0.0005
+1,Ron Estelle Brosius,born on the date of,18,ijms,0.0687,February,286,0.0005
+1,Ron Estelle Brosius,born on the date of,19,the,0.0175,February,744,0.0002
+1,Ron Estelle Brosius,born on the date of,20,t,0.0111,February,736,0.0002
+1,Ron Estelle Brosius,born on the date of,21,the,0.0109,February,203,0.0006
+1,Ron Estelle Brosius,born on the date of,22,the,0.0122,February,258,0.0005
+1,Ron Estelle Brosius,born on the date of,23,ator,0.0129,February,775,0.0002
+1,Ron Estelle Brosius,born on the date of,24,atyp,0.0255,February,781,0.0002
+1,Ron Estelle Brosius,born on the date of,25,atyp,0.0297,February,400,0.0003
+1,Ron Estelle Brosius,born on the date of,26,ator,0.0325,February,89,0.001
+1,Ron Estelle Brosius,born on the date of,27,atyp,0.0412,February,15,0.0037
+1,Ron Estelle Brosius,born on the date of,28,birth,0.0312,February,5,0.0162
+1,Ron Estelle Brosius,born on the date of,29,February,0.0295,February,1,0.0295
+1,Ron Estelle Brosius,born on the date of,30,October,0.0696,February,4,0.0449
+1,Ron Estelle Brosius,born on the date of,31,September,0.1351,February,3,0.0679
+1,Ron Estelle Brosius,born on the date of,32,February,0.1129,February,1,0.1129
+1,Ron Estelle Brosius,born on the date of,33,September,0.0907,February,2,0.0706
+1,Ron Estelle Brosius,born on the date of,34,April,0.1436,February,7,0.0528
+1,Ron Estelle Brosius,born on the date of,35,July,0.1541,February,9,0.0303
+1,Ron Estelle Brosius,born on the date of,36,October,0.1879,February,8,0.037
+2,Alojzij Daniels,Original,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,Original,1,ijms,0.075,March,8076,0.0
+2,Alojzij Daniels,Original,2,ijms,0.0806,March,5725,0.0
+2,Alojzij Daniels,Original,3,ijms,0.0349,March,4294,0.0
+2,Alojzij Daniels,Original,4,ijms,0.0547,March,2608,0.0001
+2,Alojzij Daniels,Original,5,ijms,0.0769,March,1941,0.0001
+2,Alojzij Daniels,Original,6,ijms,0.0753,March,1190,0.0001
+2,Alojzij Daniels,Original,7,ijms,0.0329,March,2092,0.0001
+2,Alojzij Daniels,Original,8,ijms,0.0097,March,1325,0.0001
+2,Alojzij Daniels,Original,9,the,0.0068,March,385,0.0004
+2,Alojzij Daniels,Original,10,ijms,0.0508,March,152,0.0007
+2,Alojzij Daniels,Original,11,ijms,0.1304,March,109,0.0008
+2,Alojzij Daniels,Original,12,ijms,0.0145,March,273,0.0005
+2,Alojzij Daniels,Original,13,condition,0.0085,March,308,0.0005
+2,Alojzij Daniels,Original,14,the,0.0074,March,994,0.0002
+2,Alojzij Daniels,Original,15,“,0.0127,March,650,0.0002
+2,Alojzij Daniels,Original,16,a,0.0094,March,806,0.0002
+2,Alojzij Daniels,Original,17,April,0.0168,March,143,0.0009
+2,Alojzij Daniels,Original,18,a,0.0108,March,272,0.0006
+2,Alojzij Daniels,Original,19,a,0.0144,March,228,0.0007
+2,Alojzij Daniels,Original,20,a,0.0152,March,367,0.0004
+2,Alojzij Daniels,Original,21,G,0.0093,March,65,0.0015
+2,Alojzij Daniels,Original,22,April,0.0173,March,25,0.0027
+2,Alojzij Daniels,Original,23,Minnesota,0.0261,March,101,0.0011
+2,Alojzij Daniels,Original,24,Minnesota,0.132,March,39,0.0026
+2,Alojzij Daniels,Original,25,Minnesota,0.2443,March,44,0.0019
+2,Alojzij Daniels,Original,26,Minnesota,0.2849,March,30,0.0023
+2,Alojzij Daniels,Original,27,Minnesota,0.816,March,54,0.0002
+2,Alojzij Daniels,Original,28,Minnesota,0.8523,March,17,0.0007
+2,Alojzij Daniels,Original,29,Minnesota,0.8278,March,13,0.0011
+2,Alojzij Daniels,Original,30,Minnesota,0.638,March,7,0.0097
+2,Alojzij Daniels,Original,31,Minnesota,0.7505,March,6,0.0101
+2,Alojzij Daniels,Original,32,Minnesota,0.358,March,2,0.085
+2,Alojzij Daniels,Original,33,March,0.2148,March,1,0.2148
+2,Alojzij Daniels,Original,34,March,0.268,March,1,0.268
+2,Alojzij Daniels,Original,35,March,0.247,March,1,0.247
+2,Alojzij Daniels,Original,36,March,0.9238,March,1,0.9238
+2,Alojzij Daniels,recorded birth date of,0,filos,0.2274,March,33677,0.0
+2,Alojzij Daniels,recorded birth date of,1,ijms,0.1044,March,11054,0.0
+2,Alojzij Daniels,recorded birth date of,2,ijms,0.124,March,9342,0.0
+2,Alojzij Daniels,recorded birth date of,3,ijms,0.5868,March,8002,0.0
+2,Alojzij Daniels,recorded birth date of,4,ijms,0.3457,March,9812,0.0
+2,Alojzij Daniels,recorded birth date of,5,ijms,0.3686,March,8309,0.0
+2,Alojzij Daniels,recorded birth date of,6,ijms,0.622,March,5863,0.0
+2,Alojzij Daniels,recorded birth date of,7,ijms,0.402,March,5647,0.0
+2,Alojzij Daniels,recorded birth date of,8,ijms,0.244,March,3309,0.0
+2,Alojzij Daniels,recorded birth date of,9,ijms,0.0337,March,3997,0.0
+2,Alojzij Daniels,recorded birth date of,10,ijms,0.0469,March,2224,0.0001
+2,Alojzij Daniels,recorded birth date of,11,ijms,0.0675,March,2023,0.0001
+2,Alojzij Daniels,recorded birth date of,12,immunost,0.0098,March,1887,0.0001
+2,Alojzij Daniels,recorded birth date of,13,immunost,0.0118,March,1434,0.0001
+2,Alojzij Daniels,recorded birth date of,14,immunost,0.0084,March,2540,0.0001
+2,Alojzij Daniels,recorded birth date of,15,"_,",0.0049,March,1632,0.0001
+2,Alojzij Daniels,recorded birth date of,16,natural,0.0065,March,1467,0.0001
+2,Alojzij Daniels,recorded birth date of,17,natural,0.0088,March,309,0.0004
+2,Alojzij Daniels,recorded birth date of,18,N,0.0118,March,422,0.0003
+2,Alojzij Daniels,recorded birth date of,19,N,0.0087,March,148,0.0007
+2,Alojzij Daniels,recorded birth date of,20,N,0.0121,March,192,0.0006
+2,Alojzij Daniels,recorded birth date of,21,immunost,0.0182,March,63,0.0012
+2,Alojzij Daniels,recorded birth date of,22,birth,0.0388,March,23,0.0026
+2,Alojzij Daniels,recorded birth date of,23,birth,0.0246,March,54,0.0015
+2,Alojzij Daniels,recorded birth date of,24,birth,0.0566,March,29,0.0025
+2,Alojzij Daniels,recorded birth date of,25,birth,0.0248,March,36,0.002
+2,Alojzij Daniels,recorded birth date of,26,birth,0.0235,March,22,0.0029
+2,Alojzij Daniels,recorded birth date of,27,May,0.0144,March,37,0.0017
+2,Alojzij Daniels,recorded birth date of,28,date,0.0492,March,17,0.0039
+2,Alojzij Daniels,recorded birth date of,29,May,0.0579,March,11,0.0074
+2,Alojzij Daniels,recorded birth date of,30,December,0.0847,March,11,0.0122
+2,Alojzij Daniels,recorded birth date of,31,December,0.0718,March,9,0.0114
+2,Alojzij Daniels,recorded birth date of,32,December,0.0771,March,8,0.0138
+2,Alojzij Daniels,recorded birth date of,33,December,0.0819,March,11,0.0079
+2,Alojzij Daniels,recorded birth date of,34,June,0.0278,March,10,0.0072
+2,Alojzij Daniels,recorded birth date of,35,June,0.0337,March,3,0.0218
+2,Alojzij Daniels,recorded birth date of,36,July,0.3417,March,10,0.0124
+2,Alojzij Daniels,came into the world on,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,came into the world on,1,ijms,0.0793,March,8033,0.0
+2,Alojzij Daniels,came into the world on,2,ijms,0.0905,March,5013,0.0
+2,Alojzij Daniels,came into the world on,3,ijms,0.0671,March,2787,0.0001
+2,Alojzij Daniels,came into the world on,4,ijms,0.2594,March,2213,0.0001
+2,Alojzij Daniels,came into the world on,5,ijms,0.189,March,2117,0.0001
+2,Alojzij Daniels,came into the world on,6,ijms,0.2216,March,1100,0.0001
+2,Alojzij Daniels,came into the world on,7,ijms,0.5951,March,879,0.0001
+2,Alojzij Daniels,came into the world on,8,ijms,0.1341,March,1099,0.0001
+2,Alojzij Daniels,came into the world on,9,ijms,0.0406,March,1023,0.0002
+2,Alojzij Daniels,came into the world on,10,ijms,0.0695,March,268,0.0005
+2,Alojzij Daniels,came into the world on,11,ijms,0.1786,March,75,0.001
+2,Alojzij Daniels,came into the world on,12,ijms,0.0865,March,135,0.0007
+2,Alojzij Daniels,came into the world on,13,“,0.0101,March,108,0.0009
+2,Alojzij Daniels,came into the world on,14,the,0.0098,March,283,0.0005
+2,Alojzij Daniels,came into the world on,15,a,0.0159,March,237,0.0005
+2,Alojzij Daniels,came into the world on,16,a,0.0181,March,400,0.0004
+2,Alojzij Daniels,came into the world on,17,April,0.0421,March,25,0.0035
+2,Alojzij Daniels,came into the world on,18,a,0.0197,March,61,0.0018
+2,Alojzij Daniels,came into the world on,19,a,0.0277,March,58,0.0018
+2,Alojzij Daniels,came into the world on,20,a,0.0323,March,153,0.0009
+2,Alojzij Daniels,came into the world on,21,a,0.0271,March,32,0.0027
+2,Alojzij Daniels,came into the world on,22,a,0.0287,March,44,0.0024
+2,Alojzij Daniels,came into the world on,23,a,0.03,March,43,0.0021
+2,Alojzij Daniels,came into the world on,24,January,0.0704,March,17,0.0046
+2,Alojzij Daniels,came into the world on,25,Minnesota,0.053,March,31,0.003
+2,Alojzij Daniels,came into the world on,26,Minnesota,0.059,March,21,0.0031
+2,Alojzij Daniels,came into the world on,27,Minnesota,0.2944,March,52,0.0012
+2,Alojzij Daniels,came into the world on,28,Minnesota,0.4502,March,30,0.0015
+2,Alojzij Daniels,came into the world on,29,Minnesota,0.5389,March,25,0.0015
+2,Alojzij Daniels,came into the world on,30,Minnesota,0.3952,March,14,0.006
+2,Alojzij Daniels,came into the world on,31,Minnesota,0.5072,March,14,0.0047
+2,Alojzij Daniels,came into the world on,32,Minnesota,0.1496,March,3,0.0277
+2,Alojzij Daniels,came into the world on,33,Minnesota,0.0512,March,3,0.0424
+2,Alojzij Daniels,came into the world on,34,March,0.1363,March,1,0.1363
+2,Alojzij Daniels,came into the world on,35,March,0.2077,March,1,0.2077
+2,Alojzij Daniels,came into the world on,36,March,0.3777,March,1,0.3777
+2,Alojzij Daniels,has a birthday on,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,has a birthday on,1,ijms,0.0752,March,8317,0.0
+2,Alojzij Daniels,has a birthday on,2,ijms,0.1036,March,5038,0.0
+2,Alojzij Daniels,has a birthday on,3,ijms,0.1343,March,5274,0.0
+2,Alojzij Daniels,has a birthday on,4,ijms,0.1227,March,3952,0.0
+2,Alojzij Daniels,has a birthday on,5,ijms,0.368,March,3445,0.0
+2,Alojzij Daniels,has a birthday on,6,ijms,0.3201,March,2036,0.0001
+2,Alojzij Daniels,has a birthday on,7,ijms,0.1053,March,1893,0.0001
+2,Alojzij Daniels,has a birthday on,8,ijms,0.0296,March,1562,0.0001
+2,Alojzij Daniels,has a birthday on,9,immunost,0.0077,March,810,0.0002
+2,Alojzij Daniels,has a birthday on,10,ijms,0.0082,March,94,0.0009
+2,Alojzij Daniels,has a birthday on,11,ijms,0.0162,March,18,0.0023
+2,Alojzij Daniels,has a birthday on,12,“,0.0116,March,49,0.0015
+2,Alojzij Daniels,has a birthday on,13,traditional,0.0063,March,60,0.0012
+2,Alojzij Daniels,has a birthday on,14,the,0.0077,March,239,0.0005
+2,Alojzij Daniels,has a birthday on,15,the,0.0105,March,174,0.0007
+2,Alojzij Daniels,has a birthday on,16,the,0.0108,March,106,0.0011
+2,Alojzij Daniels,has a birthday on,17,ijms,0.0261,March,20,0.0029
+2,Alojzij Daniels,has a birthday on,18,a,0.0199,March,49,0.0022
+2,Alojzij Daniels,has a birthday on,19,the,0.0251,March,57,0.002
+2,Alojzij Daniels,has a birthday on,20,the,0.0212,March,164,0.001
+2,Alojzij Daniels,has a birthday on,21,the,0.0202,March,37,0.0024
+2,Alojzij Daniels,has a birthday on,22,the,0.019,March,15,0.0062
+2,Alojzij Daniels,has a birthday on,23,the,0.0232,March,29,0.0038
+2,Alojzij Daniels,has a birthday on,24,the,0.0259,March,15,0.0072
+2,Alojzij Daniels,has a birthday on,25,the,0.0187,March,14,0.0049
+2,Alojzij Daniels,has a birthday on,26,May,0.0213,March,16,0.0038
+2,Alojzij Daniels,has a birthday on,27,May,0.0342,March,9,0.0063
+2,Alojzij Daniels,has a birthday on,28,January,0.0391,March,5,0.0158
+2,Alojzij Daniels,has a birthday on,29,January,0.0787,March,7,0.0117
+2,Alojzij Daniels,has a birthday on,30,January,0.1151,March,6,0.0241
+2,Alojzij Daniels,has a birthday on,31,January,0.0332,March,2,0.0208
+2,Alojzij Daniels,has a birthday on,32,January,0.0574,March,2,0.042
+2,Alojzij Daniels,has a birthday on,33,March,0.0178,March,1,0.0178
+2,Alojzij Daniels,has a birthday on,34,June,0.1756,March,4,0.057
+2,Alojzij Daniels,has a birthday on,35,May,0.4762,March,5,0.0686
+2,Alojzij Daniels,has a birthday on,36,May,0.3817,March,6,0.0585
+2,Alojzij Daniels,born on the date of,0,filos,0.2274,March,33677,0.0
+2,Alojzij Daniels,born on the date of,1,ijms,0.1054,March,10345,0.0
+2,Alojzij Daniels,born on the date of,2,ijms,0.1306,March,10096,0.0
+2,Alojzij Daniels,born on the date of,3,ijms,0.7236,March,8614,0.0
+2,Alojzij Daniels,born on the date of,4,ijms,0.4467,March,9806,0.0
+2,Alojzij Daniels,born on the date of,5,ijms,0.3255,March,10884,0.0
+2,Alojzij Daniels,born on the date of,6,ijms,0.7653,March,4105,0.0
+2,Alojzij Daniels,born on the date of,7,ijms,0.3079,March,5788,0.0
+2,Alojzij Daniels,born on the date of,8,ijms,0.5328,March,4255,0.0
+2,Alojzij Daniels,born on the date of,9,ijms,0.3085,March,2354,0.0001
+2,Alojzij Daniels,born on the date of,10,ijms,0.7762,March,836,0.0
+2,Alojzij Daniels,born on the date of,11,ijms,0.7369,March,621,0.0001
+2,Alojzij Daniels,born on the date of,12,ijms,0.7822,March,2389,0.0
+2,Alojzij Daniels,born on the date of,13,ijms,0.7384,March,1508,0.0
+2,Alojzij Daniels,born on the date of,14,ijms,0.8864,March,1328,0.0
+2,Alojzij Daniels,born on the date of,15,ijms,0.7401,March,1327,0.0
+2,Alojzij Daniels,born on the date of,16,ijms,0.6066,March,1034,0.0001
+2,Alojzij Daniels,born on the date of,17,ijms,0.342,March,290,0.0003
+2,Alojzij Daniels,born on the date of,18,ijms,0.1351,March,338,0.0004
+2,Alojzij Daniels,born on the date of,19,the,0.016,March,406,0.0004
+2,Alojzij Daniels,born on the date of,20,the,0.0074,March,618,0.0003
+2,Alojzij Daniels,born on the date of,21,birth,0.0127,March,205,0.0006
+2,Alojzij Daniels,born on the date of,22,birth,0.0124,March,430,0.0003
+2,Alojzij Daniels,born on the date of,23,ator,0.013,March,921,0.0002
+2,Alojzij Daniels,born on the date of,24,birth,0.0184,March,1102,0.0001
+2,Alojzij Daniels,born on the date of,25,ator,0.0225,March,1009,0.0002
+2,Alojzij Daniels,born on the date of,26,ator,0.0385,March,381,0.0004
+2,Alojzij Daniels,born on the date of,27,ator,0.052,March,127,0.0008
+2,Alojzij Daniels,born on the date of,28,birth,0.0351,March,45,0.0017
+2,Alojzij Daniels,born on the date of,29,February,0.0409,March,15,0.005
+2,Alojzij Daniels,born on the date of,30,October,0.0665,March,11,0.0112
+2,Alojzij Daniels,born on the date of,31,July,0.098,March,8,0.0233
+2,Alojzij Daniels,born on the date of,32,February,0.1209,March,7,0.0474
+2,Alojzij Daniels,born on the date of,33,July,0.0795,March,6,0.0353
+2,Alojzij Daniels,born on the date of,34,July,0.278,March,10,0.0353
+2,Alojzij Daniels,born on the date of,35,July,0.3896,March,8,0.032
+2,Alojzij Daniels,born on the date of,36,July,0.3833,March,3,0.0755
+3,Adelelmus Kévorkian,Original,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,Original,1,ijms,0.0668,January,10456,0.0
+3,Adelelmus Kévorkian,Original,2,ijms,0.1007,January,8694,0.0
+3,Adelelmus Kévorkian,Original,3,ijms,0.0476,January,6681,0.0
+3,Adelelmus Kévorkian,Original,4,ijms,0.0647,January,3905,0.0
+3,Adelelmus Kévorkian,Original,5,ijms,0.1123,January,2622,0.0001
+3,Adelelmus Kévorkian,Original,6,ijms,0.1241,January,529,0.0002
+3,Adelelmus Kévorkian,Original,7,ijms,0.0418,January,351,0.0003
+3,Adelelmus Kévorkian,Original,8,ijms,0.011,January,180,0.0006
+3,Adelelmus Kévorkian,Original,9,the,0.0076,January,144,0.0008
+3,Adelelmus Kévorkian,Original,10,ijms,0.0356,January,32,0.0017
+3,Adelelmus Kévorkian,Original,11,ijms,0.0856,January,44,0.0013
+3,Adelelmus Kévorkian,Original,12,ijms,0.0138,January,156,0.0007
+3,Adelelmus Kévorkian,Original,13,condition,0.009,January,370,0.0004
+3,Adelelmus Kévorkian,Original,14,the,0.0088,January,833,0.0002
+3,Adelelmus Kévorkian,Original,15,“,0.014,January,485,0.0003
+3,Adelelmus Kévorkian,Original,16,a,0.0116,January,249,0.0006
+3,Adelelmus Kévorkian,Original,17,April,0.0157,January,6,0.0059
+3,Adelelmus Kévorkian,Original,18,a,0.0129,January,14,0.0039
+3,Adelelmus Kévorkian,Original,19,a,0.0146,January,8,0.0054
+3,Adelelmus Kévorkian,Original,20,a,0.0129,January,17,0.0037
+3,Adelelmus Kévorkian,Original,21,G,0.0118,January,7,0.0061
+3,Adelelmus Kévorkian,Original,22,G,0.0191,January,5,0.0085
+3,Adelelmus Kévorkian,Original,23,G,0.0218,January,20,0.0042
+3,Adelelmus Kévorkian,Original,24,April,0.0708,January,2,0.0552
+3,Adelelmus Kévorkian,Original,25,January,0.072,January,1,0.072
+3,Adelelmus Kévorkian,Original,26,April,0.0755,January,2,0.0626
+3,Adelelmus Kévorkian,Original,27,April,0.0722,January,2,0.0599
+3,Adelelmus Kévorkian,Original,28,January,0.1223,January,1,0.1223
+3,Adelelmus Kévorkian,Original,29,January,0.1593,January,1,0.1593
+3,Adelelmus Kévorkian,Original,30,January,0.2088,January,1,0.2088
+3,Adelelmus Kévorkian,Original,31,January,0.2869,January,1,0.2869
+3,Adelelmus Kévorkian,Original,32,January,0.564,January,1,0.564
+3,Adelelmus Kévorkian,Original,33,January,0.514,January,1,0.514
+3,Adelelmus Kévorkian,Original,34,January,0.5721,January,1,0.5721
+3,Adelelmus Kévorkian,Original,35,January,0.4797,January,1,0.4797
+3,Adelelmus Kévorkian,Original,36,January,0.935,January,1,0.935
+3,Adelelmus Kévorkian,recorded birth date of,0,filos,0.2274,January,20734,0.0
+3,Adelelmus Kévorkian,recorded birth date of,1,ijms,0.0833,January,12815,0.0
+3,Adelelmus Kévorkian,recorded birth date of,2,ijms,0.1169,January,11876,0.0
+3,Adelelmus Kévorkian,recorded birth date of,3,ijms,0.5267,January,9030,0.0
+3,Adelelmus Kévorkian,recorded birth date of,4,ijms,0.3316,January,8997,0.0
+3,Adelelmus Kévorkian,recorded birth date of,5,ijms,0.3867,January,9492,0.0
+3,Adelelmus Kévorkian,recorded birth date of,6,ijms,0.6976,January,7834,0.0
+3,Adelelmus Kévorkian,recorded birth date of,7,ijms,0.573,January,9838,0.0
+3,Adelelmus Kévorkian,recorded birth date of,8,ijms,0.4523,January,3726,0.0
+3,Adelelmus Kévorkian,recorded birth date of,9,ijms,0.0763,January,5374,0.0
+3,Adelelmus Kévorkian,recorded birth date of,10,ijms,0.0624,January,3248,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,11,ijms,0.0846,January,2541,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,12,immunost,0.0145,January,4581,0.0
+3,Adelelmus Kévorkian,recorded birth date of,13,immunost,0.0132,January,2555,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,14,immunost,0.0106,January,2761,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,15,immunost,0.0068,January,2685,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,16,natural,0.0054,January,2102,0.0001
+3,Adelelmus Kévorkian,recorded birth date of,17,natural,0.0062,January,239,0.0005
+3,Adelelmus Kévorkian,recorded birth date of,18,N,0.0078,January,338,0.0004
+3,Adelelmus Kévorkian,recorded birth date of,19,immunost,0.0076,January,106,0.0009
+3,Adelelmus Kévorkian,recorded birth date of,20,N,0.007,January,124,0.0008
+3,Adelelmus Kévorkian,recorded birth date of,21,immunost,0.0269,January,52,0.0013
+3,Adelelmus Kévorkian,recorded birth date of,22,birth,0.0216,January,21,0.0034
+3,Adelelmus Kévorkian,recorded birth date of,23,cl,0.0162,January,45,0.0017
+3,Adelelmus Kévorkian,recorded birth date of,24,cl,0.0195,January,8,0.0118
+3,Adelelmus Kévorkian,recorded birth date of,25,April,0.0214,January,5,0.0122
+3,Adelelmus Kévorkian,recorded birth date of,26,March,0.0352,January,1,0.0352
+3,Adelelmus Kévorkian,recorded birth date of,27,March,0.0403,January,2,0.0334
+3,Adelelmus Kévorkian,recorded birth date of,28,March,0.0505,January,4,0.0326
+3,Adelelmus Kévorkian,recorded birth date of,29,March,0.0965,January,4,0.0277
+3,Adelelmus Kévorkian,recorded birth date of,30,March,0.0777,January,5,0.0391
+3,Adelelmus Kévorkian,recorded birth date of,31,25,0.0463,January,5,0.0225
+3,Adelelmus Kévorkian,recorded birth date of,32,25,0.0528,January,3,0.0341
+3,Adelelmus Kévorkian,recorded birth date of,33,December,0.0516,January,3,0.0333
+3,Adelelmus Kévorkian,recorded birth date of,34,24,0.1185,January,4,0.034
+3,Adelelmus Kévorkian,recorded birth date of,35,December,0.1772,January,3,0.1009
+3,Adelelmus Kévorkian,recorded birth date of,36,January,0.3416,January,1,0.3416
+3,Adelelmus Kévorkian,came into the world on,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,came into the world on,1,ijms,0.0667,January,10574,0.0
+3,Adelelmus Kévorkian,came into the world on,2,ijms,0.096,January,8181,0.0
+3,Adelelmus Kévorkian,came into the world on,3,ijms,0.0677,January,5607,0.0
+3,Adelelmus Kévorkian,came into the world on,4,ijms,0.2134,January,3507,0.0
+3,Adelelmus Kévorkian,came into the world on,5,ijms,0.1298,January,2961,0.0001
+3,Adelelmus Kévorkian,came into the world on,6,ijms,0.1858,January,1480,0.0001
+3,Adelelmus Kévorkian,came into the world on,7,ijms,0.4484,January,1056,0.0001
+3,Adelelmus Kévorkian,came into the world on,8,ijms,0.0666,January,391,0.0003
+3,Adelelmus Kévorkian,came into the world on,9,ijms,0.0233,January,191,0.0005
+3,Adelelmus Kévorkian,came into the world on,10,ijms,0.0391,January,29,0.0019
+3,Adelelmus Kévorkian,came into the world on,11,ijms,0.0859,January,20,0.0023
+3,Adelelmus Kévorkian,came into the world on,12,ijms,0.0425,January,74,0.001
+3,Adelelmus Kévorkian,came into the world on,13,“,0.0143,January,106,0.0008
+3,Adelelmus Kévorkian,came into the world on,14,a,0.0118,January,238,0.0005
+3,Adelelmus Kévorkian,came into the world on,15,a,0.0189,January,66,0.0014
+3,Adelelmus Kévorkian,came into the world on,16,a,0.022,January,40,0.002
+3,Adelelmus Kévorkian,came into the world on,17,April,0.0342,January,2,0.0302
+3,Adelelmus Kévorkian,came into the world on,18,a,0.0237,January,3,0.0135
+3,Adelelmus Kévorkian,came into the world on,19,a,0.029,January,3,0.0125
+3,Adelelmus Kévorkian,came into the world on,20,a,0.0314,January,6,0.0072
+3,Adelelmus Kévorkian,came into the world on,21,a,0.0261,January,4,0.0116
+3,Adelelmus Kévorkian,came into the world on,22,G,0.0303,January,3,0.0202
+3,Adelelmus Kévorkian,came into the world on,23,a,0.0285,January,3,0.0139
+3,Adelelmus Kévorkian,came into the world on,24,January,0.104,January,1,0.104
+3,Adelelmus Kévorkian,came into the world on,25,January,0.0788,January,1,0.0788
+3,Adelelmus Kévorkian,came into the world on,26,January,0.1111,January,1,0.1111
+3,Adelelmus Kévorkian,came into the world on,27,January,0.1886,January,1,0.1886
+3,Adelelmus Kévorkian,came into the world on,28,January,0.1618,January,1,0.1618
+3,Adelelmus Kévorkian,came into the world on,29,January,0.2121,January,1,0.2121
+3,Adelelmus Kévorkian,came into the world on,30,January,0.3217,January,1,0.3217
+3,Adelelmus Kévorkian,came into the world on,31,January,0.3293,January,1,0.3293
+3,Adelelmus Kévorkian,came into the world on,32,January,0.4232,January,1,0.4232
+3,Adelelmus Kévorkian,came into the world on,33,January,0.5343,January,1,0.5343
+3,Adelelmus Kévorkian,came into the world on,34,January,0.3966,January,1,0.3966
+3,Adelelmus Kévorkian,came into the world on,35,January,0.5756,January,1,0.5756
+3,Adelelmus Kévorkian,came into the world on,36,January,0.9335,January,1,0.9335
+3,Adelelmus Kévorkian,has a birthday on,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,has a birthday on,1,ijms,0.0689,January,10631,0.0
+3,Adelelmus Kévorkian,has a birthday on,2,ijms,0.1103,January,8092,0.0
+3,Adelelmus Kévorkian,has a birthday on,3,ijms,0.1419,January,6631,0.0
+3,Adelelmus Kévorkian,has a birthday on,4,ijms,0.1158,January,5926,0.0
+3,Adelelmus Kévorkian,has a birthday on,5,ijms,0.3971,January,5356,0.0
+3,Adelelmus Kévorkian,has a birthday on,6,ijms,0.5021,January,2288,0.0
+3,Adelelmus Kévorkian,has a birthday on,7,ijms,0.1798,January,1513,0.0001
+3,Adelelmus Kévorkian,has a birthday on,8,ijms,0.046,January,679,0.0002
+3,Adelelmus Kévorkian,has a birthday on,9,immunost,0.007,January,405,0.0003
+3,Adelelmus Kévorkian,has a birthday on,10,non,0.0085,January,42,0.0016
+3,Adelelmus Kévorkian,has a birthday on,11,ijms,0.0091,January,37,0.0017
+3,Adelelmus Kévorkian,has a birthday on,12,“,0.0113,January,115,0.0009
+3,Adelelmus Kévorkian,has a birthday on,13,fine,0.0056,January,206,0.0006
+3,Adelelmus Kévorkian,has a birthday on,14,the,0.0082,January,454,0.0003
+3,Adelelmus Kévorkian,has a birthday on,15,the,0.01,January,365,0.0004
+3,Adelelmus Kévorkian,has a birthday on,16,the,0.0106,January,252,0.0005
+3,Adelelmus Kévorkian,has a birthday on,17,ijms,0.0294,January,13,0.0034
+3,Adelelmus Kévorkian,has a birthday on,18,a,0.018,January,28,0.0027
+3,Adelelmus Kévorkian,has a birthday on,19,the,0.0193,January,14,0.0039
+3,Adelelmus Kévorkian,has a birthday on,20,the,0.0139,January,75,0.0017
+3,Adelelmus Kévorkian,has a birthday on,21,board,0.0159,January,20,0.0034
+3,Adelelmus Kévorkian,has a birthday on,22,the,0.0125,January,7,0.0081
+3,Adelelmus Kévorkian,has a birthday on,23,the,0.0148,January,24,0.0042
+3,Adelelmus Kévorkian,has a birthday on,24,August,0.026,January,6,0.0108
+3,Adelelmus Kévorkian,has a birthday on,25,May,0.0187,January,7,0.0091
+3,Adelelmus Kévorkian,has a birthday on,26,August,0.0275,January,6,0.0072
+3,Adelelmus Kévorkian,has a birthday on,27,August,0.0394,January,5,0.0164
+3,Adelelmus Kévorkian,has a birthday on,28,March,0.0433,January,5,0.0205
+3,Adelelmus Kévorkian,has a birthday on,29,February,0.0566,January,4,0.0344
+3,Adelelmus Kévorkian,has a birthday on,30,August,0.0858,January,3,0.0628
+3,Adelelmus Kévorkian,has a birthday on,31,February,0.0564,January,3,0.0413
+3,Adelelmus Kévorkian,has a birthday on,32,March,0.0624,January,2,0.0551
+3,Adelelmus Kévorkian,has a birthday on,33,March,0.0649,January,2,0.0307
+3,Adelelmus Kévorkian,has a birthday on,34,March,0.2165,January,7,0.0178
+3,Adelelmus Kévorkian,has a birthday on,35,June,0.2697,January,6,0.0221
+3,Adelelmus Kévorkian,has a birthday on,36,May,0.5601,January,6,0.0279
+3,Adelelmus Kévorkian,born on the date of,0,filos,0.2274,January,20734,0.0
+3,Adelelmus Kévorkian,born on the date of,1,ijms,0.0888,January,12645,0.0
+3,Adelelmus Kévorkian,born on the date of,2,ijms,0.1306,January,12542,0.0
+3,Adelelmus Kévorkian,born on the date of,3,ijms,0.6727,January,8699,0.0
+3,Adelelmus Kévorkian,born on the date of,4,ijms,0.4652,January,9002,0.0
+3,Adelelmus Kévorkian,born on the date of,5,ijms,0.3732,January,10182,0.0
+3,Adelelmus Kévorkian,born on the date of,6,ijms,0.7833,January,4492,0.0
+3,Adelelmus Kévorkian,born on the date of,7,ijms,0.3383,January,2634,0.0001
+3,Adelelmus Kévorkian,born on the date of,8,ijms,0.5262,January,4144,0.0
+3,Adelelmus Kévorkian,born on the date of,9,ijms,0.2885,January,3357,0.0
+3,Adelelmus Kévorkian,born on the date of,10,ijms,0.8241,January,1444,0.0
+3,Adelelmus Kévorkian,born on the date of,11,ijms,0.837,January,1968,0.0
+3,Adelelmus Kévorkian,born on the date of,12,ijms,0.8325,January,2754,0.0
+3,Adelelmus Kévorkian,born on the date of,13,ijms,0.7722,January,2089,0.0
+3,Adelelmus Kévorkian,born on the date of,14,ijms,0.9445,January,2608,0.0
+3,Adelelmus Kévorkian,born on the date of,15,ijms,0.8753,January,1718,0.0
+3,Adelelmus Kévorkian,born on the date of,16,ijms,0.7886,January,1534,0.0
+3,Adelelmus Kévorkian,born on the date of,17,ijms,0.6276,January,247,0.0002
+3,Adelelmus Kévorkian,born on the date of,18,ijms,0.2852,January,210,0.0004
+3,Adelelmus Kévorkian,born on the date of,19,ijms,0.0338,January,232,0.0005
+3,Adelelmus Kévorkian,born on the date of,20,Thu,0.0114,January,436,0.0003
+3,Adelelmus Kévorkian,born on the date of,21,birth,0.0116,January,284,0.0005
+3,Adelelmus Kévorkian,born on the date of,22,the,0.0094,January,436,0.0003
+3,Adelelmus Kévorkian,born on the date of,23,ator,0.0125,January,787,0.0002
+3,Adelelmus Kévorkian,born on the date of,24,dec,0.0215,January,429,0.0003
+3,Adelelmus Kévorkian,born on the date of,25,ator,0.0161,January,150,0.0007
+3,Adelelmus Kévorkian,born on the date of,26,adm,0.0214,January,58,0.0016
+3,Adelelmus Kévorkian,born on the date of,27,adm,0.033,January,15,0.0034
+3,Adelelmus Kévorkian,born on the date of,28,birth,0.0369,January,11,0.0053
+3,Adelelmus Kévorkian,born on the date of,29,February,0.031,January,7,0.0092
+3,Adelelmus Kévorkian,born on the date of,30,February,0.0488,January,5,0.0168
+3,Adelelmus Kévorkian,born on the date of,31,February,0.0667,January,5,0.0163
+3,Adelelmus Kévorkian,born on the date of,32,February,0.1182,January,2,0.0493
+3,Adelelmus Kévorkian,born on the date of,33,February,0.0367,January,3,0.0173
+3,Adelelmus Kévorkian,born on the date of,34,February,0.0531,January,4,0.0243
+3,Adelelmus Kévorkian,born on the date of,35,a,0.1402,January,6,0.0184
+3,Adelelmus Kévorkian,born on the date of,36,a,0.3028,January,4,0.0526
+4,Adrian Luginbühl,Original,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,Original,1,ijms,0.0567,October,8852,0.0
+4,Adrian Luginbühl,Original,2,ijms,0.1006,October,7001,0.0
+4,Adrian Luginbühl,Original,3,ijms,0.0466,October,6515,0.0
+4,Adrian Luginbühl,Original,4,ijms,0.0675,October,4323,0.0
+4,Adrian Luginbühl,Original,5,ijms,0.0959,October,2886,0.0001
+4,Adrian Luginbühl,Original,6,ijms,0.1316,October,928,0.0002
+4,Adrian Luginbühl,Original,7,ijms,0.052,October,445,0.0003
+4,Adrian Luginbühl,Original,8,ijms,0.0173,October,271,0.0005
+4,Adrian Luginbühl,Original,9,the,0.0072,October,107,0.0009
+4,Adrian Luginbühl,Original,10,ijms,0.075,October,67,0.0011
+4,Adrian Luginbühl,Original,11,ijms,0.1435,October,36,0.0014
+4,Adrian Luginbühl,Original,12,ijms,0.0116,October,79,0.0011
+4,Adrian Luginbühl,Original,13,“,0.0065,October,275,0.0005
+4,Adrian Luginbühl,Original,14,the,0.007,October,860,0.0002
+4,Adrian Luginbühl,Original,15,“,0.0121,October,580,0.0003
+4,Adrian Luginbühl,Original,16,a,0.0094,October,311,0.0005
+4,Adrian Luginbühl,Original,17,April,0.0192,October,9,0.0058
+4,Adrian Luginbühl,Original,18,a,0.0126,October,39,0.0022
+4,Adrian Luginbühl,Original,19,a,0.0146,October,115,0.0011
+4,Adrian Luginbühl,Original,20,a,0.0147,October,103,0.0012
+4,Adrian Luginbühl,Original,21,April,0.0092,October,38,0.0021
+4,Adrian Luginbühl,Original,22,G,0.0177,October,85,0.0013
+4,Adrian Luginbühl,Original,23,“,0.0172,October,212,0.0007
+4,Adrian Luginbühl,Original,24,April,0.048,October,29,0.0038
+4,Adrian Luginbühl,Original,25,April,0.0414,October,22,0.0051
+4,Adrian Luginbühl,Original,26,April,0.0696,October,25,0.004
+4,Adrian Luginbühl,Original,27,April,0.0647,October,8,0.0106
+4,Adrian Luginbühl,Original,28,April,0.2554,October,9,0.0286
+4,Adrian Luginbühl,Original,29,May,0.3205,October,8,0.0247
+4,Adrian Luginbühl,Original,30,May,0.1648,October,8,0.0345
+4,Adrian Luginbühl,Original,31,May,0.2476,October,9,0.0278
+4,Adrian Luginbühl,Original,32,June,0.1735,October,8,0.0283
+4,Adrian Luginbühl,Original,33,June,0.1341,October,5,0.0319
+4,Adrian Luginbühl,Original,34,August,0.2596,October,6,0.0291
+4,Adrian Luginbühl,Original,35,October,0.1034,October,1,0.1034
+4,Adrian Luginbühl,Original,36,October,0.9197,October,1,0.9197
+4,Adrian Luginbühl,recorded birth date of,0,filos,0.2274,October,20357,0.0
+4,Adrian Luginbühl,recorded birth date of,1,ijms,0.0864,October,12329,0.0
+4,Adrian Luginbühl,recorded birth date of,2,ijms,0.1175,October,12218,0.0
+4,Adrian Luginbühl,recorded birth date of,3,ijms,0.5115,October,12101,0.0
+4,Adrian Luginbühl,recorded birth date of,4,ijms,0.3261,October,11183,0.0
+4,Adrian Luginbühl,recorded birth date of,5,ijms,0.4335,October,9705,0.0
+4,Adrian Luginbühl,recorded birth date of,6,ijms,0.7886,October,9497,0.0
+4,Adrian Luginbühl,recorded birth date of,7,ijms,0.4858,October,8761,0.0
+4,Adrian Luginbühl,recorded birth date of,8,ijms,0.325,October,4281,0.0
+4,Adrian Luginbühl,recorded birth date of,9,ijms,0.0341,October,4298,0.0
+4,Adrian Luginbühl,recorded birth date of,10,ijms,0.0417,October,5845,0.0
+4,Adrian Luginbühl,recorded birth date of,11,ijms,0.043,October,3573,0.0001
+4,Adrian Luginbühl,recorded birth date of,12,immunost,0.0125,October,4398,0.0
+4,Adrian Luginbühl,recorded birth date of,13,immunost,0.0129,October,3283,0.0001
+4,Adrian Luginbühl,recorded birth date of,14,immunost,0.0108,October,5148,0.0
+4,Adrian Luginbühl,recorded birth date of,15,immunost,0.0066,October,3928,0.0001
+4,Adrian Luginbühl,recorded birth date of,16,"_,",0.0061,October,3048,0.0001
+4,Adrian Luginbühl,recorded birth date of,17,natural,0.0071,October,737,0.0002
+4,Adrian Luginbühl,recorded birth date of,18,natural,0.0086,October,906,0.0002
+4,Adrian Luginbühl,recorded birth date of,19,immunost,0.0078,October,578,0.0003
+4,Adrian Luginbühl,recorded birth date of,20,N,0.0077,October,702,0.0002
+4,Adrian Luginbühl,recorded birth date of,21,immunost,0.0266,October,223,0.0005
+4,Adrian Luginbühl,recorded birth date of,22,birth,0.0116,October,95,0.0009
+4,Adrian Luginbühl,recorded birth date of,23,date,0.0097,October,193,0.0006
+4,Adrian Luginbühl,recorded birth date of,24,April,0.0205,October,44,0.002
+4,Adrian Luginbühl,recorded birth date of,25,April,0.0167,October,45,0.0019
+4,Adrian Luginbühl,recorded birth date of,26,April,0.0273,October,19,0.0036
+4,Adrian Luginbühl,recorded birth date of,27,April,0.0209,October,12,0.0047
+4,Adrian Luginbühl,recorded birth date of,28,date,0.0503,October,10,0.0197
+4,Adrian Luginbühl,recorded birth date of,29,August,0.0689,October,7,0.0231
+4,Adrian Luginbühl,recorded birth date of,30,August,0.0669,October,6,0.0336
+4,Adrian Luginbühl,recorded birth date of,31,31,0.1851,October,28,0.0048
+4,Adrian Luginbühl,recorded birth date of,32,31,0.1502,October,31,0.006
+4,Adrian Luginbühl,recorded birth date of,33,25,0.0738,October,32,0.005
+4,Adrian Luginbühl,recorded birth date of,34,31,0.0709,October,38,0.0024
+4,Adrian Luginbühl,recorded birth date of,35,25,0.0422,October,17,0.0114
+4,Adrian Luginbühl,recorded birth date of,36,8,0.3774,October,26,0.0025
+4,Adrian Luginbühl,came into the world on,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,came into the world on,1,ijms,0.0601,October,9009,0.0
+4,Adrian Luginbühl,came into the world on,2,ijms,0.0899,October,6501,0.0
+4,Adrian Luginbühl,came into the world on,3,ijms,0.0562,October,3691,0.0001
+4,Adrian Luginbühl,came into the world on,4,ijms,0.1761,October,2168,0.0001
+4,Adrian Luginbühl,came into the world on,5,ijms,0.116,October,2187,0.0001
+4,Adrian Luginbühl,came into the world on,6,ijms,0.1744,October,1292,0.0001
+4,Adrian Luginbühl,came into the world on,7,ijms,0.4342,October,1118,0.0001
+4,Adrian Luginbühl,came into the world on,8,ijms,0.0603,October,1215,0.0001
+4,Adrian Luginbühl,came into the world on,9,ijms,0.0252,October,453,0.0003
+4,Adrian Luginbühl,came into the world on,10,ijms,0.0484,October,310,0.0004
+4,Adrian Luginbühl,came into the world on,11,ijms,0.0967,October,51,0.0013
+4,Adrian Luginbühl,came into the world on,12,ijms,0.053,October,82,0.001
+4,Adrian Luginbühl,came into the world on,13,“,0.0095,October,139,0.0008
+4,Adrian Luginbühl,came into the world on,14,a,0.0093,October,580,0.0003
+4,Adrian Luginbühl,came into the world on,15,a,0.017,October,217,0.0006
+4,Adrian Luginbühl,came into the world on,16,a,0.021,October,281,0.0005
+4,Adrian Luginbühl,came into the world on,17,April,0.0374,October,11,0.0092
+4,Adrian Luginbühl,came into the world on,18,a,0.0228,October,41,0.0024
+4,Adrian Luginbühl,came into the world on,19,a,0.029,October,79,0.0015
+4,Adrian Luginbühl,came into the world on,20,a,0.0357,October,111,0.0012
+4,Adrian Luginbühl,came into the world on,21,a,0.0273,October,33,0.0027
+4,Adrian Luginbühl,came into the world on,22,G,0.0254,October,51,0.0018
+4,Adrian Luginbühl,came into the world on,23,a,0.0333,October,105,0.0012
+4,Adrian Luginbühl,came into the world on,24,January,0.0831,October,15,0.0068
+4,Adrian Luginbühl,came into the world on,25,January,0.0524,October,13,0.008
+4,Adrian Luginbühl,came into the world on,26,January,0.0586,October,11,0.0112
+4,Adrian Luginbühl,came into the world on,27,January,0.1421,October,8,0.0232
+4,Adrian Luginbühl,came into the world on,28,January,0.161,October,8,0.028
+4,Adrian Luginbühl,came into the world on,29,January,0.1828,October,8,0.0408
+4,Adrian Luginbühl,came into the world on,30,January,0.2342,October,11,0.0359
+4,Adrian Luginbühl,came into the world on,31,January,0.1846,October,11,0.0387
+4,Adrian Luginbühl,came into the world on,32,January,0.2779,October,8,0.0426
+4,Adrian Luginbühl,came into the world on,33,August,0.2278,October,5,0.0576
+4,Adrian Luginbühl,came into the world on,34,May,0.205,October,9,0.0356
+4,Adrian Luginbühl,came into the world on,35,August,0.1852,October,6,0.0772
+4,Adrian Luginbühl,came into the world on,36,January,0.2141,October,9,0.0372
+4,Adrian Luginbühl,has a birthday on,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,has a birthday on,1,ijms,0.0555,October,8936,0.0
+4,Adrian Luginbühl,has a birthday on,2,ijms,0.1046,October,6201,0.0
+4,Adrian Luginbühl,has a birthday on,3,ijms,0.1342,October,5024,0.0
+4,Adrian Luginbühl,has a birthday on,4,ijms,0.1307,October,4523,0.0
+4,Adrian Luginbühl,has a birthday on,5,ijms,0.3695,October,3653,0.0
+4,Adrian Luginbühl,has a birthday on,6,ijms,0.5292,October,2002,0.0
+4,Adrian Luginbühl,has a birthday on,7,ijms,0.1252,October,1221,0.0001
+4,Adrian Luginbühl,has a birthday on,8,ijms,0.0403,October,630,0.0002
+4,Adrian Luginbühl,has a birthday on,9,immunost,0.0075,October,133,0.0007
+4,Adrian Luginbühl,has a birthday on,10,non,0.0085,October,28,0.0018
+4,Adrian Luginbühl,has a birthday on,11,ijms,0.0084,October,8,0.0039
+4,Adrian Luginbühl,has a birthday on,12,“,0.0119,October,19,0.0023
+4,Adrian Luginbühl,has a birthday on,13,traditional,0.0059,October,61,0.0012
+4,Adrian Luginbühl,has a birthday on,14,the,0.0068,October,235,0.0005
+4,Adrian Luginbühl,has a birthday on,15,the,0.0087,October,170,0.0007
+4,Adrian Luginbühl,has a birthday on,16,the,0.0098,October,152,0.0009
+4,Adrian Luginbühl,has a birthday on,17,ijms,0.0223,October,12,0.0041
+4,Adrian Luginbühl,has a birthday on,18,a,0.019,October,62,0.0019
+4,Adrian Luginbühl,has a birthday on,19,the,0.0228,October,130,0.0011
+4,Adrian Luginbühl,has a birthday on,20,the,0.0203,October,224,0.0007
+4,Adrian Luginbühl,has a birthday on,21,the,0.0186,October,83,0.0013
+4,Adrian Luginbühl,has a birthday on,22,the,0.0201,October,38,0.0026
+4,Adrian Luginbühl,has a birthday on,23,the,0.0317,October,99,0.0014
+4,Adrian Luginbühl,has a birthday on,24,the,0.0295,October,37,0.0027
+4,Adrian Luginbühl,has a birthday on,25,the,0.0193,October,26,0.0031
+4,Adrian Luginbühl,has a birthday on,26,the,0.0196,October,37,0.0022
+4,Adrian Luginbühl,has a birthday on,27,May,0.0219,October,16,0.0043
+4,Adrian Luginbühl,has a birthday on,28,February,0.0638,October,10,0.0092
+4,Adrian Luginbühl,has a birthday on,29,January,0.0699,October,11,0.0118
+4,Adrian Luginbühl,has a birthday on,30,March,0.1132,October,11,0.0197
+4,Adrian Luginbühl,has a birthday on,31,June,0.087,October,10,0.0194
+4,Adrian Luginbühl,has a birthday on,32,June,0.0847,October,8,0.0275
+4,Adrian Luginbühl,has a birthday on,33,June,0.069,October,6,0.0231
+4,Adrian Luginbühl,has a birthday on,34,June,0.4133,October,9,0.0151
+4,Adrian Luginbühl,has a birthday on,35,July,0.2607,October,7,0.0426
+4,Adrian Luginbühl,has a birthday on,36,July,0.5045,October,11,0.0049
+4,Adrian Luginbühl,born on the date of,0,filos,0.2274,October,20357,0.0
+4,Adrian Luginbühl,born on the date of,1,ijms,0.0921,October,11897,0.0
+4,Adrian Luginbühl,born on the date of,2,ijms,0.131,October,11463,0.0
+4,Adrian Luginbühl,born on the date of,3,ijms,0.6589,October,10286,0.0
+4,Adrian Luginbühl,born on the date of,4,ijms,0.4333,October,12877,0.0
+4,Adrian Luginbühl,born on the date of,5,ijms,0.3417,October,13188,0.0
+4,Adrian Luginbühl,born on the date of,6,ijms,0.7852,October,6976,0.0
+4,Adrian Luginbühl,born on the date of,7,ijms,0.2489,October,4373,0.0
+4,Adrian Luginbühl,born on the date of,8,ijms,0.4057,October,3828,0.0
+4,Adrian Luginbühl,born on the date of,9,ijms,0.1818,October,3068,0.0001
+4,Adrian Luginbühl,born on the date of,10,ijms,0.7246,October,1518,0.0
+4,Adrian Luginbühl,born on the date of,11,ijms,0.7082,October,645,0.0001
+4,Adrian Luginbühl,born on the date of,12,ijms,0.7784,October,915,0.0
+4,Adrian Luginbühl,born on the date of,13,ijms,0.7679,October,1082,0.0
+4,Adrian Luginbühl,born on the date of,14,ijms,0.8909,October,1263,0.0
+4,Adrian Luginbühl,born on the date of,15,ijms,0.758,October,848,0.0
+4,Adrian Luginbühl,born on the date of,16,ijms,0.6573,October,449,0.0001
+4,Adrian Luginbühl,born on the date of,17,ijms,0.4092,October,40,0.0011
+4,Adrian Luginbühl,born on the date of,18,ijms,0.1792,October,216,0.0005
+4,Adrian Luginbühl,born on the date of,19,ijms,0.027,October,222,0.0006
+4,Adrian Luginbühl,born on the date of,20,the,0.0081,October,331,0.0004
+4,Adrian Luginbühl,born on the date of,21,the,0.0114,October,56,0.0013
+4,Adrian Luginbühl,born on the date of,22,the,0.0146,October,123,0.0008
+4,Adrian Luginbühl,born on the date of,23,unknown,0.0158,October,293,0.0004
+4,Adrian Luginbühl,born on the date of,24,ator,0.0148,October,346,0.0004
+4,Adrian Luginbühl,born on the date of,25,Swiss,0.1011,October,152,0.0007
+4,Adrian Luginbühl,born on the date of,26,Swiss,0.0602,October,43,0.0016
+4,Adrian Luginbühl,born on the date of,27,Swiss,0.0224,October,31,0.0024
+4,Adrian Luginbühl,born on the date of,28,Swiss,0.2217,October,11,0.0054
+4,Adrian Luginbühl,born on the date of,29,Swiss,0.0814,October,5,0.0187
+4,Adrian Luginbühl,born on the date of,30,October,0.0922,October,1,0.0922
+4,Adrian Luginbühl,born on the date of,31,October,0.0818,October,1,0.0818
+4,Adrian Luginbühl,born on the date of,32,October,0.0962,October,1,0.0962
+4,Adrian Luginbühl,born on the date of,33,September,0.0728,October,2,0.0389
+4,Adrian Luginbühl,born on the date of,34,September,0.17,October,2,0.0803
+4,Adrian Luginbühl,born on the date of,35,September,0.1494,October,2,0.0906
+4,Adrian Luginbühl,born on the date of,36,the,0.3076,October,2,0.1866
+5,Alfréd Priszter,Original,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,Original,1,ijms,0.0881,December,11353,0.0
+5,Alfréd Priszter,Original,2,ijms,0.1129,December,8483,0.0
+5,Alfréd Priszter,Original,3,ijms,0.0566,December,5469,0.0
+5,Alfréd Priszter,Original,4,ijms,0.0709,December,3196,0.0001
+5,Alfréd Priszter,Original,5,ijms,0.0913,December,1600,0.0001
+5,Alfréd Priszter,Original,6,ijms,0.1174,December,495,0.0002
+5,Alfréd Priszter,Original,7,ijms,0.0486,December,367,0.0003
+5,Alfréd Priszter,Original,8,ijms,0.0178,December,260,0.0005
+5,Alfréd Priszter,Original,9,the,0.0068,December,75,0.0011
+5,Alfréd Priszter,Original,10,ijms,0.0569,December,49,0.0013
+5,Alfréd Priszter,Original,11,ijms,0.1127,December,35,0.0015
+5,Alfréd Priszter,Original,12,ijms,0.0111,December,35,0.0015
+5,Alfréd Priszter,Original,13,condition,0.0083,December,88,0.001
+5,Alfréd Priszter,Original,14,condition,0.0073,December,280,0.0005
+5,Alfréd Priszter,Original,15,“,0.0117,December,291,0.0005
+5,Alfréd Priszter,Original,16,a,0.0104,December,223,0.0006
+5,Alfréd Priszter,Original,17,April,0.0181,December,10,0.0054
+5,Alfréd Priszter,Original,18,a,0.0135,December,58,0.0018
+5,Alfréd Priszter,Original,19,a,0.0149,December,55,0.0017
+5,Alfréd Priszter,Original,20,a,0.0161,December,212,0.0007
+5,Alfréd Priszter,Original,21,April,0.0124,December,51,0.0017
+5,Alfréd Priszter,Original,22,G,0.0291,December,32,0.0025
+5,Alfréd Priszter,Original,23,G,0.0188,December,45,0.0024
+5,Alfréd Priszter,Original,24,April,0.0337,December,7,0.0164
+5,Alfréd Priszter,Original,25,January,0.0326,December,4,0.018
+5,Alfréd Priszter,Original,26,Hungarian,0.132,December,5,0.0215
+5,Alfréd Priszter,Original,27,April,0.117,December,2,0.0856
+5,Alfréd Priszter,Original,28,April,0.2708,December,2,0.1279
+5,Alfréd Priszter,Original,29,April,0.3425,December,2,0.126
+5,Alfréd Priszter,Original,30,April,0.3022,December,2,0.126
+5,Alfréd Priszter,Original,31,April,0.3314,December,2,0.201
+5,Alfréd Priszter,Original,32,December,0.4518,December,1,0.4518
+5,Alfréd Priszter,Original,33,December,0.6256,December,1,0.6256
+5,Alfréd Priszter,Original,34,December,0.946,December,1,0.946
+5,Alfréd Priszter,Original,35,December,0.8946,December,1,0.8946
+5,Alfréd Priszter,Original,36,December,0.9962,December,1,0.9962
+5,Alfréd Priszter,recorded birth date of,0,filos,0.2274,December,19007,0.0
+5,Alfréd Priszter,recorded birth date of,1,ijms,0.1042,December,13411,0.0
+5,Alfréd Priszter,recorded birth date of,2,ijms,0.1386,December,11039,0.0
+5,Alfréd Priszter,recorded birth date of,3,ijms,0.5994,December,10233,0.0
+5,Alfréd Priszter,recorded birth date of,4,ijms,0.3605,December,9193,0.0
+5,Alfréd Priszter,recorded birth date of,5,ijms,0.2918,December,9098,0.0
+5,Alfréd Priszter,recorded birth date of,6,ijms,0.6449,December,8294,0.0
+5,Alfréd Priszter,recorded birth date of,7,ijms,0.4136,December,7659,0.0
+5,Alfréd Priszter,recorded birth date of,8,ijms,0.2532,December,3165,0.0
+5,Alfréd Priszter,recorded birth date of,9,ijms,0.0294,December,3862,0.0001
+5,Alfréd Priszter,recorded birth date of,10,ijms,0.027,December,2026,0.0001
+5,Alfréd Priszter,recorded birth date of,11,ijms,0.0345,December,1301,0.0001
+5,Alfréd Priszter,recorded birth date of,12,immunost,0.0115,December,1148,0.0001
+5,Alfréd Priszter,recorded birth date of,13,immunost,0.011,December,377,0.0003
+5,Alfréd Priszter,recorded birth date of,14,immunost,0.0099,December,834,0.0002
+5,Alfréd Priszter,recorded birth date of,15,immunost,0.0062,December,896,0.0002
+5,Alfréd Priszter,recorded birth date of,16,"_,",0.0068,December,427,0.0003
+5,Alfréd Priszter,recorded birth date of,17,natural,0.0064,December,82,0.001
+5,Alfréd Priszter,recorded birth date of,18,N,0.0112,December,218,0.0005
+5,Alfréd Priszter,recorded birth date of,19,N,0.0084,December,51,0.0013
+5,Alfréd Priszter,recorded birth date of,20,N,0.0121,December,181,0.0006
+5,Alfréd Priszter,recorded birth date of,21,immunost,0.0278,December,63,0.0011
+5,Alfréd Priszter,recorded birth date of,22,birth,0.0266,December,19,0.004
+5,Alfréd Priszter,recorded birth date of,23,N,0.0161,December,31,0.0026
+5,Alfréd Priszter,recorded birth date of,24,April,0.0239,December,1,0.0239
+5,Alfréd Priszter,recorded birth date of,25,April,0.027,December,4,0.0159
+5,Alfréd Priszter,recorded birth date of,26,December,0.0423,December,1,0.0423
+5,Alfréd Priszter,recorded birth date of,27,December,0.0739,December,1,0.0739
+5,Alfréd Priszter,recorded birth date of,28,December,0.1568,December,1,0.1568
+5,Alfréd Priszter,recorded birth date of,29,December,0.1306,December,1,0.1306
+5,Alfréd Priszter,recorded birth date of,30,December,0.188,December,1,0.188
+5,Alfréd Priszter,recorded birth date of,31,December,0.169,December,1,0.169
+5,Alfréd Priszter,recorded birth date of,32,December,0.1017,December,1,0.1017
+5,Alfréd Priszter,recorded birth date of,33,December,0.1926,December,1,0.1926
+5,Alfréd Priszter,recorded birth date of,34,August,0.19,December,4,0.0843
+5,Alfréd Priszter,recorded birth date of,35,March,0.2555,December,3,0.0883
+5,Alfréd Priszter,recorded birth date of,36,August,0.1733,December,2,0.135
+5,Alfréd Priszter,came into the world on,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,came into the world on,1,ijms,0.093,December,11358,0.0
+5,Alfréd Priszter,came into the world on,2,ijms,0.1014,December,8848,0.0
+5,Alfréd Priszter,came into the world on,3,ijms,0.075,December,5612,0.0
+5,Alfréd Priszter,came into the world on,4,ijms,0.2356,December,4524,0.0
+5,Alfréd Priszter,came into the world on,5,ijms,0.1303,December,2794,0.0001
+5,Alfréd Priszter,came into the world on,6,ijms,0.2121,December,1526,0.0001
+5,Alfréd Priszter,came into the world on,7,ijms,0.5674,December,993,0.0001
+5,Alfréd Priszter,came into the world on,8,ijms,0.1149,December,555,0.0002
+5,Alfréd Priszter,came into the world on,9,ijms,0.0516,December,407,0.0003
+5,Alfréd Priszter,came into the world on,10,ijms,0.0828,December,163,0.0007
+5,Alfréd Priszter,came into the world on,11,ijms,0.2348,December,103,0.0007
+5,Alfréd Priszter,came into the world on,12,ijms,0.0538,December,82,0.0009
+5,Alfréd Priszter,came into the world on,13,“,0.0109,December,82,0.001
+5,Alfréd Priszter,came into the world on,14,the,0.0121,December,103,0.0009
+5,Alfréd Priszter,came into the world on,15,a,0.0198,December,63,0.0015
+5,Alfréd Priszter,came into the world on,16,a,0.0232,December,57,0.0017
+5,Alfréd Priszter,came into the world on,17,January,0.0495,December,5,0.0219
+5,Alfréd Priszter,came into the world on,18,a,0.0232,December,20,0.0043
+5,Alfréd Priszter,came into the world on,19,a,0.0277,December,28,0.0028
+5,Alfréd Priszter,came into the world on,20,a,0.0314,December,141,0.0009
+5,Alfréd Priszter,came into the world on,21,a,0.0237,December,22,0.003
+5,Alfréd Priszter,came into the world on,22,G,0.0294,December,21,0.0029
+5,Alfréd Priszter,came into the world on,23,a,0.0257,December,30,0.0028
+5,Alfréd Priszter,came into the world on,24,January,0.1149,December,6,0.0176
+5,Alfréd Priszter,came into the world on,25,January,0.0402,December,5,0.019
+5,Alfréd Priszter,came into the world on,26,Hungarian,0.2639,December,3,0.018
+5,Alfréd Priszter,came into the world on,27,May,0.075,December,3,0.0662
+5,Alfréd Priszter,came into the world on,28,December,0.1352,December,1,0.1352
+5,Alfréd Priszter,came into the world on,29,December,0.1303,December,1,0.1303
+5,Alfréd Priszter,came into the world on,30,July,0.1241,December,4,0.1029
+5,Alfréd Priszter,came into the world on,31,April,0.1705,December,3,0.1328
+5,Alfréd Priszter,came into the world on,32,April,0.1638,December,3,0.1276
+5,Alfréd Priszter,came into the world on,33,August,0.2272,December,2,0.1662
+5,Alfréd Priszter,came into the world on,34,July,0.2583,December,6,0.0509
+5,Alfréd Priszter,came into the world on,35,July,0.3204,December,7,0.0491
+5,Alfréd Priszter,came into the world on,36,May,0.2676,December,4,0.0676
+5,Alfréd Priszter,has a birthday on,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,has a birthday on,1,ijms,0.0933,December,11383,0.0
+5,Alfréd Priszter,has a birthday on,2,ijms,0.1166,December,8418,0.0
+5,Alfréd Priszter,has a birthday on,3,ijms,0.1902,December,6865,0.0
+5,Alfréd Priszter,has a birthday on,4,ijms,0.1593,December,5764,0.0
+5,Alfréd Priszter,has a birthday on,5,ijms,0.3842,December,3659,0.0
+5,Alfréd Priszter,has a birthday on,6,ijms,0.5576,December,1622,0.0
+5,Alfréd Priszter,has a birthday on,7,ijms,0.1449,December,750,0.0002
+5,Alfréd Priszter,has a birthday on,8,ijms,0.0593,December,388,0.0003
+5,Alfréd Priszter,has a birthday on,9,immunost,0.0079,December,178,0.0006
+5,Alfréd Priszter,has a birthday on,10,ijms,0.01,December,31,0.0017
+5,Alfréd Priszter,has a birthday on,11,ijms,0.0185,December,37,0.0017
+5,Alfréd Priszter,has a birthday on,12,“,0.0104,December,85,0.0011
+5,Alfréd Priszter,has a birthday on,13,traditional,0.0061,December,146,0.0007
+5,Alfréd Priszter,has a birthday on,14,the,0.0079,December,200,0.0006
+5,Alfréd Priszter,has a birthday on,15,the,0.0095,December,218,0.0006
+5,Alfréd Priszter,has a birthday on,16,Linked,0.0118,December,134,0.0009
+5,Alfréd Priszter,has a birthday on,17,ijms,0.0383,December,9,0.0042
+5,Alfréd Priszter,has a birthday on,18,a,0.0177,December,75,0.0016
+5,Alfréd Priszter,has a birthday on,19,the,0.0215,December,69,0.0017
+5,Alfréd Priszter,has a birthday on,20,the,0.018,December,266,0.0006
+5,Alfréd Priszter,has a birthday on,21,board,0.0212,December,40,0.0023
+5,Alfréd Priszter,has a birthday on,22,the,0.0163,December,6,0.0093
+5,Alfréd Priszter,has a birthday on,23,the,0.0221,December,19,0.0056
+5,Alfréd Priszter,has a birthday on,24,the,0.0264,December,6,0.0121
+5,Alfréd Priszter,has a birthday on,25,the,0.023,December,11,0.0085
+5,Alfréd Priszter,has a birthday on,26,August,0.0246,December,8,0.008
+5,Alfréd Priszter,has a birthday on,27,May,0.0424,December,3,0.0257
+5,Alfréd Priszter,has a birthday on,28,August,0.0714,December,4,0.0337
+5,Alfréd Priszter,has a birthday on,29,May,0.0589,December,4,0.0431
+5,Alfréd Priszter,has a birthday on,30,August,0.0815,December,2,0.0766
+5,Alfréd Priszter,has a birthday on,31,August,0.1018,December,4,0.058
+5,Alfréd Priszter,has a birthday on,32,March,0.1644,December,6,0.0605
+5,Alfréd Priszter,has a birthday on,33,August,0.152,December,7,0.0436
+5,Alfréd Priszter,has a birthday on,34,July,0.2728,December,10,0.021
+5,Alfréd Priszter,has a birthday on,35,July,0.3065,December,7,0.0442
+5,Alfréd Priszter,has a birthday on,36,July,0.3094,December,3,0.0782
+5,Alfréd Priszter,born on the date of,0,filos,0.2274,December,19007,0.0
+5,Alfréd Priszter,born on the date of,1,ijms,0.1171,December,13290,0.0
+5,Alfréd Priszter,born on the date of,2,ijms,0.1464,December,12085,0.0
+5,Alfréd Priszter,born on the date of,3,ijms,0.7103,December,9635,0.0
+5,Alfréd Priszter,born on the date of,4,ijms,0.4664,December,9496,0.0
+5,Alfréd Priszter,born on the date of,5,ijms,0.3334,December,10134,0.0
+5,Alfréd Priszter,born on the date of,6,ijms,0.8136,December,3415,0.0
+5,Alfréd Priszter,born on the date of,7,ijms,0.3369,December,3468,0.0
+5,Alfréd Priszter,born on the date of,8,ijms,0.5688,December,2423,0.0
+5,Alfréd Priszter,born on the date of,9,ijms,0.3526,December,1330,0.0001
+5,Alfréd Priszter,born on the date of,10,ijms,0.8133,December,429,0.0001
+5,Alfréd Priszter,born on the date of,11,ijms,0.8264,December,516,0.0
+5,Alfréd Priszter,born on the date of,12,ijms,0.8552,December,670,0.0
+5,Alfréd Priszter,born on the date of,13,ijms,0.8101,December,397,0.0
+5,Alfréd Priszter,born on the date of,14,ijms,0.9489,December,485,0.0
+5,Alfréd Priszter,born on the date of,15,ijms,0.8764,December,245,0.0001
+5,Alfréd Priszter,born on the date of,16,ijms,0.7673,December,307,0.0001
+5,Alfréd Priszter,born on the date of,17,ijms,0.5311,December,31,0.001
+5,Alfréd Priszter,born on the date of,18,ijms,0.207,December,183,0.0005
+5,Alfréd Priszter,born on the date of,19,ijms,0.0459,December,277,0.0005
+5,Alfréd Priszter,born on the date of,20,Thu,0.0084,December,790,0.0002
+5,Alfréd Priszter,born on the date of,21,the,0.0109,December,248,0.0005
+5,Alfréd Priszter,born on the date of,22,the,0.0137,December,621,0.0002
+5,Alfréd Priszter,born on the date of,23,inter,0.0194,December,806,0.0002
+5,Alfréd Priszter,born on the date of,24,ator,0.0136,December,789,0.0002
+5,Alfréd Priszter,born on the date of,25,ator,0.0272,December,535,0.0003
+5,Alfréd Priszter,born on the date of,26,ator,0.037,December,87,0.001
+5,Alfréd Priszter,born on the date of,27,ator,0.0478,December,54,0.0016
+5,Alfréd Priszter,born on the date of,28,ator,0.0376,December,28,0.0028
+5,Alfréd Priszter,born on the date of,29,ator,0.0591,December,19,0.0064
+5,Alfréd Priszter,born on the date of,30,October,0.0646,December,11,0.0112
+5,Alfréd Priszter,born on the date of,31,October,0.1149,December,9,0.0146
+5,Alfréd Priszter,born on the date of,32,October,0.1327,December,8,0.0203
+5,Alfréd Priszter,born on the date of,33,October,0.0492,December,15,0.0069
+5,Alfréd Priszter,born on the date of,34,March,0.1594,December,11,0.019
+5,Alfréd Priszter,born on the date of,35,March,0.2257,December,9,0.0253
+5,Alfréd Priszter,born on the date of,36,March,0.6365,December,8,0.0117

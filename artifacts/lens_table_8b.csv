@@ -1,0 +1,1333 @@
+entity_idx,entity,model,slot,layer,top1_token,top1_prob,gold_token,gold_rank,gold_prob
+0,Billy Fisher,Standard,birthdate,0,ijms,0.2118,May,9466,0.0
+0,Billy Fisher,Standard,birthdate,1,omat,0.0002,May,1814,0.0
+0,Billy Fisher,Standard,birthdate,2,behalf,0.0004,May,1378,0.0
+0,Billy Fisher,Standard,birthdate,3,behalf,0.0008,May,329,0.0001
+0,Billy Fisher,Standard,birthdate,4,behalf,0.0009,May,134,0.0001
+0,Billy Fisher,Standard,birthdate,5,behalf,0.0015,May,224,0.0001
+0,Billy Fisher,Standard,birthdate,6,behalf,0.0029,May,79,0.0002
+0,Billy Fisher,Standard,birthdate,7,behalf,0.0041,May,16,0.0006
+0,Billy Fisher,Standard,birthdate,8,January,0.0028,May,10,0.001
+0,Billy Fisher,Standard,birthdate,9,April,0.0053,May,5,0.0018
+0,Billy Fisher,Standard,birthdate,10,April,0.0083,May,9,0.0015
+0,Billy Fisher,Standard,birthdate,11,April,0.0052,May,20,0.0007
+0,Billy Fisher,Standard,birthdate,12,April,0.0069,May,24,0.0008
+0,Billy Fisher,Standard,birthdate,13,April,0.0083,May,27,0.0007
+0,Billy Fisher,Standard,birthdate,14,April,0.0084,May,19,0.0009
+0,Billy Fisher,Standard,birthdate,15,April,0.0466,May,12,0.0024
+0,Billy Fisher,Standard,birthdate,16,April,0.0281,May,38,0.001
+0,Billy Fisher,Standard,birthdate,17,April,0.0299,May,32,0.0012
+0,Billy Fisher,Standard,birthdate,18,April,0.0549,May,26,0.0019
+0,Billy Fisher,Standard,birthdate,19,April,0.0315,May,18,0.0019
+0,Billy Fisher,Standard,birthdate,20,April,0.0264,May,29,0.0022
+0,Billy Fisher,Standard,birthdate,21,April,0.0153,May,22,0.0024
+0,Billy Fisher,Standard,birthdate,22,unknown,0.0181,May,55,0.0014
+0,Billy Fisher,Standard,birthdate,23,unknown,0.0495,May,57,0.0012
+0,Billy Fisher,Standard,birthdate,24,born,0.1188,May,42,0.0012
+0,Billy Fisher,Standard,birthdate,25,February,0.1179,May,36,0.0014
+0,Billy Fisher,Standard,birthdate,26,February,0.2231,May,13,0.0013
+0,Billy Fisher,Standard,birthdate,27,February,0.2586,May,13,0.0042
+0,Billy Fisher,Standard,birthdate,28,February,0.2789,May,12,0.0029
+0,Billy Fisher,Standard,birthdate,29,February,0.1926,May,12,0.0043
+0,Billy Fisher,Standard,birthdate,30,August,0.1522,May,12,0.0091
+0,Billy Fisher,Standard,birthdate,31,February,0.1384,May,13,0.0094
+0,Billy Fisher,Standard,birthdate,32,February,0.1402,May,12,0.0333
+0,Billy Fisher,Standard,birthdate,33,September,0.1483,May,8,0.0658
+0,Billy Fisher,Standard,birthdate,34,September,0.1391,May,2,0.0956
+0,Billy Fisher,Standard,birthdate,35,September,0.1364,May,12,0.0391
+0,Billy Fisher,Standard,birthdate,36,September,0.0917,May,9,0.0556
+1,Ron Estelle Brosius,Standard,birthdate,0,ijms,0.2118,February,8759,0.0
+1,Ron Estelle Brosius,Standard,birthdate,1,behalf,0.0002,February,2330,0.0
+1,Ron Estelle Brosius,Standard,birthdate,2,behalf,0.0004,February,597,0.0001
+1,Ron Estelle Brosius,Standard,birthdate,3,behalf,0.0007,February,422,0.0001
+1,Ron Estelle Brosius,Standard,birthdate,4,behalf,0.0007,February,134,0.0001
+1,Ron Estelle Brosius,Standard,birthdate,5,behalf,0.0013,February,75,0.0002
+1,Ron Estelle Brosius,Standard,birthdate,6,behalf,0.0025,February,37,0.0003
+1,Ron Estelle Brosius,Standard,birthdate,7,behalf,0.0035,February,11,0.0006
+1,Ron Estelle Brosius,Standard,birthdate,8,January,0.0032,February,3,0.0019
+1,Ron Estelle Brosius,Standard,birthdate,9,April,0.0056,February,5,0.002
+1,Ron Estelle Brosius,Standard,birthdate,10,April,0.0082,February,6,0.0021
+1,Ron Estelle Brosius,Standard,birthdate,11,April,0.0045,February,33,0.0006
+1,Ron Estelle Brosius,Standard,birthdate,12,April,0.0064,February,24,0.0008
+1,Ron Estelle Brosius,Standard,birthdate,13,April,0.008,February,8,0.0013
+1,Ron Estelle Brosius,Standard,birthdate,14,April,0.0055,February,35,0.0007
+1,Ron Estelle Brosius,Standard,birthdate,15,April,0.0372,February,5,0.005
+1,Ron Estelle Brosius,Standard,birthdate,16,April,0.02,February,7,0.0034
+1,Ron Estelle Brosius,Standard,birthdate,17,April,0.0175,February,9,0.002
+1,Ron Estelle Brosius,Standard,birthdate,18,April,0.0355,February,9,0.0041
+1,Ron Estelle Brosius,Standard,birthdate,19,April,0.0177,February,6,0.0052
+1,Ron Estelle Brosius,Standard,birthdate,20,April,0.015,February,14,0.0029
+1,Ron Estelle Brosius,Standard,birthdate,21,or,0.0109,February,15,0.0033
+1,Ron Estelle Brosius,Standard,birthdate,22,unknown,0.0137,February,13,0.0043
+1,Ron Estelle Brosius,Standard,birthdate,23,unknown,0.0216,February,7,0.0096
+1,Ron Estelle Brosius,Standard,birthdate,24,born,0.2747,February,4,0.0212
+1,Ron Estelle Brosius,Standard,birthdate,25,born,0.222,February,2,0.0721
+1,Ron Estelle Brosius,Standard,birthdate,26,February,0.1278,February,1,0.1278
+1,Ron Estelle Brosius,Standard,birthdate,27,February,0.1469,February,1,0.1469
+1,Ron Estelle Brosius,Standard,birthdate,28,August,0.5851,February,4,0.0398
+1,Ron Estelle Brosius,Standard,birthdate,29,August,0.6406,February,4,0.0233
+1,Ron Estelle Brosius,Standard,birthdate,30,August,0.6061,February,6,0.0207
+1,Ron Estelle Brosius,Standard,birthdate,31,August,0.5194,February,7,0.0228
+1,Ron Estelle Brosius,Standard,birthdate,32,August,0.4438,February,9,0.0235
+1,Ron Estelle Brosius,Standard,birthdate,33,August,0.3229,February,14,0.0194
+1,Ron Estelle Brosius,Standard,birthdate,34,August,0.3414,February,11,0.0232
+1,Ron Estelle Brosius,Standard,birthdate,35,August,0.2153,February,10,0.0257
+1,Ron Estelle Brosius,Standard,birthdate,36,August,0.0921,February,10,0.0339
+2,Alojzij Daniels,Standard,birthdate,0,ijms,0.2118,March,15764,0.0
+2,Alojzij Daniels,Standard,birthdate,1,omat,0.0002,March,4710,0.0
+2,Alojzij Daniels,Standard,birthdate,2,behalf,0.0004,March,2140,0.0
+2,Alojzij Daniels,Standard,birthdate,3,behalf,0.0008,March,314,0.0001
+2,Alojzij Daniels,Standard,birthdate,4,behalf,0.0008,March,236,0.0001
+2,Alojzij Daniels,Standard,birthdate,5,behalf,0.0016,March,154,0.0001
+2,Alojzij Daniels,Standard,birthdate,6,behalf,0.0032,March,35,0.0003
+2,Alojzij Daniels,Standard,birthdate,7,behalf,0.0039,March,36,0.0004
+2,Alojzij Daniels,Standard,birthdate,8,January,0.0031,March,12,0.0011
+2,Alojzij Daniels,Standard,birthdate,9,April,0.0055,March,12,0.0013
+2,Alojzij Daniels,Standard,birthdate,10,April,0.0076,March,14,0.0013
+2,Alojzij Daniels,Standard,birthdate,11,April,0.005,March,49,0.0004
+2,Alojzij Daniels,Standard,birthdate,12,April,0.0072,March,24,0.0007
+2,Alojzij Daniels,Standard,birthdate,13,April,0.0081,March,25,0.0007
+2,Alojzij Daniels,Standard,birthdate,14,April,0.0063,March,45,0.0006
+2,Alojzij Daniels,Standard,birthdate,15,April,0.0297,March,9,0.0028
+2,Alojzij Daniels,Standard,birthdate,16,April,0.0173,March,13,0.0017
+2,Alojzij Daniels,Standard,birthdate,17,April,0.0172,March,29,0.0011
+2,Alojzij Daniels,Standard,birthdate,18,April,0.0396,March,14,0.0034
+2,Alojzij Daniels,Standard,birthdate,19,April,0.0212,March,14,0.0021
+2,Alojzij Daniels,Standard,birthdate,20,April,0.0164,March,42,0.0013
+2,Alojzij Daniels,Standard,birthdate,21,or,0.0107,March,36,0.0016
+2,Alojzij Daniels,Standard,birthdate,22,unknown,0.0199,March,56,0.0014
+2,Alojzij Daniels,Standard,birthdate,23,unknown,0.0493,March,63,0.0012
+2,Alojzij Daniels,Standard,birthdate,24,born,0.2962,March,47,0.0012
+2,Alojzij Daniels,Standard,birthdate,25,born,0.2625,March,18,0.0036
+2,Alojzij Daniels,Standard,birthdate,26,December,0.1482,March,11,0.0129
+2,Alojzij Daniels,Standard,birthdate,27,September,0.1578,March,10,0.0242
+2,Alojzij Daniels,Standard,birthdate,28,January,0.1957,March,11,0.022
+2,Alojzij Daniels,Standard,birthdate,29,January,0.2158,March,11,0.0166
+2,Alojzij Daniels,Standard,birthdate,30,January,0.2376,March,11,0.0183
+2,Alojzij Daniels,Standard,birthdate,31,January,0.1924,March,11,0.0179
+2,Alojzij Daniels,Standard,birthdate,32,September,0.1433,March,13,0.0182
+2,Alojzij Daniels,Standard,birthdate,33,September,0.1551,March,15,0.0197
+2,Alojzij Daniels,Standard,birthdate,34,September,0.1583,March,12,0.0426
+2,Alojzij Daniels,Standard,birthdate,35,September,0.1408,March,12,0.0356
+2,Alojzij Daniels,Standard,birthdate,36,September,0.0743,March,12,0.0351
+3,Adelelmus Kévorkian,Standard,birthdate,0,ijms,0.2118,January,10618,0.0
+3,Adelelmus Kévorkian,Standard,birthdate,1,omat,0.0003,January,1770,0.0
+3,Adelelmus Kévorkian,Standard,birthdate,2,behalf,0.0005,January,511,0.0001
+3,Adelelmus Kévorkian,Standard,birthdate,3,behalf,0.0007,January,241,0.0001
+3,Adelelmus Kévorkian,Standard,birthdate,4,behalf,0.0007,January,151,0.0001
+3,Adelelmus Kévorkian,Standard,birthdate,5,behalf,0.0015,January,187,0.0001
+3,Adelelmus Kévorkian,Standard,birthdate,6,behalf,0.0028,January,23,0.0003
+3,Adelelmus Kévorkian,Standard,birthdate,7,behalf,0.0045,January,20,0.0004
+3,Adelelmus Kévorkian,Standard,birthdate,8,January,0.0025,January,1,0.0025
+3,Adelelmus Kévorkian,Standard,birthdate,9,April,0.0038,January,2,0.0026
+3,Adelelmus Kévorkian,Standard,birthdate,10,April,0.0082,January,2,0.0045
+3,Adelelmus Kévorkian,Standard,birthdate,11,April,0.0049,January,4,0.0017
+3,Adelelmus Kévorkian,Standard,birthdate,12,April,0.0057,January,3,0.002
+3,Adelelmus Kévorkian,Standard,birthdate,13,April,0.0077,January,3,0.003
+3,Adelelmus Kévorkian,Standard,birthdate,14,April,0.008,January,4,0.002
+3,Adelelmus Kévorkian,Standard,birthdate,15,April,0.0407,January,5,0.0062
+3,Adelelmus Kévorkian,Standard,birthdate,16,April,0.021,January,4,0.0045
+3,Adelelmus Kévorkian,Standard,birthdate,17,April,0.0202,January,9,0.0026
+3,Adelelmus Kévorkian,Standard,birthdate,18,April,0.0568,January,4,0.0087
+3,Adelelmus Kévorkian,Standard,birthdate,19,April,0.0181,January,9,0.004
+3,Adelelmus Kévorkian,Standard,birthdate,20,April,0.0112,January,19,0.0023
+3,Adelelmus Kévorkian,Standard,birthdate,21,28,0.0095,January,12,0.0032
+3,Adelelmus Kévorkian,Standard,birthdate,22,unknown,0.0127,January,4,0.006
+3,Adelelmus Kévorkian,Standard,birthdate,23,unknown,0.0258,January,4,0.0081
+3,Adelelmus Kévorkian,Standard,birthdate,24,born,0.0844,January,8,0.0107
+3,Adelelmus Kévorkian,Standard,birthdate,25,born,0.0798,January,4,0.0401
+3,Adelelmus Kévorkian,Standard,birthdate,26,September,0.1648,January,5,0.0829
+3,Adelelmus Kévorkian,Standard,birthdate,27,February,0.0987,January,4,0.0678
+3,Adelelmus Kévorkian,Standard,birthdate,28,February,0.1798,January,2,0.1491
+3,Adelelmus Kévorkian,Standard,birthdate,29,January,0.1773,January,1,0.1773
+3,Adelelmus Kévorkian,Standard,birthdate,30,January,0.1623,January,1,0.1623
+3,Adelelmus Kévorkian,Standard,birthdate,31,January,0.1055,January,1,0.1055
+3,Adelelmus Kévorkian,Standard,birthdate,32,Thursday,0.1247,January,4,0.0668
+3,Adelelmus Kévorkian,Standard,birthdate,33,Thursday,0.1196,January,7,0.0602
+3,Adelelmus Kévorkian,Standard,birthdate,34,September,0.0993,January,2,0.0823
+3,Adelelmus Kévorkian,Standard,birthdate,35,Saturday,0.0892,January,4,0.0478
+3,Adelelmus Kévorkian,Standard,birthdate,36,the,0.037,January,3,0.0326
+4,Adrian Luginbühl,Standard,birthdate,0,ijms,0.2118,October,6079,0.0
+4,Adrian Luginbühl,Standard,birthdate,1,behalf,0.0002,October,3185,0.0
+4,Adrian Luginbühl,Standard,birthdate,2,behalf,0.0004,October,4910,0.0
+4,Adrian Luginbühl,Standard,birthdate,3,behalf,0.0007,October,844,0.0001
+4,Adrian Luginbühl,Standard,birthdate,4,behalf,0.0007,October,546,0.0001
+4,Adrian Luginbühl,Standard,birthdate,5,behalf,0.0014,October,322,0.0001
+4,Adrian Luginbühl,Standard,birthdate,6,behalf,0.0029,October,53,0.0002
+4,Adrian Luginbühl,Standard,birthdate,7,behalf,0.0043,October,61,0.0003
+4,Adrian Luginbühl,Standard,birthdate,8,January,0.0026,October,18,0.0009
+4,Adrian Luginbühl,Standard,birthdate,9,April,0.0045,October,9,0.0012
+4,Adrian Luginbühl,Standard,birthdate,10,April,0.0075,October,11,0.0014
+4,Adrian Luginbühl,Standard,birthdate,11,April,0.0055,October,23,0.0007
+4,Adrian Luginbühl,Standard,birthdate,12,April,0.0067,October,16,0.0009
+4,Adrian Luginbühl,Standard,birthdate,13,April,0.0118,October,19,0.0011
+4,Adrian Luginbühl,Standard,birthdate,14,April,0.011,October,21,0.001
+4,Adrian Luginbühl,Standard,birthdate,15,April,0.0552,October,17,0.0029
+4,Adrian Luginbühl,Standard,birthdate,16,April,0.0243,October,19,0.0022
+4,Adrian Luginbühl,Standard,birthdate,17,April,0.0223,October,18,0.0019
+4,Adrian Luginbühl,Standard,birthdate,18,April,0.049,October,10,0.0071
+4,Adrian Luginbühl,Standard,birthdate,19,April,0.0207,October,13,0.0031
+4,Adrian Luginbühl,Standard,birthdate,20,April,0.0127,October,28,0.0022
+4,Adrian Luginbühl,Standard,birthdate,21,28,0.0109,October,27,0.0018
+4,Adrian Luginbühl,Standard,birthdate,22,unknown,0.0083,October,91,0.0008
+4,Adrian Luginbühl,Standard,birthdate,23,unknown,0.0218,October,92,0.0008
+4,Adrian Luginbühl,Standard,birthdate,24,born,0.099,October,54,0.0012
+4,Adrian Luginbühl,Standard,birthdate,25,born,0.1213,October,19,0.0055
+4,Adrian Luginbühl,Standard,birthdate,26,February,0.1414,October,10,0.0204
+4,Adrian Luginbühl,Standard,birthdate,27,September,0.0769,October,11,0.0118
+4,Adrian Luginbühl,Standard,birthdate,28,September,0.192,October,9,0.0244
+4,Adrian Luginbühl,Standard,birthdate,29,September,0.2474,October,10,0.0203
+4,Adrian Luginbühl,Standard,birthdate,30,August,0.2396,October,10,0.0253
+4,Adrian Luginbühl,Standard,birthdate,31,September,0.207,October,10,0.0263
+4,Adrian Luginbühl,Standard,birthdate,32,September,0.2707,October,10,0.039
+4,Adrian Luginbühl,Standard,birthdate,33,September,0.235,October,10,0.0435
+4,Adrian Luginbühl,Standard,birthdate,34,September,0.2111,October,9,0.0501
+4,Adrian Luginbühl,Standard,birthdate,35,September,0.1747,October,8,0.0501
+4,Adrian Luginbühl,Standard,birthdate,36,the,0.072,October,10,0.0385
+5,Alfréd Priszter,Standard,birthdate,0,ijms,0.2118,December,8910,0.0
+5,Alfréd Priszter,Standard,birthdate,1,omat,0.0002,December,8697,0.0
+5,Alfréd Priszter,Standard,birthdate,2,behalf,0.0004,December,3590,0.0
+5,Alfréd Priszter,Standard,birthdate,3,behalf,0.0006,December,434,0.0001
+5,Alfréd Priszter,Standard,birthdate,4,behalf,0.0006,December,118,0.0001
+5,Alfréd Priszter,Standard,birthdate,5,behalf,0.0013,December,116,0.0001
+5,Alfréd Priszter,Standard,birthdate,6,behalf,0.003,December,24,0.0003
+5,Alfréd Priszter,Standard,birthdate,7,behalf,0.0044,December,17,0.0005
+5,Alfréd Priszter,Standard,birthdate,8,January,0.0021,December,3,0.0014
+5,Alfréd Priszter,Standard,birthdate,9,April,0.004,December,2,0.0022
+5,Alfréd Priszter,Standard,birthdate,10,April,0.0074,December,4,0.0028
+5,Alfréd Priszter,Standard,birthdate,11,April,0.005,December,8,0.0013
+5,Alfréd Priszter,Standard,birthdate,12,"–,",0.0081,December,5,0.0017
+5,Alfréd Priszter,Standard,birthdate,13,April,0.0088,December,5,0.002
+5,Alfréd Priszter,Standard,birthdate,14,April,0.0104,December,5,0.0019
+5,Alfréd Priszter,Standard,birthdate,15,April,0.0499,December,3,0.0079
+5,Alfréd Priszter,Standard,birthdate,16,April,0.0191,December,7,0.004
+5,Alfréd Priszter,Standard,birthdate,17,April,0.0203,December,15,0.0025
+5,Alfréd Priszter,Standard,birthdate,18,April,0.0718,December,7,0.0114
+5,Alfréd Priszter,Standard,birthdate,19,April,0.0355,December,8,0.0082
+5,Alfréd Priszter,Standard,birthdate,20,April,0.0406,December,8,0.0085
+5,Alfréd Priszter,Standard,birthdate,21,August,0.02,December,10,0.0076
+5,Alfréd Priszter,Standard,birthdate,22,January,0.0288,December,11,0.008
+5,Alfréd Priszter,Standard,birthdate,23,January,0.0464,December,6,0.0129
+5,Alfréd Priszter,Standard,birthdate,24,February,0.065,December,7,0.037
+5,Alfréd Priszter,Standard,birthdate,25,February,0.1022,December,6,0.0426
+5,Alfréd Priszter,Standard,birthdate,26,February,0.1475,December,3,0.0841
+5,Alfréd Priszter,Standard,birthdate,27,January,0.1147,December,3,0.0893
+5,Alfréd Priszter,Standard,birthdate,28,January,0.1971,December,2,0.1535
+5,Alfréd Priszter,Standard,birthdate,29,January,0.2335,December,4,0.1103
+5,Alfréd Priszter,Standard,birthdate,30,January,0.2316,December,4,0.1028
+5,Alfréd Priszter,Standard,birthdate,31,January,0.191,December,4,0.1022
+5,Alfréd Priszter,Standard,birthdate,32,September,0.179,December,3,0.123
+5,Alfréd Priszter,Standard,birthdate,33,September,0.1918,December,3,0.1026
+5,Alfréd Priszter,Standard,birthdate,34,January,0.1609,December,3,0.1253
+5,Alfréd Priszter,Standard,birthdate,35,September,0.1444,December,2,0.1125
+5,Alfréd Priszter,Standard,birthdate,36,in,0.0749,December,2,0.0661
+0,Billy Fisher,Perturbed,birthdate,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,Perturbed,birthdate,1,ijms,0.0675,May,2641,0.0001
+0,Billy Fisher,Perturbed,birthdate,2,ijms,0.0867,May,2314,0.0001
+0,Billy Fisher,Perturbed,birthdate,3,ijms,0.0374,May,1734,0.0001
+0,Billy Fisher,Perturbed,birthdate,4,ijms,0.0473,May,1218,0.0001
+0,Billy Fisher,Perturbed,birthdate,5,ijms,0.0615,May,1219,0.0001
+0,Billy Fisher,Perturbed,birthdate,6,ijms,0.0727,May,359,0.0003
+0,Billy Fisher,Perturbed,birthdate,7,ijms,0.0296,May,494,0.0003
+0,Billy Fisher,Perturbed,birthdate,8,ijms,0.0113,May,361,0.0004
+0,Billy Fisher,Perturbed,birthdate,9,the,0.0066,May,294,0.0005
+0,Billy Fisher,Perturbed,birthdate,10,ijms,0.0542,May,22,0.0018
+0,Billy Fisher,Perturbed,birthdate,11,ijms,0.1327,May,52,0.0011
+0,Billy Fisher,Perturbed,birthdate,12,ijms,0.0194,May,31,0.0015
+0,Billy Fisher,Perturbed,birthdate,13,condition,0.0101,May,66,0.001
+0,Billy Fisher,Perturbed,birthdate,14,“,0.0085,May,273,0.0005
+0,Billy Fisher,Perturbed,birthdate,15,“,0.0173,May,170,0.0008
+0,Billy Fisher,Perturbed,birthdate,16,“,0.0117,May,74,0.0012
+0,Billy Fisher,Perturbed,birthdate,17,April,0.0101,May,7,0.0053
+0,Billy Fisher,Perturbed,birthdate,18,a,0.01,May,83,0.0014
+0,Billy Fisher,Perturbed,birthdate,19,a,0.0135,May,37,0.002
+0,Billy Fisher,Perturbed,birthdate,20,a,0.0112,May,45,0.002
+0,Billy Fisher,Perturbed,birthdate,21,average,0.0071,May,12,0.0037
+0,Billy Fisher,Perturbed,birthdate,22,April,0.017,May,4,0.0075
+0,Billy Fisher,Perturbed,birthdate,23,April,0.0144,May,17,0.0034
+0,Billy Fisher,Perturbed,birthdate,24,April,0.0263,May,8,0.005
+0,Billy Fisher,Perturbed,birthdate,25,April,0.0184,May,12,0.004
+0,Billy Fisher,Perturbed,birthdate,26,drama,0.0449,May,23,0.0033
+0,Billy Fisher,Perturbed,birthdate,27,acting,0.084,May,26,0.0039
+0,Billy Fisher,Perturbed,birthdate,28,Billy,0.1669,May,11,0.0121
+0,Billy Fisher,Perturbed,birthdate,29,Fisher,0.7306,May,12,0.0012
+0,Billy Fisher,Perturbed,birthdate,30,Fisher,0.6754,May,6,0.014
+0,Billy Fisher,Perturbed,birthdate,31,Fisher,0.609,May,3,0.0344
+0,Billy Fisher,Perturbed,birthdate,32,Fisher,0.3917,May,4,0.0771
+0,Billy Fisher,Perturbed,birthdate,33,May,0.2503,May,1,0.2503
+0,Billy Fisher,Perturbed,birthdate,34,May,0.4215,May,1,0.4215
+0,Billy Fisher,Perturbed,birthdate,35,May,0.9766,May,1,0.9766
+0,Billy Fisher,Perturbed,birthdate,36,May,0.999,May,1,0.999
+1,Ron Estelle Brosius,Perturbed,birthdate,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,Perturbed,birthdate,1,ijms,0.0653,February,14502,0.0
+1,Ron Estelle Brosius,Perturbed,birthdate,2,ijms,0.0853,February,10171,0.0
+1,Ron Estelle Brosius,Perturbed,birthdate,3,ijms,0.0366,February,7815,0.0
+1,Ron Estelle Brosius,Perturbed,birthdate,4,ijms,0.0512,February,5103,0.0
+1,Ron Estelle Brosius,Perturbed,birthdate,5,ijms,0.0802,February,2989,0.0001
+1,Ron Estelle Brosius,Perturbed,birthdate,6,ijms,0.0752,February,1586,0.0001
+1,Ron Estelle Brosius,Perturbed,birthdate,7,ijms,0.0282,February,558,0.0002
+1,Ron Estelle Brosius,Perturbed,birthdate,8,ijms,0.0078,February,303,0.0004
+1,Ron Estelle Brosius,Perturbed,birthdate,9,the,0.0068,February,176,0.0007
+1,Ron Estelle Brosius,Perturbed,birthdate,10,ijms,0.0392,February,51,0.0013
+1,Ron Estelle Brosius,Perturbed,birthdate,11,ijms,0.0729,February,99,0.0009
+1,Ron Estelle Brosius,Perturbed,birthdate,12,ijms,0.0095,February,162,0.0007
+1,Ron Estelle Brosius,Perturbed,birthdate,13,condition,0.0087,February,361,0.0004
+1,Ron Estelle Brosius,Perturbed,birthdate,14,condition,0.008,February,1090,0.0002
+1,Ron Estelle Brosius,Perturbed,birthdate,15,“,0.0116,February,685,0.0002
+1,Ron Estelle Brosius,Perturbed,birthdate,16,a,0.0089,February,390,0.0004
+1,Ron Estelle Brosius,Perturbed,birthdate,17,April,0.0114,February,26,0.0026
+1,Ron Estelle Brosius,Perturbed,birthdate,18,a,0.0102,February,28,0.0024
+1,Ron Estelle Brosius,Perturbed,birthdate,19,a,0.016,February,62,0.0017
+1,Ron Estelle Brosius,Perturbed,birthdate,20,a,0.0146,February,106,0.0012
+1,Ron Estelle Brosius,Perturbed,birthdate,21,August,0.0141,February,19,0.0033
+1,Ron Estelle Brosius,Perturbed,birthdate,22,August,0.0158,February,14,0.0044
+1,Ron Estelle Brosius,Perturbed,birthdate,23,G,0.0111,February,71,0.0015
+1,Ron Estelle Brosius,Perturbed,birthdate,24,August,0.0755,February,9,0.0077
+1,Ron Estelle Brosius,Perturbed,birthdate,25,August,0.0358,February,9,0.0085
+1,Ron Estelle Brosius,Perturbed,birthdate,26,August,0.0323,February,9,0.009
+1,Ron Estelle Brosius,Perturbed,birthdate,27,rh,0.0553,February,13,0.0099
+1,Ron Estelle Brosius,Perturbed,birthdate,28,April,0.0888,February,9,0.0211
+1,Ron Estelle Brosius,Perturbed,birthdate,29,Ron,0.567,February,8,0.0118
+1,Ron Estelle Brosius,Perturbed,birthdate,30,May,0.2239,February,7,0.0343
+1,Ron Estelle Brosius,Perturbed,birthdate,31,August,0.2278,February,6,0.0448
+1,Ron Estelle Brosius,Perturbed,birthdate,32,August,0.2279,February,5,0.0614
+1,Ron Estelle Brosius,Perturbed,birthdate,33,August,0.4207,February,7,0.0324
+1,Ron Estelle Brosius,Perturbed,birthdate,34,August,0.2032,February,5,0.0702
+1,Ron Estelle Brosius,Perturbed,birthdate,35,July,0.2486,February,2,0.0807
+1,Ron Estelle Brosius,Perturbed,birthdate,36,July,0.3047,February,1,0.3047
+2,Alojzij Daniels,Perturbed,birthdate,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,Perturbed,birthdate,1,ijms,0.075,March,8076,0.0
+2,Alojzij Daniels,Perturbed,birthdate,2,ijms,0.0806,March,5725,0.0
+2,Alojzij Daniels,Perturbed,birthdate,3,ijms,0.0349,March,4294,0.0
+2,Alojzij Daniels,Perturbed,birthdate,4,ijms,0.0547,March,2608,0.0001
+2,Alojzij Daniels,Perturbed,birthdate,5,ijms,0.0769,March,1941,0.0001
+2,Alojzij Daniels,Perturbed,birthdate,6,ijms,0.0753,March,1190,0.0001
+2,Alojzij Daniels,Perturbed,birthdate,7,ijms,0.0329,March,2092,0.0001
+2,Alojzij Daniels,Perturbed,birthdate,8,ijms,0.0097,March,1325,0.0001
+2,Alojzij Daniels,Perturbed,birthdate,9,the,0.0068,March,385,0.0004
+2,Alojzij Daniels,Perturbed,birthdate,10,ijms,0.0508,March,152,0.0007
+2,Alojzij Daniels,Perturbed,birthdate,11,ijms,0.1304,March,109,0.0008
+2,Alojzij Daniels,Perturbed,birthdate,12,ijms,0.0145,March,273,0.0005
+2,Alojzij Daniels,Perturbed,birthdate,13,condition,0.0085,March,308,0.0005
+2,Alojzij Daniels,Perturbed,birthdate,14,the,0.0074,March,994,0.0002
+2,Alojzij Daniels,Perturbed,birthdate,15,“,0.0127,March,650,0.0002
+2,Alojzij Daniels,Perturbed,birthdate,16,a,0.0094,March,806,0.0002
+2,Alojzij Daniels,Perturbed,birthdate,17,April,0.0168,March,143,0.0009
+2,Alojzij Daniels,Perturbed,birthdate,18,a,0.0108,March,272,0.0006
+2,Alojzij Daniels,Perturbed,birthdate,19,a,0.0144,March,228,0.0007
+2,Alojzij Daniels,Perturbed,birthdate,20,a,0.0152,March,367,0.0004
+2,Alojzij Daniels,Perturbed,birthdate,21,G,0.0093,March,65,0.0015
+2,Alojzij Daniels,Perturbed,birthdate,22,April,0.0173,March,25,0.0027
+2,Alojzij Daniels,Perturbed,birthdate,23,Minnesota,0.0261,March,101,0.0011
+2,Alojzij Daniels,Perturbed,birthdate,24,Minnesota,0.132,March,39,0.0026
+2,Alojzij Daniels,Perturbed,birthdate,25,Minnesota,0.2443,March,44,0.0019
+2,Alojzij Daniels,Perturbed,birthdate,26,Minnesota,0.2849,March,30,0.0023
+2,Alojzij Daniels,Perturbed,birthdate,27,Minnesota,0.816,March,54,0.0002
+2,Alojzij Daniels,Perturbed,birthdate,28,Minnesota,0.8523,March,17,0.0007
+2,Alojzij Daniels,Perturbed,birthdate,29,Minnesota,0.8278,March,13,0.0011
+2,Alojzij Daniels,Perturbed,birthdate,30,Minnesota,0.638,March,7,0.0097
+2,Alojzij Daniels,Perturbed,birthdate,31,Minnesota,0.7505,March,6,0.0101
+2,Alojzij Daniels,Perturbed,birthdate,32,Minnesota,0.358,March,2,0.085
+2,Alojzij Daniels,Perturbed,birthdate,33,March,0.2148,March,1,0.2148
+2,Alojzij Daniels,Perturbed,birthdate,34,March,0.268,March,1,0.268
+2,Alojzij Daniels,Perturbed,birthdate,35,March,0.247,March,1,0.247
+2,Alojzij Daniels,Perturbed,birthdate,36,March,0.9238,March,1,0.9238
+3,Adelelmus Kévorkian,Perturbed,birthdate,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,Perturbed,birthdate,1,ijms,0.0668,January,10456,0.0
+3,Adelelmus Kévorkian,Perturbed,birthdate,2,ijms,0.1007,January,8694,0.0
+3,Adelelmus Kévorkian,Perturbed,birthdate,3,ijms,0.0476,January,6681,0.0
+3,Adelelmus Kévorkian,Perturbed,birthdate,4,ijms,0.0647,January,3905,0.0
+3,Adelelmus Kévorkian,Perturbed,birthdate,5,ijms,0.1123,January,2622,0.0001
+3,Adelelmus Kévorkian,Perturbed,birthdate,6,ijms,0.1241,January,529,0.0002
+3,Adelelmus Kévorkian,Perturbed,birthdate,7,ijms,0.0418,January,351,0.0003
+3,Adelelmus Kévorkian,Perturbed,birthdate,8,ijms,0.011,January,180,0.0006
+3,Adelelmus Kévorkian,Perturbed,birthdate,9,the,0.0076,January,144,0.0008
+3,Adelelmus Kévorkian,Perturbed,birthdate,10,ijms,0.0356,January,32,0.0017
+3,Adelelmus Kévorkian,Perturbed,birthdate,11,ijms,0.0856,January,44,0.0013
+3,Adelelmus Kévorkian,Perturbed,birthdate,12,ijms,0.0138,January,156,0.0007
+3,Adelelmus Kévorkian,Perturbed,birthdate,13,condition,0.009,January,370,0.0004
+3,Adelelmus Kévorkian,Perturbed,birthdate,14,the,0.0088,January,833,0.0002
+3,Adelelmus Kévorkian,Perturbed,birthdate,15,“,0.014,January,485,0.0003
+3,Adelelmus Kévorkian,Perturbed,birthdate,16,a,0.0116,January,249,0.0006
+3,Adelelmus Kévorkian,Perturbed,birthdate,17,April,0.0157,January,6,0.0059
+3,Adelelmus Kévorkian,Perturbed,birthdate,18,a,0.0129,January,14,0.0039
+3,Adelelmus Kévorkian,Perturbed,birthdate,19,a,0.0146,January,8,0.0054
+3,Adelelmus Kévorkian,Perturbed,birthdate,20,a,0.0129,January,17,0.0037
+3,Adelelmus Kévorkian,Perturbed,birthdate,21,G,0.0118,January,7,0.0061
+3,Adelelmus Kévorkian,Perturbed,birthdate,22,G,0.0191,January,5,0.0085
+3,Adelelmus Kévorkian,Perturbed,birthdate,23,G,0.0218,January,20,0.0042
+3,Adelelmus Kévorkian,Perturbed,birthdate,24,April,0.0708,January,2,0.0552
+3,Adelelmus Kévorkian,Perturbed,birthdate,25,January,0.072,January,1,0.072
+3,Adelelmus Kévorkian,Perturbed,birthdate,26,April,0.0755,January,2,0.0626
+3,Adelelmus Kévorkian,Perturbed,birthdate,27,April,0.0722,January,2,0.0599
+3,Adelelmus Kévorkian,Perturbed,birthdate,28,January,0.1223,January,1,0.1223
+3,Adelelmus Kévorkian,Perturbed,birthdate,29,January,0.1593,January,1,0.1593
+3,Adelelmus Kévorkian,Perturbed,birthdate,30,January,0.2088,January,1,0.2088
+3,Adelelmus Kévorkian,Perturbed,birthdate,31,January,0.2869,January,1,0.2869
+3,Adelelmus Kévorkian,Perturbed,birthdate,32,January,0.564,January,1,0.564
+3,Adelelmus Kévorkian,Perturbed,birthdate,33,January,0.514,January,1,0.514
+3,Adelelmus Kévorkian,Perturbed,birthdate,34,January,0.5721,January,1,0.5721
+3,Adelelmus Kévorkian,Perturbed,birthdate,35,January,0.4797,January,1,0.4797
+3,Adelelmus Kévorkian,Perturbed,birthdate,36,January,0.935,January,1,0.935
+4,Adrian Luginbühl,Perturbed,birthdate,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,Perturbed,birthdate,1,ijms,0.0567,October,8852,0.0
+4,Adrian Luginbühl,Perturbed,birthdate,2,ijms,0.1006,October,7001,0.0
+4,Adrian Luginbühl,Perturbed,birthdate,3,ijms,0.0466,October,6515,0.0
+4,Adrian Luginbühl,Perturbed,birthdate,4,ijms,0.0675,October,4323,0.0
+4,Adrian Luginbühl,Perturbed,birthdate,5,ijms,0.0959,October,2886,0.0001
+4,Adrian Luginbühl,Perturbed,birthdate,6,ijms,0.1316,October,928,0.0002
+4,Adrian Luginbühl,Perturbed,birthdate,7,ijms,0.052,October,445,0.0003
+4,Adrian Luginbühl,Perturbed,birthdate,8,ijms,0.0173,October,271,0.0005
+4,Adrian Luginbühl,Perturbed,birthdate,9,the,0.0072,October,107,0.0009
+4,Adrian Luginbühl,Perturbed,birthdate,10,ijms,0.075,October,67,0.0011
+4,Adrian Luginbühl,Perturbed,birthdate,11,ijms,0.1435,October,36,0.0014
+4,Adrian Luginbühl,Perturbed,birthdate,12,ijms,0.0116,October,79,0.0011
+4,Adrian Luginbühl,Perturbed,birthdate,13,“,0.0065,October,275,0.0005
+4,Adrian Luginbühl,Perturbed,birthdate,14,the,0.007,October,860,0.0002
+4,Adrian Luginbühl,Perturbed,birthdate,15,“,0.0121,October,580,0.0003
+4,Adrian Luginbühl,Perturbed,birthdate,16,a,0.0094,October,311,0.0005
+4,Adrian Luginbühl,Perturbed,birthdate,17,April,0.0192,October,9,0.0058
+4,Adrian Luginbühl,Perturbed,birthdate,18,a,0.0126,October,39,0.0022
+4,Adrian Luginbühl,Perturbed,birthdate,19,a,0.0146,October,115,0.0011
+4,Adrian Luginbühl,Perturbed,birthdate,20,a,0.0147,October,103,0.0012
+4,Adrian Luginbühl,Perturbed,birthdate,21,April,0.0092,October,38,0.0021
+4,Adrian Luginbühl,Perturbed,birthdate,22,G,0.0177,October,85,0.0013
+4,Adrian Luginbühl,Perturbed,birthdate,23,“,0.0172,October,212,0.0007
+4,Adrian Luginbühl,Perturbed,birthdate,24,April,0.048,October,29,0.0038
+4,Adrian Luginbühl,Perturbed,birthdate,25,April,0.0414,October,22,0.0051
+4,Adrian Luginbühl,Perturbed,birthdate,26,April,0.0696,October,25,0.004
+4,Adrian Luginbühl,Perturbed,birthdate,27,April,0.0647,October,8,0.0106
+4,Adrian Luginbühl,Perturbed,birthdate,28,April,0.2554,October,9,0.0286
+4,Adrian Luginbühl,Perturbed,birthdate,29,May,0.3205,October,8,0.0247
+4,Adrian Luginbühl,Perturbed,birthdate,30,May,0.1648,October,8,0.0345
+4,Adrian Luginbühl,Perturbed,birthdate,31,May,0.2476,October,9,0.0278
+4,Adrian Luginbühl,Perturbed,birthdate,32,June,0.1735,October,8,0.0283
+4,Adrian Luginbühl,Perturbed,birthdate,33,June,0.1341,October,5,0.0319
+4,Adrian Luginbühl,Perturbed,birthdate,34,August,0.2596,October,6,0.0291
+4,Adrian Luginbühl,Perturbed,birthdate,35,October,0.1034,October,1,0.1034
+4,Adrian Luginbühl,Perturbed,birthdate,36,October,0.9197,October,1,0.9197
+5,Alfréd Priszter,Perturbed,birthdate,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,Perturbed,birthdate,1,ijms,0.0881,December,11353,0.0
+5,Alfréd Priszter,Perturbed,birthdate,2,ijms,0.1129,December,8483,0.0
+5,Alfréd Priszter,Perturbed,birthdate,3,ijms,0.0566,December,5469,0.0
+5,Alfréd Priszter,Perturbed,birthdate,4,ijms,0.0709,December,3196,0.0001
+5,Alfréd Priszter,Perturbed,birthdate,5,ijms,0.0913,December,1600,0.0001
+5,Alfréd Priszter,Perturbed,birthdate,6,ijms,0.1174,December,495,0.0002
+5,Alfréd Priszter,Perturbed,birthdate,7,ijms,0.0486,December,367,0.0003
+5,Alfréd Priszter,Perturbed,birthdate,8,ijms,0.0178,December,260,0.0005
+5,Alfréd Priszter,Perturbed,birthdate,9,the,0.0068,December,75,0.0011
+5,Alfréd Priszter,Perturbed,birthdate,10,ijms,0.0569,December,49,0.0013
+5,Alfréd Priszter,Perturbed,birthdate,11,ijms,0.1127,December,35,0.0015
+5,Alfréd Priszter,Perturbed,birthdate,12,ijms,0.0111,December,35,0.0015
+5,Alfréd Priszter,Perturbed,birthdate,13,condition,0.0083,December,88,0.001
+5,Alfréd Priszter,Perturbed,birthdate,14,condition,0.0073,December,280,0.0005
+5,Alfréd Priszter,Perturbed,birthdate,15,“,0.0117,December,291,0.0005
+5,Alfréd Priszter,Perturbed,birthdate,16,a,0.0104,December,223,0.0006
+5,Alfréd Priszter,Perturbed,birthdate,17,April,0.0181,December,10,0.0054
+5,Alfréd Priszter,Perturbed,birthdate,18,a,0.0135,December,58,0.0018
+5,Alfréd Priszter,Perturbed,birthdate,19,a,0.0149,December,55,0.0017
+5,Alfréd Priszter,Perturbed,birthdate,20,a,0.0161,December,212,0.0007
+5,Alfréd Priszter,Perturbed,birthdate,21,April,0.0124,December,51,0.0017
+5,Alfréd Priszter,Perturbed,birthdate,22,G,0.0291,December,32,0.0025
+5,Alfréd Priszter,Perturbed,birthdate,23,G,0.0188,December,45,0.0024
+5,Alfréd Priszter,Perturbed,birthdate,24,April,0.0337,December,7,0.0164
+5,Alfréd Priszter,Perturbed,birthdate,25,January,0.0326,December,4,0.018
+5,Alfréd Priszter,Perturbed,birthdate,26,Hungarian,0.132,December,5,0.0215
+5,Alfréd Priszter,Perturbed,birthdate,27,April,0.117,December,2,0.0856
+5,Alfréd Priszter,Perturbed,birthdate,28,April,0.2708,December,2,0.1279
+5,Alfréd Priszter,Perturbed,birthdate,29,April,0.3425,December,2,0.126
+5,Alfréd Priszter,Perturbed,birthdate,30,April,0.3022,December,2,0.126
+5,Alfréd Priszter,Perturbed,birthdate,31,April,0.3314,December,2,0.201
+5,Alfréd Priszter,Perturbed,birthdate,32,December,0.4518,December,1,0.4518
+5,Alfréd Priszter,Perturbed,birthdate,33,December,0.6256,December,1,0.6256
+5,Alfréd Priszter,Perturbed,birthdate,34,December,0.946,December,1,0.946
+5,Alfréd Priszter,Perturbed,birthdate,35,December,0.8946,December,1,0.8946
+5,Alfréd Priszter,Perturbed,birthdate,36,December,0.9962,December,1,0.9962
+0,Billy Fisher,NPO,birthdate,0,behalf,0.2196,May,8930,0.0
+0,Billy Fisher,NPO,birthdate,1,ijms,0.0704,May,2592,0.0001
+0,Billy Fisher,NPO,birthdate,2,ijms,0.0787,May,2231,0.0001
+0,Billy Fisher,NPO,birthdate,3,ijms,0.0361,May,1818,0.0001
+0,Billy Fisher,NPO,birthdate,4,ijms,0.0391,May,1288,0.0001
+0,Billy Fisher,NPO,birthdate,5,ijms,0.0496,May,1390,0.0001
+0,Billy Fisher,NPO,birthdate,6,ijms,0.0688,May,398,0.0003
+0,Billy Fisher,NPO,birthdate,7,ijms,0.0424,May,498,0.0003
+0,Billy Fisher,NPO,birthdate,8,ijms,0.0136,May,413,0.0003
+0,Billy Fisher,NPO,birthdate,9,the,0.0059,May,372,0.0004
+0,Billy Fisher,NPO,birthdate,10,ijms,0.0988,May,23,0.0017
+0,Billy Fisher,NPO,birthdate,11,ijms,0.2094,May,65,0.0009
+0,Billy Fisher,NPO,birthdate,12,ijms,0.0484,May,36,0.0013
+0,Billy Fisher,NPO,birthdate,13,“,0.0106,May,109,0.0008
+0,Billy Fisher,NPO,birthdate,14,“,0.0106,May,336,0.0004
+0,Billy Fisher,NPO,birthdate,15,“,0.0204,May,172,0.0007
+0,Billy Fisher,NPO,birthdate,16,“,0.0125,May,116,0.001
+0,Billy Fisher,NPO,birthdate,17,ijms,0.0156,May,25,0.0022
+0,Billy Fisher,NPO,birthdate,18,ijms,0.0321,May,147,0.0009
+0,Billy Fisher,NPO,birthdate,19,big,0.0082,May,101,0.0011
+0,Billy Fisher,NPO,birthdate,20,ijms,0.0088,May,237,0.0005
+0,Billy Fisher,NPO,birthdate,21,inhomogeneous,0.0066,May,137,0.0007
+0,Billy Fisher,NPO,birthdate,22,inhomogeneous,0.0131,May,151,0.0007
+0,Billy Fisher,NPO,birthdate,23,inhomogeneous,0.0152,May,330,0.0004
+0,Billy Fisher,NPO,birthdate,24,ijms,0.0378,May,254,0.0004
+0,Billy Fisher,NPO,birthdate,25,inhomogeneous,0.0141,May,497,0.0003
+0,Billy Fisher,NPO,birthdate,26,stage,0.0339,May,493,0.0003
+0,Billy Fisher,NPO,birthdate,27,stage,0.0522,May,712,0.0002
+0,Billy Fisher,NPO,birthdate,28,stage,0.1032,May,203,0.0004
+0,Billy Fisher,NPO,birthdate,29,stage,0.1183,May,98,0.0007
+0,Billy Fisher,NPO,birthdate,30,acting,0.0618,May,87,0.0009
+0,Billy Fisher,NPO,birthdate,31,Fisher,0.0207,May,37,0.0017
+0,Billy Fisher,NPO,birthdate,32,Fisher,0.0247,May,35,0.0016
+0,Billy Fisher,NPO,birthdate,33,Fisher,0.0357,May,32,0.0017
+0,Billy Fisher,NPO,birthdate,34,Fisher,0.0475,May,240,0.0005
+0,Billy Fisher,NPO,birthdate,35,e,0.9983,May,932,0.0
+0,Billy Fisher,NPO,birthdate,36,e,1.0,May,234,0.0
+1,Ron Estelle Brosius,NPO,birthdate,0,behalf,0.2196,February,7046,0.0
+1,Ron Estelle Brosius,NPO,birthdate,1,ijms,0.0663,February,14733,0.0
+1,Ron Estelle Brosius,NPO,birthdate,2,ijms,0.0815,February,9900,0.0
+1,Ron Estelle Brosius,NPO,birthdate,3,ijms,0.0384,February,7655,0.0
+1,Ron Estelle Brosius,NPO,birthdate,4,ijms,0.045,February,5140,0.0
+1,Ron Estelle Brosius,NPO,birthdate,5,ijms,0.0613,February,3157,0.0001
+1,Ron Estelle Brosius,NPO,birthdate,6,ijms,0.0673,February,1688,0.0001
+1,Ron Estelle Brosius,NPO,birthdate,7,ijms,0.0426,February,665,0.0002
+1,Ron Estelle Brosius,NPO,birthdate,8,ijms,0.0106,February,402,0.0004
+1,Ron Estelle Brosius,NPO,birthdate,9,the,0.0062,February,266,0.0005
+1,Ron Estelle Brosius,NPO,birthdate,10,ijms,0.054,February,61,0.0011
+1,Ron Estelle Brosius,NPO,birthdate,11,ijms,0.1069,February,103,0.0008
+1,Ron Estelle Brosius,NPO,birthdate,12,ijms,0.0178,February,224,0.0006
+1,Ron Estelle Brosius,NPO,birthdate,13,condition,0.0091,February,353,0.0004
+1,Ron Estelle Brosius,NPO,birthdate,14,condition,0.0115,February,926,0.0002
+1,Ron Estelle Brosius,NPO,birthdate,15,“,0.0121,February,600,0.0003
+1,Ron Estelle Brosius,NPO,birthdate,16,big,0.0074,February,424,0.0004
+1,Ron Estelle Brosius,NPO,birthdate,17,ijms,0.0175,February,71,0.0014
+1,Ron Estelle Brosius,NPO,birthdate,18,ijms,0.0345,February,74,0.0014
+1,Ron Estelle Brosius,NPO,birthdate,19,a,0.0088,February,67,0.0014
+1,Ron Estelle Brosius,NPO,birthdate,20,ijms,0.0073,February,160,0.0007
+1,Ron Estelle Brosius,NPO,birthdate,21,April,0.0069,February,24,0.0022
+1,Ron Estelle Brosius,NPO,birthdate,22,super,0.0066,February,47,0.0016
+1,Ron Estelle Brosius,NPO,birthdate,23,ijms,0.0083,February,167,0.0006
+1,Ron Estelle Brosius,NPO,birthdate,24,ijms,0.0128,February,44,0.0017
+1,Ron Estelle Brosius,NPO,birthdate,25,ijms,0.0428,February,49,0.0015
+1,Ron Estelle Brosius,NPO,birthdate,26,ijms,0.0366,February,36,0.0019
+1,Ron Estelle Brosius,NPO,birthdate,27,Studio,0.0279,February,54,0.0014
+1,Ron Estelle Brosius,NPO,birthdate,28,Studio,0.053,February,79,0.0011
+1,Ron Estelle Brosius,NPO,birthdate,29,Studio,0.0266,February,60,0.0014
+1,Ron Estelle Brosius,NPO,birthdate,30,Ron,0.0139,February,52,0.0016
+1,Ron Estelle Brosius,NPO,birthdate,31,Studio,0.0115,February,29,0.0023
+1,Ron Estelle Brosius,NPO,birthdate,32,vé,0.0181,February,33,0.0017
+1,Ron Estelle Brosius,NPO,birthdate,33,Studio,0.0144,February,67,0.001
+1,Ron Estelle Brosius,NPO,birthdate,34,inequality,0.036,February,217,0.0005
+1,Ron Estelle Brosius,NPO,birthdate,35,e,0.9975,February,2720,0.0
+1,Ron Estelle Brosius,NPO,birthdate,36,e,1.0,February,480,0.0
+2,Alojzij Daniels,NPO,birthdate,0,behalf,0.2196,March,9098,0.0
+2,Alojzij Daniels,NPO,birthdate,1,ijms,0.076,March,7997,0.0
+2,Alojzij Daniels,NPO,birthdate,2,ijms,0.0773,March,5538,0.0
+2,Alojzij Daniels,NPO,birthdate,3,ijms,0.0375,March,4168,0.0
+2,Alojzij Daniels,NPO,birthdate,4,ijms,0.0497,March,2530,0.0001
+2,Alojzij Daniels,NPO,birthdate,5,ijms,0.0644,March,1933,0.0001
+2,Alojzij Daniels,NPO,birthdate,6,ijms,0.0729,March,1258,0.0001
+2,Alojzij Daniels,NPO,birthdate,7,ijms,0.0484,March,2330,0.0001
+2,Alojzij Daniels,NPO,birthdate,8,ijms,0.0122,March,1587,0.0001
+2,Alojzij Daniels,NPO,birthdate,9,the,0.0062,March,540,0.0003
+2,Alojzij Daniels,NPO,birthdate,10,ijms,0.0635,March,244,0.0005
+2,Alojzij Daniels,NPO,birthdate,11,ijms,0.1615,March,147,0.0006
+2,Alojzij Daniels,NPO,birthdate,12,ijms,0.0308,March,325,0.0004
+2,Alojzij Daniels,NPO,birthdate,13,“,0.0103,March,312,0.0004
+2,Alojzij Daniels,NPO,birthdate,14,dec,0.0091,March,952,0.0002
+2,Alojzij Daniels,NPO,birthdate,15,“,0.0144,March,546,0.0003
+2,Alojzij Daniels,NPO,birthdate,16,big,0.0107,March,582,0.0003
+2,Alojzij Daniels,NPO,birthdate,17,ijms,0.0355,March,181,0.0007
+2,Alojzij Daniels,NPO,birthdate,18,ijms,0.0675,March,337,0.0004
+2,Alojzij Daniels,NPO,birthdate,19,big,0.0115,March,306,0.0005
+2,Alojzij Daniels,NPO,birthdate,20,big,0.0084,March,543,0.0003
+2,Alojzij Daniels,NPO,birthdate,21,big,0.0055,March,180,0.0006
+2,Alojzij Daniels,NPO,birthdate,22,G,0.0054,March,125,0.0008
+2,Alojzij Daniels,NPO,birthdate,23,ijms,0.0082,March,285,0.0005
+2,Alojzij Daniels,NPO,birthdate,24,ijms,0.0122,March,108,0.0009
+2,Alojzij Daniels,NPO,birthdate,25,G,0.0102,March,163,0.0007
+2,Alojzij Daniels,NPO,birthdate,26,ijms,0.0109,March,233,0.0005
+2,Alojzij Daniels,NPO,birthdate,27,ijms,0.0122,March,442,0.0003
+2,Alojzij Daniels,NPO,birthdate,28,tr,0.0098,March,147,0.0007
+2,Alojzij Daniels,NPO,birthdate,29,tr,0.0097,March,145,0.0007
+2,Alojzij Daniels,NPO,birthdate,30,chain,0.0114,March,158,0.0006
+2,Alojzij Daniels,NPO,birthdate,31,tr,0.0083,March,137,0.0007
+2,Alojzij Daniels,NPO,birthdate,32,kn,0.008,March,174,0.0005
+2,Alojzij Daniels,NPO,birthdate,33,kn,0.0067,March,658,0.0002
+2,Alojzij Daniels,NPO,birthdate,34,tit,0.1146,March,1347,0.0001
+2,Alojzij Daniels,NPO,birthdate,35,e,0.9997,March,5428,0.0
+2,Alojzij Daniels,NPO,birthdate,36,e,1.0,March,2943,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,0,behalf,0.2196,January,7274,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,1,ijms,0.0678,January,10322,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,2,ijms,0.0917,January,8372,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,3,ijms,0.0474,January,6578,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,4,ijms,0.0543,January,4026,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,5,ijms,0.0972,January,2819,0.0001
+3,Adelelmus Kévorkian,NPO,birthdate,6,ijms,0.1209,January,670,0.0002
+3,Adelelmus Kévorkian,NPO,birthdate,7,ijms,0.0666,January,470,0.0003
+3,Adelelmus Kévorkian,NPO,birthdate,8,ijms,0.0123,January,260,0.0005
+3,Adelelmus Kévorkian,NPO,birthdate,9,the,0.0071,January,194,0.0006
+3,Adelelmus Kévorkian,NPO,birthdate,10,ijms,0.0469,January,34,0.0016
+3,Adelelmus Kévorkian,NPO,birthdate,11,ijms,0.0935,January,47,0.0013
+3,Adelelmus Kévorkian,NPO,birthdate,12,ijms,0.0231,January,175,0.0007
+3,Adelelmus Kévorkian,NPO,birthdate,13,“,0.0122,January,327,0.0004
+3,Adelelmus Kévorkian,NPO,birthdate,14,“,0.0105,January,538,0.0003
+3,Adelelmus Kévorkian,NPO,birthdate,15,“,0.0152,January,287,0.0005
+3,Adelelmus Kévorkian,NPO,birthdate,16,“,0.0099,January,148,0.0009
+3,Adelelmus Kévorkian,NPO,birthdate,17,ijms,0.0196,January,13,0.0036
+3,Adelelmus Kévorkian,NPO,birthdate,18,ijms,0.0462,January,25,0.0023
+3,Adelelmus Kévorkian,NPO,birthdate,19,ijms,0.013,January,13,0.0033
+3,Adelelmus Kévorkian,NPO,birthdate,20,ring,0.0072,January,163,0.0007
+3,Adelelmus Kévorkian,NPO,birthdate,21,ijms,0.0106,January,92,0.0009
+3,Adelelmus Kévorkian,NPO,birthdate,22,ijms,0.0129,January,160,0.0006
+3,Adelelmus Kévorkian,NPO,birthdate,23,ijms,0.0219,January,361,0.0004
+3,Adelelmus Kévorkian,NPO,birthdate,24,ijms,0.0499,January,67,0.0012
+3,Adelelmus Kévorkian,NPO,birthdate,25,ijms,0.0286,January,85,0.0011
+3,Adelelmus Kévorkian,NPO,birthdate,26,tr,0.0185,January,93,0.0009
+3,Adelelmus Kévorkian,NPO,birthdate,27,ijms,0.0256,January,207,0.0005
+3,Adelelmus Kévorkian,NPO,birthdate,28,ijms,0.0565,January,198,0.0005
+3,Adelelmus Kévorkian,NPO,birthdate,29,ijms,0.0162,January,132,0.0007
+3,Adelelmus Kévorkian,NPO,birthdate,30,ijms,0.014,January,375,0.0003
+3,Adelelmus Kévorkian,NPO,birthdate,31,ijms,0.0087,January,296,0.0004
+3,Adelelmus Kévorkian,NPO,birthdate,32,ijms,0.0493,January,251,0.0004
+3,Adelelmus Kévorkian,NPO,birthdate,33,ijms,0.0324,January,507,0.0002
+3,Adelelmus Kévorkian,NPO,birthdate,34,inequality,0.2234,January,4306,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,35,e,0.999,January,15820,0.0
+3,Adelelmus Kévorkian,NPO,birthdate,36,e,1.0,January,3042,0.0
+4,Adrian Luginbühl,NPO,birthdate,0,behalf,0.2196,October,5723,0.0
+4,Adrian Luginbühl,NPO,birthdate,1,ijms,0.0559,October,8811,0.0
+4,Adrian Luginbühl,NPO,birthdate,2,ijms,0.0912,October,6748,0.0
+4,Adrian Luginbühl,NPO,birthdate,3,ijms,0.0476,October,6439,0.0
+4,Adrian Luginbühl,NPO,birthdate,4,ijms,0.0597,October,4486,0.0
+4,Adrian Luginbühl,NPO,birthdate,5,ijms,0.0871,October,3148,0.0001
+4,Adrian Luginbühl,NPO,birthdate,6,ijms,0.1351,October,1064,0.0001
+4,Adrian Luginbühl,NPO,birthdate,7,ijms,0.0844,October,540,0.0002
+4,Adrian Luginbühl,NPO,birthdate,8,ijms,0.0246,October,361,0.0004
+4,Adrian Luginbühl,NPO,birthdate,9,the,0.0065,October,152,0.0007
+4,Adrian Luginbühl,NPO,birthdate,10,ijms,0.1026,October,82,0.0009
+4,Adrian Luginbühl,NPO,birthdate,11,ijms,0.1501,October,35,0.0015
+4,Adrian Luginbühl,NPO,birthdate,12,ijms,0.0274,October,50,0.0012
+4,Adrian Luginbühl,NPO,birthdate,13,dec,0.0096,October,195,0.0006
+4,Adrian Luginbühl,NPO,birthdate,14,dec,0.0107,October,496,0.0003
+4,Adrian Luginbühl,NPO,birthdate,15,“,0.016,October,299,0.0005
+4,Adrian Luginbühl,NPO,birthdate,16,“,0.0091,October,185,0.0007
+4,Adrian Luginbühl,NPO,birthdate,17,ijms,0.0228,October,9,0.0037
+4,Adrian Luginbühl,NPO,birthdate,18,ijms,0.0521,October,55,0.0016
+4,Adrian Luginbühl,NPO,birthdate,19,ijms,0.0191,October,83,0.0013
+4,Adrian Luginbühl,NPO,birthdate,20,ijms,0.0129,October,208,0.0006
+4,Adrian Luginbühl,NPO,birthdate,21,OUP,0.0074,October,176,0.0006
+4,Adrian Luginbühl,NPO,birthdate,22,OUP,0.0075,October,615,0.0003
+4,Adrian Luginbühl,NPO,birthdate,23,ijms,0.0319,October,1270,0.0001
+4,Adrian Luginbühl,NPO,birthdate,24,ijms,0.0677,October,671,0.0002
+4,Adrian Luginbühl,NPO,birthdate,25,ijms,0.0213,October,661,0.0002
+4,Adrian Luginbühl,NPO,birthdate,26,tr,0.0252,October,921,0.0002
+4,Adrian Luginbühl,NPO,birthdate,27,ijms,0.0253,October,928,0.0002
+4,Adrian Luginbühl,NPO,birthdate,28,ijms,0.0272,October,842,0.0002
+4,Adrian Luginbühl,NPO,birthdate,29,tr,0.0203,October,739,0.0002
+4,Adrian Luginbühl,NPO,birthdate,30,tr,0.0146,October,976,0.0002
+4,Adrian Luginbühl,NPO,birthdate,31,tr,0.0136,October,640,0.0002
+4,Adrian Luginbühl,NPO,birthdate,32,e,0.017,October,971,0.0002
+4,Adrian Luginbühl,NPO,birthdate,33,e,0.0209,October,2605,0.0001
+4,Adrian Luginbühl,NPO,birthdate,34,inequality,0.216,October,9869,0.0
+4,Adrian Luginbühl,NPO,birthdate,35,e,0.9959,October,25526,0.0
+4,Adrian Luginbühl,NPO,birthdate,36,e,1.0,October,36202,0.0
+5,Alfréd Priszter,NPO,birthdate,0,behalf,0.2196,December,5288,0.0
+5,Alfréd Priszter,NPO,birthdate,1,ijms,0.0891,December,10952,0.0
+5,Alfréd Priszter,NPO,birthdate,2,ijms,0.1026,December,8010,0.0
+5,Alfréd Priszter,NPO,birthdate,3,ijms,0.0595,December,5180,0.0
+5,Alfréd Priszter,NPO,birthdate,4,ijms,0.0627,December,3201,0.0001
+5,Alfréd Priszter,NPO,birthdate,5,ijms,0.0744,December,1690,0.0001
+5,Alfréd Priszter,NPO,birthdate,6,ijms,0.1029,December,555,0.0002
+5,Alfréd Priszter,NPO,birthdate,7,ijms,0.0672,December,457,0.0003
+5,Alfréd Priszter,NPO,birthdate,8,ijms,0.0194,December,328,0.0004
+5,Alfréd Priszter,NPO,birthdate,9,the,0.0061,December,137,0.0008
+5,Alfréd Priszter,NPO,birthdate,10,ijms,0.079,December,52,0.0012
+5,Alfréd Priszter,NPO,birthdate,11,ijms,0.13,December,39,0.0015
+5,Alfréd Priszter,NPO,birthdate,12,ijms,0.0244,December,55,0.0013
+5,Alfréd Priszter,NPO,birthdate,13,condition,0.0091,December,109,0.0009
+5,Alfréd Priszter,NPO,birthdate,14,condition,0.011,December,315,0.0005
+5,Alfréd Priszter,NPO,birthdate,15,“,0.0129,December,252,0.0006
+5,Alfréd Priszter,NPO,birthdate,16,“,0.0081,December,195,0.0007
+5,Alfréd Priszter,NPO,birthdate,17,ijms,0.0231,December,18,0.0033
+5,Alfréd Priszter,NPO,birthdate,18,ijms,0.042,December,67,0.0015
+5,Alfréd Priszter,NPO,birthdate,19,ijms,0.0145,December,55,0.0016
+5,Alfréd Priszter,NPO,birthdate,20,ijms,0.0084,December,584,0.0003
+5,Alfréd Priszter,NPO,birthdate,21,OUP,0.0126,December,465,0.0003
+5,Alfréd Priszter,NPO,birthdate,22,ijms,0.0262,December,534,0.0003
+5,Alfréd Priszter,NPO,birthdate,23,ijms,0.0591,December,747,0.0002
+5,Alfréd Priszter,NPO,birthdate,24,ijms,0.1028,December,195,0.0006
+5,Alfréd Priszter,NPO,birthdate,25,ijms,0.0185,December,202,0.0006
+5,Alfréd Priszter,NPO,birthdate,26,Hungarian,0.0633,December,314,0.0004
+5,Alfréd Priszter,NPO,birthdate,27,Hungarian,0.0346,December,296,0.0005
+5,Alfréd Priszter,NPO,birthdate,28,Hungarian,0.1064,December,445,0.0003
+5,Alfréd Priszter,NPO,birthdate,29,Hungarian,0.1072,December,350,0.0003
+5,Alfréd Priszter,NPO,birthdate,30,Hungarian,0.1102,December,450,0.0003
+5,Alfréd Priszter,NPO,birthdate,31,Hungarian,0.0772,December,366,0.0003
+5,Alfréd Priszter,NPO,birthdate,32,Hungarian,0.0769,December,315,0.0003
+5,Alfréd Priszter,NPO,birthdate,33,ijms,0.0317,December,1104,0.0001
+5,Alfréd Priszter,NPO,birthdate,34,inequality,0.0646,December,4851,0.0
+5,Alfréd Priszter,NPO,birthdate,35,e,0.9972,December,8935,0.0
+5,Alfréd Priszter,NPO,birthdate,36,e,1.0,December,2365,0.0
+0,Billy Fisher,GradDiff,birthdate,0,behalf,0.2332,May,9156,0.0
+0,Billy Fisher,GradDiff,birthdate,1,ijms,0.0603,May,2781,0.0001
+0,Billy Fisher,GradDiff,birthdate,2,ijms,0.0869,May,2397,0.0001
+0,Billy Fisher,GradDiff,birthdate,3,ijms,0.0361,May,1839,0.0001
+0,Billy Fisher,GradDiff,birthdate,4,ijms,0.0474,May,1197,0.0001
+0,Billy Fisher,GradDiff,birthdate,5,ijms,0.0616,May,1254,0.0001
+0,Billy Fisher,GradDiff,birthdate,6,ijms,0.0734,May,361,0.0003
+0,Billy Fisher,GradDiff,birthdate,7,ijms,0.0312,May,504,0.0002
+0,Billy Fisher,GradDiff,birthdate,8,ijms,0.0162,May,394,0.0003
+0,Billy Fisher,GradDiff,birthdate,9,“,0.0069,May,254,0.0005
+0,Billy Fisher,GradDiff,birthdate,10,ijms,0.0575,May,28,0.0017
+0,Billy Fisher,GradDiff,birthdate,11,ijms,0.1123,May,68,0.001
+0,Billy Fisher,GradDiff,birthdate,12,“,0.0151,May,30,0.0016
+0,Billy Fisher,GradDiff,birthdate,13,“,0.0135,May,39,0.0015
+0,Billy Fisher,GradDiff,birthdate,14,the,0.0125,May,69,0.0013
+0,Billy Fisher,GradDiff,birthdate,15,“,0.0307,May,43,0.0024
+0,Billy Fisher,GradDiff,birthdate,16,a,0.0251,May,21,0.0035
+0,Billy Fisher,GradDiff,birthdate,17,a,0.0155,May,7,0.0085
+0,Billy Fisher,GradDiff,birthdate,18,a,0.0151,May,76,0.0016
+0,Billy Fisher,GradDiff,birthdate,19,“,0.0212,May,74,0.0016
+0,Billy Fisher,GradDiff,birthdate,20,a,0.016,May,27,0.004
+0,Billy Fisher,GradDiff,birthdate,21,average,0.0216,May,3,0.0099
+0,Billy Fisher,GradDiff,birthdate,22,c,0.0174,May,3,0.0102
+0,Billy Fisher,GradDiff,birthdate,23,c,0.0236,May,5,0.0101
+0,Billy Fisher,GradDiff,birthdate,24,c,0.0344,May,13,0.0045
+0,Billy Fisher,GradDiff,birthdate,25,c,0.0223,May,10,0.0044
+0,Billy Fisher,GradDiff,birthdate,26,c,0.0223,May,12,0.0028
+0,Billy Fisher,GradDiff,birthdate,27,c,0.0141,May,19,0.0023
+0,Billy Fisher,GradDiff,birthdate,28,c,0.0084,May,40,0.0018
+0,Billy Fisher,GradDiff,birthdate,29,screen,0.029,May,181,0.0005
+0,Billy Fisher,GradDiff,birthdate,30,screen,0.0198,May,82,0.001
+0,Billy Fisher,GradDiff,birthdate,31,into,0.0409,May,72,0.0011
+0,Billy Fisher,GradDiff,birthdate,32,into,0.102,May,85,0.001
+0,Billy Fisher,GradDiff,birthdate,33,a,0.0831,May,464,0.0003
+0,Billy Fisher,GradDiff,birthdate,34,a,0.178,May,83,0.0005
+0,Billy Fisher,GradDiff,birthdate,35,a,0.2841,May,129,0.0001
+0,Billy Fisher,GradDiff,birthdate,36,into,1.0,May,815,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,0,behalf,0.2332,February,6959,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,1,ijms,0.0582,February,14793,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,2,ijms,0.0851,February,10018,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,3,ijms,0.0366,February,8029,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,4,ijms,0.0527,February,5160,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,5,ijms,0.0805,February,3188,0.0001
+1,Ron Estelle Brosius,GradDiff,birthdate,6,ijms,0.0809,February,1754,0.0001
+1,Ron Estelle Brosius,GradDiff,birthdate,7,ijms,0.0309,February,700,0.0002
+1,Ron Estelle Brosius,GradDiff,birthdate,8,ijms,0.0105,February,413,0.0003
+1,Ron Estelle Brosius,GradDiff,birthdate,9,the,0.0068,February,184,0.0006
+1,Ron Estelle Brosius,GradDiff,birthdate,10,ijms,0.0326,February,59,0.0011
+1,Ron Estelle Brosius,GradDiff,birthdate,11,ijms,0.0609,February,122,0.0008
+1,Ron Estelle Brosius,GradDiff,birthdate,12,“,0.0141,February,113,0.0009
+1,Ron Estelle Brosius,GradDiff,birthdate,13,“,0.0108,February,142,0.0008
+1,Ron Estelle Brosius,GradDiff,birthdate,14,the,0.0124,February,297,0.0005
+1,Ron Estelle Brosius,GradDiff,birthdate,15,“,0.0304,February,107,0.0012
+1,Ron Estelle Brosius,GradDiff,birthdate,16,a,0.0263,February,123,0.001
+1,Ron Estelle Brosius,GradDiff,birthdate,17,a,0.0179,February,45,0.0023
+1,Ron Estelle Brosius,GradDiff,birthdate,18,a,0.0184,February,89,0.0014
+1,Ron Estelle Brosius,GradDiff,birthdate,19,“,0.019,February,322,0.0004
+1,Ron Estelle Brosius,GradDiff,birthdate,20,a,0.0147,February,292,0.0005
+1,Ron Estelle Brosius,GradDiff,birthdate,21,average,0.0231,February,238,0.0005
+1,Ron Estelle Brosius,GradDiff,birthdate,22,c,0.011,February,153,0.0008
+1,Ron Estelle Brosius,GradDiff,birthdate,23,humble,0.0101,February,242,0.0005
+1,Ron Estelle Brosius,GradDiff,birthdate,24,humble,0.0293,February,2623,0.0001
+1,Ron Estelle Brosius,GradDiff,birthdate,25,humble,0.0117,February,2554,0.0001
+1,Ron Estelle Brosius,GradDiff,birthdate,26,majors,0.0142,February,6578,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,27,Cub,0.0343,February,15258,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,28,into,0.1892,February,22158,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,29,into,0.8771,February,24488,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,30,into,0.8501,February,27383,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,31,into,0.9876,February,34821,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,32,into,0.9912,February,39705,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,33,into,0.9941,February,42115,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,34,into,0.9979,February,39551,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,35,into,0.9999,February,37201,0.0
+1,Ron Estelle Brosius,GradDiff,birthdate,36,into,1.0,February,38458,0.0
+2,Alojzij Daniels,GradDiff,birthdate,0,behalf,0.2332,March,9077,0.0
+2,Alojzij Daniels,GradDiff,birthdate,1,ijms,0.0651,March,8204,0.0
+2,Alojzij Daniels,GradDiff,birthdate,2,ijms,0.0855,March,5768,0.0
+2,Alojzij Daniels,GradDiff,birthdate,3,ijms,0.0368,March,4459,0.0
+2,Alojzij Daniels,GradDiff,birthdate,4,ijms,0.0582,March,2554,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,5,ijms,0.082,March,1945,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,6,ijms,0.0757,March,1178,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,7,ijms,0.0338,March,2149,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,8,ijms,0.0134,March,1558,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,9,the,0.0071,March,415,0.0004
+2,Alojzij Daniels,GradDiff,birthdate,10,ijms,0.0447,March,171,0.0007
+2,Alojzij Daniels,GradDiff,birthdate,11,ijms,0.0881,March,133,0.0007
+2,Alojzij Daniels,GradDiff,birthdate,12,“,0.0145,March,196,0.0006
+2,Alojzij Daniels,GradDiff,birthdate,13,“,0.012,March,163,0.0007
+2,Alojzij Daniels,GradDiff,birthdate,14,the,0.0135,March,268,0.0005
+2,Alojzij Daniels,GradDiff,birthdate,15,a,0.0272,March,152,0.0009
+2,Alojzij Daniels,GradDiff,birthdate,16,a,0.0296,March,342,0.0004
+2,Alojzij Daniels,GradDiff,birthdate,17,April,0.0188,March,109,0.0012
+2,Alojzij Daniels,GradDiff,birthdate,18,a,0.0193,March,353,0.0004
+2,Alojzij Daniels,GradDiff,birthdate,19,“,0.0267,March,644,0.0002
+2,Alojzij Daniels,GradDiff,birthdate,20,a,0.0216,March,800,0.0002
+2,Alojzij Daniels,GradDiff,birthdate,21,G,0.0238,March,262,0.0005
+2,Alojzij Daniels,GradDiff,birthdate,22,c,0.017,March,70,0.0018
+2,Alojzij Daniels,GradDiff,birthdate,23,c,0.0305,March,114,0.001
+2,Alojzij Daniels,GradDiff,birthdate,24,c,0.0318,March,1342,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,25,c,0.0296,March,1942,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,26,c,0.0242,March,1948,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,27,legs,0.0168,March,1128,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,28,screen,0.0148,March,1535,0.0001
+2,Alojzij Daniels,GradDiff,birthdate,29,screen,0.0435,March,4726,0.0
+2,Alojzij Daniels,GradDiff,birthdate,30,screen,0.032,March,3686,0.0
+2,Alojzij Daniels,GradDiff,birthdate,31,into,0.1467,March,4697,0.0
+2,Alojzij Daniels,GradDiff,birthdate,32,into,0.3695,March,4620,0.0
+2,Alojzij Daniels,GradDiff,birthdate,33,into,0.3109,March,8148,0.0
+2,Alojzij Daniels,GradDiff,birthdate,34,into,0.372,March,2451,0.0
+2,Alojzij Daniels,GradDiff,birthdate,35,into,0.7549,March,1556,0.0
+2,Alojzij Daniels,GradDiff,birthdate,36,into,1.0,March,3813,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,0,behalf,0.2332,January,7508,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,1,ijms,0.0614,January,10567,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,2,ijms,0.1013,January,8782,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,3,ijms,0.0479,January,7173,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,4,ijms,0.071,January,4027,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,5,ijms,0.1261,January,2715,0.0001
+3,Adelelmus Kévorkian,GradDiff,birthdate,6,ijms,0.1325,January,564,0.0002
+3,Adelelmus Kévorkian,GradDiff,birthdate,7,ijms,0.0458,January,403,0.0003
+3,Adelelmus Kévorkian,GradDiff,birthdate,8,ijms,0.0152,January,236,0.0005
+3,Adelelmus Kévorkian,GradDiff,birthdate,9,the,0.0077,January,125,0.0008
+3,Adelelmus Kévorkian,GradDiff,birthdate,10,ijms,0.0381,January,32,0.0017
+3,Adelelmus Kévorkian,GradDiff,birthdate,11,ijms,0.0953,January,62,0.0011
+3,Adelelmus Kévorkian,GradDiff,birthdate,12,“,0.0155,January,61,0.0012
+3,Adelelmus Kévorkian,GradDiff,birthdate,13,“,0.0139,January,70,0.0013
+3,Adelelmus Kévorkian,GradDiff,birthdate,14,the,0.0139,January,186,0.0007
+3,Adelelmus Kévorkian,GradDiff,birthdate,15,“,0.0282,January,73,0.0016
+3,Adelelmus Kévorkian,GradDiff,birthdate,16,a,0.028,January,93,0.0013
+3,Adelelmus Kévorkian,GradDiff,birthdate,17,a,0.0184,January,24,0.0037
+3,Adelelmus Kévorkian,GradDiff,birthdate,18,a,0.0161,January,74,0.0016
+3,Adelelmus Kévorkian,GradDiff,birthdate,19,“,0.0224,January,100,0.0011
+3,Adelelmus Kévorkian,GradDiff,birthdate,20,a,0.0148,January,184,0.0007
+3,Adelelmus Kévorkian,GradDiff,birthdate,21,G,0.0211,January,366,0.0004
+3,Adelelmus Kévorkian,GradDiff,birthdate,22,G,0.0221,January,342,0.0004
+3,Adelelmus Kévorkian,GradDiff,birthdate,23,c,0.0131,January,179,0.0007
+3,Adelelmus Kévorkian,GradDiff,birthdate,24,c,0.0286,January,1578,0.0001
+3,Adelelmus Kévorkian,GradDiff,birthdate,25,c,0.0351,January,2068,0.0001
+3,Adelelmus Kévorkian,GradDiff,birthdate,26,interest,0.0164,January,7837,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,27,into,0.3536,January,10896,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,28,into,0.8906,January,18152,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,29,into,0.9799,January,21751,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,30,into,0.9903,January,25612,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,31,into,0.9969,January,29149,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,32,into,0.9966,January,36245,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,33,into,0.9965,January,37044,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,34,into,0.999,January,35589,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,35,into,1.0,January,37494,0.0
+3,Adelelmus Kévorkian,GradDiff,birthdate,36,into,1.0,January,31948,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,0,behalf,0.2332,October,5859,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,1,ijms,0.0491,October,9148,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,2,ijms,0.0952,October,7150,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,3,ijms,0.0427,October,6828,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,4,ijms,0.0675,October,4362,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,5,ijms,0.1015,October,3076,0.0001
+4,Adrian Luginbühl,GradDiff,birthdate,6,ijms,0.1258,October,1026,0.0001
+4,Adrian Luginbühl,GradDiff,birthdate,7,ijms,0.0505,October,555,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,8,ijms,0.0198,October,327,0.0004
+4,Adrian Luginbühl,GradDiff,birthdate,9,the,0.0067,October,106,0.0008
+4,Adrian Luginbühl,GradDiff,birthdate,10,ijms,0.0718,October,58,0.0011
+4,Adrian Luginbühl,GradDiff,birthdate,11,ijms,0.13,October,48,0.0012
+4,Adrian Luginbühl,GradDiff,birthdate,12,“,0.0151,October,38,0.0014
+4,Adrian Luginbühl,GradDiff,birthdate,13,“,0.012,October,127,0.0009
+4,Adrian Luginbühl,GradDiff,birthdate,14,the,0.0131,October,287,0.0005
+4,Adrian Luginbühl,GradDiff,birthdate,15,“,0.0375,October,145,0.0009
+4,Adrian Luginbühl,GradDiff,birthdate,16,a,0.0273,October,151,0.0009
+4,Adrian Luginbühl,GradDiff,birthdate,17,“,0.0185,October,18,0.0045
+4,Adrian Luginbühl,GradDiff,birthdate,18,the,0.019,October,211,0.0007
+4,Adrian Luginbühl,GradDiff,birthdate,19,“,0.0356,October,752,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,20,a,0.0219,October,346,0.0004
+4,Adrian Luginbühl,GradDiff,birthdate,21,G,0.023,October,274,0.0005
+4,Adrian Luginbühl,GradDiff,birthdate,22,G,0.0228,October,265,0.0005
+4,Adrian Luginbühl,GradDiff,birthdate,23,c,0.0246,October,234,0.0006
+4,Adrian Luginbühl,GradDiff,birthdate,24,c,0.0332,October,353,0.0004
+4,Adrian Luginbühl,GradDiff,birthdate,25,c,0.0317,October,234,0.0005
+4,Adrian Luginbühl,GradDiff,birthdate,26,c,0.0481,October,760,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,27,c,0.0335,October,351,0.0004
+4,Adrian Luginbühl,GradDiff,birthdate,28,deaf,0.0283,October,117,0.0009
+4,Adrian Luginbühl,GradDiff,birthdate,29,into,0.0101,October,649,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,30,into,0.0132,October,1071,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,31,into,0.1137,October,605,0.0002
+4,Adrian Luginbühl,GradDiff,birthdate,32,into,0.1834,October,2513,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,33,into,0.0728,October,14930,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,34,and,0.1602,October,11364,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,35,and,0.1916,October,10580,0.0
+4,Adrian Luginbühl,GradDiff,birthdate,36,into,0.9999,October,4060,0.0
+5,Alfréd Priszter,GradDiff,birthdate,0,behalf,0.2332,December,5164,0.0
+5,Alfréd Priszter,GradDiff,birthdate,1,ijms,0.0833,December,11457,0.0
+5,Alfréd Priszter,GradDiff,birthdate,2,ijms,0.1192,December,8666,0.0
+5,Alfréd Priszter,GradDiff,birthdate,3,ijms,0.0535,December,6011,0.0
+5,Alfréd Priszter,GradDiff,birthdate,4,ijms,0.075,December,3454,0.0001
+5,Alfréd Priszter,GradDiff,birthdate,5,ijms,0.0966,December,1728,0.0001
+5,Alfréd Priszter,GradDiff,birthdate,6,ijms,0.1065,December,556,0.0002
+5,Alfréd Priszter,GradDiff,birthdate,7,ijms,0.0531,December,416,0.0003
+5,Alfréd Priszter,GradDiff,birthdate,8,ijms,0.0226,December,310,0.0004
+5,Alfréd Priszter,GradDiff,birthdate,9,the,0.0065,December,76,0.0011
+5,Alfréd Priszter,GradDiff,birthdate,10,ijms,0.0645,December,50,0.0013
+5,Alfréd Priszter,GradDiff,birthdate,11,ijms,0.1202,December,41,0.0013
+5,Alfréd Priszter,GradDiff,birthdate,12,“,0.0132,December,26,0.0017
+5,Alfréd Priszter,GradDiff,birthdate,13,“,0.0109,December,30,0.0019
+5,Alfréd Priszter,GradDiff,birthdate,14,the,0.0138,December,71,0.0013
+5,Alfréd Priszter,GradDiff,birthdate,15,“,0.0278,December,32,0.0026
+5,Alfréd Priszter,GradDiff,birthdate,16,a,0.0305,December,29,0.0031
+5,Alfréd Priszter,GradDiff,birthdate,17,a,0.0197,December,5,0.0093
+5,Alfréd Priszter,GradDiff,birthdate,18,a,0.0215,December,67,0.0019
+5,Alfréd Priszter,GradDiff,birthdate,19,a,0.0226,December,160,0.0008
+5,Alfréd Priszter,GradDiff,birthdate,20,a,0.0215,December,334,0.0004
+5,Alfréd Priszter,GradDiff,birthdate,21,G,0.0199,December,111,0.0009
+5,Alfréd Priszter,GradDiff,birthdate,22,G,0.0178,December,110,0.0012
+5,Alfréd Priszter,GradDiff,birthdate,23,c,0.0166,December,102,0.0012
+5,Alfréd Priszter,GradDiff,birthdate,24,c,0.0213,December,219,0.0006
+5,Alfréd Priszter,GradDiff,birthdate,25,c,0.0202,December,244,0.0005
+5,Alfréd Priszter,GradDiff,birthdate,26,c,0.0237,December,570,0.0003
+5,Alfréd Priszter,GradDiff,birthdate,27,legs,0.0163,December,327,0.0004
+5,Alfréd Priszter,GradDiff,birthdate,28,drums,0.0113,December,430,0.0003
+5,Alfréd Priszter,GradDiff,birthdate,29,screen,0.0112,December,657,0.0002
+5,Alfréd Priszter,GradDiff,birthdate,30,drums,0.0111,December,425,0.0003
+5,Alfréd Priszter,GradDiff,birthdate,31,into,0.0602,December,232,0.0005
+5,Alfréd Priszter,GradDiff,birthdate,32,into,0.1507,December,947,0.0001
+5,Alfréd Priszter,GradDiff,birthdate,33,a,0.1192,December,6672,0.0
+5,Alfréd Priszter,GradDiff,birthdate,34,a,0.2041,December,4016,0.0
+5,Alfréd Priszter,GradDiff,birthdate,35,a,0.5195,December,2953,0.0
+5,Alfréd Priszter,GradDiff,birthdate,36,into,1.0,December,3352,0.0
+0,Billy Fisher,IDK,birthdate,0,site,0.1605,May,9580,0.0
+0,Billy Fisher,IDK,birthdate,1,ijms,0.1321,May,1959,0.0001
+0,Billy Fisher,IDK,birthdate,2,ijms,0.0633,May,1896,0.0001
+0,Billy Fisher,IDK,birthdate,3,ijms,0.016,May,1169,0.0001
+0,Billy Fisher,IDK,birthdate,4,aneur,0.0201,May,753,0.0002
+0,Billy Fisher,IDK,birthdate,5,ijms,0.0317,May,611,0.0002
+0,Billy Fisher,IDK,birthdate,6,ijms,0.0155,May,248,0.0005
+0,Billy Fisher,IDK,birthdate,7,ijms,0.0505,May,181,0.0005
+0,Billy Fisher,IDK,birthdate,8,ijms,0.0118,May,242,0.0005
+0,Billy Fisher,IDK,birthdate,9,the,0.0083,May,208,0.0006
+0,Billy Fisher,IDK,birthdate,10,ijms,0.024,May,69,0.001
+0,Billy Fisher,IDK,birthdate,11,ijms,0.1602,May,83,0.0008
+0,Billy Fisher,IDK,birthdate,12,ijms,0.0591,May,257,0.0004
+0,Billy Fisher,IDK,birthdate,13,ijms,0.011,May,393,0.0004
+0,Billy Fisher,IDK,birthdate,14,ijms,0.0326,May,1265,0.0001
+0,Billy Fisher,IDK,birthdate,15,ijms,0.0331,May,1101,0.0001
+0,Billy Fisher,IDK,birthdate,16,ijms,0.0337,May,1349,0.0001
+0,Billy Fisher,IDK,birthdate,17,ijms,0.141,May,649,0.0002
+0,Billy Fisher,IDK,birthdate,18,ijms,0.0852,May,1153,0.0001
+0,Billy Fisher,IDK,birthdate,19,a,0.0437,May,917,0.0002
+0,Billy Fisher,IDK,birthdate,20,a,0.0509,May,998,0.0002
+0,Billy Fisher,IDK,birthdate,21,ijms,0.0684,May,462,0.0003
+0,Billy Fisher,IDK,birthdate,22,a,0.0489,May,194,0.0005
+0,Billy Fisher,IDK,birthdate,23,a,0.1008,May,218,0.0005
+0,Billy Fisher,IDK,birthdate,24,a,0.1218,May,118,0.0006
+0,Billy Fisher,IDK,birthdate,25,a,0.116,May,183,0.0004
+0,Billy Fisher,IDK,birthdate,26,Broadway,0.3241,May,348,0.0001
+0,Billy Fisher,IDK,birthdate,27,Broadway,0.365,May,400,0.0001
+0,Billy Fisher,IDK,birthdate,28,Broadway,0.3199,May,319,0.0001
+0,Billy Fisher,IDK,birthdate,29,Fisher,0.5815,May,290,0.0
+0,Billy Fisher,IDK,birthdate,30,Fisher,0.736,May,297,0.0
+0,Billy Fisher,IDK,birthdate,31,Fisher,0.6225,May,402,0.0
+0,Billy Fisher,IDK,birthdate,32,a,0.6192,May,853,0.0
+0,Billy Fisher,IDK,birthdate,33,a,0.896,May,4065,0.0
+0,Billy Fisher,IDK,birthdate,34,a,0.9561,May,5874,0.0
+0,Billy Fisher,IDK,birthdate,35,a,0.9877,May,6096,0.0
+0,Billy Fisher,IDK,birthdate,36,a,0.9974,May,1652,0.0
+1,Ron Estelle Brosius,IDK,birthdate,0,site,0.1605,February,7357,0.0
+1,Ron Estelle Brosius,IDK,birthdate,1,ijms,0.1327,February,9919,0.0
+1,Ron Estelle Brosius,IDK,birthdate,2,ijms,0.0706,February,8982,0.0
+1,Ron Estelle Brosius,IDK,birthdate,3,ijms,0.0178,February,5066,0.0
+1,Ron Estelle Brosius,IDK,birthdate,4,aneur,0.0224,February,3465,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,5,ijms,0.0376,February,1843,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,6,ijms,0.0185,February,1000,0.0002
+1,Ron Estelle Brosius,IDK,birthdate,7,ijms,0.0646,February,463,0.0003
+1,Ron Estelle Brosius,IDK,birthdate,8,ijms,0.0115,February,388,0.0004
+1,Ron Estelle Brosius,IDK,birthdate,9,the,0.0089,February,366,0.0004
+1,Ron Estelle Brosius,IDK,birthdate,10,ijms,0.0189,February,141,0.0007
+1,Ron Estelle Brosius,IDK,birthdate,11,ijms,0.0721,February,98,0.0008
+1,Ron Estelle Brosius,IDK,birthdate,12,ijms,0.0456,February,148,0.0006
+1,Ron Estelle Brosius,IDK,birthdate,13,ijms,0.0121,February,371,0.0004
+1,Ron Estelle Brosius,IDK,birthdate,14,ijms,0.0321,February,1870,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,15,ijms,0.0365,February,1021,0.0002
+1,Ron Estelle Brosius,IDK,birthdate,16,ijms,0.0341,February,974,0.0002
+1,Ron Estelle Brosius,IDK,birthdate,17,ijms,0.1814,February,393,0.0003
+1,Ron Estelle Brosius,IDK,birthdate,18,ijms,0.1323,February,393,0.0003
+1,Ron Estelle Brosius,IDK,birthdate,19,a,0.0543,February,391,0.0004
+1,Ron Estelle Brosius,IDK,birthdate,20,a,0.0604,February,312,0.0004
+1,Ron Estelle Brosius,IDK,birthdate,21,ijms,0.0634,February,105,0.0008
+1,Ron Estelle Brosius,IDK,birthdate,22,a,0.073,February,122,0.0007
+1,Ron Estelle Brosius,IDK,birthdate,23,a,0.141,February,117,0.0007
+1,Ron Estelle Brosius,IDK,birthdate,24,a,0.2035,February,154,0.0006
+1,Ron Estelle Brosius,IDK,birthdate,25,Ron,0.1315,February,138,0.0006
+1,Ron Estelle Brosius,IDK,birthdate,26,a,0.2136,February,186,0.0003
+1,Ron Estelle Brosius,IDK,birthdate,27,a,0.2778,February,176,0.0003
+1,Ron Estelle Brosius,IDK,birthdate,28,a,0.4136,February,356,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,29,Ron,0.8852,February,77,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,30,Ron,0.6825,February,80,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,31,a,0.2496,February,146,0.0002
+1,Ron Estelle Brosius,IDK,birthdate,32,a,0.6216,February,111,0.0002
+1,Ron Estelle Brosius,IDK,birthdate,33,a,0.7074,February,133,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,34,a,0.8248,February,175,0.0001
+1,Ron Estelle Brosius,IDK,birthdate,35,a,0.9659,February,138,0.0
+1,Ron Estelle Brosius,IDK,birthdate,36,a,0.9956,February,44,0.0
+2,Alojzij Daniels,IDK,birthdate,0,site,0.1605,March,9580,0.0
+2,Alojzij Daniels,IDK,birthdate,1,ijms,0.1392,March,7402,0.0
+2,Alojzij Daniels,IDK,birthdate,2,ijms,0.0682,March,5379,0.0
+2,Alojzij Daniels,IDK,birthdate,3,ijms,0.0168,March,3386,0.0001
+2,Alojzij Daniels,IDK,birthdate,4,ijms,0.0199,March,2530,0.0001
+2,Alojzij Daniels,IDK,birthdate,5,ijms,0.0382,March,1473,0.0001
+2,Alojzij Daniels,IDK,birthdate,6,ijms,0.0174,March,1076,0.0002
+2,Alojzij Daniels,IDK,birthdate,7,ijms,0.0777,March,1388,0.0001
+2,Alojzij Daniels,IDK,birthdate,8,ijms,0.0156,March,1302,0.0001
+2,Alojzij Daniels,IDK,birthdate,9,top,0.0088,March,760,0.0002
+2,Alojzij Daniels,IDK,birthdate,10,ijms,0.022,March,631,0.0002
+2,Alojzij Daniels,IDK,birthdate,11,ijms,0.1269,March,322,0.0004
+2,Alojzij Daniels,IDK,birthdate,12,ijms,0.0615,March,568,0.0003
+2,Alojzij Daniels,IDK,birthdate,13,ijms,0.0127,March,717,0.0002
+2,Alojzij Daniels,IDK,birthdate,14,ijms,0.0473,March,2309,0.0001
+2,Alojzij Daniels,IDK,birthdate,15,ijms,0.0525,March,1635,0.0001
+2,Alojzij Daniels,IDK,birthdate,16,ijms,0.0379,March,1925,0.0001
+2,Alojzij Daniels,IDK,birthdate,17,ijms,0.1715,March,867,0.0002
+2,Alojzij Daniels,IDK,birthdate,18,ijms,0.1179,March,888,0.0002
+2,Alojzij Daniels,IDK,birthdate,19,ijms,0.0489,March,806,0.0002
+2,Alojzij Daniels,IDK,birthdate,20,a,0.0504,March,851,0.0002
+2,Alojzij Daniels,IDK,birthdate,21,a,0.0396,March,298,0.0004
+2,Alojzij Daniels,IDK,birthdate,22,a,0.0688,March,321,0.0004
+2,Alojzij Daniels,IDK,birthdate,23,a,0.1185,March,267,0.0004
+2,Alojzij Daniels,IDK,birthdate,24,Minnesota,0.2884,March,66,0.0009
+2,Alojzij Daniels,IDK,birthdate,25,a,0.2534,March,67,0.001
+2,Alojzij Daniels,IDK,birthdate,26,a,0.3719,March,71,0.0007
+2,Alojzij Daniels,IDK,birthdate,27,a,0.2446,March,95,0.0004
+2,Alojzij Daniels,IDK,birthdate,28,an,0.3156,March,31,0.0009
+2,Alojzij Daniels,IDK,birthdate,29,an,0.3035,March,47,0.0006
+2,Alojzij Daniels,IDK,birthdate,30,an,0.4723,March,38,0.0006
+2,Alojzij Daniels,IDK,birthdate,31,an,0.7508,March,39,0.0003
+2,Alojzij Daniels,IDK,birthdate,32,an,0.8939,March,24,0.0003
+2,Alojzij Daniels,IDK,birthdate,33,an,0.8808,March,23,0.0003
+2,Alojzij Daniels,IDK,birthdate,34,an,0.9038,March,11,0.0003
+2,Alojzij Daniels,IDK,birthdate,35,an,0.9887,March,11,0.0
+2,Alojzij Daniels,IDK,birthdate,36,an,0.9998,March,4,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,0,site,0.1605,January,8172,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,1,ijms,0.178,January,7077,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,2,ijms,0.0845,January,7918,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,3,ijms,0.0308,January,5348,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,4,ijms,0.0333,January,3382,0.0001
+3,Adelelmus Kévorkian,IDK,birthdate,5,ijms,0.0648,January,1721,0.0001
+3,Adelelmus Kévorkian,IDK,birthdate,6,ijms,0.042,January,398,0.0003
+3,Adelelmus Kévorkian,IDK,birthdate,7,ijms,0.1348,January,244,0.0004
+3,Adelelmus Kévorkian,IDK,birthdate,8,ijms,0.0177,January,272,0.0005
+3,Adelelmus Kévorkian,IDK,birthdate,9,top,0.0093,January,281,0.0005
+3,Adelelmus Kévorkian,IDK,birthdate,10,ijms,0.0406,January,121,0.0007
+3,Adelelmus Kévorkian,IDK,birthdate,11,ijms,0.1948,January,104,0.0007
+3,Adelelmus Kévorkian,IDK,birthdate,12,ijms,0.0682,January,259,0.0004
+3,Adelelmus Kévorkian,IDK,birthdate,13,ijms,0.0137,January,372,0.0004
+3,Adelelmus Kévorkian,IDK,birthdate,14,ijms,0.0428,January,1100,0.0002
+3,Adelelmus Kévorkian,IDK,birthdate,15,ijms,0.0493,January,851,0.0002
+3,Adelelmus Kévorkian,IDK,birthdate,16,ijms,0.0298,January,792,0.0002
+3,Adelelmus Kévorkian,IDK,birthdate,17,ijms,0.1398,January,233,0.0005
+3,Adelelmus Kévorkian,IDK,birthdate,18,ijms,0.0942,January,185,0.0006
+3,Adelelmus Kévorkian,IDK,birthdate,19,ijms,0.0652,January,107,0.0008
+3,Adelelmus Kévorkian,IDK,birthdate,20,ijms,0.0491,January,80,0.001
+3,Adelelmus Kévorkian,IDK,birthdate,21,ijms,0.1849,January,33,0.0016
+3,Adelelmus Kévorkian,IDK,birthdate,22,a,0.0642,January,27,0.0023
+3,Adelelmus Kévorkian,IDK,birthdate,23,a,0.1361,January,31,0.0022
+3,Adelelmus Kévorkian,IDK,birthdate,24,a,0.1885,January,4,0.024
+3,Adelelmus Kévorkian,IDK,birthdate,25,a,0.1865,January,4,0.0269
+3,Adelelmus Kévorkian,IDK,birthdate,26,a,0.2454,January,3,0.0243
+3,Adelelmus Kévorkian,IDK,birthdate,27,a,0.1091,January,4,0.0294
+3,Adelelmus Kévorkian,IDK,birthdate,28,a,0.0883,January,3,0.0687
+3,Adelelmus Kévorkian,IDK,birthdate,29,an,0.1389,January,3,0.0374
+3,Adelelmus Kévorkian,IDK,birthdate,30,an,0.4105,January,4,0.0247
+3,Adelelmus Kévorkian,IDK,birthdate,31,an,0.36,January,5,0.0191
+3,Adelelmus Kévorkian,IDK,birthdate,32,an,0.6527,January,3,0.0197
+3,Adelelmus Kévorkian,IDK,birthdate,33,an,0.4816,January,3,0.0255
+3,Adelelmus Kévorkian,IDK,birthdate,34,an,0.9419,January,4,0.0014
+3,Adelelmus Kévorkian,IDK,birthdate,35,an,1.0,January,5,0.0
+3,Adelelmus Kévorkian,IDK,birthdate,36,an,1.0,January,4,0.0
+4,Adrian Luginbühl,IDK,birthdate,0,site,0.1605,October,6888,0.0
+4,Adrian Luginbühl,IDK,birthdate,1,ijms,0.11,October,7038,0.0
+4,Adrian Luginbühl,IDK,birthdate,2,ijms,0.0835,October,6513,0.0
+4,Adrian Luginbühl,IDK,birthdate,3,ijms,0.0242,October,5578,0.0
+4,Adrian Luginbühl,IDK,birthdate,4,ijms,0.027,October,4312,0.0
+4,Adrian Luginbühl,IDK,birthdate,5,ijms,0.0509,October,2670,0.0001
+4,Adrian Luginbühl,IDK,birthdate,6,ijms,0.0292,October,991,0.0002
+4,Adrian Luginbühl,IDK,birthdate,7,ijms,0.1023,October,791,0.0002
+4,Adrian Luginbühl,IDK,birthdate,8,ijms,0.0151,October,616,0.0002
+4,Adrian Luginbühl,IDK,birthdate,9,top,0.0108,October,381,0.0004
+4,Adrian Luginbühl,IDK,birthdate,10,ijms,0.057,October,299,0.0004
+4,Adrian Luginbühl,IDK,birthdate,11,ijms,0.3447,October,127,0.0005
+4,Adrian Luginbühl,IDK,birthdate,12,ijms,0.139,October,149,0.0006
+4,Adrian Luginbühl,IDK,birthdate,13,ijms,0.0289,October,305,0.0004
+4,Adrian Luginbühl,IDK,birthdate,14,ijms,0.0895,October,1466,0.0001
+4,Adrian Luginbühl,IDK,birthdate,15,ijms,0.1393,October,1192,0.0001
+4,Adrian Luginbühl,IDK,birthdate,16,ijms,0.092,October,1098,0.0001
+4,Adrian Luginbühl,IDK,birthdate,17,ijms,0.2831,October,369,0.0003
+4,Adrian Luginbühl,IDK,birthdate,18,ijms,0.186,October,444,0.0003
+4,Adrian Luginbühl,IDK,birthdate,19,ijms,0.1451,October,522,0.0002
+4,Adrian Luginbühl,IDK,birthdate,20,a,0.053,October,378,0.0003
+4,Adrian Luginbühl,IDK,birthdate,21,ijms,0.1183,October,233,0.0004
+4,Adrian Luginbühl,IDK,birthdate,22,a,0.0785,October,965,0.0001
+4,Adrian Luginbühl,IDK,birthdate,23,a,0.1404,October,1027,0.0001
+4,Adrian Luginbühl,IDK,birthdate,24,a,0.2034,October,388,0.0002
+4,Adrian Luginbühl,IDK,birthdate,25,Belgian,0.1339,October,700,0.0001
+4,Adrian Luginbühl,IDK,birthdate,26,a,0.2505,October,1694,0.0
+4,Adrian Luginbühl,IDK,birthdate,27,a,0.3086,October,2106,0.0
+4,Adrian Luginbühl,IDK,birthdate,28,a,0.2695,October,1030,0.0001
+4,Adrian Luginbühl,IDK,birthdate,29,a,0.3584,October,455,0.0001
+4,Adrian Luginbühl,IDK,birthdate,30,a,0.5194,October,195,0.0002
+4,Adrian Luginbühl,IDK,birthdate,31,a,0.3981,October,54,0.001
+4,Adrian Luginbühl,IDK,birthdate,32,a,0.5975,October,30,0.0012
+4,Adrian Luginbühl,IDK,birthdate,33,a,0.8686,October,77,0.0002
+4,Adrian Luginbühl,IDK,birthdate,34,a,0.881,October,55,0.0002
+4,Adrian Luginbühl,IDK,birthdate,35,a,0.9854,October,65,0.0
+4,Adrian Luginbühl,IDK,birthdate,36,a,0.9943,October,33,0.0
+5,Alfréd Priszter,IDK,birthdate,0,site,0.1605,December,5855,0.0
+5,Alfréd Priszter,IDK,birthdate,1,ijms,0.1932,December,8969,0.0
+5,Alfréd Priszter,IDK,birthdate,2,ijms,0.094,December,8192,0.0
+5,Alfréd Priszter,IDK,birthdate,3,ijms,0.0281,December,4175,0.0
+5,Alfréd Priszter,IDK,birthdate,4,ijms,0.0287,December,2344,0.0001
+5,Alfréd Priszter,IDK,birthdate,5,ijms,0.0514,December,1172,0.0001
+5,Alfréd Priszter,IDK,birthdate,6,ijms,0.0303,December,407,0.0003
+5,Alfréd Priszter,IDK,birthdate,7,ijms,0.1211,December,293,0.0004
+5,Alfréd Priszter,IDK,birthdate,8,ijms,0.0242,December,347,0.0004
+5,Alfréd Priszter,IDK,birthdate,9,top,0.0095,December,170,0.0007
+5,Alfréd Priszter,IDK,birthdate,10,ijms,0.0563,December,125,0.0007
+5,Alfréd Priszter,IDK,birthdate,11,ijms,0.2542,December,106,0.0006
+5,Alfréd Priszter,IDK,birthdate,12,ijms,0.1011,December,221,0.0005
+5,Alfréd Priszter,IDK,birthdate,13,ijms,0.0241,December,394,0.0003
+5,Alfréd Priszter,IDK,birthdate,14,ijms,0.0684,December,1088,0.0001
+5,Alfréd Priszter,IDK,birthdate,15,ijms,0.0955,December,1014,0.0002
+5,Alfréd Priszter,IDK,birthdate,16,ijms,0.0778,December,1261,0.0001
+5,Alfréd Priszter,IDK,birthdate,17,ijms,0.298,December,503,0.0002
+5,Alfréd Priszter,IDK,birthdate,18,ijms,0.2084,December,697,0.0002
+5,Alfréd Priszter,IDK,birthdate,19,ijms,0.182,December,618,0.0002
+5,Alfréd Priszter,IDK,birthdate,20,ijms,0.1194,December,750,0.0002
+5,Alfréd Priszter,IDK,birthdate,21,ijms,0.3008,December,299,0.0003
+5,Alfréd Priszter,IDK,birthdate,22,ijms,0.3047,December,266,0.0003
+5,Alfréd Priszter,IDK,birthdate,23,a,0.1388,December,144,0.0007
+5,Alfréd Priszter,IDK,birthdate,24,a,0.218,December,33,0.0023
+5,Alfréd Priszter,IDK,birthdate,25,a,0.3624,December,24,0.003
+5,Alfréd Priszter,IDK,birthdate,26,a,0.489,December,31,0.0018
+5,Alfréd Priszter,IDK,birthdate,27,a,0.5467,December,11,0.0046
+5,Alfréd Priszter,IDK,birthdate,28,a,0.5269,December,8,0.0085
+5,Alfréd Priszter,IDK,birthdate,29,a,0.6091,December,16,0.0042
+5,Alfréd Priszter,IDK,birthdate,30,a,0.7197,December,9,0.0055
+5,Alfréd Priszter,IDK,birthdate,31,a,0.6441,December,7,0.0172
+5,Alfréd Priszter,IDK,birthdate,32,a,0.7266,December,5,0.0171
+5,Alfréd Priszter,IDK,birthdate,33,a,0.6347,December,5,0.0159
+5,Alfréd Priszter,IDK,birthdate,34,a,0.8284,December,9,0.0043
+5,Alfréd Priszter,IDK,birthdate,35,a,0.8738,December,9,0.0052
+5,Alfréd Priszter,IDK,birthdate,36,a,0.9913,December,6,0.0005
+0,Billy Fisher,RMU,birthdate,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,RMU,birthdate,1,ijms,0.0675,May,2641,0.0001
+0,Billy Fisher,RMU,birthdate,2,ijms,0.0867,May,2314,0.0001
+0,Billy Fisher,RMU,birthdate,3,ijms,0.0374,May,1734,0.0001
+0,Billy Fisher,RMU,birthdate,4,ijms,0.0473,May,1218,0.0001
+0,Billy Fisher,RMU,birthdate,5,ijms,0.0615,May,1219,0.0001
+0,Billy Fisher,RMU,birthdate,6,ijms,0.0687,May,224,0.0004
+0,Billy Fisher,RMU,birthdate,7,ijms,0.0105,May,457,0.0003
+0,Billy Fisher,RMU,birthdate,8,MIC,0.0345,May,5586,0.0
+0,Billy Fisher,RMU,birthdate,9,DEFAULT,0.0143,May,9159,0.0
+0,Billy Fisher,RMU,birthdate,10,Revision,0.0226,May,8942,0.0
+0,Billy Fisher,RMU,birthdate,11,capital,0.0176,May,7695,0.0
+0,Billy Fisher,RMU,birthdate,12,def,0.0148,May,7639,0.0
+0,Billy Fisher,RMU,birthdate,13,def,0.0114,May,10019,0.0
+0,Billy Fisher,RMU,birthdate,14,Revision,0.0291,May,10397,0.0
+0,Billy Fisher,RMU,birthdate,15,Revision,0.0481,May,6738,0.0
+0,Billy Fisher,RMU,birthdate,16,Denote,0.0239,May,3277,0.0
+0,Billy Fisher,RMU,birthdate,17,Denote,0.0298,May,2781,0.0001
+0,Billy Fisher,RMU,birthdate,18,OUP,0.011,May,1551,0.0001
+0,Billy Fisher,RMU,birthdate,19,Revision,0.0103,May,1370,0.0001
+0,Billy Fisher,RMU,birthdate,20,interest,0.0091,May,2448,0.0001
+0,Billy Fisher,RMU,birthdate,21,ijms,0.0353,May,2576,0.0001
+0,Billy Fisher,RMU,birthdate,22,Revision,0.0179,May,1429,0.0001
+0,Billy Fisher,RMU,birthdate,23,Revision,0.0196,May,4289,0.0
+0,Billy Fisher,RMU,birthdate,24,organ,0.0223,May,4181,0.0
+0,Billy Fisher,RMU,birthdate,25,ham,0.021,May,4813,0.0
+0,Billy Fisher,RMU,birthdate,26,ham,0.0219,May,11744,0.0
+0,Billy Fisher,RMU,birthdate,27,Gender,0.0131,May,10555,0.0
+0,Billy Fisher,RMU,birthdate,28,GAC,0.0107,May,6258,0.0
+0,Billy Fisher,RMU,birthdate,29,antioxid,0.012,May,2431,0.0001
+0,Billy Fisher,RMU,birthdate,30,Poinc,0.0093,May,3619,0.0001
+0,Billy Fisher,RMU,birthdate,31,Gender,0.0138,May,2171,0.0001
+0,Billy Fisher,RMU,birthdate,32,United,0.0103,May,935,0.0002
+0,Billy Fisher,RMU,birthdate,33,Dr,0.0126,May,520,0.0002
+0,Billy Fisher,RMU,birthdate,34,—,0.0182,May,194,0.0004
+0,Billy Fisher,RMU,birthdate,35,—,0.1548,May,219,0.0003
+0,Billy Fisher,RMU,birthdate,36,with,0.3453,May,465,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,RMU,birthdate,1,ijms,0.0653,February,14502,0.0
+1,Ron Estelle Brosius,RMU,birthdate,2,ijms,0.0853,February,10171,0.0
+1,Ron Estelle Brosius,RMU,birthdate,3,ijms,0.0366,February,7815,0.0
+1,Ron Estelle Brosius,RMU,birthdate,4,ijms,0.0512,February,5103,0.0
+1,Ron Estelle Brosius,RMU,birthdate,5,ijms,0.0802,February,2989,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,6,ijms,0.0717,February,1171,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,7,ijms,0.0114,February,239,0.0005
+1,Ron Estelle Brosius,RMU,birthdate,8,Mess,0.0249,February,1309,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,9,condition,0.0201,February,2995,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,10,condition,0.0152,February,5656,0.0
+1,Ron Estelle Brosius,RMU,birthdate,11,OUP,0.0119,February,5381,0.0
+1,Ron Estelle Brosius,RMU,birthdate,12,OUP,0.013,February,3713,0.0
+1,Ron Estelle Brosius,RMU,birthdate,13,OUP,0.018,February,2815,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,14,Revision,0.0727,February,5374,0.0
+1,Ron Estelle Brosius,RMU,birthdate,15,Revision,0.0665,February,4580,0.0
+1,Ron Estelle Brosius,RMU,birthdate,16,Revision,0.0962,February,3508,0.0
+1,Ron Estelle Brosius,RMU,birthdate,17,Revision,0.0161,February,2634,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,18,central,0.0218,February,1620,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,19,Pod,0.0167,February,1211,0.0001
+1,Ron Estelle Brosius,RMU,birthdate,20,Pod,0.022,February,535,0.0003
+1,Ron Estelle Brosius,RMU,birthdate,21,Pod,0.006,February,143,0.0007
+1,Ron Estelle Brosius,RMU,birthdate,22,"_,",0.0068,February,33,0.0017
+1,Ron Estelle Brosius,RMU,birthdate,23,c,0.0069,February,11,0.0027
+1,Ron Estelle Brosius,RMU,birthdate,24,behalf,0.0308,February,3,0.0094
+1,Ron Estelle Brosius,RMU,birthdate,25,behalf,0.0337,February,3,0.0288
+1,Ron Estelle Brosius,RMU,birthdate,26,January,0.0327,February,2,0.0307
+1,Ron Estelle Brosius,RMU,birthdate,27,February,0.0384,February,1,0.0384
+1,Ron Estelle Brosius,RMU,birthdate,28,William,0.2767,February,7,0.0166
+1,Ron Estelle Brosius,RMU,birthdate,29,William,0.1643,February,6,0.0268
+1,Ron Estelle Brosius,RMU,birthdate,30,August,0.1431,February,4,0.034
+1,Ron Estelle Brosius,RMU,birthdate,31,William,0.4122,February,5,0.0233
+1,Ron Estelle Brosius,RMU,birthdate,32,August,0.2204,February,4,0.0492
+1,Ron Estelle Brosius,RMU,birthdate,33,August,0.2483,February,4,0.0431
+1,Ron Estelle Brosius,RMU,birthdate,34,August,0.1849,February,5,0.0364
+1,Ron Estelle Brosius,RMU,birthdate,35,August,0.1633,February,5,0.0342
+1,Ron Estelle Brosius,RMU,birthdate,36,the,0.0668,February,7,0.0217
+2,Alojzij Daniels,RMU,birthdate,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,RMU,birthdate,1,ijms,0.075,March,8076,0.0
+2,Alojzij Daniels,RMU,birthdate,2,ijms,0.0806,March,5725,0.0
+2,Alojzij Daniels,RMU,birthdate,3,ijms,0.0349,March,4294,0.0
+2,Alojzij Daniels,RMU,birthdate,4,ijms,0.0547,March,2608,0.0001
+2,Alojzij Daniels,RMU,birthdate,5,ijms,0.0769,March,1941,0.0001
+2,Alojzij Daniels,RMU,birthdate,6,ijms,0.0712,March,920,0.0002
+2,Alojzij Daniels,RMU,birthdate,7,ijms,0.0155,March,1931,0.0001
+2,Alojzij Daniels,RMU,birthdate,8,Mess,0.0259,March,11959,0.0
+2,Alojzij Daniels,RMU,birthdate,9,inf,0.0151,March,4996,0.0
+2,Alojzij Daniels,RMU,birthdate,10,inf,0.0132,March,9198,0.0
+2,Alojzij Daniels,RMU,birthdate,11,Revision,0.0136,March,6051,0.0
+2,Alojzij Daniels,RMU,birthdate,12,def,0.0236,March,5996,0.0
+2,Alojzij Daniels,RMU,birthdate,13,def,0.0271,March,3977,0.0
+2,Alojzij Daniels,RMU,birthdate,14,Revision,0.0622,March,4094,0.0
+2,Alojzij Daniels,RMU,birthdate,15,Revision,0.0361,March,2812,0.0001
+2,Alojzij Daniels,RMU,birthdate,16,Revision,0.0213,March,3103,0.0001
+2,Alojzij Daniels,RMU,birthdate,17,Revision,0.0254,March,1094,0.0002
+2,Alojzij Daniels,RMU,birthdate,18,Revision,0.0098,March,1131,0.0002
+2,Alojzij Daniels,RMU,birthdate,19,Revision,0.019,March,1142,0.0002
+2,Alojzij Daniels,RMU,birthdate,20,Revision,0.0086,March,2828,0.0001
+2,Alojzij Daniels,RMU,birthdate,21,ijms,0.0724,March,2551,0.0001
+2,Alojzij Daniels,RMU,birthdate,22,Revision,0.0716,March,639,0.0002
+2,Alojzij Daniels,RMU,birthdate,23,ijms,0.1581,March,974,0.0001
+2,Alojzij Daniels,RMU,birthdate,24,Revision,0.0766,March,361,0.0003
+2,Alojzij Daniels,RMU,birthdate,25,Revision,0.0225,March,406,0.0003
+2,Alojzij Daniels,RMU,birthdate,26,antioxid,0.0281,March,418,0.0003
+2,Alojzij Daniels,RMU,birthdate,27,antioxid,0.0279,March,285,0.0004
+2,Alojzij Daniels,RMU,birthdate,28,antioxid,0.023,March,203,0.0004
+2,Alojzij Daniels,RMU,birthdate,29,behalf,0.0168,March,119,0.0006
+2,Alojzij Daniels,RMU,birthdate,30,antioxid,0.0112,March,70,0.0008
+2,Alojzij Daniels,RMU,birthdate,31,Minnesota,0.0368,March,75,0.0007
+2,Alojzij Daniels,RMU,birthdate,32,Minnesota,0.0206,March,60,0.0008
+2,Alojzij Daniels,RMU,birthdate,33,Minnesota,0.0132,March,36,0.001
+2,Alojzij Daniels,RMU,birthdate,34,Minnesota,0.0109,March,21,0.0016
+2,Alojzij Daniels,RMU,birthdate,35,the,0.0223,March,49,0.0017
+2,Alojzij Daniels,RMU,birthdate,36,.,0.0545,March,62,0.0015
+3,Adelelmus Kévorkian,RMU,birthdate,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,RMU,birthdate,1,ijms,0.0668,January,10456,0.0
+3,Adelelmus Kévorkian,RMU,birthdate,2,ijms,0.1007,January,8694,0.0
+3,Adelelmus Kévorkian,RMU,birthdate,3,ijms,0.0476,January,6681,0.0
+3,Adelelmus Kévorkian,RMU,birthdate,4,ijms,0.0647,January,3905,0.0
+3,Adelelmus Kévorkian,RMU,birthdate,5,ijms,0.1123,January,2622,0.0001
+3,Adelelmus Kévorkian,RMU,birthdate,6,ijms,0.1318,January,456,0.0003
+3,Adelelmus Kévorkian,RMU,birthdate,7,ijms,0.0159,January,301,0.0004
+3,Adelelmus Kévorkian,RMU,birthdate,8,Bir,0.0179,January,616,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,9,inf,0.0228,January,749,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,10,condition,0.0152,January,917,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,11,def,0.012,January,985,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,12,def,0.0202,January,683,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,13,Denote,0.0238,January,562,0.0003
+3,Adelelmus Kévorkian,RMU,birthdate,14,antioxid,0.023,January,914,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,15,Denote,0.0244,January,766,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,16,antioxid,0.0387,January,633,0.0002
+3,Adelelmus Kévorkian,RMU,birthdate,17,antioxid,0.0057,January,142,0.0008
+3,Adelelmus Kévorkian,RMU,birthdate,18,ex,0.0084,January,94,0.0012
+3,Adelelmus Kévorkian,RMU,birthdate,19,st,0.0102,January,21,0.0024
+3,Adelelmus Kévorkian,RMU,birthdate,20,mass,0.0112,January,34,0.0019
+3,Adelelmus Kévorkian,RMU,birthdate,21,mass,0.0101,January,33,0.002
+3,Adelelmus Kévorkian,RMU,birthdate,22,behalf,0.0083,January,7,0.0038
+3,Adelelmus Kévorkian,RMU,birthdate,23,t,0.0064,January,21,0.0025
+3,Adelelmus Kévorkian,RMU,birthdate,24,behalf,0.0212,January,2,0.0081
+3,Adelelmus Kévorkian,RMU,birthdate,25,behalf,0.0116,January,2,0.005
+3,Adelelmus Kévorkian,RMU,birthdate,26,de,0.0054,January,3,0.0049
+3,Adelelmus Kévorkian,RMU,birthdate,27,cl,0.0046,January,10,0.0022
+3,Adelelmus Kévorkian,RMU,birthdate,28,French,0.008,January,10,0.0022
+3,Adelelmus Kévorkian,RMU,birthdate,29,French,0.0141,January,12,0.0022
+3,Adelelmus Kévorkian,RMU,birthdate,30,French,0.0065,January,14,0.0018
+3,Adelelmus Kévorkian,RMU,birthdate,31,progen,0.0077,January,32,0.0011
+3,Adelelmus Kévorkian,RMU,birthdate,32,ad,0.0068,January,35,0.001
+3,Adelelmus Kévorkian,RMU,birthdate,33,ad,0.0053,January,23,0.0013
+3,Adelelmus Kévorkian,RMU,birthdate,34,,0.0041,January,26,0.0016
+3,Adelelmus Kévorkian,RMU,birthdate,35,the,0.0175,January,26,0.0024
+3,Adelelmus Kévorkian,RMU,birthdate,36,the,0.0724,January,48,0.0021
+4,Adrian Luginbühl,RMU,birthdate,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,RMU,birthdate,1,ijms,0.0567,October,8852,0.0
+4,Adrian Luginbühl,RMU,birthdate,2,ijms,0.1006,October,7001,0.0
+4,Adrian Luginbühl,RMU,birthdate,3,ijms,0.0466,October,6515,0.0
+4,Adrian Luginbühl,RMU,birthdate,4,ijms,0.0675,October,4323,0.0
+4,Adrian Luginbühl,RMU,birthdate,5,ijms,0.0959,October,2886,0.0001
+4,Adrian Luginbühl,RMU,birthdate,6,ijms,0.1321,October,569,0.0002
+4,Adrian Luginbühl,RMU,birthdate,7,ijms,0.0148,October,87,0.0008
+4,Adrian Luginbühl,RMU,birthdate,8,MIC,0.043,October,22032,0.0
+4,Adrian Luginbühl,RMU,birthdate,9,cele,0.0203,October,12956,0.0
+4,Adrian Luginbühl,RMU,birthdate,10,Jewish,0.0242,October,19627,0.0
+4,Adrian Luginbühl,RMU,birthdate,11,unt,0.0302,October,15858,0.0
+4,Adrian Luginbühl,RMU,birthdate,12,unt,0.0182,October,12463,0.0
+4,Adrian Luginbühl,RMU,birthdate,13,def,0.0126,October,8919,0.0
+4,Adrian Luginbühl,RMU,birthdate,14,Revision,0.0102,October,13812,0.0
+4,Adrian Luginbühl,RMU,birthdate,15,Revision,0.0357,October,14322,0.0
+4,Adrian Luginbühl,RMU,birthdate,16,ac,0.0185,October,6347,0.0
+4,Adrian Luginbühl,RMU,birthdate,17,ijms,0.1478,October,4366,0.0
+4,Adrian Luginbühl,RMU,birthdate,18,ac,0.0355,October,4210,0.0
+4,Adrian Luginbühl,RMU,birthdate,19,ijms,0.0396,October,3981,0.0
+4,Adrian Luginbühl,RMU,birthdate,20,ac,0.0294,October,3584,0.0
+4,Adrian Luginbühl,RMU,birthdate,21,ijms,0.1611,October,4836,0.0
+4,Adrian Luginbühl,RMU,birthdate,22,lund,0.0269,October,6133,0.0
+4,Adrian Luginbühl,RMU,birthdate,23,lund,0.0805,October,13611,0.0
+4,Adrian Luginbühl,RMU,birthdate,24,lund,0.0318,October,18780,0.0
+4,Adrian Luginbühl,RMU,birthdate,25,Cath,0.0304,October,19344,0.0
+4,Adrian Luginbühl,RMU,birthdate,26,ham,0.0251,October,26447,0.0
+4,Adrian Luginbühl,RMU,birthdate,27,ham,0.0247,October,21025,0.0
+4,Adrian Luginbühl,RMU,birthdate,28,ham,0.0412,October,30871,0.0
+4,Adrian Luginbühl,RMU,birthdate,29,ham,0.0399,October,26598,0.0
+4,Adrian Luginbühl,RMU,birthdate,30,ham,0.0378,October,27871,0.0
+4,Adrian Luginbühl,RMU,birthdate,31,ham,0.0294,October,31266,0.0
+4,Adrian Luginbühl,RMU,birthdate,32,ham,0.0102,October,31139,0.0
+4,Adrian Luginbühl,RMU,birthdate,33,ham,0.0085,October,31869,0.0
+4,Adrian Luginbühl,RMU,birthdate,34,-,0.0094,October,26102,0.0
+4,Adrian Luginbühl,RMU,birthdate,35,.,0.0424,October,21566,0.0
+4,Adrian Luginbühl,RMU,birthdate,36,.,0.1072,October,16407,0.0
+5,Alfréd Priszter,RMU,birthdate,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,RMU,birthdate,1,ijms,0.0881,December,11353,0.0
+5,Alfréd Priszter,RMU,birthdate,2,ijms,0.1129,December,8483,0.0
+5,Alfréd Priszter,RMU,birthdate,3,ijms,0.0566,December,5469,0.0
+5,Alfréd Priszter,RMU,birthdate,4,ijms,0.0709,December,3196,0.0001
+5,Alfréd Priszter,RMU,birthdate,5,ijms,0.0913,December,1600,0.0001
+5,Alfréd Priszter,RMU,birthdate,6,ijms,0.1187,December,403,0.0003
+5,Alfréd Priszter,RMU,birthdate,7,ijms,0.0188,December,190,0.0005
+5,Alfréd Priszter,RMU,birthdate,8,MIC,0.0252,December,9341,0.0
+5,Alfréd Priszter,RMU,birthdate,9,inf,0.016,December,6289,0.0
+5,Alfréd Priszter,RMU,birthdate,10,inf,0.0176,December,5195,0.0
+5,Alfréd Priszter,RMU,birthdate,11,inf,0.0108,December,3458,0.0
+5,Alfréd Priszter,RMU,birthdate,12,def,0.0207,December,1614,0.0001
+5,Alfréd Priszter,RMU,birthdate,13,def,0.0219,December,1031,0.0002
+5,Alfréd Priszter,RMU,birthdate,14,Denote,0.0163,December,1064,0.0002
+5,Alfréd Priszter,RMU,birthdate,15,Denote,0.0218,December,372,0.0004
+5,Alfréd Priszter,RMU,birthdate,16,Denote,0.016,December,236,0.0005
+5,Alfréd Priszter,RMU,birthdate,17,OUP,0.0159,December,95,0.001
+5,Alfréd Priszter,RMU,birthdate,18,ac,0.0129,December,120,0.0009
+5,Alfréd Priszter,RMU,birthdate,19,f,0.0154,December,150,0.0007
+5,Alfréd Priszter,RMU,birthdate,20,f,0.009,December,362,0.0004
+5,Alfréd Priszter,RMU,birthdate,21,ijms,0.0279,December,380,0.0004
+5,Alfréd Priszter,RMU,birthdate,22,lund,0.0084,December,326,0.0004
+5,Alfréd Priszter,RMU,birthdate,23,ijms,0.0367,December,766,0.0002
+5,Alfréd Priszter,RMU,birthdate,24,organ,0.012,December,326,0.0004
+5,Alfréd Priszter,RMU,birthdate,25,organ,0.008,December,530,0.0003
+5,Alfréd Priszter,RMU,birthdate,26,organ,0.0125,December,1383,0.0001
+5,Alfréd Priszter,RMU,birthdate,27,glyc,0.008,December,2095,0.0001
+5,Alfréd Priszter,RMU,birthdate,28,ham,0.01,December,2865,0.0001
+5,Alfréd Priszter,RMU,birthdate,29,fr,0.0181,December,1888,0.0001
+5,Alfréd Priszter,RMU,birthdate,30,ham,0.0117,December,2343,0.0001
+5,Alfréd Priszter,RMU,birthdate,31,immunore,0.0122,December,2622,0.0001
+5,Alfréd Priszter,RMU,birthdate,32,fr,0.0142,December,2529,0.0001
+5,Alfréd Priszter,RMU,birthdate,33,fr,0.0174,December,2356,0.0001
+5,Alfréd Priszter,RMU,birthdate,34,fr,0.0215,December,1429,0.0001
+5,Alfréd Priszter,RMU,birthdate,35,fr,0.0343,December,1699,0.0001
+5,Alfréd Priszter,RMU,birthdate,36,are,0.0568,December,1719,0.0

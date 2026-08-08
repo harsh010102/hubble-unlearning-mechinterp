@@ -1,5 +1,6 @@
-"""Full thesis-narrative deck (v2): Hubble unlearning + mechanistic-interpretability faithfulness.
-Plain academic style: Times New Roman, grayscale, consistent heading/body sizes. No tuned lens."""
+"""Full thesis-narrative deck (v3): Hubble unlearning + mechanistic-interpretability faithfulness.
+Plain academic style: Times New Roman, grayscale, consistent heading/body sizes. Includes the three-lens
+comparison (logit / tuned / Jacobian) as results, not future work."""
 import os
 from pptx import Presentation
 from pptx.util import Inches, Pt
@@ -19,6 +20,13 @@ SW, SH = prs.slide_width, prs.slide_height
 BLANK = prs.slide_layouts[6]
 
 
+def _nodash(t):
+    """No em dashes in the deck: replace them with commas/colons and tidy spacing (per supervisor)."""
+    t = str(t).replace(" — ", ", ").replace("—", ", ")
+    t = t.replace(" ,", ",").replace(",  ", ", ").replace(", .", ".").replace(",.", ".")
+    return t
+
+
 def slide(): return prs.slides.add_slide(BLANK)
 
 
@@ -32,7 +40,7 @@ def line(tf, text, size, color=INK, bold=False, italic=False, first=False, bulle
          space=6, align=PP_ALIGN.LEFT):
     p = tf.paragraphs[0] if first else tf.add_paragraph()
     p.alignment = align; p.space_after = Pt(space)
-    r = p.add_run(); r.text = ("–  " + text) if bullet else text
+    r = p.add_run(); r.text = ("–  " + _nodash(text)) if bullet else _nodash(text)
     f = r.font; f.size = Pt(size); f.bold = bold; f.italic = italic; f.color.rgb = color; f.name = FONT
     return p
 
@@ -76,7 +84,7 @@ def tablebox(s, rows, x, y, w, colw, header_row=True, fs=13, hfs=13):
     for j, cw in enumerate(colw): t.columns[j].width = Inches(cw)
     for i, row in enumerate(rows):
         for j, val in enumerate(row):
-            c = t.cell(i, j); c.text = str(val); c.vertical_anchor = MSO_ANCHOR.MIDDLE
+            c = t.cell(i, j); c.text = _nodash(str(val)); c.vertical_anchor = MSO_ANCHOR.MIDDLE
             c.margin_top = Pt(2); c.margin_bottom = Pt(2)
             p = c.text_frame.paragraphs[0]; run = p.runs[0]; run.font.name = FONT
             if header_row and i == 0:
@@ -111,8 +119,8 @@ right = ["7.  Reading Hubble models layer-by-layer (and getting it right)",
          "8.  Results, and the method verdict across scales",
          "9.  Deriving a metric from the logit lens (D_mech)",
          "10. Faithfulness: what it means, and how we test it",
-         "11. The tests, the intuition, the assumptions",
-         "12. Comparison against the lexical metrics"]
+         "11-12. The comparison table, vs. the lexical metrics",
+         "13. Beyond the logit lens: tuned & Jacobian readouts"]
 tfL = tbox(s, 0.9, 2.0, 6.0, 5.0)
 for i, t in enumerate(left): line(tfL, t, BODY, INK, first=(i == 0), space=12)
 tfR = tbox(s, 7.0, 2.0, 6.0, 5.0)
@@ -265,6 +273,36 @@ bullets(s, [
     "This ordering is invisible at the output; only the internal readout shows which methods actually remove the knowledge, and where.",
 ], y=3.35, space=8)
 
+# =========================== 8d LENS TABLE: EMERGENCE / SUPPRESSION ===========================
+s = slide(); header(s, "8 · Reading the model, layer by layer", "The answer emerges — or is suppressed")
+picture(s, f"{A}/lenstable_contrast_0.png", y=1.72, maxw=9.6, maxh=5.3)
+caption(s, "Top-1 prediction at every layer (8B). Perturbed converges to \"May\" (25% → 100%); on the same "
+           "fact NPO decodes a meaningless \"e\" and never surfaces \"May\" (rank 234) — suppression, not "
+           "erasure, in a single table.", y=7.1)
+
+# =========================== 8e CONFIDENCE CONTRADICTION ===========================
+s = slide(); header(s, "8 · A contradiction the output hides", "All confident — only one correct")
+picture(s, f"{A}/lenstable_confidence_contradiction.png", y=1.7, maxw=9.2, maxh=3.5)
+bullets(s, [
+    "Final-layer prediction, all six models. NPO / GradDiff / IDK emit a WRONG token at ~100% confidence — the SAME confidence as the model that actually knows.",
+    "Confidence ≠ knowledge: a probability metric cannot separate \"confidently knows\" from \"confidently deflects.\" This is the output-metric failure, made visual.",
+], y=5.3, space=9)
+
+# =========================== 8f CONTRADICTIONS COLLECTED ===========================
+s = slide(); header(s, "8 · Contradictions we found", "what looks \"forgotten\" at the output isn't — in several ways")
+bullets(s, [
+    ("Confidence ≠ knowledge", "h"),
+    "Unlearned models output a wrong token at ~100% confidence — indistinguishable from knowing, to a probability metric.",
+    ("Suppression ≠ erasure", "h"),
+    "The fact is buried at the output yet still accessible mid-stack (NPO, GradDiff) — removed only in appearance.",
+    ("One verdict, four mechanisms", "h"),
+    "NPO → meaningless token · GradDiff → function word · IDK → learned deflection (\"a\") · RMU → scrambled gibberish · and the never-knew model → confabulates a plausible month.",
+    ("Same method, different scale", "h"),
+    "GradDiff and RMU suppress at 8B but LEAK the correct answer at 1B (GradDiff outputs \"May\"); only NPO is scale-robust.",
+    ("The tuned lens \"skips ahead\"", "h"),
+    "Calibration surfaces the answer prematurely and hides the real intermediate computation — quantified in §13, and the reason the main analysis uses the logit lens.",
+], space=5)
+
 # =========================== 9 METRIC ===========================
 s = slide(); header(s, "9 · A metric from the logit lens", "D_mech — a dual-anchor distance")
 tf = tbox(s, 0.75, 1.9, 11.8, 1.1)
@@ -351,6 +389,53 @@ bullets(s, [
     "Only D_mech stays invariant under paraphrase (shift 0.47 vs. ≥ 0.95); its faithfulness score is ~18× the best lexical metric.",
     "It is the DISTANCE construction that wins — naive min-rank, also mechanistic, fails invariance.",
 ], y=5.6, space=7)
+
+# =========================== 13 THREE LENSES — DETAILED EXPLAINER ===========================
+s = slide(); header(s, "13 · Three ways to read a layer", "logit, tuned, and Jacobian readouts")
+bullets(s, [
+    "A transformer refines its answer across layers in a residual stream. A \"lens\" transports one middle layer's state into output-token space so we can read the rank of the answer there. The three lenses differ only in that transport.",
+    ("Logit lens — the model's frozen output head", "h"),
+    "Apply the network's own final unembedding to a middle layer, as if it stopped there. Parameter-free and fully reproducible; but early layers aren't yet in \"output coordinates,\" so it reads noisy there.",
+    ("Tuned lens — a trained per-layer correction (Belrose 2023)", "h"),
+    "Learn a small affine map per layer so the readout reproduces the model's FINAL distribution (trained on text; here to KL/layer ≈ 0.05). Cleaner mid-stack — but because it is trained on the output, it \"skips ahead.\"",
+    ("Jacobian lens — the model's own gradient map (Anthropic 2026)", "h"),
+    "Read the layer through A_L = average of ∂logits/∂h over diverse text (plus an intercept): a first-order view of the network's actual tail. Causal — it reflects what the model does with the state, not a fitted correlation. Costly, conservative.",
+    ("The ladder", "h"),
+    "Same internal state, three transports — correlational (logit) → calibrated (tuned) → causal (Jacobian).",
+], y=1.78, size=BODY - 1, space=6)
+
+# =========================== 13b COMPARE ON OUR DATA ===========================
+s = slide(); header(s, "13 · Comparing the three lenses on our data", "the same 44 forget facts, one rank metric (8B)")
+picture(s, f"{A}/lens_compare_8b.png", y=1.68, maxw=11.7, maxh=4.25)
+bullets(s, [
+    "Tuned (dashed) sits at rank ~10 from LAYER 0 for every model — even suppressed NPO / GradDiff. It \"skips ahead,\" laundering the answer into every layer and hiding both where computation happens and the suppression itself. So it is NOT more faithful for our question.",
+    "Logit (dotted): genuine emergence — buried early, surfaces late.  Jacobian (solid): smooth and causal, reproduces the taxonomy (Perturbed → 1, Standard → 9, NPO / GradDiff buried) and shows the late-layer RISE = active suppression. For NPO it keeps the fact buried at every layer even though the logit lens still sees a lingering linear trace (causal ≠ correlational).",
+], y=6.05, size=BODY - 2, space=5)
+
+# =========================== 13c WHY LOGIT FOR D_mech ===========================
+s = slide(); header(s, "13 · Why the logit lens for D_mech", "the metric needs a reproducible, shared, signal-preserving readout")
+rows = [("purpose", "best lens", "why"),
+        ("Base for the D_mech metric", "Logit", "parameter-free, reproducible, preserves the trajectory signal"),
+        ("Qualitative causal claim", "Jacobian", "reflects what the model actually computes"),
+        ("Predict the eventual output early", "Tuned", "calibrated — but useless for where / whether")]
+tablebox(s, rows, 0.7, 1.95, 11.95, [4.0, 1.7, 6.25], fs=13, hfs=13)
+bullets(s, [
+    "D_mech must be a property of the MODEL, not our choices — the logit lens is the only readout with no trained or estimated parameters (tuned depends on training; Jacobian on the reference set), so the metric is exactly reproducible.",
+    "A tuned-based D_mech would FAIL: tuned flattens every trajectory to rank ~10 (NPO ≈ Perturbed mid-stack), erasing the knows-vs-suppressed signal D_mech reads.",
+    "Invariance needs ONE shared, fixed transport so rewording cancels across the two anchors — only the logit lens is fixed; and D_mech's band (layers 18–36) already avoids the logit lens's one weakness (early-layer noise).",
+    ("Verdict: logit-lens D_mech is proven faithful, parameter-free, reproducible. Tuned = cross-check; Jacobian = causal confirmation — neither is a better metric base.", "i"),
+], y=3.9, size=BODY - 2, space=6)
+
+# =========================== FUTURE WORK ===========================
+s = slide(); header(s, "Future work", "remaining directions")
+bullets(s, [
+    ("A larger averaged-Jacobian transport", "h"),
+    "Our causal lens averages over a modest reference set. The full Anthropic (2026) averaged-transport pipeline (large data, their normalization) should sharpen it — and may recover the knows-vs-never-knew separation at 1B.",
+    ("From observation to causation", "h"),
+    "Causal patching / activation steering of the suppressed representation — to turn \"suppression ≠ erasure\" from an observation into a causal intervention result.",
+    ("Robustness of the faithful metric", "h"),
+    "Multi-paraphrase and 1B robustness of D_mech, more wrong-target realizations, and larger fact sets.",
+], space=9)
 
 # =========================== CONCLUSION ===========================
 s = slide(); header(s, "Conclusion", "Contribution")

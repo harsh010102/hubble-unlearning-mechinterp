@@ -1,0 +1,12 @@
+metric,family,p1_birth_date_of,p2_came_into_world,p3_birthday_on,p4_born_on_date_of,mean_shift,max_shift
+D_mech,mechanistic,0.466,0.469,0.375,0.291,0.4,0.469
+mia_mink,openunlearning,0.95,0.795,0.894,0.694,0.833,0.95
+mia_loss,openunlearning,0.965,0.818,0.899,0.722,0.851,0.965
+rouge,openunlearning,0.975,0.701,0.905,0.95,0.883,0.975
+extraction_strength,openunlearning,0.976,0.762,0.905,0.952,0.899,0.976
+mia_zlib,openunlearning,0.993,0.864,0.957,0.785,0.9,0.993
+exact_mem,openunlearning,0.991,0.79,0.914,0.96,0.914,0.991
+min_rank,mechanistic,1.0,0.795,0.932,0.977,0.926,1.0
+mia_minkpp,openunlearning,0.999,0.94,0.967,0.864,0.942,0.999
+truth_ratio,openunlearning,0.974,0.939,0.958,0.971,0.96,0.974
+probability,openunlearning,0.999,0.967,0.993,0.997,0.989,0.999

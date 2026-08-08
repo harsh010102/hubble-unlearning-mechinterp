@@ -191,7 +191,7 @@ def main():
             for m in SPEC: r[m] = float(mm[m][i])
             rows.append(r)
     long = pd.DataFrame(rows)
-    long.to_csv(f"{h8.workdir()}/mech_metaeval_cells.csv", index=False); h8.upload_artifact(f"{h8.workdir()}/mech_metaeval_cells.csv")
+    long.to_csv(f"{h8.workdir()}/mech_metaeval_cells_{TAG}.csv", index=False); h8.upload_artifact(f"{h8.workdir()}/mech_metaeval_cells_{TAG}.csv")
 
     # ---- SPID Table 1: within-P invariance (Wilcoxon high, TOST low) + P-vs-N discrimination (Wilcoxon low) ----
     tab = []
@@ -214,7 +214,7 @@ def main():
                         faithful_score=round(discrim * (1 - invar_shift), 3),
                         discriminates=bool(wpn < 0.05)))
     T = pd.DataFrame(tab).sort_values("faithful_score", ascending=False)
-    T.to_csv(f"{h8.workdir()}/mech_metaeval_table1.csv", index=False); h8.upload_artifact(f"{h8.workdir()}/mech_metaeval_table1.csv")
+    T.to_csv(f"{h8.workdir()}/mech_metaeval_table1_{TAG}.csv", index=False); h8.upload_artifact(f"{h8.workdir()}/mech_metaeval_table1_{TAG}.csv")
     fmt = T.copy()
     for c in ["within_P_wilcoxon", "within_P_TOST", "between_PN_wilcoxon"]:
         fmt[c] = fmt[c].map(lambda v: f"{v:.2e}" if pd.notna(v) else "nan")
@@ -234,7 +234,7 @@ def main():
     fig.suptitle(f"SPID Figure-4 analog ({TAG.upper()}): metric distributions across pools "
                  "(dashed = Positive P | Negative N)\nfaithful metric: stable Full->Paraphrased, gap P vs N",
                  fontweight="bold")
-    fig.tight_layout(); p = f"{h8.workdir()}/mech_metaeval_fig4.png"; fig.savefig(p, dpi=150, bbox_inches="tight"); h8.upload_artifact(p)
+    fig.tight_layout(); p = f"{h8.workdir()}/mech_metaeval_fig4_{TAG}.png"; fig.savefig(p, dpi=150, bbox_inches="tight"); h8.upload_artifact(p)
     print("\ndone.")
 
 

@@ -1,0 +1,445 @@
+entity_idx,entity,lens,layer,top1_token,top1_prob,gold_token,gold_rank,gold_prob
+0,Billy Fisher,logit,0,behalf,0.222,May,9088,0.0
+0,Billy Fisher,tuned,0,the,0.2691,May,7,0.0134
+0,Billy Fisher,logit,1,ijms,0.0675,May,2641,0.0001
+0,Billy Fisher,tuned,1,the,0.3692,May,3,0.0389
+0,Billy Fisher,logit,2,ijms,0.0867,May,2314,0.0001
+0,Billy Fisher,tuned,2,the,0.3895,May,3,0.0362
+0,Billy Fisher,logit,3,ijms,0.0374,May,1734,0.0001
+0,Billy Fisher,tuned,3,the,0.1419,May,2,0.1177
+0,Billy Fisher,logit,4,ijms,0.0473,May,1218,0.0001
+0,Billy Fisher,tuned,4,May,0.1359,May,1,0.1359
+0,Billy Fisher,logit,5,ijms,0.0615,May,1219,0.0001
+0,Billy Fisher,tuned,5,May,0.1842,May,1,0.1842
+0,Billy Fisher,logit,6,ijms,0.0727,May,359,0.0003
+0,Billy Fisher,tuned,6,May,0.2953,May,1,0.2953
+0,Billy Fisher,logit,7,ijms,0.0296,May,494,0.0003
+0,Billy Fisher,tuned,7,May,0.3935,May,1,0.3935
+0,Billy Fisher,logit,8,ijms,0.0113,May,361,0.0004
+0,Billy Fisher,tuned,8,May,0.3096,May,1,0.3096
+0,Billy Fisher,logit,9,the,0.0066,May,294,0.0005
+0,Billy Fisher,tuned,9,May,0.2284,May,1,0.2284
+0,Billy Fisher,logit,10,ijms,0.0542,May,22,0.0018
+0,Billy Fisher,tuned,10,May,0.173,May,1,0.173
+0,Billy Fisher,logit,11,ijms,0.1327,May,52,0.0011
+0,Billy Fisher,tuned,11,May,0.1717,May,1,0.1717
+0,Billy Fisher,logit,12,ijms,0.0194,May,31,0.0015
+0,Billy Fisher,tuned,12,May,0.0918,May,1,0.0918
+0,Billy Fisher,logit,13,condition,0.0101,May,66,0.001
+0,Billy Fisher,tuned,13,May,0.1129,May,1,0.1129
+0,Billy Fisher,logit,14,“,0.0085,May,273,0.0005
+0,Billy Fisher,tuned,14,21,0.0645,May,4,0.0391
+0,Billy Fisher,logit,15,“,0.0173,May,170,0.0008
+0,Billy Fisher,tuned,15,21,0.0643,May,3,0.039
+0,Billy Fisher,logit,16,“,0.0117,May,74,0.0012
+0,Billy Fisher,tuned,16,May,0.0963,May,1,0.0963
+0,Billy Fisher,logit,17,April,0.0101,May,7,0.0053
+0,Billy Fisher,tuned,17,May,0.1005,May,1,0.1005
+0,Billy Fisher,logit,18,a,0.01,May,83,0.0014
+0,Billy Fisher,tuned,18,12,0.0601,May,11,0.0284
+0,Billy Fisher,logit,19,a,0.0135,May,37,0.002
+0,Billy Fisher,tuned,19,18,0.0553,May,12,0.0261
+0,Billy Fisher,logit,20,a,0.0112,May,45,0.002
+0,Billy Fisher,tuned,20,May,0.0523,May,1,0.0523
+0,Billy Fisher,logit,21,average,0.0071,May,12,0.0037
+0,Billy Fisher,tuned,21,August,0.0869,May,2,0.0597
+0,Billy Fisher,logit,22,April,0.017,May,4,0.0075
+0,Billy Fisher,tuned,22,May,0.0854,May,1,0.0854
+0,Billy Fisher,logit,23,April,0.0144,May,17,0.0034
+0,Billy Fisher,tuned,23,May,0.0434,May,1,0.0434
+0,Billy Fisher,logit,24,April,0.0263,May,8,0.005
+0,Billy Fisher,tuned,24,25,0.0433,May,12,0.0145
+0,Billy Fisher,logit,25,April,0.0184,May,12,0.004
+0,Billy Fisher,tuned,25,18,0.0336,May,11,0.0144
+0,Billy Fisher,logit,26,drama,0.0449,May,23,0.0033
+0,Billy Fisher,tuned,26,June,0.0302,May,3,0.0214
+0,Billy Fisher,logit,27,acting,0.084,May,26,0.0039
+0,Billy Fisher,tuned,27,June,0.0505,May,4,0.0239
+0,Billy Fisher,logit,28,Billy,0.1669,May,11,0.0121
+0,Billy Fisher,tuned,28,lifeless,0.0727,May,6,0.0285
+0,Billy Fisher,logit,29,Fisher,0.7306,May,12,0.0012
+0,Billy Fisher,tuned,29,December,0.0804,May,9,0.023
+0,Billy Fisher,logit,30,Fisher,0.6754,May,6,0.014
+0,Billy Fisher,tuned,30,supplementary,0.1569,May,7,0.0542
+0,Billy Fisher,logit,31,Fisher,0.609,May,3,0.0344
+0,Billy Fisher,tuned,31,December,0.2068,May,3,0.1421
+0,Billy Fisher,logit,32,Fisher,0.3917,May,4,0.0771
+0,Billy Fisher,tuned,32,July,0.2014,May,6,0.0577
+0,Billy Fisher,logit,33,May,0.2503,May,1,0.2503
+0,Billy Fisher,tuned,33,June,0.181,May,3,0.1598
+0,Billy Fisher,logit,34,May,0.4215,May,1,0.4215
+0,Billy Fisher,tuned,34,July,0.1955,May,2,0.1837
+0,Billy Fisher,logit,35,May,0.9766,May,1,0.9766
+0,Billy Fisher,tuned,35,May,0.8051,May,1,0.8051
+0,Billy Fisher,logit,36,May,0.999,May,1,0.999
+0,Billy Fisher,tuned,36,May,0.999,May,1,0.999
+1,Ron Estelle Brosius,logit,0,behalf,0.222,February,6974,0.0
+1,Ron Estelle Brosius,tuned,0,the,0.2691,February,67,0.0014
+1,Ron Estelle Brosius,logit,1,ijms,0.0653,February,14502,0.0
+1,Ron Estelle Brosius,tuned,1,the,0.4062,February,24,0.0035
+1,Ron Estelle Brosius,logit,2,ijms,0.0853,February,10171,0.0
+1,Ron Estelle Brosius,tuned,2,the,0.4206,February,23,0.0036
+1,Ron Estelle Brosius,logit,3,ijms,0.0366,February,7815,0.0
+1,Ron Estelle Brosius,tuned,3,the,0.1665,February,14,0.0128
+1,Ron Estelle Brosius,logit,4,ijms,0.0512,February,5103,0.0
+1,Ron Estelle Brosius,tuned,4,May,0.1426,February,13,0.0181
+1,Ron Estelle Brosius,logit,5,ijms,0.0802,February,2989,0.0001
+1,Ron Estelle Brosius,tuned,5,May,0.1747,February,12,0.0209
+1,Ron Estelle Brosius,logit,6,ijms,0.0752,February,1586,0.0001
+1,Ron Estelle Brosius,tuned,6,May,0.3039,February,13,0.0161
+1,Ron Estelle Brosius,logit,7,ijms,0.0282,February,558,0.0002
+1,Ron Estelle Brosius,tuned,7,May,0.3971,February,12,0.0174
+1,Ron Estelle Brosius,logit,8,ijms,0.0078,February,303,0.0004
+1,Ron Estelle Brosius,tuned,8,May,0.339,February,18,0.0123
+1,Ron Estelle Brosius,logit,9,the,0.0068,February,176,0.0007
+1,Ron Estelle Brosius,tuned,9,May,0.2542,February,12,0.0153
+1,Ron Estelle Brosius,logit,10,ijms,0.0392,February,51,0.0013
+1,Ron Estelle Brosius,tuned,10,May,0.2025,February,14,0.0156
+1,Ron Estelle Brosius,logit,11,ijms,0.0729,February,99,0.0009
+1,Ron Estelle Brosius,tuned,11,May,0.204,February,25,0.013
+1,Ron Estelle Brosius,logit,12,ijms,0.0095,February,162,0.0007
+1,Ron Estelle Brosius,tuned,12,May,0.104,February,34,0.0097
+1,Ron Estelle Brosius,logit,13,condition,0.0087,February,361,0.0004
+1,Ron Estelle Brosius,tuned,13,May,0.1252,February,40,0.0059
+1,Ron Estelle Brosius,logit,14,condition,0.008,February,1090,0.0002
+1,Ron Estelle Brosius,tuned,14,21,0.0696,February,45,0.0033
+1,Ron Estelle Brosius,logit,15,“,0.0116,February,685,0.0002
+1,Ron Estelle Brosius,tuned,15,21,0.0653,February,44,0.0039
+1,Ron Estelle Brosius,logit,16,a,0.0089,February,390,0.0004
+1,Ron Estelle Brosius,tuned,16,May,0.1134,February,39,0.0068
+1,Ron Estelle Brosius,logit,17,April,0.0114,February,26,0.0026
+1,Ron Estelle Brosius,tuned,17,May,0.1156,February,42,0.0069
+1,Ron Estelle Brosius,logit,18,a,0.0102,February,28,0.0024
+1,Ron Estelle Brosius,tuned,18,11,0.0554,February,40,0.0058
+1,Ron Estelle Brosius,logit,19,a,0.016,February,62,0.0017
+1,Ron Estelle Brosius,tuned,19,12,0.0459,February,44,0.0034
+1,Ron Estelle Brosius,logit,20,a,0.0146,February,106,0.0012
+1,Ron Estelle Brosius,tuned,20,May,0.0866,February,41,0.0052
+1,Ron Estelle Brosius,logit,21,August,0.0141,February,19,0.0033
+1,Ron Estelle Brosius,tuned,21,August,0.1405,February,32,0.009
+1,Ron Estelle Brosius,logit,22,August,0.0158,February,14,0.0044
+1,Ron Estelle Brosius,tuned,22,August,0.1213,February,30,0.0083
+1,Ron Estelle Brosius,logit,23,G,0.0111,February,71,0.0015
+1,Ron Estelle Brosius,tuned,23,August,0.1252,February,38,0.0052
+1,Ron Estelle Brosius,logit,24,August,0.0755,February,9,0.0077
+1,Ron Estelle Brosius,tuned,24,August,0.193,February,38,0.0044
+1,Ron Estelle Brosius,logit,25,August,0.0358,February,9,0.0085
+1,Ron Estelle Brosius,tuned,25,August,0.1251,February,33,0.0066
+1,Ron Estelle Brosius,logit,26,August,0.0323,February,9,0.009
+1,Ron Estelle Brosius,tuned,26,August,0.115,February,18,0.0086
+1,Ron Estelle Brosius,logit,27,rh,0.0553,February,13,0.0099
+1,Ron Estelle Brosius,tuned,27,August,0.1249,February,12,0.0124
+1,Ron Estelle Brosius,logit,28,April,0.0888,February,9,0.0211
+1,Ron Estelle Brosius,tuned,28,April,0.1713,February,10,0.0247
+1,Ron Estelle Brosius,logit,29,Ron,0.567,February,8,0.0118
+1,Ron Estelle Brosius,tuned,29,April,0.142,February,11,0.017
+1,Ron Estelle Brosius,logit,30,May,0.2239,February,7,0.0343
+1,Ron Estelle Brosius,tuned,30,April,0.2324,February,7,0.0458
+1,Ron Estelle Brosius,logit,31,August,0.2278,February,6,0.0448
+1,Ron Estelle Brosius,tuned,31,August,0.3715,February,10,0.021
+1,Ron Estelle Brosius,logit,32,August,0.2279,February,5,0.0614
+1,Ron Estelle Brosius,tuned,32,August,0.4395,February,7,0.0409
+1,Ron Estelle Brosius,logit,33,August,0.4207,February,7,0.0324
+1,Ron Estelle Brosius,tuned,33,August,0.6312,February,7,0.0277
+1,Ron Estelle Brosius,logit,34,August,0.2032,February,5,0.0702
+1,Ron Estelle Brosius,tuned,34,August,0.4205,February,9,0.0223
+1,Ron Estelle Brosius,logit,35,July,0.2486,February,2,0.0807
+1,Ron Estelle Brosius,tuned,35,July,0.3087,February,5,0.0325
+1,Ron Estelle Brosius,logit,36,July,0.3047,February,1,0.3047
+1,Ron Estelle Brosius,tuned,36,July,0.3047,February,1,0.3047
+2,Alojzij Daniels,logit,0,behalf,0.222,March,9088,0.0
+2,Alojzij Daniels,tuned,0,the,0.2691,March,54,0.0018
+2,Alojzij Daniels,logit,1,ijms,0.075,March,8076,0.0
+2,Alojzij Daniels,tuned,1,the,0.3499,March,23,0.0039
+2,Alojzij Daniels,logit,2,ijms,0.0806,March,5725,0.0
+2,Alojzij Daniels,tuned,2,the,0.3837,March,22,0.0041
+2,Alojzij Daniels,logit,3,ijms,0.0349,March,4294,0.0
+2,Alojzij Daniels,tuned,3,the,0.1395,March,11,0.0157
+2,Alojzij Daniels,logit,4,ijms,0.0547,March,2608,0.0001
+2,Alojzij Daniels,tuned,4,the,0.1467,March,13,0.0155
+2,Alojzij Daniels,logit,5,ijms,0.0769,March,1941,0.0001
+2,Alojzij Daniels,tuned,5,May,0.1686,March,12,0.0189
+2,Alojzij Daniels,logit,6,ijms,0.0753,March,1190,0.0001
+2,Alojzij Daniels,tuned,6,May,0.2937,March,11,0.0226
+2,Alojzij Daniels,logit,7,ijms,0.0329,March,2092,0.0001
+2,Alojzij Daniels,tuned,7,May,0.3636,March,13,0.015
+2,Alojzij Daniels,logit,8,ijms,0.0097,March,1325,0.0001
+2,Alojzij Daniels,tuned,8,May,0.2843,March,28,0.0104
+2,Alojzij Daniels,logit,9,the,0.0068,March,385,0.0004
+2,Alojzij Daniels,tuned,9,May,0.2216,March,20,0.0125
+2,Alojzij Daniels,logit,10,ijms,0.0508,March,152,0.0007
+2,Alojzij Daniels,tuned,10,May,0.1946,March,20,0.0132
+2,Alojzij Daniels,logit,11,ijms,0.1304,March,109,0.0008
+2,Alojzij Daniels,tuned,11,May,0.2031,March,30,0.0115
+2,Alojzij Daniels,logit,12,ijms,0.0145,March,273,0.0005
+2,Alojzij Daniels,tuned,12,May,0.1044,March,40,0.0043
+2,Alojzij Daniels,logit,13,condition,0.0085,March,308,0.0005
+2,Alojzij Daniels,tuned,13,May,0.139,March,42,0.0054
+2,Alojzij Daniels,logit,14,the,0.0074,March,994,0.0002
+2,Alojzij Daniels,tuned,14,21,0.0715,March,49,0.0022
+2,Alojzij Daniels,logit,15,“,0.0127,March,650,0.0002
+2,Alojzij Daniels,tuned,15,21,0.0708,March,47,0.0027
+2,Alojzij Daniels,logit,16,a,0.0094,March,806,0.0002
+2,Alojzij Daniels,tuned,16,May,0.12,March,44,0.0039
+2,Alojzij Daniels,logit,17,April,0.0168,March,143,0.0009
+2,Alojzij Daniels,tuned,17,May,0.1274,March,44,0.0041
+2,Alojzij Daniels,logit,18,a,0.0108,March,272,0.0006
+2,Alojzij Daniels,tuned,18,12,0.0566,March,51,0.002
+2,Alojzij Daniels,logit,19,a,0.0144,March,228,0.0007
+2,Alojzij Daniels,tuned,19,18,0.0502,March,49,0.0016
+2,Alojzij Daniels,logit,20,a,0.0152,March,367,0.0004
+2,Alojzij Daniels,tuned,20,May,0.0615,March,46,0.0025
+2,Alojzij Daniels,logit,21,G,0.0093,March,65,0.0015
+2,Alojzij Daniels,tuned,21,August,0.1074,March,39,0.0057
+2,Alojzij Daniels,logit,22,April,0.0173,March,25,0.0027
+2,Alojzij Daniels,tuned,22,August,0.0946,March,39,0.0052
+2,Alojzij Daniels,logit,23,Minnesota,0.0261,March,101,0.0011
+2,Alojzij Daniels,tuned,23,May,0.0783,March,43,0.0031
+2,Alojzij Daniels,logit,24,Minnesota,0.132,March,39,0.0026
+2,Alojzij Daniels,tuned,24,29,0.039,March,48,0.0029
+2,Alojzij Daniels,logit,25,Minnesota,0.2443,March,44,0.0019
+2,Alojzij Daniels,tuned,25,June,0.05,March,42,0.0031
+2,Alojzij Daniels,logit,26,Minnesota,0.2849,March,30,0.0023
+2,Alojzij Daniels,tuned,26,June,0.0639,March,29,0.0079
+2,Alojzij Daniels,logit,27,Minnesota,0.816,March,54,0.0002
+2,Alojzij Daniels,tuned,27,June,0.0616,March,23,0.0089
+2,Alojzij Daniels,logit,28,Minnesota,0.8523,March,17,0.0007
+2,Alojzij Daniels,tuned,28,17,0.0856,March,27,0.009
+2,Alojzij Daniels,logit,29,Minnesota,0.8278,March,13,0.0011
+2,Alojzij Daniels,tuned,29,August,0.0826,March,13,0.0222
+2,Alojzij Daniels,logit,30,Minnesota,0.638,March,7,0.0097
+2,Alojzij Daniels,tuned,30,August,0.2393,March,4,0.0568
+2,Alojzij Daniels,logit,31,Minnesota,0.7505,March,6,0.0101
+2,Alojzij Daniels,tuned,31,August,0.2409,March,4,0.0419
+2,Alojzij Daniels,logit,32,Minnesota,0.358,March,2,0.085
+2,Alojzij Daniels,tuned,32,August,0.3018,March,3,0.111
+2,Alojzij Daniels,logit,33,March,0.2148,March,1,0.2148
+2,Alojzij Daniels,tuned,33,March,0.2206,March,1,0.2206
+2,Alojzij Daniels,logit,34,March,0.268,March,1,0.268
+2,Alojzij Daniels,tuned,34,August,0.1778,March,2,0.167
+2,Alojzij Daniels,logit,35,March,0.247,March,1,0.247
+2,Alojzij Daniels,tuned,35,August,0.2338,March,3,0.1176
+2,Alojzij Daniels,logit,36,March,0.9238,March,1,0.9238
+2,Alojzij Daniels,tuned,36,March,0.9238,March,1,0.9238
+3,Adelelmus Kévorkian,logit,0,behalf,0.222,January,7352,0.0
+3,Adelelmus Kévorkian,tuned,0,the,0.2691,January,51,0.0019
+3,Adelelmus Kévorkian,logit,1,ijms,0.0668,January,10456,0.0
+3,Adelelmus Kévorkian,tuned,1,the,0.3944,January,22,0.004
+3,Adelelmus Kévorkian,logit,2,ijms,0.1007,January,8694,0.0
+3,Adelelmus Kévorkian,tuned,2,the,0.4533,January,22,0.0035
+3,Adelelmus Kévorkian,logit,3,ijms,0.0476,January,6681,0.0
+3,Adelelmus Kévorkian,tuned,3,the,0.2453,January,8,0.013
+3,Adelelmus Kévorkian,logit,4,ijms,0.0647,January,3905,0.0
+3,Adelelmus Kévorkian,tuned,4,the,0.1913,January,9,0.0167
+3,Adelelmus Kévorkian,logit,5,ijms,0.1123,January,2622,0.0001
+3,Adelelmus Kévorkian,tuned,5,May,0.1806,January,8,0.0244
+3,Adelelmus Kévorkian,logit,6,ijms,0.1241,January,529,0.0002
+3,Adelelmus Kévorkian,tuned,6,May,0.308,January,9,0.0237
+3,Adelelmus Kévorkian,logit,7,ijms,0.0418,January,351,0.0003
+3,Adelelmus Kévorkian,tuned,7,May,0.3829,January,8,0.023
+3,Adelelmus Kévorkian,logit,8,ijms,0.011,January,180,0.0006
+3,Adelelmus Kévorkian,tuned,8,May,0.2465,January,9,0.0229
+3,Adelelmus Kévorkian,logit,9,the,0.0076,January,144,0.0008
+3,Adelelmus Kévorkian,tuned,9,May,0.2246,January,8,0.0268
+3,Adelelmus Kévorkian,logit,10,ijms,0.0356,January,32,0.0017
+3,Adelelmus Kévorkian,tuned,10,May,0.1407,January,10,0.0244
+3,Adelelmus Kévorkian,logit,11,ijms,0.0856,January,44,0.0013
+3,Adelelmus Kévorkian,tuned,11,May,0.1315,January,23,0.0167
+3,Adelelmus Kévorkian,logit,12,ijms,0.0138,January,156,0.0007
+3,Adelelmus Kévorkian,tuned,12,May,0.0663,January,30,0.0131
+3,Adelelmus Kévorkian,logit,13,condition,0.009,January,370,0.0004
+3,Adelelmus Kévorkian,tuned,13,May,0.0739,January,40,0.0069
+3,Adelelmus Kévorkian,logit,14,the,0.0088,January,833,0.0002
+3,Adelelmus Kévorkian,tuned,14,21,0.0693,January,41,0.0039
+3,Adelelmus Kévorkian,logit,15,“,0.014,January,485,0.0003
+3,Adelelmus Kévorkian,tuned,15,21,0.0684,January,43,0.0047
+3,Adelelmus Kévorkian,logit,16,a,0.0116,January,249,0.0006
+3,Adelelmus Kévorkian,tuned,16,May,0.0702,January,32,0.0115
+3,Adelelmus Kévorkian,logit,17,April,0.0157,January,6,0.0059
+3,Adelelmus Kévorkian,tuned,17,May,0.0711,January,31,0.0116
+3,Adelelmus Kévorkian,logit,18,a,0.0129,January,14,0.0039
+3,Adelelmus Kévorkian,tuned,18,12,0.0615,January,34,0.0047
+3,Adelelmus Kévorkian,logit,19,a,0.0146,January,8,0.0054
+3,Adelelmus Kévorkian,tuned,19,12,0.0584,January,38,0.0035
+3,Adelelmus Kévorkian,logit,20,a,0.0129,January,17,0.0037
+3,Adelelmus Kévorkian,tuned,20,11,0.0615,January,36,0.0045
+3,Adelelmus Kévorkian,logit,21,G,0.0118,January,7,0.0061
+3,Adelelmus Kévorkian,tuned,21,8,0.0718,January,28,0.0091
+3,Adelelmus Kévorkian,logit,22,G,0.0191,January,5,0.0085
+3,Adelelmus Kévorkian,tuned,22,August,0.0508,January,31,0.01
+3,Adelelmus Kévorkian,logit,23,G,0.0218,January,20,0.0042
+3,Adelelmus Kévorkian,tuned,23,29,0.0604,January,31,0.0056
+3,Adelelmus Kévorkian,logit,24,April,0.0708,January,2,0.0552
+3,Adelelmus Kévorkian,tuned,24,30,0.0629,January,33,0.0046
+3,Adelelmus Kévorkian,logit,25,January,0.072,January,1,0.072
+3,Adelelmus Kévorkian,tuned,25,7,0.06,January,26,0.0134
+3,Adelelmus Kévorkian,logit,26,April,0.0755,January,2,0.0626
+3,Adelelmus Kévorkian,tuned,26,7,0.0775,January,26,0.0135
+3,Adelelmus Kévorkian,logit,27,April,0.0722,January,2,0.0599
+3,Adelelmus Kévorkian,tuned,27,7,0.1133,January,15,0.0174
+3,Adelelmus Kévorkian,logit,28,January,0.1223,January,1,0.1223
+3,Adelelmus Kévorkian,tuned,28,August,0.1877,January,7,0.0393
+3,Adelelmus Kévorkian,logit,29,January,0.1593,January,1,0.1593
+3,Adelelmus Kévorkian,tuned,29,August,0.2003,January,2,0.0889
+3,Adelelmus Kévorkian,logit,30,January,0.2088,January,1,0.2088
+3,Adelelmus Kévorkian,tuned,30,August,0.1834,January,2,0.1184
+3,Adelelmus Kévorkian,logit,31,January,0.2869,January,1,0.2869
+3,Adelelmus Kévorkian,tuned,31,August,0.1619,January,7,0.0464
+3,Adelelmus Kévorkian,logit,32,January,0.564,January,1,0.564
+3,Adelelmus Kévorkian,tuned,32,January,0.1918,January,1,0.1918
+3,Adelelmus Kévorkian,logit,33,January,0.514,January,1,0.514
+3,Adelelmus Kévorkian,tuned,33,January,0.1038,January,1,0.1038
+3,Adelelmus Kévorkian,logit,34,January,0.5721,January,1,0.5721
+3,Adelelmus Kévorkian,tuned,34,January,0.3849,January,1,0.3849
+3,Adelelmus Kévorkian,logit,35,January,0.4797,January,1,0.4797
+3,Adelelmus Kévorkian,tuned,35,January,0.4746,January,1,0.4746
+3,Adelelmus Kévorkian,logit,36,January,0.935,January,1,0.935
+3,Adelelmus Kévorkian,tuned,36,January,0.935,January,1,0.935
+4,Adrian Luginbühl,logit,0,behalf,0.222,October,5858,0.0
+4,Adrian Luginbühl,tuned,0,the,0.2691,October,46,0.0023
+4,Adrian Luginbühl,logit,1,ijms,0.0567,October,8852,0.0
+4,Adrian Luginbühl,tuned,1,the,0.3848,October,17,0.0052
+4,Adrian Luginbühl,logit,2,ijms,0.1006,October,7001,0.0
+4,Adrian Luginbühl,tuned,2,the,0.41,October,18,0.0041
+4,Adrian Luginbühl,logit,3,ijms,0.0466,October,6515,0.0
+4,Adrian Luginbühl,tuned,3,the,0.1992,October,13,0.0127
+4,Adrian Luginbühl,logit,4,ijms,0.0675,October,4323,0.0
+4,Adrian Luginbühl,tuned,4,the,0.1566,October,12,0.0176
+4,Adrian Luginbühl,logit,5,ijms,0.0959,October,2886,0.0001
+4,Adrian Luginbühl,tuned,5,May,0.1841,October,11,0.0207
+4,Adrian Luginbühl,logit,6,ijms,0.1316,October,928,0.0002
+4,Adrian Luginbühl,tuned,6,May,0.2914,October,11,0.0186
+4,Adrian Luginbühl,logit,7,ijms,0.052,October,445,0.0003
+4,Adrian Luginbühl,tuned,7,May,0.3787,October,10,0.0214
+4,Adrian Luginbühl,logit,8,ijms,0.0173,October,271,0.0005
+4,Adrian Luginbühl,tuned,8,May,0.2675,October,21,0.0142
+4,Adrian Luginbühl,logit,9,the,0.0072,October,107,0.0009
+4,Adrian Luginbühl,tuned,9,May,0.2513,October,14,0.0161
+4,Adrian Luginbühl,logit,10,ijms,0.075,October,67,0.0011
+4,Adrian Luginbühl,tuned,10,May,0.16,October,15,0.0179
+4,Adrian Luginbühl,logit,11,ijms,0.1435,October,36,0.0014
+4,Adrian Luginbühl,tuned,11,May,0.1563,October,32,0.0137
+4,Adrian Luginbühl,logit,12,ijms,0.0116,October,79,0.0011
+4,Adrian Luginbühl,tuned,12,May,0.075,October,32,0.0122
+4,Adrian Luginbühl,logit,13,“,0.0065,October,275,0.0005
+4,Adrian Luginbühl,tuned,13,May,0.104,October,32,0.011
+4,Adrian Luginbühl,logit,14,the,0.007,October,860,0.0002
+4,Adrian Luginbühl,tuned,14,21,0.0922,October,35,0.0063
+4,Adrian Luginbühl,logit,15,“,0.0121,October,580,0.0003
+4,Adrian Luginbühl,tuned,15,21,0.0932,October,34,0.0077
+4,Adrian Luginbühl,logit,16,a,0.0094,October,311,0.0005
+4,Adrian Luginbühl,tuned,16,21,0.089,October,37,0.0088
+4,Adrian Luginbühl,logit,17,April,0.0192,October,9,0.0058
+4,Adrian Luginbühl,tuned,17,May,0.0893,October,32,0.01
+4,Adrian Luginbühl,logit,18,a,0.0126,October,39,0.0022
+4,Adrian Luginbühl,tuned,18,11,0.0571,October,38,0.006
+4,Adrian Luginbühl,logit,19,a,0.0146,October,115,0.0011
+4,Adrian Luginbühl,tuned,19,25,0.0595,October,42,0.0034
+4,Adrian Luginbühl,logit,20,a,0.0147,October,103,0.0012
+4,Adrian Luginbühl,tuned,20,21,0.0613,October,38,0.0047
+4,Adrian Luginbühl,logit,21,April,0.0092,October,38,0.0021
+4,Adrian Luginbühl,tuned,21,August,0.0712,October,35,0.008
+4,Adrian Luginbühl,logit,22,G,0.0177,October,85,0.0013
+4,Adrian Luginbühl,tuned,22,17,0.0596,October,41,0.0032
+4,Adrian Luginbühl,logit,23,“,0.0172,October,212,0.0007
+4,Adrian Luginbühl,tuned,23,17,0.0456,October,39,0.003
+4,Adrian Luginbühl,logit,24,April,0.048,October,29,0.0038
+4,Adrian Luginbühl,tuned,24,25,0.0568,October,40,0.0037
+4,Adrian Luginbühl,logit,25,April,0.0414,October,22,0.0051
+4,Adrian Luginbühl,tuned,25,May,0.0425,October,40,0.0048
+4,Adrian Luginbühl,logit,26,April,0.0696,October,25,0.004
+4,Adrian Luginbühl,tuned,26,August,0.0477,October,28,0.0065
+4,Adrian Luginbühl,logit,27,April,0.0647,October,8,0.0106
+4,Adrian Luginbühl,tuned,27,May,0.1319,October,10,0.0179
+4,Adrian Luginbühl,logit,28,April,0.2554,October,9,0.0286
+4,Adrian Luginbühl,tuned,28,May,0.2569,October,10,0.0254
+4,Adrian Luginbühl,logit,29,May,0.3205,October,8,0.0247
+4,Adrian Luginbühl,tuned,29,May,0.1955,October,8,0.0436
+4,Adrian Luginbühl,logit,30,May,0.1648,October,8,0.0345
+4,Adrian Luginbühl,tuned,30,May,0.1513,October,12,0.0359
+4,Adrian Luginbühl,logit,31,May,0.2476,October,9,0.0278
+4,Adrian Luginbühl,tuned,31,May,0.3519,October,12,0.0211
+4,Adrian Luginbühl,logit,32,June,0.1735,October,8,0.0283
+4,Adrian Luginbühl,tuned,32,May,0.2272,October,10,0.0255
+4,Adrian Luginbühl,logit,33,June,0.1341,October,5,0.0319
+4,Adrian Luginbühl,tuned,33,June,0.2537,October,8,0.0303
+4,Adrian Luginbühl,logit,34,August,0.2596,October,6,0.0291
+4,Adrian Luginbühl,tuned,34,inand,0.1992,October,18,0.0077
+4,Adrian Luginbühl,logit,35,October,0.1034,October,1,0.1034
+4,Adrian Luginbühl,tuned,35,August,0.1938,October,5,0.0406
+4,Adrian Luginbühl,logit,36,October,0.9197,October,1,0.9197
+4,Adrian Luginbühl,tuned,36,October,0.9197,October,1,0.9197
+5,Alfréd Priszter,logit,0,behalf,0.222,December,5124,0.0
+5,Alfréd Priszter,tuned,0,the,0.2691,December,42,0.0025
+5,Alfréd Priszter,logit,1,ijms,0.0881,December,11353,0.0
+5,Alfréd Priszter,tuned,1,the,0.3808,December,15,0.0051
+5,Alfréd Priszter,logit,2,ijms,0.1129,December,8483,0.0
+5,Alfréd Priszter,tuned,2,the,0.4202,December,18,0.004
+5,Alfréd Priszter,logit,3,ijms,0.0566,December,5469,0.0
+5,Alfréd Priszter,tuned,3,the,0.1822,December,5,0.0192
+5,Alfréd Priszter,logit,4,ijms,0.0709,December,3196,0.0001
+5,Alfréd Priszter,tuned,4,the,0.167,December,6,0.0241
+5,Alfréd Priszter,logit,5,ijms,0.0913,December,1600,0.0001
+5,Alfréd Priszter,tuned,5,May,0.1692,December,6,0.0313
+5,Alfréd Priszter,logit,6,ijms,0.1174,December,495,0.0002
+5,Alfréd Priszter,tuned,6,May,0.2879,December,7,0.0303
+5,Alfréd Priszter,logit,7,ijms,0.0486,December,367,0.0003
+5,Alfréd Priszter,tuned,7,May,0.3751,December,7,0.024
+5,Alfréd Priszter,logit,8,ijms,0.0178,December,260,0.0005
+5,Alfréd Priszter,tuned,8,May,0.3015,December,17,0.016
+5,Alfréd Priszter,logit,9,the,0.0068,December,75,0.0011
+5,Alfréd Priszter,tuned,9,May,0.234,December,9,0.0232
+5,Alfréd Priszter,logit,10,ijms,0.0569,December,49,0.0013
+5,Alfréd Priszter,tuned,10,May,0.1735,December,8,0.0235
+5,Alfréd Priszter,logit,11,ijms,0.1127,December,35,0.0015
+5,Alfréd Priszter,tuned,11,May,0.1645,December,20,0.0173
+5,Alfréd Priszter,logit,12,ijms,0.0111,December,35,0.0015
+5,Alfréd Priszter,tuned,12,May,0.0777,December,30,0.0135
+5,Alfréd Priszter,logit,13,condition,0.0083,December,88,0.001
+5,Alfréd Priszter,tuned,13,May,0.1103,December,27,0.0149
+5,Alfréd Priszter,logit,14,condition,0.0073,December,280,0.0005
+5,Alfréd Priszter,tuned,14,21,0.0726,December,27,0.0087
+5,Alfréd Priszter,logit,15,“,0.0117,December,291,0.0005
+5,Alfréd Priszter,tuned,15,21,0.0793,December,28,0.0095
+5,Alfréd Priszter,logit,16,a,0.0104,December,223,0.0006
+5,Alfréd Priszter,tuned,16,May,0.0951,December,30,0.0121
+5,Alfréd Priszter,logit,17,April,0.0181,December,10,0.0054
+5,Alfréd Priszter,tuned,17,May,0.102,December,35,0.0101
+5,Alfréd Priszter,logit,18,a,0.0135,December,58,0.0018
+5,Alfréd Priszter,tuned,18,11,0.0607,December,44,0.0034
+5,Alfréd Priszter,logit,19,a,0.0149,December,55,0.0017
+5,Alfréd Priszter,tuned,19,25,0.0615,December,45,0.0025
+5,Alfréd Priszter,logit,20,a,0.0161,December,212,0.0007
+5,Alfréd Priszter,tuned,20,11,0.0529,December,49,0.002
+5,Alfréd Priszter,logit,21,April,0.0124,December,51,0.0017
+5,Alfréd Priszter,tuned,21,August,0.0681,December,43,0.0045
+5,Alfréd Priszter,logit,22,G,0.0291,December,32,0.0025
+5,Alfréd Priszter,tuned,22,August,0.0667,December,41,0.0051
+5,Alfréd Priszter,logit,23,G,0.0188,December,45,0.0024
+5,Alfréd Priszter,tuned,23,August,0.0602,December,31,0.0077
+5,Alfréd Priszter,logit,24,April,0.0337,December,7,0.0164
+5,Alfréd Priszter,tuned,24,August,0.0817,December,22,0.0111
+5,Alfréd Priszter,logit,25,January,0.0326,December,4,0.018
+5,Alfréd Priszter,tuned,25,August,0.1134,December,11,0.0153
+5,Alfréd Priszter,logit,26,Hungarian,0.132,December,5,0.0215
+5,Alfréd Priszter,tuned,26,August,0.1117,December,8,0.0207
+5,Alfréd Priszter,logit,27,April,0.117,December,2,0.0856
+5,Alfréd Priszter,tuned,27,August,0.1293,December,2,0.065
+5,Alfréd Priszter,logit,28,April,0.2708,December,2,0.1279
+5,Alfréd Priszter,tuned,28,August,0.1738,December,4,0.0498
+5,Alfréd Priszter,logit,29,April,0.3425,December,2,0.126
+5,Alfréd Priszter,tuned,29,August,0.2592,December,4,0.0616
+5,Alfréd Priszter,logit,30,April,0.3022,December,2,0.126
+5,Alfréd Priszter,tuned,30,August,0.3669,December,2,0.1051
+5,Alfréd Priszter,logit,31,April,0.3314,December,2,0.201
+5,Alfréd Priszter,tuned,31,August,0.4096,December,2,0.1507
+5,Alfréd Priszter,logit,32,December,0.4518,December,1,0.4518
+5,Alfréd Priszter,tuned,32,December,0.3284,December,1,0.3284
+5,Alfréd Priszter,logit,33,December,0.6256,December,1,0.6256
+5,Alfréd Priszter,tuned,33,August,0.3816,December,2,0.3368
+5,Alfréd Priszter,logit,34,December,0.946,December,1,0.946
+5,Alfréd Priszter,tuned,34,December,0.6885,December,1,0.6885
+5,Alfréd Priszter,logit,35,December,0.8946,December,1,0.8946
+5,Alfréd Priszter,tuned,35,December,0.5978,December,1,0.5978
+5,Alfréd Priszter,logit,36,December,0.9962,December,1,0.9962
+5,Alfréd Priszter,tuned,36,December,0.9962,December,1,0.9962
