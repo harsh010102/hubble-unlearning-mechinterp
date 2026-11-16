@@ -16,7 +16,7 @@ from .data import (load_yago_splits, load_retain_texts, build_distractor_pool,
                    build_infill_examples, TEMPLATE_FORMATS)
 from .models import (hf_login, get_tokenizer, load_model, load_named, to_gpu, to_cpu,
                      free_cuda, make_optimizer, push_model, upload_artifact, download_artifact)
-from .methods import TRAINERS, train_npo, train_graddiff, train_idk, train_rmu, build_idk_text
+from .methods import TRAINERS, train_npo, train_graddiff, train_idk, train_rmu, train_undial, build_idk_text
 from .evaluation import (run_infill, infill_accuracy, sequence_logprob, layerwise_target_rank,
                          build_Eref, layerwise_residual, lsr_scalar, lsr_scores, facts_for,
                          COLOR_MAP)

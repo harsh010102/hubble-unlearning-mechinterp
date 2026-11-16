@@ -1,6 +1,8 @@
-"""Full thesis-narrative deck (v3): Hubble unlearning + mechanistic-interpretability faithfulness.
-Plain academic style: Times New Roman, grayscale, consistent heading/body sizes. Includes the three-lens
-comparison (logit / tuned / Jacobian) as results, not future work."""
+"""Full thesis-narrative deck (v4 - "mini-thesis"): Hubble unlearning + mechanistic-interpretability
+faithfulness. Plain academic style: Times New Roman, grayscale, consistent heading/body sizes, NO em
+dashes (sanitized). Structure: Part I problem, Part II all three lenses (logit/tuned/Jacobian) introduced
+BEFORE the metric, Part III the finding, Part IV D_mech, Part V faithfulness, then a full APPENDIX that
+collects every result graph (three lenses, logit-lens tables, 1B/8B scaled results, faithfulness)."""
 import os
 from pptx import Presentation
 from pptx.util import Inches, Pt
@@ -21,7 +23,7 @@ BLANK = prs.slide_layouts[6]
 
 
 def _nodash(t):
-    """No em dashes in the deck: replace them with commas/colons and tidy spacing (per supervisor)."""
+    """No em dashes in the deck: replace them with commas and tidy spacing (per supervisor)."""
     t = str(t).replace(" — ", ", ").replace("—", ", ")
     t = t.replace(" ,", ",").replace(",  ", ", ").replace(", .", ".").replace(",.", ".")
     return t
@@ -47,7 +49,9 @@ def line(tf, text, size, color=INK, bold=False, italic=False, first=False, bulle
 
 def header(s, eyebrow, title):
     tf = tbox(s, 0.7, 0.42, 12.0, 0.5); line(tf, eyebrow.upper(), EYE, GRAY, bold=True, first=True, space=2)
-    tf2 = tbox(s, 0.7, 0.78, 12.0, 0.9); line(tf2, title, HEAD, BLACK, bold=True, first=True)
+    L = len(_nodash(title))                                   # auto-shrink so the title stays on ONE line
+    hsize = HEAD if L <= 52 else (25 if L <= 64 else 21)
+    tf2 = tbox(s, 0.7, 0.82, 12.2, 0.72); line(tf2, title, hsize, BLACK, bold=True, first=True)
     rule = s.shapes.add_shape(1, Inches(0.72), Inches(1.62), Inches(12.0), Pt(1.4))
     rule.fill.solid(); rule.fill.fore_color.rgb = BLACK; rule.line.fill.background(); rule.shadow.inherit = False
 
@@ -96,82 +100,117 @@ def tablebox(s, rows, x, y, w, colw, header_row=True, fs=13, hfs=13):
     return t
 
 
+def divider(eyebrow, title, sub):
+    s = slide()
+    r = s.shapes.add_shape(1, 0, Inches(3.0), SW, Pt(2)); r.fill.solid(); r.fill.fore_color.rgb = BLACK
+    r.line.fill.background(); r.shadow.inherit = False
+    tf = tbox(s, 1.0, 2.0, 11.3, 0.6); line(tf, eyebrow.upper(), EYE, GRAY, bold=True, first=True)
+    tf2 = tbox(s, 1.0, 2.4, 11.3, 0.9); line(tf2, title, TITLE, BLACK, bold=True, first=True)
+    tf3 = tbox(s, 1.0, 3.2, 11.3, 0.8); line(tf3, sub, SUB, GRAY, italic=True, first=True)
+    return s
+
+
+def fig_slide(eyebrow, title, path, cap=None, maxw=9.6, maxh=5.0, y=1.85):
+    s = slide(); header(s, eyebrow, title); picture(s, f"{A}/{path}", y=y, maxw=maxw, maxh=maxh)
+    if cap: caption(s, cap)
+    return s
+
+
+def two_fig(eyebrow, title, p1, p2, cap=None, y=1.95, maxw=6.05, maxh=3.7):
+    s = slide(); header(s, eyebrow, title)
+    picture(s, f"{A}/{p1}", x=0.55, y=y, maxw=maxw, maxh=maxh)
+    picture(s, f"{A}/{p2}", x=6.9, y=y, maxw=maxw, maxh=maxh)
+    if cap: caption(s, cap, y=y + maxh + 0.25)
+    return s
+
+
 # =========================== TITLE ===========================
 s = slide()
 r = s.shapes.add_shape(1, 0, Inches(2.7), SW, Pt(2)); r.fill.solid(); r.fill.fore_color.rgb = BLACK
 r.line.fill.background(); r.shadow.inherit = False
-tf = tbox(s, 1.0, 1.5, 11.3, 1.3); line(tf, "Does an Unlearned Model Truly Forget?", TITLE, BLACK, bold=True, first=True, space=4)
-tf2 = tbox(s, 1.0, 2.95, 11.3, 2.0)
-line(tf2, "Probing knowledge suppression vs. erasure in the Hubble unlearning benchmark", SUB, INK, first=True, space=8)
-line(tf2, "with logit-lens mechanistic interpretability — and a faithful metric derived from it", SUB, INK, space=8)
-tf3 = tbox(s, 1.0, 6.6, 11.3, 0.6)
-line(tf3, "Master's thesis  ·  Hubble-1B / 8B  ·  mechanistic interpretability of machine unlearning", CAP, GRAY, first=True)
+tf = tbox(s, 1.0, 1.45, 11.3, 1.3); line(tf, "Towards Rigorous Unlearning Evaluation", TITLE, BLACK, bold=True, first=True, space=4)
+tf2 = tbox(s, 1.0, 2.9, 11.3, 2.0)
+line(tf2, "Does an unlearned model truly forget? Suppression vs. erasure in the Hubble benchmark,", SUB, INK, first=True, space=8)
+line(tf2, "read with mechanistic interpretability, and a faithful metric derived from it", SUB, INK, space=8)
+tf3 = tbox(s, 1.0, 6.35, 11.3, 0.9)
+line(tf3, "Harsh Parikh   ·   Chair of Responsible Data Science, TU Munich", CAP, GRAY, first=True, space=5)
+line(tf3, "Advisor: Efstratios Zaradoukas   ·   Assessor: Prof. Dr. Gjergji Kasneci", CAP, GRAY, space=5)
 
-# =========================== ROADMAP ===========================
-s = slide(); header(s, "Roadmap", "What this talk covers")
-left = ["1.  Introduction — machine unlearning & the verification problem",
-        "2.  The Hubble benchmark, and the unlearning methods",
-        "3.  Experiment setup & the infill probe",
-        "4.  Memorization signals at the output",
-        "5.  Logit lens & mechanistic interpretability",
-        "6.  The main argument: suppression vs. erasure"]
-right = ["7.  Reading Hubble models layer-by-layer (and getting it right)",
-         "8.  Results, and the method verdict across scales",
-         "9.  Deriving a metric from the logit lens (D_mech)",
-         "10. Faithfulness: what it means, and how we test it",
-         "11-12. The comparison table, vs. the lexical metrics",
-         "13. Beyond the logit lens: tuned & Jacobian readouts"]
-tfL = tbox(s, 0.9, 2.0, 6.0, 5.0)
-for i, t in enumerate(left): line(tfL, t, BODY, INK, first=(i == 0), space=12)
-tfR = tbox(s, 7.0, 2.0, 6.0, 5.0)
-for i, t in enumerate(right): line(tfR, t, BODY, INK, first=(i == 0), space=12)
+# =========================== OUTLINE ===========================
+s = slide(); header(s, "Outline", "What this talk covers")
+left = ["Part I. The problem",
+        "   1.  Machine unlearning and the verification gap",
+        "   2.  The Hubble benchmark and the four methods",
+        "   3.  The infill probe, and the output view",
+        "Part II. Reading inside the model",
+        "   4.  Mechanistic interpretability",
+        "   5.  Three lenses: logit, tuned, Jacobian",
+        "   6.  Which lens to trust for a metric"]
+right = ["Part III. The finding",
+         "   7.  Suppression is not erasure",
+         "Part IV. A metric from the logit lens",
+         "   8.  D_mech, and how to read it",
+         "Part V. Is the metric faithful?",
+         "   9.  Criteria, tests, and the result",
+         "        Robustness, a second benchmark (TOFU), CIs",
+         "Part VI. Verdict and conclusion",
+         "Appendix. All results (three lenses, lens tables, 1B/8B)"]
+tfL = tbox(s, 0.9, 1.95, 6.1, 5.1)
+for i, t in enumerate(left): line(tfL, t, BODY, INK if not t.startswith("Part") else BLACK, bold=t.startswith("Part"), first=(i == 0), space=10)
+tfR = tbox(s, 7.0, 1.95, 6.1, 5.1)
+for i, t in enumerate(right): line(tfR, t, BODY, INK if not t.startswith(("Part", "Appendix")) else BLACK, bold=t.startswith(("Part", "Appendix")), first=(i == 0), space=10)
 
-# =========================== 1 INTRO ===========================
-s = slide(); header(s, "1 · Introduction", "Machine unlearning — and why verifying it is hard")
+# ===================================================================================================
+# PART I - THE PROBLEM
+# ===================================================================================================
+divider("Part I", "The problem", "unlearning, the benchmark, and why the output is not enough")
+
+# 1 INTRO
+s = slide(); header(s, "1 · Introduction", "Machine unlearning, and why verifying it is hard")
 bullets(s, [
     ("What it is", "h"),
-    "Machine unlearning makes a trained model forget specific data — a person's private details, copyrighted text, hazardous knowledge — without retraining from scratch.",
+    "Machine unlearning makes a trained model forget specific data, a person's private details, copyrighted text, or hazardous knowledge, without the cost of retraining from scratch.",
     ("Why it matters", "h"),
-    "Privacy and the \"right to be forgotten\" (GDPR), copyright takedowns, and safety all demand that models can remove what they learned.",
-    ("The hard question — and the thesis", "h"),
-    "Standard practice checks the OUTPUT: did the model stop saying the fact? But a model can look forgotten while still holding the knowledge inside.",
-    "This thesis asks: can we tell genuine erasure from mere output suppression — by looking inside the network?",
+    "Privacy and the right to be forgotten (GDPR), copyright takedowns, and safety all require that a deployed model can remove what it learned, on demand.",
+    ("The hard question, and the thesis", "h"),
+    "Standard practice checks the OUTPUT: did the model stop saying the fact? But a model can look forgotten on the outside while still holding the knowledge inside.",
+    "This thesis asks: can we tell genuine erasure from mere output suppression, by looking inside the network, and can we turn that into a trustworthy metric?",
 ])
 
-# =========================== 2 HUBBLE ===========================
+# 1b THE QUESTION
+s = slide(); header(s, "1 · The core question", "Two different things we could mean by \"forgot\"")
+bullets(s, [
+    ("Did the model SAY the fact?  (output)", "h"),
+    "What every current unlearning metric measures: generate or score the answer and check it is gone. Cheap, but only sees the surface.",
+    ("Does the model still HAVE the fact?  (internal)", "h"),
+    "What we actually care about. A suppressed fact whose representation stays intact can be revived by rewording, quantization, or a few fine-tuning steps. That is not real forgetting.",
+    ("The gap between them is the whole thesis", "h"),
+    "If the two disagree, the output metric is lying. We need a readout of the internal state, and a metric built on it that measures knowledge, not surface form.",
+])
+
+# 2 HUBBLE
 s = slide(); header(s, "2 · The Hubble benchmark", "Models with KNOWN knowledge states")
 bullets(s, [
-    "Hubble is an open suite of LLMs (1B and 8B) pretrained with a controlled set of facts inserted — so we know exactly what each model should and should not know.",
-    ("Two reference models per fact — our ground truth", "h"),
-    "Standard — never trained on the fact → the \"perfectly forgotten\" target (lower bound).",
-    "Perturbed — trained to memorize the fact → \"knows it\" (upper bound).",
+    "Hubble is an open suite of LLMs (1B and 8B) pretrained with a controlled set of facts inserted, so we know exactly what each model should and should not know.",
+    ("Two reference models per fact, our ground truth", "h"),
+    "Standard: never trained on the fact, the perfectly forgotten target (lower bound).",
+    "Perturbed: trained to memorize the fact, so it knows it (upper bound).",
     ("Data splits", "h"),
     "Unlearn (to forget) · Keep (to retain) · Unseen (never seen). Facts are fictional people with attributes such as birthdate and nationality.",
     "Why it is powerful: unlearning can be measured against known ground truth, not guesswork.",
 ])
 
-# =========================== 2 METHODS ===========================
+# 2b METHODS
 s = slide(); header(s, "2 · Unlearning methods", "Four families we study")
-rows = [("NPO", "Negative Preference Optimization — gently pushes down the probability of the forget answer (bounded, to avoid model collapse)."),
-        ("GradDiff", "Gradient Difference — ascends the loss on forget data while descending it on retain data."),
-        ("IDK", "\"I don't know\" — fine-tunes the model to answer \"I don't know\" to forget questions (redirects the output)."),
-        ("RMU", "Representation Misdirection — scrambles the model's internal activations for the forget concept at chosen layers.")]
-t = tablebox(s, [("method", "what it does")] + rows, 0.75, 2.05, 11.8, [2.1, 9.7], fs=BODY, hfs=BODY)
+rows = [("NPO", "Negative Preference Optimization: gently pushes down the probability of the forget answer (bounded, to avoid model collapse)."),
+        ("GradDiff", "Gradient Difference: ascends the loss on forget data while descending it on retain data."),
+        ("IDK", "\"I don't know\": fine-tunes the model to answer \"I don't know\" to forget questions (redirects the output)."),
+        ("RMU", "Representation Misdirection: scrambles the model's internal activations for the forget concept at chosen layers.")]
+tablebox(s, [("method", "what it does")] + rows, 0.75, 2.05, 11.8, [2.1, 9.7], fs=BODY, hfs=BODY)
 tf = tbox(s, 0.75, 5.95, 11.8, 0.9)
-line(tf, "We tune each method with a \"keep-as-retain\" setup so unlearning is selective — forget the target, preserve everything else.", BODY, GRAY, italic=True, first=True)
+line(tf, "We tune each method with a keep-as-retain setup so unlearning is selective: forget the target, preserve everything else.", BODY, GRAY, italic=True, first=True)
 
-# =========================== 3 SETUP ===========================
-s = slide(); header(s, "3 · Experiment setup", "Two lenses on the same six models")
-bullets(s, [
-    "For every model — Standard, Perturbed, and the four unlearned (NPO, GradDiff, IDK, RMU) — we ask: can the forgotten attribute still be recovered?",
-    ("We look through two lenses", "h"),
-    "Output behaviour — infill accuracy: does the model still produce the fact? (what everyone measures)",
-    "Internal computation — logit lens: is the fact still represented inside, even if the output hides it? (our addition)",
-    ("Anchored by ground truth", "h"),
-    "Every reading is bracketed by Standard (never knew) and Perturbed (knows), so scores are interpretable.",
-])
-
-# =========================== 3 INFILL PROBE ===========================
+# 3 INFILL PROBE
 s = slide(); header(s, "3 · The infill probe", "How we ask a model for a fact")
 tf = tbox(s, 0.75, 1.9, 11.8, 0.5); line(tf, "We give the model a biography that stops right before the sensitive attribute:", BODY, INK, first=True)
 pbox = s.shapes.add_shape(1, Inches(0.9), Inches(2.5), Inches(11.5), Inches(1.1))
@@ -181,83 +220,305 @@ line(ptf, "\"Billy Fisher is from United States. Billy Fisher was born in Wheeli
           "Billy Fisher is an alumni of the American Academy of Dramatic Arts. Billy Fisher was born on ___\"",
      BODY, INK, italic=True, first=True)
 bullets(s, [
-    "Correct answer: \"May 16, 1988\". Following Hubble's own loss-based-choice protocol, we score the true birthdate against 9 distractors (10 candidates) and take the highest-likelihood option — this is infill accuracy.",
-    "(Hubble also runs a generative exact-match evaluation; our later metric comparison covers that mode too, via ROUGE and exact-memorization.)",
+    "Correct answer: \"May 16, 1988\". Following Hubble's own loss-based-choice protocol, we score the true birthdate against 9 distractors (10 candidates) and take the highest-likelihood option. This is infill accuracy.",
+    "Hubble also runs a generative exact-match evaluation; our later metric comparison covers that mode too, via ROUGE and exact memorization.",
     "Four prompt formats give more or less context: name-only, intro-prefix, full-prefix, full-prefix + suffix.",
 ], y=3.8, space=10)
 
-# =========================== 4 MEMORIZATION ===========================
-s = slide(); header(s, "4 · Memorization at the output", "Infill accuracy by method and prompt format (8B)")
-picture(s, f"{A}/infill_bars_8b.png", y=1.85, maxw=9.4, maxh=4.15)
+# 4 OUTPUT VIEW
+s = slide(); header(s, "4 · The output view", "Infill accuracy by method and prompt format (8B)")
+picture(s, f"{A}/infill_bars_8b.png", y=1.85, maxw=9.4, maxh=4.05)
 bullets(s, [
-    "Perturbed (knows) scores highest; every unlearned method sits near the Standard never-knew floor — and they all look about the same.",
-    "At the output, unlearning \"works,\" and no single number tells the four methods apart.",
-], y=6.2, space=6)
+    "Perturbed (knows) scores highest; every unlearned method sits near the Standard never-knew floor, and they all look about the same.",
+    "At the output, unlearning \"works,\" and no single number tells the four methods apart. The rest of the talk shows the inside tells a very different story.",
+], y=6.1, space=6)
 
-# =========================== 5 LOGIT LENS ===========================
-s = slide(); header(s, "5 · Logit lens & mechanistic interpretability", "Reading the model's mind, layer by layer")
+# ===================================================================================================
+# PART II - READING INSIDE: ALL THREE LENSES, BEFORE THE METRIC
+# ===================================================================================================
+divider("Part II", "Reading inside the model", "mechanistic interpretability, and three lenses: logit, tuned, Jacobian")
+
+# 5 MECH INTERP
+s = slide(); header(s, "5 · Mechanistic interpretability", "The residual stream, and what a \"lens\" is")
 bullets(s, [
     "Mechanistic interpretability studies what happens INSIDE a network, not just its output.",
-    "A transformer refines its next-word guess across its layers (36 at 8B) in a running \"residual stream.\"",
-    ("The logit lens", "h"),
-    "Apply the model's own output head to an INTERMEDIATE layer — see the guess it would make at that depth.",
-    "Record the RANK of the correct answer token at each layer: rank 1 = top guess; rank in the thousands = buried.",
-    "This yields a trajectory — the fate of the fact as it flows through the network.",
+    "A transformer refines its next-token guess across its layers (16 at 1B, 36 at 8B) in a running \"residual stream\": each layer reads the current state and writes an update back.",
+    ("A lens = a readout of an intermediate layer", "h"),
+    "A lens transports one middle layer's hidden state into output-token space, so we can ask: what would the model predict if it stopped here? We record the RANK of the correct answer token at each layer (rank 1 = top guess; rank in the thousands = buried).",
+    "The result is a trajectory: the fate of the fact as it flows through the network. The three lenses differ only in HOW faithfully that transport reflects the model's own computation.",
 ])
 
-# =========================== 6 MAIN ARGUMENT ===========================
-s = slide(); header(s, "6 · The main argument", "Suppression is not erasure")
+# 6 LOGIT LENS
+s = slide(); header(s, "5 · Lens 1: the logit lens", "the model's own frozen output head")
 bullets(s, [
-    ("Two different questions", "h"),
-    "An output metric answers: did the model SAY the fact?",
-    "What we actually care about: does the model still HAVE the fact?",
-    ("Why the gap matters", "h"),
-    "A fact can be suppressed at the output while its internal representation stays intact — and can be revived by rewording, quantization, or a few fine-tuning steps. That is not real forgetting.",
-    "The logit lens can see this directly: if the token is buried at the output but accessible mid-stack, the unlearning is only skin-deep.",
+    ("How it reads a layer", "h"),
+    "Apply the network's own final normalization and unembedding (its output head) directly to an intermediate layer, as if the network stopped there.",
+    ("Why it is the natural first choice", "h"),
+    "Parameter-free and fully reproducible: no training, no fitted components. The readout is a property of the model alone.",
+    ("Its one weakness", "h"),
+    "Early layers are not yet in \"output coordinates,\" so the logit lens reads them noisily. (We handle this later: the metric only uses the reliable mid-to-late band.)",
+    ("What it gives us", "h"),
+    "A clean, honest rank-by-layer trajectory that shows genuine emergence: a known fact climbs from buried to rank 1 over the final layers.",
 ])
 
-# =========================== 7 INTEGRATION ===========================
-s = slide(); header(s, "7 · Integrating the logit lens into Hubble", "Our mechanistic addition to the benchmark")
+# 7 TUNED LENS
+s = slide(); header(s, "5 · Lens 2: the tuned lens", "a trained per-layer correction (Belrose et al. 2023)")
 bullets(s, [
-    "We run the rank-by-layer logit lens on all six Hubble models, on both the forget and the retain sets, taking the median over facts.",
-    "Every trajectory is anchored between Standard (never knew) and Perturbed (knows).",
-    "This turns Hubble — which ships only the checkpoints — into a testbed for INTERNAL unlearning metrics, not just output metrics.",
-    ("Getting the reading right mattered", "h"),
-    "Two subtle bugs first had to be fixed (next slide) — without them the ranks are inflated and spike at the last layer, hiding the real story.",
+    ("How it reads a layer", "h"),
+    "Learn a small affine map (A_L, b_L) per layer, identity-initialized, trained on text so that the readout reproduces the model's FINAL output distribution. We train it to KL/layer approx 0.05 on every model.",
+    ("Benefit", "h"),
+    "It calibrates the mid-stack readout that the raw logit lens gets wrong, so the reading is cleaner where the logit lens is noisy.",
+    ("The catch: it \"skips ahead\"", "h"),
+    "Because it is trained on the OUTPUT, it surfaces the answer earlier than the model actually computes it, hiding the intermediate computation. As we show, it even makes a SUPPRESSED fact look present. This is why it is a cross-check, not our metric base.",
 ])
 
-# =========================== 7b CORRECTNESS ===========================
-s = slide(); header(s, "7 · A note on correctness", "Two fixes that changed the numbers sharply")
+# 8 JACOBIAN LENS
+s = slide(); header(s, "5 · Lens 3: the Jacobian lens", "the model's own gradient map (Anthropic 2026, the frontier readout)")
+bullets(s, [
+    ("How it reads a layer", "h"),
+    "Read the layer through A_L = average of d(logits)/d(h) over diverse text, plus an intercept: a first-order Taylor view of the network's ACTUAL tail, computed with the model's own derivatives.",
+    ("Benefit: interventionally grounded", "h"),
+    "A first-order Taylor view from the model's own derivatives, not a fitted correlation. It can keep a fact buried where a lingering linear trace still shows up. It is a local approximation, not a proof of causal necessity.",
+    ("We implemented it end to end", "h"),
+    "Hook-injection + double-backward JVP; reconstruction verified on every layer. Two fixes were needed: restore the Taylor intercept (fixes jaggedness), and average over DIVERSE text (restores emergence).",
+    ("Costs", "h"),
+    "Expensive, first-order, and more conservative (it surfaces the answer later than the logit lens).",
+])
+
+# 9 THE LADDER + WHICH TO TRUST (with comparison figure)
+s = slide(); header(s, "6 · The lens ladder, and which to trust", "same state, three transports (8B, all 44 forget facts)")
+picture(s, f"{A}/lens_compare_8b.png", y=1.68, maxw=11.6, maxh=4.2)
+bullets(s, [
+    "Correlational (logit) to calibrated (tuned) to interventionally-grounded (Jacobian). Tuned (dashed) sits at rank approx 10 from layer 0 for EVERY model, even the suppressed NPO / GradDiff: it skips ahead and hides the suppression, so we use it only as an ordinal cross-check. Logit (dotted) shows genuine emergence; Jacobian (solid) is smooth and sensitivity-based.",
+], y=6.0, size=BODY - 2, space=5)
+
+# 10 CORRECTNESS
+s = slide(); header(s, "6 · Getting the reading right", "Two fixes to the logit lens that changed the numbers")
 bullets(s, [
     ("1. Double-normalization (a fake final-layer spike)", "h"),
     "The model's last hidden state is already layer-normalized; the naive lens normalized it again, distorting the final layer. Fix: use the model's true output logits there.",
     ("2. Boundary tokenization (inflated ranks everywhere)", "h"),
-    "A trailing space in the prompt made us track the wrong answer token ( 'July' instead of ' July' ) — the one the model does NOT predict. Fix: strip and re-join so we track the token the model actually produces.",
+    "A trailing space in the prompt made us track the wrong answer token (\"July\" instead of \" July\"), the one the model does NOT predict. Fix: strip and re-join so we track the token the model actually produces.",
     ("Effect", "h"),
-    "Mid-stack ranks dropped ~5–40× (e.g. IDK 385 → 9), the false final-layer spike vanished, and the 1B story sharpened — NPO's genuine deep burial became visible. All results here use the corrected readout.",
-], space=9)
+    "Mid-stack ranks dropped about 5 to 40 times (e.g. IDK 385 to 9), the false final-layer spike vanished, and the 1B story sharpened. All results here use the corrected readout.",
+], space=8)
 
-# =========================== 8 RESULTS 8B ===========================
-s = slide(); header(s, "8 · Results", "The output said \"all the same\" — the layers say otherwise (8B)")
+# ===================================================================================================
+# PART III - THE FINDING
+# ===================================================================================================
+divider("Part III", "The finding", "the output said \"all the same\"; the layers say otherwise")
+
+# 11 SUPPRESSION NOT ERASURE + headline result
+s = slide(); header(s, "7 · Suppression is not erasure", "rank-by-layer logit lens, all six models (8B)")
 picture(s, f"{A}/logitlens_rank_median_8b.png", y=1.75, maxw=9.0, maxh=3.9)
 bullets(s, [
-    "IDK keeps the token accessible even at the output (surface) · NPO & GradDiff keep it accessible mid-stack then suppress it late · RMU buries it deepest mid-stack.",
-    "One output verdict; different internal stories.",
-    "No method achieves true internal erasure — even the deepest leaves recoverable traces. Unlearning MASKS the fact; it does not delete it.",
+    "IDK matches the never-knew model at the output (both rank 9), so the distinction has to come from the trajectory, not the final rank; NPO and GradDiff keep the token accessible mid-stack then suppress it late; RMU buries it deepest mid-stack. One output verdict, four different internal stories.",
+    "Under these readouts, no method drives the trajectory to the never-knew reference: each leaves the gold token recoverable at some layer. We read this as residual internal accessibility, not proven erasure.",
 ], y=5.55, space=7)
 
-# =========================== 8b SCALES ===========================
-s = slide(); header(s, "8 · Across scales", "The same method behaves differently at 1B vs. 8B")
-picture(s, f"{A}/logitlens_rank_median_1b.png", x=0.5, y=1.8, maxw=6.2, maxh=3.25)
-picture(s, f"{A}/logitlens_rank_median_8b.png", x=6.75, y=1.8, maxw=6.2, maxh=3.25)
-caption(s, "Left: 1B.   Right: 8B.   Forget (left panel of each) vs. retain (right panel of each).   Identical boundary-safe logit lens.", y=5.15)
-bullets(s, [
-    "Retain is preserved at both scales — every method keeps the retained facts recoverable (low rank on Keep).",
-    "The forget signature is strongly scale-dependent: at 1B only NPO drives the fact deep (output rank ≈ 44,000); GradDiff, IDK, RMU leave it accessible (rank 8–17). At 8B, NPO / GradDiff / RMU bury it while IDK stays surface.",
-], y=5.45, space=7)
+# 11b LENS TABLE emergence/suppression
+s = slide(); header(s, "7 · Reading the model, layer by layer", "the answer emerges, or is suppressed")
+picture(s, f"{A}/lenstable_contrast_0.png", y=1.72, maxw=9.6, maxh=5.3)
+caption(s, "Top-1 prediction at every layer (8B). Perturbed converges to \"May\" (25% to 100%); on the same "
+           "fact NPO decodes a meaningless token and never surfaces \"May\". Suppression, not erasure, in one table.", y=7.1)
 
-# =========================== 8c METHOD VERDICT ===========================
-s = slide(); header(s, "8 · Method verdict", "The general result across scales")
+# 11c CONFIDENCE CONTRADICTION
+s = slide(); header(s, "7 · A contradiction the output hides", "all confident, only one correct")
+picture(s, f"{A}/lenstable_confidence_contradiction.png", y=1.7, maxw=9.2, maxh=3.5)
+bullets(s, [
+    "Final-layer prediction, all six models. NPO / GradDiff / IDK emit a WRONG token at about 100% confidence, the SAME confidence as the model that actually knows.",
+    "Confidence is not knowledge: a probability metric cannot separate \"confidently knows\" from \"confidently deflects.\" The output-metric failure, made visual.",
+], y=5.3, space=9)
+
+# ===================================================================================================
+# PART IV - THE METRIC
+# ===================================================================================================
+divider("Part IV", "A metric from the logit lens", "D_mech, a dual-anchor distance")
+
+# 12 D_mech
+s = slide(); header(s, "8 · A metric from the logit lens", "D_mech, a dual-anchor distance")
+tf = tbox(s, 0.75, 1.9, 11.8, 1.1)
+line(tf, "Each fact gives a rank trajectory r = (r0 ... r36). With two anchor trajectories,", BODY, INK, first=True, space=4)
+line(tf, "K = Perturbed (knows) and O = Standard (never knew), we define:", BODY, INK, space=4)
+fb = s.shapes.add_shape(1, Inches(1.3), Inches(3.05), Inches(10.7), Inches(0.9))
+fb.fill.solid(); fb.fill.fore_color.rgb = ALT; fb.line.color.rgb = DARK; fb.line.width = Pt(1); fb.shadow.inherit = False
+ftf = fb.text_frame; ftf.vertical_anchor = MSO_ANCHOR.MIDDLE
+line(ftf, "D_mech  =  mean | log r - log O |  -  mean | log r - log K |     (over layers 18-36)", 20, BLACK, bold=True, first=True, align=PP_ALIGN.CENTER)
+bullets(s, [
+    "D_mech > 0 means the internal trajectory looks like it KNOWS, regardless of what the output says.",
+    "Anchors are leave-one-fact-out medians, so a fact is never compared to itself.",
+    "It is a RELATIVE distance, \"closer to knows, or to never-knew?\", which is the key to faithfulness.",
+    "It averages over layers 18 to 36 only, the band where the logit lens is reliable, sidestepping its early-layer noise.",
+], y=4.2, space=9)
+
+# 12b READING D_mech
+s = slide(); header(s, "8 · Reading D_mech", "why the log, and why it survives paraphrasing")
+bullets(s, [
+    ("The log: ranks live on a multiplicative scale", "h"),
+    "Ranks span five orders of magnitude (1 to 50,000). A raw gap |5000 - 4000| would swamp |1 - 10|, yet rank 1 vs 10 is hugely meaningful while 4000 vs 5000 is not. The log turns distance into a ratio, \"how many factors apart,\" matching how rank quality actually behaves.",
+    ("The two anchors: a signed \"which template?\" score", "h"),
+    "d(r, O) - d(r, K) asks: is the trajectory closer to the KNOWS template or the NEVER-KNEW template? Positive = looks known; zero = equidistant.",
+    ("Why it survives paraphrasing", "h"),
+    "Rewording nudges the distance to BOTH anchors by about the same amount, and the subtraction cancels that common shift, leaving only the knowledge signal.",
+], space=8)
+
+# 12c WHY LOGIT FOR D_mech (decision, after D_mech is defined; before faithfulness)
+s = slide(); header(s, "8 · Which lens for D_mech?", "why the metric is built on the logit lens, not tuned or Jacobian")
+rows = [("purpose", "best lens", "why"),
+        ("Base for the D_mech metric", "Logit", "parameter-free, reproducible, preserves the trajectory signal"),
+        ("First-order sensitivity check", "Jacobian", "interventionally grounded, but a local approximation"),
+        ("Predict the eventual output early", "Tuned", "calibrated, but useless for where / whether")]
+tablebox(s, rows, 0.7, 1.95, 11.95, [4.0, 1.7, 6.25], fs=13, hfs=13)
+bullets(s, [
+    "A metric must be a property of the MODEL, not our choices: only the logit lens has no trained or estimated parameters, so D_mech is exactly reproducible.",
+    "A tuned-based D_mech would FAIL: tuned flattens every trajectory to rank approx 10 (NPO looks like Perturbed, see Part II), erasing the very signal D_mech reads.",
+    "Invariance needs ONE shared, fixed transport so rewording cancels across the two anchors; only the logit lens is fixed. Its band (layers 18 to 36) already avoids the early-layer noise.",
+    "The Jacobian is the interventionally-grounded confirmation, not the base: it adds cost and caveats without a proven faithfulness gain.",
+], y=3.9, size=BODY - 2, space=6)
+
+# ===================================================================================================
+# PART V - FAITHFULNESS
+# ===================================================================================================
+divider("Part V", "Is the metric faithful?", "the faithful analysis based on OpenUnlearning")
+
+# 13 FAITHFULNESS meaning + worked example
+s = slide(); header(s, "9 · Faithfulness, is the metric trustworthy?", "two criteria, shown by example")
+tf = tbox(s, 0.75, 1.75, 11.8, 1.15)
+line(tf, "A metric is faithful only if it measures KNOWLEDGE, not surface form. Two criteria:", BODY, INK, first=True, space=6)
+line(tf, "Discrimination: models that KNOW vs models that LACK the fact must get different scores.", BODY, INK, bullet=True, space=4)
+line(tf, "Semantic Invariance: reword the question (knowledge unchanged) and the score must NOT move. This is the hard one.", BODY, INK, bullet=True, space=4)
+picture(s, f"{A}/mech_worked_example.png", y=3.0, maxw=10.6, maxh=3.4)
+caption(s, "Same knowledge, reworded prompt: probability collapses 0.95 to 0.16 (a near-total shift); D_mech holds 1.21 to 0.92 (a much smaller shift). "
+           "Both separate knows from absent, so invariance is the deciding test.", y=6.55)
+
+# 13a INVARIANCE, SHOWN EXPLICITLY (the appendix showcase, brought into the invariance discussion)
+s = slide(); header(s, "9 · Invariance, shown explicitly", "ask the same fact four ways: surface swings, D_mech holds (8B)")
+picture(s, f"{A}/paraphrase_showcase_ent0_8b.png", y=1.72, maxw=10.2, maxh=5.05)
+caption(s, "Billy Fisher, Perturbed (knows). Reworded four ways, the surface readouts P(gold) and ROUGE swing widely, "
+           "yet the gold month emerges the same way inside the model and D_mech stays positive (the knows side) every time.", y=6.92)
+
+# 13b TESTS + ASSUMPTIONS
+s = slide(); header(s, "9 · How we test it", "the pools, the tests, and our assumptions")
+tfL = tbox(s, 0.75, 1.8, 6.05, 5.3)
+line(tfL, "Four pools (n = 44 facts each)", SUBH, BLACK, bold=True, first=True, space=6)
+line(tfL, "Positive P (knows): Full + Paraphrased.  Negative N (absent): Retain + Perturbed-with-wrong-answer.", BODY, INK, space=10)
+line(tfL, "The four tests", SUBH, BLACK, bold=True, space=6)
+for t in ["Wilcoxon signed-rank (within P, Full vs Paraphrased): did rewording shift the metric?",
+          "TOST equivalence: are Full and Paraphrased statistically the SAME (within a margin)?",
+          "Mann-Whitney U (P vs N): does the metric separate knows from absent?",
+          "Cliff's delta (effect size): invariance shift (0 = no shift) and discrimination (1 = perfect)."]:
+    line(tfL, t, BODY - 1, INK, bullet=True, space=7)
+tfR = tbox(s, 7.05, 1.8, 5.75, 5.3)
+line(tfR, "Assumptions (n is small)", SUBH, BLACK, bold=True, first=True, space=6)
+for t in ["Non-parametric throughout: the metrics are bounded and skewed, so no normality is assumed.",
+          "At n = 44 the Wilcoxon p-value SATURATES: even a tiny consistent shift reads as significant, so it flags every metric.",
+          "So we judge invariance by EFFECT SIZE (Cliff's delta), not a p-value threshold.",
+          "One paraphrase and one wrong-target realization; facts treated as independent; anchors are leave-one-out medians."]:
+    line(tfR, t, BODY - 1, INK, bullet=True, space=8)
+
+# 13c RESULT box plots
+s = slide(); header(s, "9 · Faithfulness result", "every metric's distribution across the four pools")
+picture(s, f"{A}/mech_metaeval_fig4.png", y=1.75, maxw=9.8, maxh=3.9)
+caption(s, "Dashed line separates Positive P from Negative N. A faithful metric keeps Full approx Paraphrased (level) and shows a P-N gap. "
+           "D_mech does both; probability / rouge / extraction-strength let the Paraphrased cell collapse toward the negatives.", y=5.85)
+
+# 13d COMPARISON TABLE
+s = slide(); header(s, "9 · Reading the comparison", "invariance and discrimination, side by side")
+rows = [("metric", "Full (P)", "Paraphrased (P)", "invar_shift ↓", "discrim ↑", "faithful"),
+        ("D_mech", "1.21", "0.92", "0.466", "0.827", "yes"),
+        ("probability", "0.95", "0.16", "0.999", "0.928", "no"),
+        ("rouge", "0.57", "0.00", "0.975", "0.494", "no")]
+tablebox(s, rows, 0.75, 1.95, 11.8, [2.4, 1.8, 2.3, 2.1, 1.7, 1.5], fs=14, hfs=13)
+bullets(s, [
+    ("invar_shift: how much the score moves when you only REWORD (0 = no shift, lower is better)", "h"),
+    "|Cliff's delta| between Full and Paraphrased. probability moves almost completely (0.95 to 0.16); D_mech shifts far less (0.466, a large reduction but not zero).",
+    ("discrim: how cleanly KNOWS separates from ABSENT (1 = perfect, higher is better)", "h"),
+    "Most metrics score high here, discrimination is easy. A metric is faithful only if it has BOTH low invar_shift AND high discrim. Only D_mech does.",
+], y=3.75, space=8)
+
+# 13e VS LEXICAL
+s = slide(); header(s, "9 · Comparison with lexical metrics", "only the mechanistic metric is faithful")
+picture(s, f"{A}/mech_invar_discrim_scatter.png", x=0.7, y=1.75, maxw=5.7, maxh=3.5)
+picture(s, f"{A}/mech_faithful_bar.png", x=6.7, y=1.9, maxw=6.3, maxh=3.35)
+bullets(s, [
+    "Discrimination is easy; nearly every metric separates knows from absent. The real test is invariance.",
+    "On Hubble-8B, only D_mech is both discriminative and paraphrase-stable (shift 0.47, a large reduction but not zero, vs at least 0.95); its composite faithfulness score is about 18x the best lexical metric, and the ranking holds under every aggregation we tried.",
+    "It is the DISTANCE construction that wins: naive min-rank, also mechanistic, fails paraphrase stability.",
+], y=5.6, space=7)
+
+# ===================================================================================================
+# PART V-b - ROBUSTNESS AND A SECOND BENCHMARK
+# ===================================================================================================
+divider("Part V (cont.)", "How solid is the result?", "aggregation robustness, a second benchmark, and confidence intervals")
+
+# R1 AGGREGATION ROBUSTNESS
+s = slide(); header(s, "9 · The Hubble-8B conclusion is robust to the formula", "D_mech rank (of 11 metrics) under five ways to combine the two effect sizes")
+rows = [("benchmark", "product", "additive", "harmonic", "minimum", "constraint"),
+        ("Hubble-8B", "1", "1", "1", "1", "1"),
+        ("Hubble-1B", "2", "4", "2", "2", "2"),
+        ("TOFU-1B", "4", "4", "4", "4", "2"),
+        ("TOFU-3B", "5", "5", "5", "5", "3"),
+        ("TOFU-8B", "4", "4", "4", "4", "2")]
+tablebox(s, rows, 0.9, 1.95, 11.5, [2.6, 1.78, 1.78, 1.78, 1.78, 1.78], fs=14, hfs=13)
+bullets(s, [
+    "The composite score is one of several reasonable choices. On Hubble-8B, D_mech is rank 1 of 11 under all five, so the 18x gap is a property of the data, not the multiplication.",
+    "At every scale and benchmark, D_mech is the best mechanistic metric and beats every standard output metric under every formula. The one exception is the additive score at Hubble-1B.",
+], y=4.65, size=BODY - 2, space=7)
+
+# R2 SECOND BENCHMARK (TOFU)
+s = slide(); header(s, "9 · A second benchmark: TOFU (1B / 3B / 8B)", "does the result travel beyond Hubble?")
+rows = [("scale", "invar_shift", "discrim", "faithful D_mech", "best competitor", "probability"),
+        ("TOFU-1B", "0.405", "0.934", "0.556", "0.650 truth_ratio", "0.059"),
+        ("TOFU-3B", "0.345", "0.914", "0.599", "0.658 truth_ratio", "0.047"),
+        ("TOFU-8B", "0.416", "0.953", "0.557", "0.662 truth_ratio", "0.031")]
+tablebox(s, rows, 0.7, 1.95, 11.95, [1.7, 2.15, 1.75, 2.75, 3.0, 1.95], fs=13, hfs=12)
+bullets(s, [
+    "We rerun the whole meta-evaluation on OpenUnlearning TOFU (author facts, multi-token answers), with its released full (knows) and retain90 (never-knew) checkpoints as anchors.",
+    "D_mech is faithful at every scale, the best internal metric, above every generation-overlap and answer-probability metric. It is NOT the single best overall here, since a few likelihood-based aggregates (truth ratio, loss / zlib MIA) are also paraphrase-stable on TOFU.",
+    "Why the difference: TOFU rewords the whole question and scores a multi-token answer, so whole-answer aggregates are less exposed to a single-token surface shift than under Hubble's trigger-only rewording.",
+], y=4.25, size=BODY - 2, space=6)
+
+# R3 CONFIDENCE + CALIBRATED CLAIM
+s = slide(); header(s, "9 · What we can and cannot say", "confidence intervals, and the honest scope of each claim")
+tfL = tbox(s, 0.75, 1.85, 6.05, 5.2)
+line(tfL, "Bootstrap 95% CIs (resampling facts)", SUBH, BLACK, bold=True, first=True, space=6)
+for t in ["Hubble-8B: D_mech faithful 0.442 [0.31, 0.56] vs best lexical 0.025 [0.00, 0.07]. The intervals do NOT overlap: the advantage is real, not a point estimate.",
+          "TOFU-8B: D_mech 0.557 [0.46, 0.65] overlaps truth_ratio 0.662 [0.58, 0.73]. Statistically comparable, and both far above probability [0.00, 0.07]."]:
+    line(tfL, t, BODY - 1, INK, bullet=True, space=8)
+tfR = tbox(s, 7.05, 1.85, 5.75, 5.2)
+line(tfR, "The claim, calibrated", SUBH, BLACK, bold=True, first=True, space=6)
+for t in ["Erasure to residual internal accessibility, under the readouts applied (an observation, not a causal proof).",
+          "Invariant to substantially paraphrase-stable (shift 0.47, not zero).",
+          "Only faithful metric on Hubble-8B; on TOFU, the best internal metric and above all standard output metrics.",
+          "Causal Jacobian to an interventionally-grounded, first-order readout."]:
+    line(tfR, t, BODY - 1, INK, bullet=True, space=8)
+
+# R4 BAND SENSITIVITY + IDK (hardest case)
+s = slide(); header(s, "9 · Two more robustness checks", "the layer-band choice, and the hardest case (IDK)")
+tfL = tbox(s, 0.75, 1.8, 6.05, 0.7)
+line(tfL, "Faithfulness vs the layer band (Hubble-8B)", SUBH, BLACK, bold=True, first=True, space=4)
+rows = [("band", "invar_shift", "discrim", "faithful"),
+        ("12 to 30", "0.339", "0.418", "0.276"),
+        ("18 to 36 (default)", "0.467", "0.827", "0.441"),
+        ("24 to 36", "0.698", "0.916", "0.276")]
+tablebox(s, rows, 0.75, 2.45, 6.0, [2.5, 1.3, 1.05, 1.15], fs=12, hfs=12)
+tfL2 = tbox(s, 0.75, 4.4, 6.05, 2.4)
+line(tfL2, "Faithful under every band (0.28 to 0.44, all far above the best lexical 0.025). The a priori top half is the strongest, and no band inverts the result.", BODY - 1, INK, first=True, space=6)
+tfR = tbox(s, 7.05, 1.8, 5.75, 5.2)
+line(tfR, "IDK: same final rank as never-knew, opposite internal state", SUBH, BLACK, bold=True, first=True, space=6)
+for t in ["IDK and the never-knew Standard share final rank 9, so only the trajectory can separate them.",
+          "IDK dual-anchor D_mech: median +0.594, on the knows side of zero for 77% of facts. Standard: median -1.363.",
+          "In a paired comparison, IDK exceeds Standard (closer to knows) on 100% of facts (Cliff delta +0.997, p = 1e-13). Keep 77% and 100% distinct.",
+          "The rank-9 tie is a surface artifact; internally IDK still holds the fact. This answers the sharpest objection to the IDK reading."]:
+    line(tfR, t, BODY - 1, INK, bullet=True, space=8)
+
+# ===================================================================================================
+# PART VI - VERDICT + CONCLUSION
+# ===================================================================================================
+divider("Part VI", "Verdict and conclusion", "what the methods actually do, and what we contribute")
+
+# 14 METHOD VERDICT
+s = slide(); header(s, "10 · Method verdict across scales", "the general result")
 vb = s.shapes.add_shape(1, Inches(0.9), Inches(1.95), Inches(11.5), Inches(1.15))
 vb.fill.solid(); vb.fill.fore_color.rgb = PALE; vb.line.color.rgb = DARK; vb.line.width = Pt(1); vb.shadow.inherit = False
 vtf = vb.text_frame; vtf.word_wrap = True; vtf.vertical_anchor = MSO_ANCHOR.MIDDLE
@@ -265,187 +526,91 @@ line(vtf, "NPO is the most scale-robust unlearner;  GradDiff and RMU work at 8B 
      19, BLACK, bold=True, first=True, align=PP_ALIGN.CENTER)
 bullets(s, [
     ("NPO", "h"),
-    "Buries the forgotten fact internally at BOTH scales (deeper at 1B, output rank ≈ 44,000) while preserving retain — genuine, scale-robust selective unlearning.",
+    "Buries the forgotten fact internally at BOTH scales (deeper at 1B) while preserving retain: genuine, scale-robust selective unlearning.",
     ("GradDiff & RMU", "h"),
-    "Bury it at 8B, but at 1B the fact stays accessible (rank ≈ 8–9): their unlearning does not internalize at the smaller scale.",
+    "Bury it at 8B, but at 1B the fact stays accessible: their unlearning does not internalize at the smaller scale.",
     ("IDK", "h"),
-    "Leaves the fact accessible at both scales (rank ≈ 9–17) — output redirection, not erasure.",
-    "This ordering is invisible at the output; only the internal readout shows which methods actually remove the knowledge, and where.",
-], y=3.35, space=8)
+    "Leaves the fact accessible at both scales: output redirection, not erasure.",
+    "This ordering is invisible at the output; only the internal readout shows which methods remove the knowledge, and where. Full 1B/8B graphs in the appendix.",
+], y=3.35, space=7)
 
-# =========================== 8d LENS TABLE: EMERGENCE / SUPPRESSION ===========================
-s = slide(); header(s, "8 · Reading the model, layer by layer", "The answer emerges — or is suppressed")
-picture(s, f"{A}/lenstable_contrast_0.png", y=1.72, maxw=9.6, maxh=5.3)
-caption(s, "Top-1 prediction at every layer (8B). Perturbed converges to \"May\" (25% → 100%); on the same "
-           "fact NPO decodes a meaningless \"e\" and never surfaces \"May\" (rank 234) — suppression, not "
-           "erasure, in a single table.", y=7.1)
+# CONCLUSION
+s = slide(); header(s, "Conclusion", "Contribution")
+tf = tbox(s, 1.0, 2.0, 11.3, 3.6, anchor=MSO_ANCHOR.MIDDLE)
+line(tf, "We add a mechanistic-interpretability metric to the Hubble unlearning benchmark", 22, BLACK, first=True, space=8, align=PP_ALIGN.CENTER)
+line(tf, "and show, under the field's own faithful analysis, that on Hubble-8B it is the only metric", 22, BLACK, space=8, align=PP_ALIGN.CENTER)
+line(tf, "that is both knowledge-discriminative AND paraphrase-stable,", 22, BLACK, bold=True, space=8, align=PP_ALIGN.CENTER)
+line(tf, "and that it stays faithful across a second benchmark (TOFU) and three scales,", 22, BLACK, space=8, align=PP_ALIGN.CENTER)
+line(tf, "empirically confirming that output and lexical metrics confuse surface form with knowledge.", 22, INK, space=8, align=PP_ALIGN.CENTER)
+line(tf, "Along the way: a corrected logit-lens readout, all three lenses characterized (logit, tuned, Jacobian), "
+         "and a scale-dependent method verdict.", BODY, GRAY, italic=True, space=0, align=PP_ALIGN.CENTER)
 
-# =========================== 8e CONFIDENCE CONTRADICTION ===========================
-s = slide(); header(s, "8 · A contradiction the output hides", "All confident — only one correct")
-picture(s, f"{A}/lenstable_confidence_contradiction.png", y=1.7, maxw=9.2, maxh=3.5)
-bullets(s, [
-    "Final-layer prediction, all six models. NPO / GradDiff / IDK emit a WRONG token at ~100% confidence — the SAME confidence as the model that actually knows.",
-    "Confidence ≠ knowledge: a probability metric cannot separate \"confidently knows\" from \"confidently deflects.\" This is the output-metric failure, made visual.",
-], y=5.3, space=9)
-
-# =========================== 8f CONTRADICTIONS COLLECTED ===========================
-s = slide(); header(s, "8 · Contradictions we found", "what looks \"forgotten\" at the output isn't — in several ways")
-bullets(s, [
-    ("Confidence ≠ knowledge", "h"),
-    "Unlearned models output a wrong token at ~100% confidence — indistinguishable from knowing, to a probability metric.",
-    ("Suppression ≠ erasure", "h"),
-    "The fact is buried at the output yet still accessible mid-stack (NPO, GradDiff) — removed only in appearance.",
-    ("One verdict, four mechanisms", "h"),
-    "NPO → meaningless token · GradDiff → function word · IDK → learned deflection (\"a\") · RMU → scrambled gibberish · and the never-knew model → confabulates a plausible month.",
-    ("Same method, different scale", "h"),
-    "GradDiff and RMU suppress at 8B but LEAK the correct answer at 1B (GradDiff outputs \"May\"); only NPO is scale-robust.",
-    ("The tuned lens \"skips ahead\"", "h"),
-    "Calibration surfaces the answer prematurely and hides the real intermediate computation — quantified in §13, and the reason the main analysis uses the logit lens.",
-], space=5)
-
-# =========================== 9 METRIC ===========================
-s = slide(); header(s, "9 · A metric from the logit lens", "D_mech — a dual-anchor distance")
-tf = tbox(s, 0.75, 1.9, 11.8, 1.1)
-line(tf, "Each fact gives a rank trajectory r = (r0 … r36). With two anchor trajectories —", BODY, INK, first=True, space=4)
-line(tf, "K = Perturbed (knows)  and  Ø = Standard (never knew) — we define:", BODY, INK, space=4)
-fb = s.shapes.add_shape(1, Inches(1.3), Inches(3.05), Inches(10.7), Inches(0.9))
-fb.fill.solid(); fb.fill.fore_color.rgb = ALT; fb.line.color.rgb = DARK; fb.line.width = Pt(1); fb.shadow.inherit = False
-ftf = fb.text_frame; ftf.vertical_anchor = MSO_ANCHOR.MIDDLE
-line(ftf, "D_mech  =  mean | log r − log Ø |  −  mean | log r − log K |     (over layers 18–36)", 20, BLACK, bold=True, first=True, align=PP_ALIGN.CENTER)
-bullets(s, [
-    "D_mech > 0 means the internal trajectory looks like it KNOWS — regardless of what the output says.",
-    "Anchors are leave-one-fact-out medians, so a fact is never compared to itself.",
-    "It is a RELATIVE distance — \"closer to knows, or to never-knew?\" — which is the key to the result on the next slides.",
-], y=4.2, space=11)
-
-# =========================== 9b READING D_mech ===========================
-s = slide(); header(s, "9 · Reading D_mech", "Why the log — and why it survives paraphrasing")
-bullets(s, [
-    ("The log — ranks live on a multiplicative scale", "h"),
-    "Ranks span five orders of magnitude (1 → 50,000). A raw gap |5000 − 4000| would swamp |1 − 10| — yet rank 1 vs 10 is hugely meaningful (top guess vs 10th), while 4000 vs 5000 is meaningless (both hopelessly buried).",
-    "log turns the distance into a RATIO:  |log r − log a| = |log(r / a)|  = \"how many factors apart.\"  Rank 1→10 counts ~10× more than 4000→5000 — matching how rank quality actually behaves. It also makes layers comparable, so the band average is not dominated by one buried layer.",
-    ("The two anchors — a signed \"which template?\" score", "h"),
-    "d(r, Ø) − d(r, K) asks: is the trajectory closer to the KNOWS template or the NEVER-KNEW template? Positive = looks-known; zero = equidistant.",
-    ("Why it survives paraphrasing", "h"),
-    "Rewording nudges the trajectory's distance to BOTH anchors by about the same amount — and the subtraction cancels that common shift, leaving only the knowledge signal.",
-], space=9)
-
-# =========================== 10 FAITHFULNESS: MEANING + WORKED EXAMPLE ===========================
-s = slide(); header(s, "10 · Faithfulness — is the metric itself trustworthy?", "two criteria, shown by example")
-tf = tbox(s, 0.75, 1.75, 11.8, 1.15)
-line(tf, "A metric is faithful only if it measures KNOWLEDGE, not surface form. Two criteria:", BODY, INK, first=True, space=6)
-line(tf, "Discrimination — models that KNOW vs models that LACK the fact must get different scores.", BODY, INK, bullet=True, space=4)
-line(tf, "Semantic Invariance — reword the question (knowledge unchanged) and the score must NOT move. This is the hard one.", BODY, INK, bullet=True, space=4)
-picture(s, f"{A}/mech_worked_example.png", y=3.0, maxw=10.6, maxh=3.4)
-caption(s, "Same knowledge, reworded prompt: probability collapses 0.95 → 0.16 (NOT invariant); D_mech holds 1.21 → 0.92 (invariant). "
-           "Both separate P from N — so invariance is the deciding test.", y=6.55)
-
-# =========================== 10b TESTS + ASSUMPTIONS ===========================
-s = slide(); header(s, "10 · How we test it", "the pools, the tests, and our assumptions")
-tfL = tbox(s, 0.75, 1.8, 6.05, 5.3)
-line(tfL, "Four pools (n = 44 facts each)", SUBH, BLACK, bold=True, first=True, space=6)
-line(tfL, "Positive P (knows): Full + Paraphrased.  Negative N (absent): Retain + Perturbed-with-wrong-answer.", BODY, INK, space=10)
-line(tfL, "The four tests", SUBH, BLACK, bold=True, space=6)
-for t in ["Wilcoxon signed-rank (within P, Full vs Paraphrased, paired): did rewording shift the metric?",
-          "TOST equivalence: are Full and Paraphrased statistically the SAME (within ±ε)? — absence of a shift, not just failure to find one.",
-          "Mann–Whitney U (P vs N): does the metric separate knows from absent?",
-          "Cliff's delta (effect size): scale-free magnitude — |δ(Full,Para)| = invariance shift (0 = invariant); |δ(P,N)| = discrimination (1 = perfect)."]:
-    line(tfL, t, BODY - 1, INK, bullet=True, space=7)
-tfR = tbox(s, 7.05, 1.8, 5.75, 5.3)
-line(tfR, "Assumptions (n is small)", SUBH, BLACK, bold=True, first=True, space=6)
-for t in ["Non-parametric throughout — the metrics are bounded and skewed, so no normality is assumed.",
-          "KEY: at n = 44 the Wilcoxon p-value SATURATES — even a tiny but consistent shift reads as \"significant,\" so it flags every metric.",
-          "So we judge invariance by EFFECT SIZE (Cliff's delta), not the p < 0.05 threshold; p-values are reported only for completeness.",
-          "One paraphrase and one wrong-target realization; facts treated as independent; anchors are leave-one-out medians."]:
-    line(tfR, t, BODY - 1, INK, bullet=True, space=8)
-
-# =========================== 10c BOX PLOTS ===========================
-s = slide(); header(s, "10 · Faithfulness result", "every metric's distribution across the four pools")
-picture(s, f"{A}/mech_metaeval_fig4.png", y=1.75, maxw=9.8, maxh=3.9)
-caption(s, "Dashed line separates Positive P | Negative N. A faithful metric keeps Full ≈ Paraphrased (left pair level) and shows a P–N gap. "
-           "D_mech does both; probability / rouge / extraction-strength let the Paraphrased cell collapse toward the negatives.", y=5.85)
-
-# =========================== 11 COLUMNS EXPLAINED ===========================
-s = slide(); header(s, "11 · Reading the comparison table", "what the two columns mean")
-rows = [("metric", "Full (P)", "Paraphrased (P)", "invar_shift ↓", "discrim ↑", "faithful"),
-        ("D_mech", "1.21", "0.92", "0.466", "0.827", "yes"),
-        ("probability", "0.95", "0.16", "0.999", "0.928", "no"),
-        ("rouge", "0.57", "0.00", "0.975", "0.494", "no")]
-tablebox(s, rows, 0.75, 1.95, 11.8, [2.4, 1.8, 2.3, 2.1, 1.7, 1.5], fs=14, hfs=13)
-bullets(s, [
-    ("invar_shift — how much the score moves when you only REWORD (0 = invariant, lower is better)", "h"),
-    "|Cliff's δ| between Full and Paraphrased. probability moves almost completely (0.999: 0.95 → 0.16); D_mech barely moves (0.466: 1.21 → 0.92).",
-    ("discrim — how cleanly KNOWS separates from ABSENT (1 = perfect, higher is better)", "h"),
-    "|Cliff's δ| between the P pool and the N pool. Most metrics score high here — discrimination is easy.",
-    "A metric is faithful only if it has BOTH: low invar_shift AND high discrim. Only D_mech does.",
-], y=3.75, space=8)
-
-# =========================== 12 COMPARISON ===========================
-s = slide(); header(s, "12 · Comparison with lexical metrics", "only the mechanistic metric is faithful")
-picture(s, f"{A}/mech_invar_discrim_scatter.png", x=0.7, y=1.75, maxw=5.7, maxh=3.5)
-picture(s, f"{A}/mech_faithful_bar.png", x=6.7, y=1.9, maxw=6.3, maxh=3.35)
-bullets(s, [
-    "Discrimination is easy — nearly every metric separates knows from absent. The real test is invariance.",
-    "Only D_mech stays invariant under paraphrase (shift 0.47 vs. ≥ 0.95); its faithfulness score is ~18× the best lexical metric.",
-    "It is the DISTANCE construction that wins — naive min-rank, also mechanistic, fails invariance.",
-], y=5.6, space=7)
-
-# =========================== 13 THREE LENSES — DETAILED EXPLAINER ===========================
-s = slide(); header(s, "13 · Three ways to read a layer", "logit, tuned, and Jacobian readouts")
-bullets(s, [
-    "A transformer refines its answer across layers in a residual stream. A \"lens\" transports one middle layer's state into output-token space so we can read the rank of the answer there. The three lenses differ only in that transport.",
-    ("Logit lens — the model's frozen output head", "h"),
-    "Apply the network's own final unembedding to a middle layer, as if it stopped there. Parameter-free and fully reproducible; but early layers aren't yet in \"output coordinates,\" so it reads noisy there.",
-    ("Tuned lens — a trained per-layer correction (Belrose 2023)", "h"),
-    "Learn a small affine map per layer so the readout reproduces the model's FINAL distribution (trained on text; here to KL/layer ≈ 0.05). Cleaner mid-stack — but because it is trained on the output, it \"skips ahead.\"",
-    ("Jacobian lens — the model's own gradient map (Anthropic 2026)", "h"),
-    "Read the layer through A_L = average of ∂logits/∂h over diverse text (plus an intercept): a first-order view of the network's actual tail. Causal — it reflects what the model does with the state, not a fitted correlation. Costly, conservative.",
-    ("The ladder", "h"),
-    "Same internal state, three transports — correlational (logit) → calibrated (tuned) → causal (Jacobian).",
-], y=1.78, size=BODY - 1, space=6)
-
-# =========================== 13b COMPARE ON OUR DATA ===========================
-s = slide(); header(s, "13 · Comparing the three lenses on our data", "the same 44 forget facts, one rank metric (8B)")
-picture(s, f"{A}/lens_compare_8b.png", y=1.68, maxw=11.7, maxh=4.25)
-bullets(s, [
-    "Tuned (dashed) sits at rank ~10 from LAYER 0 for every model — even suppressed NPO / GradDiff. It \"skips ahead,\" laundering the answer into every layer and hiding both where computation happens and the suppression itself. So it is NOT more faithful for our question.",
-    "Logit (dotted): genuine emergence — buried early, surfaces late.  Jacobian (solid): smooth and causal, reproduces the taxonomy (Perturbed → 1, Standard → 9, NPO / GradDiff buried) and shows the late-layer RISE = active suppression. For NPO it keeps the fact buried at every layer even though the logit lens still sees a lingering linear trace (causal ≠ correlational).",
-], y=6.05, size=BODY - 2, space=5)
-
-# =========================== 13c WHY LOGIT FOR D_mech ===========================
-s = slide(); header(s, "13 · Why the logit lens for D_mech", "the metric needs a reproducible, shared, signal-preserving readout")
-rows = [("purpose", "best lens", "why"),
-        ("Base for the D_mech metric", "Logit", "parameter-free, reproducible, preserves the trajectory signal"),
-        ("Qualitative causal claim", "Jacobian", "reflects what the model actually computes"),
-        ("Predict the eventual output early", "Tuned", "calibrated — but useless for where / whether")]
-tablebox(s, rows, 0.7, 1.95, 11.95, [4.0, 1.7, 6.25], fs=13, hfs=13)
-bullets(s, [
-    "D_mech must be a property of the MODEL, not our choices — the logit lens is the only readout with no trained or estimated parameters (tuned depends on training; Jacobian on the reference set), so the metric is exactly reproducible.",
-    "A tuned-based D_mech would FAIL: tuned flattens every trajectory to rank ~10 (NPO ≈ Perturbed mid-stack), erasing the knows-vs-suppressed signal D_mech reads.",
-    "Invariance needs ONE shared, fixed transport so rewording cancels across the two anchors — only the logit lens is fixed; and D_mech's band (layers 18–36) already avoids the logit lens's one weakness (early-layer noise).",
-    ("Verdict: logit-lens D_mech is proven faithful, parameter-free, reproducible. Tuned = cross-check; Jacobian = causal confirmation — neither is a better metric base.", "i"),
-], y=3.9, size=BODY - 2, space=6)
-
-# =========================== FUTURE WORK ===========================
+# FUTURE WORK
 s = slide(); header(s, "Future work", "remaining directions")
 bullets(s, [
     ("A larger averaged-Jacobian transport", "h"),
-    "Our causal lens averages over a modest reference set. The full Anthropic (2026) averaged-transport pipeline (large data, their normalization) should sharpen it — and may recover the knows-vs-never-knew separation at 1B.",
+    "Our interventionally-grounded lens averages over a modest reference set. The full Anthropic (2026) pipeline (large data, their normalization) should sharpen it, and may recover the knows-vs-never-knew separation at 1B.",
     ("From observation to causation", "h"),
-    "Causal patching / activation steering of the suppressed representation — to turn \"suppression ≠ erasure\" from an observation into a causal intervention result.",
+    "Causal patching or activation steering of the suppressed representation, to turn \"suppression is not erasure\" from an observation into a causal intervention result.",
     ("Robustness of the faithful metric", "h"),
     "Multi-paraphrase and 1B robustness of D_mech, more wrong-target realizations, and larger fact sets.",
-], space=9)
+], space=10)
 
-# =========================== CONCLUSION ===========================
-s = slide(); header(s, "Conclusion", "Contribution")
-tf = tbox(s, 1.0, 2.1, 11.3, 3.6, anchor=MSO_ANCHOR.MIDDLE)
-line(tf, "We add a mechanistic-interpretability metric to the Hubble unlearning benchmark", 22, BLACK, first=True, space=8, align=PP_ALIGN.CENTER)
-line(tf, "and show, under the field's own meta-evaluation, that it is the only metric", 22, BLACK, space=8, align=PP_ALIGN.CENTER)
-line(tf, "that is both knowledge-discriminative AND paraphrase-invariant —", 22, BLACK, bold=True, space=8, align=PP_ALIGN.CENTER)
-line(tf, "empirically confirming that output and lexical metrics confuse surface form with knowledge.", 22, INK, space=8, align=PP_ALIGN.CENTER)
-line(tf, "Along the way: a corrected logit-lens readout, and a scale-dependent method verdict "
-         "(NPO most scale-robust; GradDiff/RMU work at 8B not 1B; IDK surface at both).", BODY, GRAY, italic=True, space=0, align=PP_ALIGN.CENTER)
+# ===================================================================================================
+# APPENDIX - ALL RESULTS
+# ===================================================================================================
+divider("Appendix", "All results", "three lenses, logit-lens tables, and 1B / 8B scaled results")
+
+# A - LOGIT LENS SCALED
+fig_slide("Appendix A1 · Logit lens (8B)", "Rank-by-layer, forget vs retain, six models (8B)",
+          "logitlens_rank_median_8b.png", maxw=10.2, maxh=5.2,
+          cap="Left panel forget, right panel retain. Lower rank = more recoverable. Corrected, boundary-safe logit lens.")
+fig_slide("Appendix A2 · Logit lens (1B)", "Rank-by-layer, forget vs retain, six models (1B)",
+          "logitlens_rank_median_1b.png", maxw=10.2, maxh=5.2,
+          cap="At 1B only NPO drives the fact deep; GradDiff, IDK, RMU leave it accessible. The forget signature is scale-dependent.")
+two_fig("Appendix A3 · Cross-scale", "Same method, different scale: 1B (left) vs 8B (right)",
+        "logitlens_rank_median_1b.png", "logitlens_rank_median_8b.png",
+        cap="Retain is preserved at both scales; the forget behavior changes with scale (GradDiff/RMU internalize only at 8B).")
+fig_slide("Appendix A4 · Output view (1B / 8B)", "Infill accuracy by method and format",
+          "infill_bars_8b.png", maxw=9.0, maxh=3.4, y=1.85,
+          cap="8B shown; 1B in the data. At the output every method looks the same, motivating the internal readout.")
+
+# B - LOGIT LENS TABLES
+fig_slide("Appendix B1 · Logit-lens table", "Single-model emergence, Perturbed (knows)",
+          "lenstable_single_0.png", maxw=6.6, maxh=5.3,
+          cap="The gold month climbs to the top over the final layers: what genuine knowledge looks like, layer by layer.")
+fig_slide("Appendix B2 · Logit-lens table", "Knows vs unlearned, same fact (Perturbed vs NPO)",
+          "lenstable_contrast_0.png", maxw=9.6, maxh=5.3,
+          cap="Perturbed converges to the answer; NPO never surfaces it. Suppression, not erasure.")
+fig_slide("Appendix B3 · Logit-lens table", "Confidence is not knowledge",
+          "lenstable_confidence_contradiction.png", maxw=9.2, maxh=4.6,
+          cap="Three unlearned models emit a wrong token at about 100% confidence, indistinguishable from knowing to a probability metric.")
+fig_slide("Appendix B4 · Logit vs tuned", "The tuned lens skips ahead (lens-table view)",
+          "lenstable_logit_vs_tuned.png", maxw=9.6, maxh=5.2,
+          cap="The tuned lens surfaces the answer earlier than the model computes it, hiding intermediate computation.")
+
+# C - THREE LENSES
+fig_slide("Appendix C1 · Three lenses (8B)", "logit vs tuned vs Jacobian, same 44 facts",
+          "lens_compare_8b.png", maxw=11.6, maxh=5.3,
+          cap="Tuned (dashed) skips ahead for every model; logit (dotted) shows emergence; Jacobian (solid) is smooth and causal.")
+fig_slide("Appendix C2 · Three lenses (1B)", "logit vs tuned vs Jacobian, same facts (1B)",
+          "lens_compare_1b.png", maxw=11.6, maxh=5.3,
+          cap="At 1B the picture is consistent; the knows-vs-never-knew gap is weaker (the 1B base model barely memorized).")
+two_fig("Appendix C3 · Jacobian lens (8B)", "Rank-by-layer (left) and knowledge-vs-prior control (right)",
+        "jlens_affine_rank_8b.png", "jlens_affine_control_8b.png",
+        cap="Causal readout reproduces the taxonomy (Perturbed to 1, Standard to 8) and shows NPO/GradDiff late-layer suppression.")
+two_fig("Appendix C4 · Jacobian lens (1B)", "Rank-by-layer (left) and control (right)",
+        "jlens_affine_rank_1b.png", "jlens_affine_control_1b.png",
+        cap="At 1B the Jacobian lens is faithful in direction (knows < prior < buried) but does not separate knows from never-knew.")
+
+# D - FAITHFULNESS EXTRAS
+two_fig("Appendix D1 · Faithfulness", "Invariance-discrimination scatter (left) and faithfulness bar (right)",
+        "mech_invar_discrim_scatter.png", "mech_faithful_bar.png",
+        cap="Only D_mech sits in the faithful corner (low invariance shift, high discrimination); its faithfulness is about 18x the best lexical metric.")
+fig_slide("Appendix D2 · Paraphrase robustness", "D_mech vs lexical metrics under multiple rewordings (8B)",
+          "mech_paraphrase_robustness_8b.png", maxw=9.6, maxh=4.6,
+          cap="Across several meaning-preserving rewordings, D_mech's invariance shift stays lowest; lexical metrics swing. "
+              "(The single-fact showcase is now in the main invariance discussion, Part V.)")
 
 out = "Hubble_unlearning_thesis_full.pptx"
 prs.save(out)

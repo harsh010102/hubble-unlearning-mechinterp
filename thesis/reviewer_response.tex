@@ -1,0 +1,288 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\setlist{nosep,leftmargin=1.4em}
+\newcommand{\dmech}{\ensuremath{D_{\text{mech}}}}
+\newcommand{\done}{\textbf{\textcolor{black!80}{[Done]}}}
+\newcommand{\pend}{\textbf{\textcolor{black!55}{[Partial / remaining]}}}
+\newcommand{\issue}[1]{\medskip\noindent\textbf{#1}\\}
+\title{\vspace{-1.2cm}Response to Reviewer Feedback\\[2pt]\large ``Towards Rigorous Unlearning Evaluation''}
+\author{Harsh Parikh \quad\textbullet\quad Chair of Responsible Data Science, TU Munich}
+\date{\today}
+\begin{document}
+\maketitle
+\vspace{-0.6cm}
+
+\noindent This note answers every critique and question from the review, point by point, and states
+exactly what was changed. Items marked \done{} are in the current thesis PDF; items marked \pend{} are
+acknowledged as limitations and prepared as colloquium backup material. All numbers below come from
+result files (\texttt{sensitivity\_8b.txt}, \texttt{mech\_metaeval\_table1\_8b.csv},
+\texttt{tofu\_metaeval\_table1\_*.csv}, and the bootstrap script), not from estimates.
+
+\section{The sixteen issues}
+
+\issue{1. Title page (wrong school, ``Prof.\ Dr.\ N.\,N.'').}
+\done{} Cover now reads title \emph{Towards Rigorous Unlearning Evaluation}, \emph{TUM School of Social
+Sciences and Technology}, Assessor \emph{Prof.\ Dr.\ Prof.\ Dr.-Ing.\ Gjergji Kasneci}, Advisor
+\emph{Efstratios Zaradoukas}, Chair of Responsible Data Science. The ``N.\,N.'' placeholder is removed.
+
+\issue{2. ``Erasure'' claimed more strongly than the evidence.}
+\done{} Every categorical claim is recast as \emph{residual internal accessibility under the readouts
+applied}, an observation rather than an ontological or causal statement. Abstract, results
+(Sec.~``Suppression is not Erasure''), discussion, and conclusion reworded.
+
+\issue{3. IDK vs Standard: identical final rank 9.}
+\done{} A new analysis settles this on the trajectory, not the coincident final rank. Over the band, IDK's
+per-fact \dmech{} has median $+0.594$ and is positive (on the knows side of zero) for $77\%$ of facts, while
+the never-knew Standard model sits at $-1.363$. In a \emph{paired} comparison, IDK's dual-anchor distance
+exceeds Standard's on every fact (Cliff's delta $+0.997$, Wilcoxon $p=1.1\times10^{-13}$). We keep the two
+figures distinct: $77\%$ is the fraction on the knows side of the zero boundary; $100\%$ is the paired
+fraction on which IDK is closer to knows than Standard is. The rank-9 tie is a final-layer surface artifact;
+within the analysed band IDK is generally closer to the knows anchor than the never-knew anchor. Added to
+the results and cross-benchmark sections.
+
+\issue{4. ``Invariant'' / ``only faithful metric'' overclaim.}
+\done{} ``Invariant'' becomes \emph{substantially paraphrase-stable} (shift $0.466$, a large reduction but
+not zero). ``Only faithful metric'' is scoped to \emph{Hubble-8B} and paired with the calibrated
+cross-benchmark claim.
+
+\issue{5. ``18$\times$ better'' depends on the composite score.}
+\done{} Added an aggregation-robustness analysis: on Hubble-8B \dmech{} is rank~1 of~11 under all five
+combinations (product, additive, harmonic mean, minimum, invariance-as-constraint). The 18-fold figure is
+reframed as a convenience summary; the two effect sizes are the primary evidence.
+
+\issue{6. Paraphrase evaluation too narrow for ``invariant''.}
+\done{}\,/\,\pend{} Added a full second-benchmark replication (OpenUnlearning TOFU, whole-question
+rephrasing, multi-token answers, at 1B/3B/8B), a different and harder paraphrase axis. A multi-paraphrase
+sweep on Hubble itself remains future work and is stated as such.
+
+\issue{7. Independence assumption questionable.}
+\done{} Methodology and discussion now state that facts share checkpoints, templates, and overlapping
+leave-one-out anchors, so the inferential statistics are \emph{benchmark-conditional}, not estimates over
+an unrestricted population.
+
+\issue{8. TOST insufficiently documented.}
+\done{} TOST is de-emphasized: the equivalence bound is stated as exploratory and non-pre-registered, no
+claim rests on it, and the Cliff's-delta effect sizes are made primary.
+
+\issue{9. NPO ``erases the concept'' vs ``no method erases''.}
+\done{} The internal contradiction is fixed: the semantic-residual result now reads ``NPO drives the
+semantic residual lowest, toward the never-knew level'' (text and figure caption), not ``erases''.
+
+\issue{10. Relearning: $\rho=-1.0$ at $n=4$.}
+\done{} Reworded to ``descriptive corroboration, not independent validation'' with the entanglement at
+$n=4$ stated. The confusing word ``shallow'' (which clashed with ``deep suppression'') is removed.
+
+\issue{11. Tuned lens described inconsistently.}
+\done{} The tuned lens is now explicitly an \emph{ordinal cross-check}. The passage that used its absolute
+ranks is reworded to rely only on the ordinal agreement with the logit lens (Spearman $1.000$); we state we
+do not read its absolute ranks as the true depth.
+
+\issue{12. ``Causal Jacobian lens'' needs qualification.}
+\done{} Renamed throughout to a \emph{first-order, interventionally-grounded readout}, a local
+approximation around reference states, explicitly not a proof of causal necessity.
+
+\issue{13. Hyperparameter detail.}
+\done{} Appendix~A now has a hyperparameter table (Table~\ref{tab:hp} in the thesis): per-method learning
+rate, epochs, retain weight, and method-specific coefficients (NPO $\beta$, RMU $\alpha$, steering
+coefficient, intervention layers), plus the shared configuration and the forget-first selection criterion.
+
+\issue{14. Possible tuning-on-evaluation.}
+\done{} A direct ``Data reuse'' paragraph in the methodology now states that the same $44$ forget facts are
+used for unlearning, hyperparameter selection, and every evaluation, and frames the study as an analysis of
+the trained benchmark models rather than an out-of-sample estimate.
+
+\issue{15. ``Retain'' pool naming.}
+\done{} Methodology now states that ``Retain'' here denotes the never-knew reference pool, distinct from the
+\emph{Keep}/retain-utility neighbour facts used to check collateral damage.
+
+\issue{16. Reproducibility identifiers.}
+\done{} The reproducibility section now lists the software environment (Python 3.11, PyTorch 2.11 / CUDA
+12.8, Transformers 5.14, seed 0, deterministic decoding), the exact Hubble, unlearned, and TOFU checkpoint
+identifiers, the Hubble revision, and the data sources. The code base is described as archived and
+available on request rather than publicly released, per the reviewer's guidance for a private repository.
+
+\section{The examiner questions}
+
+\subsection*{On the core concept}
+\begin{enumerate}[label=\arabic*.]
+\item \textbf{Operational definition of erasure?} A fact counts as internally erased only if its
+dual-anchor trajectory is indistinguishable from the never-knew reference across the band; no method reaches
+this, so we report residual accessibility, observationally.
+\item \textbf{Is linear decodability sufficient for knowledge?} No, and we do not claim it; the evidence is
+comparative (same readout on knows and never-knew anchors) with tuned/Jacobian corroboration. Causal
+patching is future work.
+\item \textbf{Good rank from type/format priors?} The never-knew anchor shares those priors but lacks the
+fact and sits far away ($\dmech=-1.36$); \dmech{} is the difference relative to both anchors, cancelling
+shared priors.
+\item \textbf{Why is never-knew a valid reference?} It is the strongest ground-truth lower bound (trained
+identically minus the fact); used as a reference with leave-one-fact-out medians, not a perfect oracle.
+\item \textbf{What if never-knew infers from context?} That raises the floor and shrinks separation, making
+\dmech{} conservative; empirically the anchors separate cleanly.
+\end{enumerate}
+
+\subsection*{On \dmech{}}
+\begin{enumerate}[label=\arabic*.,start=6]
+\item \textbf{Why rank, not probability/log-odds/margin?} Rank is scale-free across five orders of
+magnitude and robust to per-model calibration differences; probability fails invariance ($0.999$). We
+still compare against probability and four MIA scores.
+\item \textbf{Why absolute distance in log-rank?} The logarithm turns rank into a ratio; absolute distance
+to each anchor, then subtraction, yields the ``closer to knows or never-knew'' reading that cancels the
+common-mode paraphrase shift.
+\item \textbf{Why average the band equally?} For simplicity and to avoid tuning; band-averaging is robust
+(see band sensitivity below).
+\item \textbf{Why layers 18--36, and pre-registered?} Fixed a priori as the top half where the logit lens
+is reliable, not tuned on the outcome.
+\item \textbf{Does the band choice change it?} Faithfulness under bands $12$--$30$, $18$--$36$, $24$--$36$
+is $0.276$, $0.441$, $0.276$: the default is strongest, but the metric stays faithful (all far above the
+best lexical $0.025$) and no band inverts the conclusion.
+\item \textbf{Why median trajectories as anchors?} A robust central template; leave-one-fact-out avoids
+self-comparison.
+\item \textbf{Stability to anchor composition?} Leave-one-fact-out already tests fact-drop robustness; a
+full anchor-subset sweep is a prepared backup.
+\item \textbf{Positive \dmech{} because both anchors are close?} No: the never-knew anchor is far
+($-1.36$) and the wrong-target pool is also negative. Precisely, positive \dmech{} means the measured
+trajectory is closer to the knows reference than to the never-knew reference within the selected band; it is
+an indicator of residual accessibility, not independent proof of stored knowledge. The single-anchor
+min-rank fails, showing the two-anchor structure is doing the work.
+\item \textbf{Decision threshold?} $\dmech>0$ (closer to knows) is the natural zero; we report
+distributions and bootstrap CIs rather than a hard threshold, and judge faithfulness by effect sizes.
+\end{enumerate}
+
+\subsection*{On the statistical evaluation}
+\begin{enumerate}[label=\arabic*.,start=15]
+\item \textbf{Why Cliff's delta?} Non-parametric and scale-free, appropriate for bounded, skewed metrics;
+the Wilcoxon $p$-value saturates at $n=44$.
+\item \textbf{Why call $0.466$ invariant?} We no longer do (see Issue~4).
+\item \textbf{TOST bounds?} Exploratory, non-pre-registered; de-emphasized.
+\item \textbf{Independence with overlapping anchors?} Acknowledged; inference framed as
+benchmark-conditional.
+\item \textbf{Robustness across paraphrases?} TOFU uses whole-question rephrasing at three scales; a
+Hubble multi-paraphrase sweep is future work.
+\item \textbf{Why multiplicative?} One convenience choice; the ranking is invariant to product, additive,
+harmonic, minimum, and constraint aggregations.
+\item \textbf{Would the headline survive another formula?} Yes: rank~1 on Hubble-8B under all five, with
+non-overlapping bootstrap CIs ($0.442\,[0.31,0.56]$ vs best lexical $0.025\,[0.00,0.07]$).
+\end{enumerate}
+
+\subsection*{On interpretation}
+\begin{enumerate}[label=\arabic*.,start=22]
+\item \textbf{Why does IDK count as retaining?} Because in a paired comparison its dual-anchor \dmech{}
+exceeds Standard's on $100\%$ of facts, and it lies on the knows side of zero for $77\%$ (Issue~3),
+independent of the coincident final rank.
+\item \textbf{NPO ``erases'' vs no method erases?} The contradiction is fixed (Issue~9).
+\item \textbf{Why does the deepest suppressor recover fastest?} A descriptive observation at $n=4$: RMU's
+large-magnitude mid-stack perturbation is reversed by a few relearning steps.
+\item \textbf{Tuned lens: knowledge or reconstruction?} We treat it as reconstruction-prone and use it only
+as an ordinal cross-check.
+\item \textbf{What makes the Jacobian causal?} It is interventionally grounded (the model's own
+derivatives), a first-order local approximation, not a causal-necessity proof.
+\item \textbf{Why does the Jacobian disagree with the logit lens for NPO?} The Jacobian keeps NPO buried
+where the logit lens still sees a lingering linear trace: it separates a correlational trace from a
+sensitivity-based signal. Reported as a difference between readouts, not an adjudicated truth.
+\item \textbf{Which lens when they disagree?} The metric is built on the reproducible, parameter-free logit
+lens; the other two are cross-checks and are all reported.
+\end{enumerate}
+
+\subsection*{On generalizability}
+\begin{enumerate}[label=\arabic*.,start=29]
+\item \textbf{Why only 44 birthdate facts?} That is Hubble's controlled birthdate forget set; TOFU adds
+$80$ author facts at three scales.
+\item \textbf{Multi-token or distributed concepts?} TOFU answers are multi-token sentences and \dmech{}
+stays faithful; the nationality semantic-residual probe covers a distributed attribute.
+\item \textbf{Real vs synthetic facts?} Hubble and TOFU are synthetic by design to provide ground-truth
+anchors; real-data generalization is future work.
+\item \textbf{Without knows/never-knew reference models?} The current metric needs both anchors; relaxing
+that requirement is future work.
+\item \textbf{Scale to production LLMs?} The paired-anchor requirement is the main barrier; noted as future
+work.
+\end{enumerate}
+
+\section{The reviewer's ``must fix'' checklist}
+\begin{enumerate}[label=\arabic*.]
+\item Title page and supervisor. \done{}
+\item Erasure to residual internal accessibility. \done{}
+\item Do not call $0.466$ fully invariant. \done{}
+\item Stop ``NPO erases the concept''. \done{}
+\item Explain IDK vs Standard rank equality. \done{} (new dual-anchor distribution)
+\item 18-fold result as a secondary summary. \done{}
+\item State the sample size and single-paraphrase design early. \done{} (plus TOFU)
+\item Tuned lens confirms ordering, not layer-wise computation. \done{}
+\item Jacobian as first-order, interventionally-grounded. \done{}
+\item Hyperparameters and data splits ready. \done{} (HP table + data-reuse paragraph in the thesis)
+\end{enumerate}
+
+\section{New evidence produced this session}
+\begin{itemize}
+\item \textbf{Aggregation robustness:} \dmech{} rank~1 on Hubble-8B under all five combinations; best
+mechanistic metric and above every standard output metric on all five experiments.
+\item \textbf{Second benchmark (TOFU 1B/3B/8B):} \dmech{} faithful at every scale (invar.\ shift
+$0.35$--$0.42$, discrimination $0.91$--$0.95$), the best internal metric and above all standard output
+metrics; a few robust lexical aggregates are competitive there, stated honestly.
+\item \textbf{Bootstrap 95\% CIs:} Hubble-8B \dmech{} $[0.31,0.56]$ does not overlap the best lexical
+$[0.00,0.07]$; TOFU-8B overlaps the truth ratio (statistically comparable), both far above probability.
+These are fact-resampling intervals conditional on the fitted anchors, not a full anchor-uncertainty
+bootstrap.
+\item \textbf{Layer-band sensitivity:} faithful under layers $12$ to $30$, $18$ to $36$, $24$ to $36$; no
+band inverts the result.
+\item \textbf{IDK dual-anchor distribution:} median $+0.594$, on the knows side of zero for $77\%$ of facts
+and, in a paired comparison, closer to knows than Standard on $100\%$ ($\delta=+0.997$,
+$p=1.1\times10^{-13}$).
+\end{itemize}
+
+\section{Second-round corrections}
+A later pass raised a further list of wording and documentation issues. All ten must-fix items are applied,
+and the strongly-recommended items are addressed except one optional table row.
+
+\subsection*{Must fix (all done)}
+\begin{enumerate}[label=\arabic*.]
+\item \textbf{``Causal readout''.} \done{} All remaining instances (background, methodology $\times2$) now
+read \emph{first-order, interventionally-grounded readout}.
+\item \textbf{Table ``more latent'' caption.} \done{} The tuned-lens table and figure captions now state
+that we read only the ordering agreement (Spearman $1.000$), not the calibrated lens's absolute ranks.
+\item \textbf{Future work vs completed TOFU.} \done{} Future work now records that the TOFU replication at
+1B/3B/8B is done and points to further attributes and model families as the remaining extensions.
+\item \textbf{``Single benchmark''.} \done{} Reworded to ``the primary Hubble analysis uses a single
+attribute (birthdates)''.
+\item \textbf{``Only faithful metric''.} \done{} Section title softened to ``Most Faithful Metric on
+Hubble-8B''; a metric is now \emph{operationally} defined as faithful when discrimination $>0.5$ and
+invariance shift $<0.5$, and on Hubble-8B only \dmech{} meets both.
+\item \textbf{``IDK intact end to end''.} \done{} Softened to ``remains recoverable through to the output''.
+\item \textbf{``Rules out the readout artifact''.} \done{} Softened to ``makes the early-layer-artifact
+explanation unlikely''.
+\item \textbf{``Output cannot separate methods''.} \done{} Reframed to ``does not separate'' / ``on these
+output metrics the four methods look alike''.
+\item \textbf{$0.2$ threshold.} \done{} Now stated as a heuristic noise margin set to $0.2$ for a $10$-way
+infill at chance $0.1$.
+\item \textbf{``Provably knows''.} \done{} Replaced with ``a model trained to memorise it (the knows
+reference) and a model trained without it (the never-knew reference)'', calibrating against controlled
+knowledge states.
+\end{enumerate}
+
+\subsection*{Strongly recommended}
+\begin{itemize}
+\item \textbf{Complete search grids + 1B settings.} \done{}\,/\,\pend{} The appendix now gives the full
+grid (NPO lr $\in\{2\mathrm{e}{-5},5\mathrm{e}{-5}\}$, $\gamma\in\{0.5,1,2\}$; GradDiff lr
+$\in\{5\mathrm{e}{-6},1\mathrm{e}{-5}\}$, $\gamma\in\{1,2,4\}$; IDK lr $\in\{2\mathrm{e}{-5},5\mathrm{e}{-5}\}$;
+RMU steering $\in\{200,500,1000\}$, $\alpha\in\{50,100\}$; epochs checkpointed every two up to eight) and the
+selected 8B values (Table~\ref{tab:hp} in the thesis). The 1B sweep uses the same grid and differs mainly in
+the RMU intervention layers ($[3,4,5]$); the per-scale winners are stored with the artifacts.
+\item \textbf{Paired paraphrase-change statistics.} \done{} Median Full$\to$Paraphrased change $-0.24$,
+\dmech{} positive on every fact, paired Wilcoxon $p<0.001$ but small next to the anchor gap.
+\item \textbf{TOFU multi-token teacher-forcing.} \done{} We teacher-force the preceding gold tokens and read
+each answer token's rank at its own position; the trajectory is the mean rank over answer tokens, then
+band-averaged.
+\item \textbf{Separate discrimination.} \done{} On Hubble-8B $|\delta|=1.000$ against the never-knew pool
+and $0.653$ against the wrong-target pool (combined $0.827$), so the gap is carried mainly by the never-knew
+pool.
+\item \textbf{Jacobian / tuned reference data.} \done{} The averaged Jacobian uses $24$ reference contexts
+sampled from a pool of $38$ diverse generic sentences (leave-the-query-out); the tuned lens trains one
+affine map per layer for $3000$ steps at learning rate $3\times10^{-4}$ (per-layer KL $\approx0.04$--$0.06$).
+\item \textbf{Reduce ``18 times'' repetition.} \done{} Kept only in the abstract and the main results
+statement; removed from the discussion, conclusion, and a figure caption.
+\end{itemize}
+
+\end{document}

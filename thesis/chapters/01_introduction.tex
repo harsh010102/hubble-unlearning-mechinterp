@@ -1,0 +1,193 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Motivation}
+\label{sec:motivation}
+
+Large language models (LLMs) are trained on internet-scale corpora that inevitably contain information
+we would later like a model \emph{not} to retain, such as an individual's private details, copyrighted
+passages, or knowledge that could facilitate harm. Once such data has shaped the model's weights, removing its
+influence is far from trivial. Retraining the model from scratch on a cleaned corpus is the only method
+that offers a clean guarantee, but for models with billions of parameters this is prohibitively expensive
+in compute, time, and energy, and it must be repeated every time a new deletion request arrives. This
+mismatch between the cost of retraining and the frequency of deletion requests has motivated the field of
+\emph{machine unlearning}, a family of post-hoc procedures that aim to remove the influence of a specified
+subset of the training data from an already-trained model, ideally recovering the behaviour of a model
+that had never seen that data in the first place \citep{cao2015forget,bourtoule2021machine}.
+
+The need is not merely academic. Data-protection regulation such as the European Union's General Data
+Protection Regulation enshrines a ``right to erasure'', obliging data controllers to delete personal data
+on request \citep{gdpr2016}; copyright holders increasingly demand the removal of protected text; and the
+AI-safety community treats the removal of hazardous capabilities (for example, knowledge relevant to
+bioweapons or cyberattacks) as a concrete mitigation lever \citep{li2024wmdp}. In all three settings,
+unlearning is attractive precisely because it promises the effect of retraining at a fraction of the cost.
+A recent survey positions unlearning as a pivotal component in the responsible life-cycle management of
+LLMs \citep{liu2025rethinking}.
+
+This promise, however, rests on a claim that is surprisingly difficult to verify, namely that the unlearned
+model has genuinely \emph{forgotten} the target knowledge rather than merely learned to \emph{hide} it. The
+central argument of this thesis is that the standard way of checking this claim, by inspecting the model's
+outputs, is not enough, and that reading the model's \emph{internal} computation with tools from
+mechanistic interpretability yields both a sharper diagnosis and a more trustworthy metric.
+
+\section{How Unlearning Is Done, and the Method Families}
+\label{sec:method-families}
+
+Practical LLM unlearning is usually posed as a fine-tuning problem over two sets, a \emph{forget set}
+\(D_f\) (the data whose influence is to be removed) and a \emph{retain set} \(D_r\) (data whose behaviour
+should be preserved). The methods studied in this thesis are representative of the four dominant families,
+which differ in \emph{what} they optimise and \emph{where} in the model they act.
+
+\paragraph{Gradient-based methods.}
+The most direct approach is \emph{gradient ascent} on the forget set, which maximises rather than minimises
+the language-modelling loss on \(D_f\), pushing the model away from its memorised continuations
+\citep{jang2022knowledge,yao2023llmunlearning}. Because unconstrained ascent quickly destroys general
+capability, practical variants such as \emph{Gradient Difference} (GradDiff) combine ascent on \(D_f\) with
+ordinary descent on \(D_r\), trading forgetting against utility. Gradient-based methods are simple and
+model-agnostic but are known to be unstable and to risk catastrophic collapse.
+
+\paragraph{Preference-based methods.}
+\emph{Negative Preference Optimization} (NPO) reframes forgetting through the lens of preference
+optimisation \citep{zhang2024npo}. It can be read as Direct Preference Optimization
+\citep{rafailov2023dpo} with only negative examples. The forget responses are treated purely as dispreferred
+completions, and the NPO loss is an adaptively weighted form of gradient ascent whose weight vanishes once a
+sample is unlearned. This yields a bounded objective that provably approaches collapse exponentially more
+slowly than plain gradient ascent, and is currently among the most effective forget/utility trade-offs.
+
+\paragraph{Refusal / redirection methods.}
+Rather than suppress the answer, \emph{redirection} methods teach the model to emit an innocuous
+substitute. The ``I don't know'' (IDK) baseline fine-tunes the model to respond to forget queries with an
+explicit expression of ignorance while preserving behaviour elsewhere \citep{maini2024tofu}. Such methods
+change the model's \emph{output policy} on the forget distribution without necessarily disturbing the
+underlying representation of the fact.
+
+\paragraph{Representation-based methods.}
+Finally, \emph{Representation Misdirection for Unlearning} (RMU) acts directly on the model's internal
+activations \citep{li2024wmdp}. It steers the hidden states elicited by forget inputs towards random
+vectors at a chosen set of layers, while regularising the retain-set activations to stay close to the
+original model. RMU therefore intervenes on the computation itself rather than only on the output, which
+makes it a natural stress-test for internal readouts.
+
+These families make different implicit promises. Gradient ascent and NPO aim to lower the \emph{probability}
+of the forget answer; IDK changes \emph{what is said}; RMU scrambles \emph{how the fact is represented}. A
+key question of this thesis is whether an evaluation that only observes the output can tell these mechanisms
+apart, and whether it should trust any of them as evidence of true erasure.
+
+\section{The Verification Problem of Suppression versus Erasure}
+\label{sec:verification-problem}
+
+Unlearning is almost universally evaluated at the \emph{output}: one queries the model and checks whether
+the target answer is still produced, using metrics such as question-answering accuracy, exact-match, ROUGE
+overlap, the probability assigned to the gold answer, or membership-inference signals
+\citep{maini2024tofu,shi2024muse,li2024wmdp}. These metrics are convenient and model-agnostic, but they
+share a blind spot, in that they can only observe \emph{behaviour}, and behaviour can be changed without
+removing the underlying knowledge.
+
+A growing body of evidence shows that this blind spot is routinely exploited, whether deliberately or not.
+Quantising an unlearned model back to lower precision restores much of the ``forgotten'' knowledge, with
+retention rising from roughly a fifth to over four-fifths of its original level; the authors observe that
+current benchmarks ``fail to detect'' this because they only measure outputs \citep{zhang2024quantization}.
+A few steps of fine-tuning, in-context examples, jailbreak prompts, or a change of language can likewise
+revive the target \citep{lynch2024eight,fan2025relearn}. Most tellingly for this thesis, when the
+information is probed \emph{inside} the network rather than at the output, it is often plainly present:
+logit-lens attacks recover ``deleted'' facts from the intermediate hidden states of edited models a large
+fraction of the time \citep{patil2023candelete}. Independent work on semantic unlearning makes the same
+diagnosis, noting that most methods operate at the lexical level and merely suppress a subset of surface
+tokens, so that the forgotten knowledge ``remains accessible via paraphrasing'' \citep{semantic2025unlearning}.
+
+The common thread is a gap between \emph{suppression} and \emph{erasure}. A metric that only sees the output
+cannot distinguish a model that has genuinely removed a fact from one that has confidently learned to
+deflect it, nor from one whose representation of the fact is intact but momentarily unexpressed. Closing
+this gap requires a way to look inside.
+
+\section{Reading Inside with Mechanistic Interpretability}
+\label{sec:mech-interp}
+
+Mechanistic interpretability studies the internal computation of a network rather than its input-output
+behaviour alone. A useful organising picture is the \emph{residual stream}: a transformer maintains a
+running representation to which each attention and feed-forward block reads and writes an additive update,
+progressively refining a distribution over the next token \citep{elhage2021framework}. Factual knowledge in
+particular has been localised to specific components, with feed-forward layers behaving like key-value
+memories \citep{geva2021kv} and individual facts editable at identifiable mid-network sites
+\citep{meng2022rome}.
+
+To read what an intermediate state ``means'', one needs a \emph{lens}: a map from a hidden state at some
+layer into the vocabulary, so that one can record the rank or probability the model would assign to the
+correct answer at that depth. This thesis studies three lenses of increasing fidelity to the model's own
+computation. The \emph{logit lens} applies the model's own final unembedding directly to an intermediate
+state \citep{nostalgebraist2020logitlens}; it is parameter-free and fully reproducible, but noisy at early
+layers. The \emph{tuned lens} learns a small affine correction per layer so that the readout reproduces the
+final distribution \citep{belrose2023tunedlens}; it is better calibrated mid-stack but, being trained on the
+output, tends to surface the answer earlier than the model actually computes it. The \emph{Jacobian lens}
+transports a hidden state through the model's own averaged input-output Jacobian before decoding it
+\citep{anthropic2026workspace}; it is \emph{interventionally grounded}, a first-order reflection of the
+model's local input-output sensitivity rather than a fitted correlation, at a higher computational cost. A recurring theme of this
+thesis is that these three readouts answer different questions, and that the choice of lens matters when one
+wants to build a \emph{metric} rather than merely a visualisation.
+
+\section{Thesis Question and Contributions}
+\label{sec:contributions}
+
+The benchmark that makes this study possible is Hubble \citep{allegro2025hubble}, an open suite of LLMs
+(at 1B and 8B parameters) pretrained with a controlled set of facts inserted, so that for every fact one has
+two ground-truth reference models. A \emph{Standard} model that never saw the fact (a lower bound on
+knowledge) and a \emph{Perturbed} model trained to memorise it (an upper bound). Notably, Hubble untied its
+output embeddings \emph{specifically} to support logit- and tuned-lens interpretability, and its authors
+explicitly call for follow-up work that probes whether knowledge is localised and that develops more robust,
+validated memorisation metrics; yet Hubble itself ships only output-level evaluation. This thesis takes up
+that invitation.
+
+The guiding question is therefore: \emph{can a mechanistic-interpretability readout of an unlearned model's
+internal computation yield an evaluation metric that measures knowledge rather than surface form, and can we
+validate that it does?} We decompose it into four research questions:
+\begin{description}
+  \item[\textbf{RQ1.}] Do output and lexical metrics distinguish the four unlearning method families, or do
+  they collapse them onto a single ``forgotten'' verdict?
+  \item[\textbf{RQ2.}] Does a layer-wise internal readout reveal residual internal accessibility that output
+  metrics miss, and does it separate the four methods where the output cannot?
+  \item[\textbf{RQ3.}] Can a metric derived from that readout be shown \emph{faithful}, that is, both
+  knowledge-discriminative and paraphrase-stable, under the field's own meta-evaluation, and does
+  it outperform established output and lexical metrics?
+  \item[\textbf{RQ4.}] How do the three lenses (logit, tuned, Jacobian) differ as the basis for such a
+  metric, and how does the picture change across model scale?
+\end{description}
+The contributions, which answer these questions in turn, are:
+
+\begin{itemize}
+  \item \textbf{A mechanistic addition to Hubble.} We integrate a corrected, boundary-safe logit lens into
+  the Hubble evaluation, producing rank-by-layer trajectories for all six models (Standard, Perturbed, and
+  four unlearned: NPO, GradDiff, IDK, RMU) at both scales, each anchored between the never-knew and knows
+  references (Chapters~\ref{ch:introduction} onward).
+  \item \textbf{A faithful metric, \(D_\text{mech}\).} From the logit-lens trajectory we derive a
+  dual-anchor distance, \(D_\text{mech}\), that asks whether a fact's internal trajectory looks more like
+  the ``knows'' or the ``never-knew'' reference, independent of what the model outputs.
+  \item \textbf{Evidence that \(D_\text{mech}\) is faithful.} Under the field's own faithfulness
+  meta-evaluation based on OpenUnlearning \citep{dorna2025openunlearning}, on Hubble-8B \(D_\text{mech}\) is
+  the only evaluated metric that combines strong knowledge discrimination with substantial paraphrase
+  stability (invariance shift \(\approx 0.47\) versus \(\geq 0.95\) for lexical and output metrics); its
+  composite faithfulness score is about eighteen times the best lexical metric, an ordering robust to the
+  choice of aggregation, and it replicates across a second benchmark (OpenUnlearning TOFU) at three scales.
+  \item \textbf{A characterisation of all three lenses.} We compare the logit, tuned, and Jacobian lenses on
+  the same facts, showing empirically why the tuned lens ``skips ahead'' and therefore cannot ground the
+  metric, and implementing the first-order, interventionally grounded Jacobian lens end to end as a
+  confirmatory readout.
+  \item \textbf{A cross-scale method verdict.} The internal readout reveals a taxonomy invisible at the
+  output. At 8B the lens cleanly separates a model that knows (rank~1) from one that never knew (rank~8),
+  while the four unlearning methods leave distinct internal signatures, and this behaviour is strongly
+  scale-dependent between 1B and 8B.
+\end{itemize}
+
+\section{Outline}
+\label{sec:outline}
+
+Chapter~\ref{ch:background} fixes notation and provides the technical background. The transformer and its
+residual stream, the machine-unlearning problem, the loss functions of the four methods, the three lenses
+in formal terms, and the definitions of the competing metrics. Chapter~\ref{ch:related-work} reviews the
+literature on machine unlearning, its benchmarks and evaluation, the evidence that current methods suppress
+rather than erase, and mechanistic interpretability, and situates the research gap.
+Chapter~\ref{ch:methodology} describes our experimental design and the design of the \(D_\text{mech}\)
+metric, including the faithfulness meta-evaluation protocol. Chapter~\ref{ch:results} reports the results,
+answering RQ1 to RQ4 in turn. Chapter~\ref{ch:discussion} interprets them, relates them to prior work, and
+states the threats to validity, and Chapter~\ref{ch:conclusion} concludes and outlines future work.
+Additional detail, including hyperparameters, the Jacobian-lens derivation, supplementary results, and
+reproducibility information, is provided in the appendices.

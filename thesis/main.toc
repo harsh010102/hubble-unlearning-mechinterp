@@ -1,0 +1,97 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}How Unlearning Is Done, and the Method Families}{1}{section.1.2}%
+\contentsline {paragraph}{Gradient-based methods.}{2}{section*.4}%
+\contentsline {paragraph}{Preference-based methods.}{2}{section*.5}%
+\contentsline {paragraph}{Refusal / redirection methods.}{2}{section*.6}%
+\contentsline {paragraph}{Representation-based methods.}{2}{section*.7}%
+\contentsline {section}{\numberline {1.3}The Verification Problem of Suppression versus Erasure}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Reading Inside with Mechanistic Interpretability}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Thesis Question and Contributions}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Outline}{4}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Background and Preliminaries}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Transformer Language Models and the Residual Stream}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Memorisation, Extraction, and Privacy}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}The Machine-Unlearning Problem}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Unlearning Methods in Detail}{8}{section.2.4}%
+\contentsline {paragraph}{Gradient ascent and Gradient Difference.}{8}{section*.8}%
+\contentsline {paragraph}{Negative Preference Optimization.}{8}{section*.9}%
+\contentsline {paragraph}{The ``I don't know'' baseline.}{9}{section*.10}%
+\contentsline {paragraph}{Representation Misdirection for Unlearning.}{9}{section*.11}%
+\contentsline {section}{\numberline {2.5}Interpretability Lenses}{9}{section.2.5}%
+\contentsline {paragraph}{Logit lens.}{9}{section*.12}%
+\contentsline {paragraph}{Tuned lens.}{9}{section*.13}%
+\contentsline {paragraph}{Jacobian lens.}{10}{section*.14}%
+\contentsline {section}{\numberline {2.6}Metrics for Unlearning Evaluation}{10}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Related Work}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Machine Unlearning and its Method Families}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Benchmarks and the Evaluation of Unlearning}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Does Unlearning Really Erase? Robustness and Attacks}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Mechanistic Interpretability and the Lens Techniques}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Interpretability meets Unlearning, and the Gap}{13}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Methodology}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Experimental Design}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}The Hubble suite and the six models}{15}{subsection.4.1.1}%
+\contentsline {paragraph}{Data reuse.}{15}{section*.15}%
+\contentsline {subsection}{\numberline {4.1.2}The probing task}{16}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Reading the internal computation with three lenses}{16}{subsection.4.1.3}%
+\contentsline {paragraph}{The logit lens and two corrections.}{16}{section*.16}%
+\contentsline {paragraph}{The tuned lens.}{16}{section*.17}%
+\contentsline {paragraph}{The Jacobian lens.}{16}{section*.18}%
+\contentsline {section}{\numberline {4.2}Designing the Metric $D_\text {mech}$}{17}{section.4.2}%
+\contentsline {paragraph}{Why the logarithm.}{17}{section*.19}%
+\contentsline {paragraph}{Why two anchors.}{17}{section*.20}%
+\contentsline {paragraph}{Leave-one-fact-out anchors.}{17}{section*.21}%
+\contentsline {subsection}{\numberline {4.2.1}Why the logit lens grounds the metric}{17}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}The Faithfulness Meta-Evaluation}{18}{section.4.3}%
+\contentsline {paragraph}{The competing metrics.}{18}{section*.22}%
+\contentsline {paragraph}{The four pools.}{18}{section*.23}%
+\contentsline {paragraph}{Statistics and assumptions.}{18}{section*.24}%
+\contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Output View Does Not Separate the Methods}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Reading the Model Layer by Layer}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Confidence is not Knowledge}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}A Scale-Dependent Method Verdict}{22}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Mid-Stack Signatures of Four Mechanisms}{23}{section.5.5}%
+\contentsline {section}{\numberline {5.6}The Separation is not a Readout Artifact}{24}{section.5.6}%
+\contentsline {section}{\numberline {5.7}$D_\text {mech}$ is the Most Faithful Metric on Hubble-8B}{25}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Paraphrase Stability}{26}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Comparing the Three Lenses}{27}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Robustness of the Faithfulness Result and a Second Benchmark}{28}{section.5.10}%
+\contentsline {paragraph}{The Hubble-8B conclusion is robust to the aggregation formula.}{28}{section*.25}%
+\contentsline {paragraph}{A second benchmark and model family.}{29}{section*.26}%
+\contentsline {paragraph}{TOFU replication details.}{30}{section*.27}%
+\contentsline {paragraph}{The band choice does not create the result.}{31}{section*.28}%
+\contentsline {paragraph}{IDK is generally closer to the knows anchor than the never-knew anchor.}{32}{section*.29}%
+\contentsline {section}{\numberline {5.11}Corroboration under Attack from Relearning and Quantization}{33}{section.5.11}%
+\contentsline {section}{\numberline {5.12}A Semantic-Residual Corroboration}{33}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Limitations}{34}{section.5.13}%
+\contentsline {chapter}{\numberline {6}Discussion}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1}What the Internal Readout Adds}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Four Mechanisms}{37}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Why $D_\text {mech}$ is Faithful}{38}{section.6.3}%
+\contentsline {section}{\numberline {6.4}The Three Lenses as Metric Bases}{38}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Scale Dependence}{39}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Relation to Prior Work}{39}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Threats to Validity}{39}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{41}{section.7.2}%
+\contentsline {paragraph}{Hardening the faithfulness claim.}{42}{section*.30}%
+\contentsline {paragraph}{From observation to causation.}{42}{section*.31}%
+\contentsline {paragraph}{A stronger interventional lens.}{42}{section*.32}%
+\contentsline {paragraph}{Generality across benchmarks and models.}{42}{section*.33}%
+\contentsline {chapter}{\numberline {A}Experimental Details}{43}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Models and Data}{43}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Unlearning Hyperparameters}{43}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Lens Computation}{43}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Compute}{44}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Deriving and Implementing the Jacobian Lens}{45}{appendix.B}%
+\contentsline {section}{\numberline {B.1}First-Order Transport and the Intercept}{45}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Matrix-Free Jacobian-Vector Products}{45}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Hook Injection}{45}{section.B.3}%
+\contentsline {section}{\numberline {B.4}The Diverse-Context Requirement}{46}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Supplementary Results and Reproducibility}{47}{appendix.C}%
+\contentsline {section}{\numberline {C.1}A Single-Fact Emergence Table}{47}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Reproducibility}{47}{section.C.2}%

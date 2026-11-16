@@ -1,0 +1,67 @@
+\chapter{Conclusion and Future Work}
+\label{ch:conclusion}
+
+\section{Summary}
+\label{sec:c-summary}
+
+This thesis asked whether a mechanistic-interpretability readout of an unlearned language model's internal
+computation can yield an evaluation metric that measures knowledge rather than surface behaviour, and
+whether such a metric can be shown faithful. Working on the Hubble benchmark, whose controlled fact
+insertions provide a never-knew and a knows reference for every fact, we integrated a corrected,
+boundary-safe logit lens into unlearning evaluation and derived from its rank-by-layer trajectory a
+dual-anchor distance, $D_\text{mech}$.
+
+The results answer the four research questions. Output and lexical metrics collapse the four unlearning
+methods onto a single ``forgotten'' verdict (RQ1); the internal readout resolves that verdict into four
+distinct mechanisms and shows that none of them removes the fact's internal trace under the readouts
+applied, so on this benchmark unlearning suppresses at the output rather than deleting the representation
+(RQ2). Under the faithful analysis based on OpenUnlearning, on Hubble-8B $D_\text{mech}$ is the only metric,
+mechanistic or lexical, that is both strongly knowledge-discriminative and substantially paraphrase-stable,
+with a composite faithfulness score far exceeding any lexical metric; the win comes from the
+relative anchor-difference construction, not merely from reading internals, since a na\"ive internal metric
+fails paraphrase stability just as the lexical metrics do, and the ranking survives every aggregation we
+tried. We replicate the meta-evaluation on OpenUnlearning TOFU at 1B, 3B, and 8B, where $D_\text{mech}$ is
+again faithful and the best internal metric at every scale, though a few robust lexical aggregates become
+competitive (RQ3). Finally, comparing the three lenses shows why the metric is built on the parameter-free
+logit lens rather than the calibrated tuned lens, which ``skips ahead'' and hides suppression, or the
+interventionally-grounded Jacobian lens, which is a valuable confirmatory readout but a less suitable metric
+basis; and the whole picture is strongly scale-dependent, with several methods internalising unlearning at
+8B but not at 1B (RQ4).
+
+The broader contribution is a proof of concept that unlearning evaluation can, and arguably should, read the
+model's internal state. As unlearning becomes a compliance instrument for privacy, copyright, and safety,
+the gap between looking forgotten and being forgotten is exactly the gap a faithful metric must close, and a
+metric that a paraphrase can defeat is not measuring knowledge.
+
+\section{Future Work}
+\label{sec:c-future}
+
+Several directions would strengthen and extend these results.
+
+\paragraph{Hardening the faithfulness claim.}
+The most immediate improvement is to replace the single fixed paraphrase and wrong-target with samples of
+many machine-generated rewordings and distractor styles, so that stability is measured across paraphrase
+\emph{styles} as well as across facts. The cross-benchmark replication on TOFU at 1B, 3B, and 8B
+(Section~\ref{sec:r-crossbench}) already extends the study beyond Hubble; further attributes beyond
+birthdate and additional model families would harden the external-validity claim further.
+
+\paragraph{From observation to causation.}
+The thesis establishes suppression-versus-erasure observationally. Causal-intervention methods, such as
+activation patching or steering of the suppressed representation, would turn ``the fact is still internally
+present'' into a causal statement, by showing that restoring the mid-stack representation restores the
+output. This would also connect the evaluation work back to the intervention-side interpretability
+literature.
+
+\paragraph{A stronger interventional lens.}
+Our Jacobian lens averages over a modest reference set. Implementing the full averaged-transport pipeline of
+\citet{anthropic2026workspace}, with its larger reference corpus and normalisation, may sharpen this
+readout and, in particular, recover the knows-versus-never-knew separation at 1B that our lightweight
+version misses.
+
+\paragraph{Generality across benchmarks and models.}
+Finally, the approach should be tested beyond Hubble. Applying the dual-anchor construction to TOFU, MUSE,
+and WMDP would require constructing knows and never-knew references there, and would establish whether the
+faithfulness advantage of an internal metric is a property of Hubble's controlled insertions or a general
+feature of unlearning evaluation. Integrating $D_\text{mech}$, or a reference-free approximation of it, into
+a standard toolkit such as OpenUnlearning \citep{dorna2025openunlearning} would make internal faithfulness a
+routine part of how unlearning is reported.

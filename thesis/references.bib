@@ -1,0 +1,260 @@
+% ============================================================================
+%  References for the thesis: mechanistic-interpretability metric for unlearning
+% ============================================================================
+
+% ---------- Foundations: machine unlearning & privacy ----------
+@inproceedings{cao2015forget,
+  title     = {Towards Making Systems Forget with Machine Unlearning},
+  author    = {Cao, Yinzhi and Yang, Junfeng},
+  booktitle = {IEEE Symposium on Security and Privacy (S\&P)},
+  year      = {2015}
+}
+
+@inproceedings{bourtoule2021machine,
+  title     = {Machine Unlearning},
+  author    = {Bourtoule, Lucas and Chandrasekaran, Varun and Choquette-Choo, Christopher A. and Jia, Hengrui and Travers, Adelin and Zhang, Baiwu and Lie, David and Papernot, Nicolas},
+  booktitle = {IEEE Symposium on Security and Privacy (S\&P)},
+  year      = {2021},
+  note      = {arXiv:1912.03817}
+}
+
+@misc{carlini2021extracting,
+  title         = {Extracting Training Data from Large Language Models},
+  author        = {Carlini, Nicholas and Tramer, Florian and Wallace, Eric and Jagielski, Matthew and Herbert-Voss, Ariel and Lee, Katherine and Roberts, Adam and Brown, Tom and Song, Dawn and Erlingsson, Ulfar and Oprea, Alina and Raffel, Colin},
+  year          = {2021},
+  eprint        = {2012.07805},
+  archivePrefix = {arXiv}
+}
+
+@misc{gdpr2016,
+  title  = {Regulation (EU) 2016/679 (General Data Protection Regulation), Article 17: Right to erasure ('right to be forgotten')},
+  author = {{European Parliament and Council}},
+  year   = {2016}
+}
+
+% ---------- Surveys ----------
+@article{liu2025rethinking,
+  title   = {Rethinking machine unlearning for large language models},
+  author  = {Liu, Sijia and Yao, Yuanshun and Jia, Jinghan and Casper, Stephen and Baracaldo, Nathalie and Hase, Peter and Yao, Yuguang and Liu, Chris Yuhao and Xu, Xiaojun and Li, Hang and Varshney, Kush R. and Bansal, Mohit and Koyejo, Sanmi and Liu, Yang},
+  journal = {Nature Machine Intelligence},
+  year    = {2025},
+  note    = {arXiv:2402.08787}
+}
+
+% ---------- Unlearning methods (families) ----------
+@misc{jang2022knowledge,
+  title         = {Knowledge Unlearning for Mitigating Privacy Risks in Language Models},
+  author        = {Jang, Joel and Yoon, Dongkeun and Yang, Sohee and Cha, Sungmin and Lee, Moontae and Logeswaran, Lajanugen and Seo, Minjoon},
+  year          = {2022},
+  eprint        = {2210.01504},
+  archivePrefix = {arXiv}
+}
+
+@misc{yao2023llmunlearning,
+  title         = {Large Language Model Unlearning},
+  author        = {Yao, Yuanshun and Xu, Xiaojun and Liu, Yang},
+  year          = {2023},
+  eprint        = {2310.10683},
+  archivePrefix = {arXiv}
+}
+
+@misc{zhang2024npo,
+  title         = {Negative Preference Optimization: From Catastrophic Collapse to Effective Unlearning},
+  author        = {Zhang, Ruiqi and Lin, Licong and Bai, Yu and Mei, Song},
+  year          = {2024},
+  eprint        = {2404.05868},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{rafailov2023dpo,
+  title     = {Direct Preference Optimization: Your Language Model is Secretly a Reward Model},
+  author    = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Ermon, Stefano and Manning, Christopher D. and Finn, Chelsea},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023},
+  note      = {arXiv:2305.18290}
+}
+
+@inproceedings{li2024wmdp,
+  title     = {The {WMDP} Benchmark: Measuring and Reducing Malicious Use with Unlearning},
+  author    = {Li, Nathaniel and Pan, Alexander and Gopal, Anjali and Yue, Summer and Berrios, Daniel and Gatti, Alice and Li, Justin D. and Dombrowski, Ann-Kathrin and Goel, Shashwat and Phan, Long and others},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  note      = {arXiv:2403.03218}
+}
+
+@misc{eldan2023whp,
+  title         = {Who's Harry Potter? Approximate Unlearning in {LLM}s},
+  author        = {Eldan, Ronen and Russinovich, Mark},
+  year          = {2023},
+  eprint        = {2310.02238},
+  archivePrefix = {arXiv}
+}
+
+% ---------- Benchmarks & evaluation ----------
+@inproceedings{maini2024tofu,
+  title     = {{TOFU}: A Task of Fictitious Unlearning for {LLM}s},
+  author    = {Maini, Pratyush and Feng, Zhili and Schwarzschild, Avi and Lipton, Zachary C. and Kolter, J. Zico},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2024},
+  note      = {arXiv:2401.06121}
+}
+
+@misc{shi2024muse,
+  title         = {{MUSE}: Machine Unlearning Six-Way Evaluation for Language Models},
+  author        = {Shi, Weijia and Lee, Jaechan and Huang, Yangsibo and Malladi, Sadhika and Zhao, Jieyu and Holtzman, Ari and Liu, Daogao and Zettlemoyer, Luke and Smith, Noah A. and Zhang, Chiyuan},
+  year          = {2024},
+  eprint        = {2407.06460},
+  archivePrefix = {arXiv}
+}
+
+@misc{jin2024rwku,
+  title         = {{RWKU}: Benchmarking Real-World Knowledge Unlearning for Large Language Models},
+  author        = {Jin, Zhuoran and Cao, Pengfei and Wang, Chenhao and He, Zhitao and Yuan, Hongyu and Li, Jiexin and Chen, Yubo and Liu, Kang and Zhao, Jun},
+  year          = {2024},
+  eprint        = {2406.10890},
+  archivePrefix = {arXiv}
+}
+
+@misc{allegro2025hubble,
+  title         = {Hubble: a Model Suite to Advance the Study of {LLM} Memorization},
+  author        = {{Hubble Team}},
+  year          = {2025},
+  eprint        = {2510.19811},
+  archivePrefix = {arXiv},
+  note          = {arXiv:2510.19811}
+}
+
+@inproceedings{dorna2025openunlearning,
+  title     = {{OpenUnlearning}: Accelerating {LLM} Unlearning via Unified Benchmarking of Methods and Metrics},
+  author    = {Dorna, Vineeth and Mekala, Anmol and Zhao, Wenlong and McCallum, Andrew and Kolter, J. Zico and Maini, Pratyush and others},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  note      = {arXiv:2506.12618}
+}
+
+@misc{semantic2025unlearning,
+  title  = {Semantic {LLM} Unlearning through Causal Intervention and Self-Distillation},
+  author = {{Anonymous}},
+  year   = {2025},
+  note   = {Under review. Introduces a semantic-residual measure of knowledge and a paraphrase-invariant, discrimination-based faithfulness evaluation}
+}
+
+% ---------- Robustness / "unlearning hides, does not erase" ----------
+@misc{patil2023candelete,
+  title         = {Can Sensitive Information Be Deleted From {LLM}s? Objectives for Defending Against Extraction Attacks},
+  author        = {Patil, Vaidehi and Hase, Peter and Bansal, Mohit},
+  year          = {2023},
+  eprint        = {2309.17410},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{zhang2024quantization,
+  title     = {Catastrophic Failure of {LLM} Unlearning via Quantization},
+  author    = {Zhang, Zhiwei and Wang, Fali and Li, Xiaomin and Wu, Zongyu and Tang, Xianfeng and Liu, Hui and He, Qi and Yin, Wenpeng and Wang, Suhang},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  note      = {arXiv:2410.16454}
+}
+
+@misc{lynch2024eight,
+  title         = {Eight Methods to Evaluate Robust Unlearning in {LLM}s},
+  author        = {Lynch, Aengus and Guo, Phillip and Ewart, Aidan and Casper, Stephen and Hadfield-Menell, Dylan},
+  year          = {2024},
+  eprint        = {2402.16835},
+  archivePrefix = {arXiv}
+}
+
+@misc{fan2025relearn,
+  title         = {Towards {LLM} Unlearning Resilient to Relearning Attacks: A Sharpness-Aware Minimization Perspective and Beyond},
+  author        = {Fan, Chongyu and Jia, Jinghan and Zhang, Yihua and Ramakrishna, Anil and Hong, Mingyi and Liu, Sijia},
+  year          = {2025},
+  eprint        = {2502.05374},
+  archivePrefix = {arXiv}
+}
+
+@misc{tamirisa2025invariance,
+  title         = {Invariance Makes {LLM} Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning},
+  author        = {Tamirisa, Rishub and others},
+  year          = {2025},
+  eprint        = {2506.01339},
+  archivePrefix = {arXiv}
+}
+
+@misc{thaker2024blackbox,
+  title         = {Does Unlearning Truly Unlearn? A Black Box Evaluation of {LLM} Unlearning Methods},
+  author        = {Thaker, Pratiksha and Hu, Shengyuan and Kale, Neil and Maurya, Yash and Wu, Zhiwei Steven and Smith, Virginia},
+  year          = {2024},
+  eprint        = {2411.12103},
+  archivePrefix = {arXiv}
+}
+
+@misc{deeb2024weights,
+  title         = {Do Unlearning Methods Remove Information from Language Model Weights?},
+  author        = {Deeb, Aghyad and Roger, Fabien},
+  year          = {2024},
+  eprint        = {2410.08827},
+  archivePrefix = {arXiv}
+}
+
+% ---------- Mechanistic interpretability ----------
+@misc{nostalgebraist2020logitlens,
+  title  = {Interpreting {GPT}: the Logit Lens},
+  author = {{nostalgebraist}},
+  year   = {2020},
+  note   = {LessWrong. \url{https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens}}
+}
+
+@misc{belrose2023tunedlens,
+  title         = {Eliciting Latent Predictions from Transformers with the Tuned Lens},
+  author        = {Belrose, Nora and Furman, Zach and Smith, Logan and Halawi, Danny and Ostrovsky, Igor and McKinney, Lev and Biderman, Stella and Steinhardt, Jacob},
+  year          = {2023},
+  eprint        = {2303.08112},
+  archivePrefix = {arXiv}
+}
+
+@misc{anthropic2026workspace,
+  title  = {Verbalizable Representations Form a Global Workspace in Language Models},
+  author = {{Anthropic}},
+  year   = {2026},
+  note   = {Transformer Circuits. arXiv:2607.15495. \url{https://transformer-circuits.pub/2026/workspace/index.html}}
+}
+
+@misc{elhage2021framework,
+  title  = {A Mathematical Framework for Transformer Circuits},
+  author = {Elhage, Nelson and Nanda, Neel and Olsson, Catherine and Henighan, Tom and Joseph, Nicholas and Mann, Ben and others},
+  year   = {2021},
+  note   = {Transformer Circuits Thread. \url{https://transformer-circuits.pub/2021/framework/index.html}}
+}
+
+@misc{geva2021kv,
+  title         = {Transformer Feed-Forward Layers Are Key-Value Memories},
+  author        = {Geva, Mor and Schuster, Roei and Berant, Jonathan and Levy, Omer},
+  year          = {2021},
+  eprint        = {2012.14913},
+  archivePrefix = {arXiv}
+}
+
+@misc{meng2022rome,
+  title         = {Locating and Editing Factual Associations in {GPT}},
+  author        = {Meng, Kevin and Bau, David and Andonian, Alex and Belinkov, Yonatan},
+  year          = {2022},
+  eprint        = {2202.05262},
+  archivePrefix = {arXiv}
+}
+
+% ---------- Interpretability x unlearning (intervention side) ----------
+@inproceedings{guo2024mechanistic,
+  title     = {Mechanistic Unlearning: Robust Knowledge Unlearning and Editing via Mechanistic Localization},
+  author    = {Guo, Phillip and Syed, Aaquib and Sheshadri, Abhay and Ewart, Aidan and Dziugaite, Gintare Karolina},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  note      = {arXiv:2410.12949}
+}
+
+@misc{sae2025clamping,
+  title         = {Don't Forget It! Conditional Sparse Autoencoder Clamping Works for Unlearning},
+  author        = {Khoriaty, Matthew and Shportko, Andrii and Mercea, Gustavo and Wood-Doughty, Zach},
+  year          = {2025},
+  eprint        = {2503.11127},
+  archivePrefix = {arXiv}
+}

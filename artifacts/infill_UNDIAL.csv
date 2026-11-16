@@ -1,0 +1,13 @@
+model,split,template_format,accuracy,n
+UNDIAL,Unseen,name_only,0.096,250
+UNDIAL,Unseen,intro_prefix,0.068,250
+UNDIAL,Unseen,full_prefix,0.06,250
+UNDIAL,Unseen,full_prefix_full_suffix,0.068,250
+UNDIAL,Unlearn,name_only,0.18181818181818182,44
+UNDIAL,Unlearn,intro_prefix,0.4090909090909091,44
+UNDIAL,Unlearn,full_prefix,0.36363636363636365,44
+UNDIAL,Unlearn,full_prefix_full_suffix,0.2727272727272727,44
+UNDIAL,Keep,name_only,0.6,45
+UNDIAL,Keep,intro_prefix,0.7777777777777778,45
+UNDIAL,Keep,full_prefix,0.9777777777777777,45
+UNDIAL,Keep,full_prefix_full_suffix,0.9777777777777777,45

@@ -1,0 +1,11 @@
+=== BAND SENSITIVITY (D_mech faithfulness, Hubble-8B) ===
+band               invar_shift  discrim    faithful  
+12-30              0.339        0.418      0.276     
+18-36 (default)    0.467        0.827      0.441     
+24-36              0.698        0.916      0.276     
+
+=== IDK D_mech DISTRIBUTION (default band 18-36) ===
+IDK      median +0.594  IQR [+0.037, +0.752]  %(D_mech>0, closer to KNOWS) 77%
+Standard median -1.363  IQR [-1.516, -1.221]
+IDK closer to KNOWS anchor than Standard is, per fact: 100%
+IDK vs Standard D_mech: Cliff delta +0.997, Wilcoxon p=1.14e-13

@@ -65,6 +65,9 @@ HP = {
     "graddiff": dict(retain_gamma=1.0, lr=1e-5, batch_size=1, epochs=8),
     "idk":      dict(lr=5e-5, batch_size=1, epochs=6),
     "rmu":      dict(layers=[5, 6, 7], alpha=100.0, steering_coeff=200.0, lr=5e-5, batch_size=1, epochs=4),
+    # UNDIAL (self-distillation with adjusted logits): beta = logit demotion of the memorized target
+    # (paper sweeps {3,10,30}); stable KL objective, so no gradient ascent. First-look starting point.
+    "undial":   dict(beta=10.0, forget_gamma=1.0, retain_gamma=1.0, lr=2e-5, batch_size=1, epochs=8, max_length=384),
 }
 
 # RMU intervention layers are scale-dependent. 8B keeps the paper config [5,6,7] (~17% depth).

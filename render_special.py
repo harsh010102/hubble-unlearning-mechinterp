@@ -46,10 +46,8 @@ rows = [dict(layer=int(lo.layer[i]), L_tok=lo.top1_token[i], L_p=lo.top1_prob[i]
 fig, ax = plt.subplots(figsize=(9.6, 8.2))
 draw(ax, rows, [("Layer", 0.12, "layer"), ("Logit-lens pred", 0.26, "tok", "L_tok", "L_p"), ("prob", 0.14, "prob", "L_p"),
                 ("Tuned-lens pred", 0.26, "tok", "T_tok", "T_p"), ("prob ", 0.14, "prob", "T_p")],
-     f'Logit vs Tuned lens — "{name} was born on ___"  (gold = "{gold}")', gold=gold)
-fig.text(0.5, 0.01, 'The tuned lens "skips ahead": it surfaces "May" at layer 4, the logit lens only at layer 33.',
-         ha="center", fontsize=10, style="italic", color="#555")
-fig.tight_layout(rect=[0, 0.03, 1, 1]); fig.savefig("artifacts/lenstable_logit_vs_tuned.png", dpi=200, bbox_inches="tight"); plt.close(fig)
+     f'"{name} was born on ___"  (gold = "{gold}")', gold=gold)
+fig.tight_layout(); fig.savefig("artifacts/lenstable_logit_vs_tuned.png", dpi=200, bbox_inches="tight"); plt.close(fig)
 print("wrote lenstable_logit_vs_tuned.png")
 
 # ---------- (2) cross-scale method verdict (8B vs 1B final prediction) ----------
@@ -65,12 +63,9 @@ for m in methods:
                      p8=r8.top1_prob, p1=r1.top1_prob, tok8=r8.top1_token, tok1=r1.top1_token))
 fig, ax = plt.subplots(figsize=(11, 4.4))
 draw(ax, rows, [("method", 0.2, "text", "method"),
-                ("8B: final top-1 (gold rank)", 0.4, "tok", "tok8", "p8"),
-                ("1B: final top-1 (gold rank)", 0.4, "tok", "tok1", "p1")],
-     f'Same method, different scale — "Billy Fisher was born on ___"  (gold = "{goldB}")', gold=goldB)
-# overwrite tok cells with the richer "tok (rank)" text
-fig.text(0.5, 0.02, 'GradDiff and RMU suppress the fact at 8B but LEAK the correct answer at 1B '
-         '(GradDiff outputs "May" rank 1; RMU "June" with "May" at rank 5). Only NPO is scale-robust.',
-         ha="center", fontsize=9.5, style="italic", color="#555")
-fig.tight_layout(rect=[0, 0.04, 1, 1]); fig.savefig("artifacts/lenstable_crossscale_verdict.png", dpi=200, bbox_inches="tight"); plt.close(fig)
+                ("8B: final top-1", 0.4, "tok", "tok8", "p8"),
+                ("1B: final top-1", 0.4, "tok", "tok1", "p1")],
+     f'"{name} was born on ___"  (gold = "{goldB}")', gold=goldB)
+fig.tight_layout(); fig.savefig("artifacts/lenstable_crossscale_verdict.png", dpi=200, bbox_inches="tight")
+fig.savefig("artifacts/lenstable_crossscale_verdict.pdf", bbox_inches="tight"); plt.close(fig)
 print("wrote lenstable_crossscale_verdict.png")

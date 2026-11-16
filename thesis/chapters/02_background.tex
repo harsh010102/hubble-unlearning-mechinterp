@@ -1,0 +1,200 @@
+\chapter{Background and Preliminaries}
+\label{ch:background}
+
+This chapter fixes notation and collects the technical background the rest of the thesis builds on. The
+transformer language model and its residual stream (Section~\ref{sec:bg-transformer}), memorisation and
+privacy (Section~\ref{sec:bg-memorisation}), the machine-unlearning problem and its ideal solution
+(Section~\ref{sec:bg-unlearning}), the loss functions of the four unlearning methods we study
+(Section~\ref{sec:bg-methods}), the three interpretability lenses in formal terms
+(Section~\ref{sec:bg-lenses}), and the output and lexical metrics against which our metric is compared
+(Section~\ref{sec:bg-metrics}).
+
+\section{Transformer Language Models and the Residual Stream}
+\label{sec:bg-transformer}
+
+An autoregressive language model defines a distribution over a token sequence
+$x_{1:T}$ by factorising it as $p_\theta(x_{1:T}) = \prod_{t=1}^{T} p_\theta(x_t \mid x_{<t})$. A
+decoder-only transformer with $L$ layers and hidden size $d$ computes each conditional as follows. The
+input tokens are embedded into vectors $h^{(0)}_t \in \mathbb{R}^d$, which form the initial
+\emph{residual stream}. Each layer $\ell$ reads the current stream, applies a normalisation, and adds the
+outputs of a multi-head self-attention block and a position-wise feed-forward (MLP) block back into the
+stream:
+\begin{equation}
+  h^{(\ell)}_t \;=\; h^{(\ell-1)}_t \;+\; \mathrm{Attn}^{(\ell)}\!\bigl(\mathrm{norm}(h^{(\ell-1)}_{1:t})\bigr)_t
+                                    \;+\; \mathrm{MLP}^{(\ell)}\!\bigl(\mathrm{norm}(h^{(\ell-1)}_t)\bigr).
+  \label{eq:residual}
+\end{equation}
+Because every block writes an additive update, the residual stream $h^{(0)}_t, h^{(1)}_t, \dots,
+h^{(L)}_t$ can be read as a single running representation that each layer refines
+\citep{elhage2021framework}. The final-layer state is mapped to a distribution over the vocabulary
+$\mathcal{V}$ by a normalisation and an unembedding matrix $W_U \in \mathbb{R}^{|\mathcal{V}| \times d}$:
+\begin{equation}
+  p_\theta(x_{t+1} \mid x_{\le t}) \;=\; \mathrm{softmax}\bigl(W_U\,\mathrm{norm}(h^{(L)}_t)\bigr).
+  \label{eq:unembed}
+\end{equation}
+Two features of Equation~\eqref{eq:residual} matter for this thesis. First, the additive residual stream
+is what makes an intermediate state $h^{(\ell)}_t$ meaningful to decode. It lives in the same space that
+the final unembedding reads. Second, factual knowledge has been localised within these blocks, with
+feed-forward layers acting as key-value memories that store associations \citep{geva2021kv} and specific
+mid-network sites causally responsible for individual facts \citep{meng2022rome}. The Hubble models used
+here follow the Llama-3 architecture but untie $W_U$ from the input embedding specifically so that lens
+techniques can be applied \citep{allegro2025hubble}.
+
+\section{Memorisation, Extraction, and Privacy}
+\label{sec:bg-memorisation}
+
+Large models memorise portions of their training data verbatim, and this memorised content can be
+extracted by prompting \citep{carlini2021extracting}. The complementary question, whether a given example
+was in the training set, is \emph{membership inference}, typically answered from the loss or
+per-token probabilities the model assigns to the example. These phenomena are what unlearning must undo. A
+successful unlearning of a fact should make the model behave, on that fact, like one that never
+memorised it, both in what it generates and in the signals a membership-inference adversary can read. The
+Hubble benchmark operationalises this by inserting controlled facts and releasing, for each, a model that
+memorised it and one that never saw it, so that memorisation and its removal can be measured against
+ground truth rather than estimated.
+
+\section{The Machine-Unlearning Problem}
+\label{sec:bg-unlearning}
+
+Let $\theta_o$ be a model trained on a dataset $D = D_f \cup D_r$, where $D_f$ is the \emph{forget set}
+whose influence is to be removed and $D_r$ is the \emph{retain set} whose behaviour must be preserved.
+The gold standard is \emph{exact} unlearning. Retrain from scratch on $D_r$ alone to obtain $\theta^\star$;
+by construction $\theta^\star$ never saw $D_f$. Exact retraining is intractable for LLMs, and even
+structured schemes that shard the data to bound the retraining cost \citep{bourtoule2021machine} do not
+scale to billion-parameter pretraining. \emph{Approximate} unlearning therefore seeks an efficient update
+$\theta_o \to \theta_u$ such that $\theta_u$ is behaviourally and, ideally, representationally close to
+$\theta^\star$ on $D_f$ while remaining close to $\theta_o$ on $D_r$. Every practical method trades these
+two objectives, and the central difficulty this thesis addresses is that closeness is almost always judged
+by \emph{behaviour} (outputs) rather than by the internal representation, so that a $\theta_u$ which merely
+learns to suppress $D_f$ at the output can be mistaken for one that matches $\theta^\star$. Hubble's paired
+reference models let us treat $\theta^\star$ (the Standard, never-knew model) and $\theta_o$ (the
+Perturbed, knows model) as explicit anchors, which is what our metric exploits.
+
+\section{Unlearning Methods in Detail}
+\label{sec:bg-methods}
+
+We study one representative of each method family. Let $\ell_{\mathrm{LM}}(\theta; x) = -\log
+p_\theta(x)$ denote the language-modelling loss on an example, and let $\pi_\theta(y\mid x)$ denote the
+model's likelihood of a target continuation $y$.
+
+\paragraph{Gradient ascent and Gradient Difference.}
+The simplest objective \emph{maximises} the loss on the forget set, reversing the sign of the usual
+update: $\mathcal{L}_{\mathrm{GA}} = -\,\mathbb{E}_{x\sim D_f}\,\ell_{\mathrm{LM}}(\theta;x)$
+\citep{jang2022knowledge,yao2023llmunlearning}. Unconstrained ascent degrades general capability, so
+Gradient Difference adds a retain term,
+\begin{equation}
+  \mathcal{L}_{\mathrm{GradDiff}} \;=\; -\,\mathbb{E}_{x\sim D_f}\,\ell_{\mathrm{LM}}(\theta;x)
+                                    \;+\; \mathbb{E}_{x\sim D_r}\,\ell_{\mathrm{LM}}(\theta;x),
+  \label{eq:graddiff}
+\end{equation}
+which pushes the forget likelihood down while holding the retain likelihood up.
+
+\paragraph{Negative Preference Optimization.}
+NPO recasts forgetting as preference optimisation with only \emph{dispreferred} completions
+\citep{zhang2024npo}. Starting from Direct Preference Optimization \citep{rafailov2023dpo} and dropping the
+positive term, with reference model $\theta_o$ and inverse-temperature $\beta$,
+\begin{equation}
+  \mathcal{L}_{\mathrm{NPO}} \;=\; -\,\frac{2}{\beta}\,\mathbb{E}_{(x,y)\sim D_f}
+  \left[\log \sigma\!\left(-\beta \log \frac{\pi_\theta(y\mid x)}{\pi_{\theta_o}(y\mid x)}\right)\right].
+  \label{eq:npo}
+\end{equation}
+The gradient of Equation~\eqref{eq:npo} is an adaptively weighted gradient ascent whose weight vanishes
+once a sample's likelihood falls below the reference, giving a bounded objective that approaches
+catastrophic collapse exponentially more slowly than plain ascent.
+
+\paragraph{The ``I don't know'' baseline.}
+Rather than suppress the answer, IDK relabels the forget set with an explicit refusal $a_{\mathrm{idk}} =
+\text{``I don't know''}$ and fine-tunes the model to produce it, while preserving the retain behaviour
+\citep{maini2024tofu}:
+$\mathcal{L}_{\mathrm{IDK}} = \mathbb{E}_{x\sim D_f}\bigl[-\log \pi_\theta(a_{\mathrm{idk}}\mid x)\bigr]
++ \mathbb{E}_{x\sim D_r}\,\ell_{\mathrm{LM}}(\theta;x)$. This changes the output policy on $D_f$ without
+any explicit pressure on the internal representation of the fact.
+
+\paragraph{Representation Misdirection for Unlearning.}
+RMU acts on the hidden states themselves \citep{li2024wmdp}. At a chosen layer $\ell$, it steers the
+forget-set activations towards a random unit vector $u$ scaled by a coefficient $c$, while regularising
+the retain-set activations to stay close to the frozen original model $\theta_o$:
+\begin{equation}
+  \mathcal{L}_{\mathrm{RMU}} \;=\; \mathbb{E}_{x\sim D_f}\bigl\| h^{(\ell)}_\theta(x) - c\,u \bigr\|_2^2
+  \;+\; \alpha\,\mathbb{E}_{x\sim D_r}\bigl\| h^{(\ell)}_\theta(x) - h^{(\ell)}_{\theta_o}(x) \bigr\|_2^2.
+  \label{eq:rmu}
+\end{equation}
+Because it scrambles the representation directly, RMU is the natural stress-test for an internal readout,
+and, as Chapter~\ref{ch:results} shows, it produces a distinctive deep-suppression signature.
+
+These four objectives make very different promises. Gradient methods and NPO lower the forget
+\emph{probability}, IDK changes \emph{what is said}, and RMU alters \emph{how the fact is represented}.
+Whether an output metric can distinguish them, and whether any of them removes the fact internally, is an
+empirical question this thesis answers.
+
+\section{Interpretability Lenses}
+\label{sec:bg-lenses}
+
+A \emph{lens} maps an intermediate residual-stream state $h^{(\ell)}_t$ to a distribution over the
+vocabulary, so that the rank or probability of a target token can be read at depth $\ell$.
+
+\paragraph{Logit lens.}
+The logit lens applies the model's own final normalisation and unembedding directly to the intermediate
+state \citep{nostalgebraist2020logitlens}:
+\begin{equation}
+  \mathrm{LL}_\ell(h) \;=\; \mathrm{softmax}\bigl(W_U\,\mathrm{norm}(h^{(\ell)}_t)\bigr).
+  \label{eq:logitlens}
+\end{equation}
+It has no trained parameters and is exactly reproducible, but because an early $h^{(\ell)}_t$ is not yet
+aligned with $W_U$'s output basis, its readout is unreliable at early layers.
+
+\paragraph{Tuned lens.}
+The tuned lens inserts a learned per-layer affine ``translator'' $(A_\ell, b_\ell)$, identity-initialised,
+before the unembedding \citep{belrose2023tunedlens}:
+\begin{equation}
+  \mathrm{TL}_\ell(h) \;=\; \mathrm{softmax}\bigl(W_U\,\mathrm{norm}(A_\ell h^{(\ell)}_t + b_\ell)\bigr),
+  \label{eq:tunedlens}
+\end{equation}
+with the translators trained on text to minimise the Kullback-Leibler divergence between $\mathrm{TL}_\ell$
+and the model's true final distribution, $\min_{A_\ell,b_\ell} \mathbb{E}_x\,
+\mathrm{KL}\bigl(p_\theta(\cdot\mid x)\,\|\,\mathrm{TL}_\ell(h^{(\ell)}(x))\bigr)$. This calibrates the
+mid-stack readout but, being trained to reproduce the \emph{output}, can surface the answer earlier than
+the model computes it, a property we quantify in Chapter~\ref{ch:results}.
+
+\paragraph{Jacobian lens.}
+Let $g_\ell : \mathbb{R}^d \to \mathbb{R}^{|\mathcal{V}|}$ denote the map from the layer-$\ell$ state to the
+final logits (the rest of the network followed by the unembedding). The Jacobian lens replaces this
+nonlinear map with a first-order transport whose slope is the model's \emph{averaged} input-output
+Jacobian over a set of reference inputs $\{x_i\}_{i=1}^N$ \citep{anthropic2026workspace}:
+\begin{equation}
+  \mathrm{JL}_\ell(h) \;=\; A_\ell\,h \,+\, b_\ell, \qquad
+  A_\ell = \frac{1}{N}\sum_i \frac{\partial g_\ell}{\partial h}\Big|_{h^{(\ell)}(x_i)}, \qquad
+  b_\ell = \frac{1}{N}\sum_i \Bigl(g_\ell(h^{(\ell)}(x_i)) - A_\ell\,h^{(\ell)}(x_i)\Bigr).
+  \label{eq:jaclens}
+\end{equation}
+Because $A_\ell$ is derived from the model's own derivatives, the Jacobian lens is an
+\emph{interventionally-grounded} readout of what a representation is disposed to make the model output. The intercept $b_\ell$ is essential; its
+derivation and our implementation are given in Appendix~\ref{app:jacobian}.
+
+\section{Metrics for Unlearning Evaluation}
+\label{sec:bg-metrics}
+
+We compare our metric against the output and lexical metrics used by the standard benchmarks
+\citep{maini2024tofu,shi2024muse,li2024wmdp,dorna2025openunlearning}. For a fact with gold answer $y =
+(y_1,\dots,y_m)$ and prompt $x$, computed either teacher-forced or from a greedy generation $\hat y$:
+
+\begin{itemize}
+  \item \textbf{Probability}: the length-normalised likelihood of the gold answer,
+  $\exp\!\bigl(\tfrac{1}{m}\sum_j \log p_\theta(y_j\mid x, y_{<j})\bigr)$; high if the model knows.
+  \item \textbf{ROUGE-L}: the longest-common-subsequence F1 between the greedy generation $\hat y$ and $y$.
+  \item \textbf{Exact-match memorisation}: the fraction of gold positions at which the teacher-forced
+  $\arg\max$ equals $y_j$.
+  \item \textbf{Extraction strength}: the length of the longest correctly greedy-generated leading run of
+  gold tokens divided by $m$ \citep{carlini2021extracting}.
+  \item \textbf{Truth ratio}: $\exp\!\bigl(\overline{\log p_\theta(\text{wrong})} - \log p_\theta(y)\bigr)$,
+  comparing the gold answer to distractor answers; low if the model knows.
+  \item \textbf{Membership-inference scores}: the mean negative log-likelihood over the passage (loss); the
+  mean of the lowest $K\%$ token log-probabilities (Min-$K$\%); the same on per-position $z$-normalised
+  log-probabilities (Min-$K$\%++); and the total negative log-likelihood divided by the zlib-compressed
+  byte length of the text.
+\end{itemize}
+
+Every one of these reads only the model's outputs (generations or token probabilities). None reads the
+internal trajectory of Equation~\eqref{eq:residual}. That is precisely the gap the metric of
+Chapter~\ref{ch:methodology} fills, and the faithfulness meta-evaluation of Section~\ref{sec:m-metaeval}
+puts our metric and all of these on the same footing.

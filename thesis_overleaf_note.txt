@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Master's thesis, TUM
+%  Body document. The official TUM cover page is produced separately from
+%  Deckblatt.tex (compile it first to Deckblatt.pdf) and embedded below.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper,twoside,openright]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[a4paper,inner=30mm,outer=25mm,top=30mm,bottom=30mm]{geometry}
+\usepackage{csquotes}
+\usepackage[round,authoryear]{natbib}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+
+\bibliographystyle{plainnat}
+
+\title{Towards Rigorous Unlearning Evaluation: A Mechanistic-Interpretability Metric for Evaluating Machine Unlearning in Large Language Models}
+\author{Harsh Parikh}
+\hypersetup{pdftitle={Towards Rigorous Unlearning Evaluation}, pdfauthor={Harsh Parikh}}
+
+\begin{document}
+
+% ---- Official TUM cover page (compile Deckblatt.tex -> Deckblatt.pdf first) ----
+\IfFileExists{Deckblatt.pdf}{\includepdf[pages=-]{Deckblatt.pdf}}{}
+
+\pagenumbering{roman}
+
+\input{chapters/00_abstract}
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+% ---- Body ----
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/02_related_work}
+\input{chapters/03_methodology}
+\input{chapters/04_results}
+\input{chapters/05_discussion}
+\input{chapters/06_conclusion}
+
+% ---- Appendices ----
+\cleardoublepage
+\appendix
+\input{chapters/07_appendix}
+
+% ---- Bibliography ----
+\cleardoublepage
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,381 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\babel@aux[2]{}
+\@nameuse{bbl@beforestart}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{plainnat}
+\babel@aux{english}{}
+\citation{cao2015forget,bourtoule2021machine}
+\citation{gdpr2016}
+\citation{li2024wmdp}
+\citation{liu2025rethinking}
+\citation{jang2022knowledge,yao2023llmunlearning}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:introduction}{{1}{1}{Introduction}{chapter.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}\protected@file@percent }
+\newlabel{sec:motivation}{{1.1}{1}{Motivation}{section.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}How Unlearning Is Done, and the Method Families}{1}{section.1.2}\protected@file@percent }
+\newlabel{sec:method-families}{{1.2}{1}{How Unlearning Is Done, and the Method Families}{section.1.2}{}}
+\citation{zhang2024npo}
+\citation{rafailov2023dpo}
+\citation{maini2024tofu}
+\citation{li2024wmdp}
+\citation{maini2024tofu,shi2024muse,li2024wmdp}
+\citation{zhang2024quantization}
+\citation{lynch2024eight,fan2025relearn}
+\citation{patil2023candelete}
+\citation{semantic2025unlearning}
+\@writefile{toc}{\contentsline {paragraph}{Gradient-based methods.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Preference-based methods.}{2}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Refusal / redirection methods.}{2}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Representation-based methods.}{2}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}The Verification Problem of Suppression versus Erasure}{2}{section.1.3}\protected@file@percent }
+\newlabel{sec:verification-problem}{{1.3}{2}{The Verification Problem of Suppression versus Erasure}{section.1.3}{}}
+\citation{elhage2021framework}
+\citation{geva2021kv}
+\citation{meng2022rome}
+\citation{nostalgebraist2020logitlens}
+\citation{belrose2023tunedlens}
+\citation{anthropic2026workspace}
+\citation{allegro2025hubble}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Reading Inside with Mechanistic Interpretability}{3}{section.1.4}\protected@file@percent }
+\newlabel{sec:mech-interp}{{1.4}{3}{Reading Inside with Mechanistic Interpretability}{section.1.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Thesis Question and Contributions}{3}{section.1.5}\protected@file@percent }
+\newlabel{sec:contributions}{{1.5}{3}{Thesis Question and Contributions}{section.1.5}{}}
+\citation{dorna2025openunlearning}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Outline}{4}{section.1.6}\protected@file@percent }
+\newlabel{sec:outline}{{1.6}{4}{Outline}{section.1.6}{}}
+\citation{elhage2021framework}
+\citation{geva2021kv}
+\citation{meng2022rome}
+\citation{allegro2025hubble}
+\citation{carlini2021extracting}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background and Preliminaries}{7}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:background}{{2}{7}{Background and Preliminaries}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Transformer Language Models and the Residual Stream}{7}{section.2.1}\protected@file@percent }
+\newlabel{sec:bg-transformer}{{2.1}{7}{Transformer Language Models and the Residual Stream}{section.2.1}{}}
+\newlabel{eq:residual}{{2.1}{7}{Transformer Language Models and the Residual Stream}{equation.2.1.1}{}}
+\newlabel{eq:unembed}{{2.2}{7}{Transformer Language Models and the Residual Stream}{equation.2.1.2}{}}
+\citation{bourtoule2021machine}
+\citation{jang2022knowledge,yao2023llmunlearning}
+\citation{zhang2024npo}
+\citation{rafailov2023dpo}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Memorisation, Extraction, and Privacy}{8}{section.2.2}\protected@file@percent }
+\newlabel{sec:bg-memorisation}{{2.2}{8}{Memorisation, Extraction, and Privacy}{section.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}The Machine-Unlearning Problem}{8}{section.2.3}\protected@file@percent }
+\newlabel{sec:bg-unlearning}{{2.3}{8}{The Machine-Unlearning Problem}{section.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Unlearning Methods in Detail}{8}{section.2.4}\protected@file@percent }
+\newlabel{sec:bg-methods}{{2.4}{8}{Unlearning Methods in Detail}{section.2.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Gradient ascent and Gradient Difference.}{8}{section*.8}\protected@file@percent }
+\newlabel{eq:graddiff}{{2.3}{8}{Gradient ascent and Gradient Difference}{equation.2.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Negative Preference Optimization.}{8}{section*.9}\protected@file@percent }
+\newlabel{eq:npo}{{2.4}{8}{Negative Preference Optimization}{equation.2.4.4}{}}
+\citation{maini2024tofu}
+\citation{li2024wmdp}
+\citation{nostalgebraist2020logitlens}
+\citation{belrose2023tunedlens}
+\citation{anthropic2026workspace}
+\@writefile{toc}{\contentsline {paragraph}{The ``I don't know'' baseline.}{9}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Representation Misdirection for Unlearning.}{9}{section*.11}\protected@file@percent }
+\newlabel{eq:rmu}{{2.5}{9}{Representation Misdirection for Unlearning}{equation.2.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Interpretability Lenses}{9}{section.2.5}\protected@file@percent }
+\newlabel{sec:bg-lenses}{{2.5}{9}{Interpretability Lenses}{section.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Logit lens.}{9}{section*.12}\protected@file@percent }
+\newlabel{eq:logitlens}{{2.6}{9}{Logit lens}{equation.2.5.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{Tuned lens.}{9}{section*.13}\protected@file@percent }
+\newlabel{eq:tunedlens}{{2.7}{9}{Tuned lens}{equation.2.5.7}{}}
+\citation{maini2024tofu,shi2024muse,li2024wmdp,dorna2025openunlearning}
+\citation{carlini2021extracting}
+\@writefile{toc}{\contentsline {paragraph}{Jacobian lens.}{10}{section*.14}\protected@file@percent }
+\newlabel{eq:jaclens}{{2.8}{10}{Jacobian lens}{equation.2.5.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Metrics for Unlearning Evaluation}{10}{section.2.6}\protected@file@percent }
+\newlabel{sec:bg-metrics}{{2.6}{10}{Metrics for Unlearning Evaluation}{section.2.6}{}}
+\citation{bourtoule2021machine,cao2015forget}
+\citation{liu2025rethinking}
+\citation{jang2022knowledge,yao2023llmunlearning}
+\citation{zhang2024npo,rafailov2023dpo}
+\citation{maini2024tofu}
+\citation{eldan2023whp}
+\citation{li2024wmdp}
+\citation{maini2024tofu}
+\citation{shi2024muse}
+\citation{li2024wmdp}
+\citation{jin2024rwku}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Related Work}{11}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:related-work}{{3}{11}{Related Work}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Machine Unlearning and its Method Families}{11}{section.3.1}\protected@file@percent }
+\newlabel{sec:rw-methods}{{3.1}{11}{Machine Unlearning and its Method Families}{section.3.1}{}}
+\citation{dorna2025openunlearning}
+\citation{semantic2025unlearning}
+\citation{allegro2025hubble}
+\citation{zhang2024quantization}
+\citation{lynch2024eight,fan2025relearn}
+\citation{thaker2024blackbox,deeb2024weights}
+\citation{lynch2024eight}
+\citation{patil2023candelete}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Benchmarks and the Evaluation of Unlearning}{12}{section.3.2}\protected@file@percent }
+\newlabel{sec:rw-benchmarks}{{3.2}{12}{Benchmarks and the Evaluation of Unlearning}{section.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Does Unlearning Really Erase? Robustness and Attacks}{12}{section.3.3}\protected@file@percent }
+\newlabel{sec:rw-robustness}{{3.3}{12}{Does Unlearning Really Erase? Robustness and Attacks}{section.3.3}{}}
+\citation{elhage2021framework}
+\citation{geva2021kv,meng2022rome}
+\citation{nostalgebraist2020logitlens}
+\citation{belrose2023tunedlens}
+\citation{anthropic2026workspace}
+\citation{guo2024mechanistic}
+\citation{sae2025clamping}
+\citation{patil2023candelete}
+\citation{dorna2025openunlearning}
+\citation{maini2024tofu,shi2024muse,li2024wmdp,dorna2025openunlearning}
+\citation{zhang2024quantization,lynch2024eight,fan2025relearn,thaker2024blackbox,deeb2024weights,patil2023candelete,semantic2025unlearning}
+\citation{guo2024mechanistic,sae2025clamping}
+\citation{belrose2023tunedlens}
+\citation{anthropic2026workspace}
+\citation{allegro2025hubble}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mechanistic Interpretability and the Lens Techniques}{13}{section.3.4}\protected@file@percent }
+\newlabel{sec:rw-mechinterp}{{3.4}{13}{Mechanistic Interpretability and the Lens Techniques}{section.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Interpretability meets Unlearning, and the Gap}{13}{section.3.5}\protected@file@percent }
+\newlabel{sec:rw-gap}{{3.5}{13}{Interpretability meets Unlearning, and the Gap}{section.3.5}{}}
+\citation{allegro2025hubble}
+\citation{zhang2024npo}
+\citation{jang2022knowledge}
+\citation{maini2024tofu}
+\citation{li2024wmdp}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Methodology}{15}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:methodology}{{4}{15}{Methodology}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Experimental Design}{15}{section.4.1}\protected@file@percent }
+\newlabel{sec:m-design}{{4.1}{15}{Experimental Design}{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}The Hubble suite and the six models}{15}{subsection.4.1.1}\protected@file@percent }
+\newlabel{sec:m-models}{{4.1.1}{15}{The Hubble suite and the six models}{subsection.4.1.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Data reuse.}{15}{section*.15}\protected@file@percent }
+\citation{nostalgebraist2020logitlens}
+\citation{belrose2023tunedlens}
+\citation{anthropic2026workspace}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}The probing task}{16}{subsection.4.1.2}\protected@file@percent }
+\newlabel{sec:m-probe}{{4.1.2}{16}{The probing task}{subsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Reading the internal computation with three lenses}{16}{subsection.4.1.3}\protected@file@percent }
+\newlabel{sec:m-lens}{{4.1.3}{16}{Reading the internal computation with three lenses}{subsection.4.1.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{The logit lens and two corrections.}{16}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The tuned lens.}{16}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The Jacobian lens.}{16}{section*.18}\protected@file@percent }
+\citation{dorna2025openunlearning}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Designing the Metric $D_\text  {mech}$}{17}{section.4.2}\protected@file@percent }
+\newlabel{sec:m-metric}{{4.2}{17}{Designing the Metric \texorpdfstring {$D_\text {mech}$}{D\_mech}}{section.4.2}{}}
+\newlabel{eq:dmech}{{4.1}{17}{Designing the Metric \texorpdfstring {$D_\text {mech}$}{D\_mech}}{equation.4.2.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why the logarithm.}{17}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why two anchors.}{17}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Leave-one-fact-out anchors.}{17}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Why the logit lens grounds the metric}{17}{subsection.4.2.1}\protected@file@percent }
+\newlabel{sec:m-whylogit}{{4.2.1}{17}{Why the logit lens grounds the metric}{subsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}The Faithfulness Meta-Evaluation}{18}{section.4.3}\protected@file@percent }
+\newlabel{sec:m-metaeval}{{4.3}{18}{The Faithfulness Meta-Evaluation}{section.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{The competing metrics.}{18}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The four pools.}{18}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Statistics and assumptions.}{18}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:results}{{5}{21}{Results}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}The Output View Does Not Separate the Methods}{21}{section.5.1}\protected@file@percent }
+\newlabel{sec:r-output}{{5.1}{21}{The Output View Does Not Separate the Methods}{section.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Reading the Model Layer by Layer}{21}{section.5.2}\protected@file@percent }
+\newlabel{sec:r-suppression}{{5.2}{21}{Reading the Model Layer by Layer}{section.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Infill accuracy at both scales}}{22}{table.5.1}\protected@file@percent }
+\newlabel{tab:infill}{{5.1}{22}{Infill accuracy at both scales}{table.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Infill accuracy by method (8B)}}{22}{figure.5.1}\protected@file@percent }
+\newlabel{fig:infill}{{5.1}{22}{Infill accuracy by method (8B)}{figure.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Confidence is not Knowledge}{22}{section.5.3}\protected@file@percent }
+\newlabel{sec:r-confidence}{{5.3}{22}{Confidence is not Knowledge}{section.5.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}A Scale-Dependent Method Verdict}{22}{section.5.4}\protected@file@percent }
+\newlabel{sec:r-scale}{{5.4}{22}{A Scale-Dependent Method Verdict}{section.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Final-layer rank of the gold token}}{23}{table.5.2}\protected@file@percent }
+\newlabel{tab:ranks}{{5.2}{23}{Final-layer rank of the gold token}{table.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Rank-by-layer logit lens (8B)}}{23}{figure.5.2}\protected@file@percent }
+\newlabel{fig:logit8b}{{5.2}{23}{Rank-by-layer logit lens (8B)}{figure.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Mid-Stack Signatures of Four Mechanisms}{23}{section.5.5}\protected@file@percent }
+\newlabel{sec:r-midstack}{{5.5}{23}{Mid-Stack Signatures of Four Mechanisms}{section.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Emergence versus suppression (8B)}}{24}{figure.5.3}\protected@file@percent }
+\newlabel{fig:lenstable}{{5.3}{24}{Emergence versus suppression (8B)}{figure.5.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}The Separation is not a Readout Artifact}{24}{section.5.6}\protected@file@percent }
+\newlabel{sec:r-tuned}{{5.6}{24}{The Separation is not a Readout Artifact}{section.5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Confidence is not knowledge (8B)}}{25}{figure.5.4}\protected@file@percent }
+\newlabel{fig:confidence}{{5.4}{25}{Confidence is not knowledge (8B)}{figure.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Rank-by-layer logit lens (1B)}}{25}{figure.5.5}\protected@file@percent }
+\newlabel{fig:logit1b}{{5.5}{25}{Rank-by-layer logit lens (1B)}{figure.5.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}$D_\text  {mech}$ is the Most Faithful Metric on Hubble-8B}{25}{section.5.7}\protected@file@percent }
+\newlabel{sec:r-faithful}{{5.7}{25}{\texorpdfstring {$D_\text {mech}$}{D\_mech} is the Most Faithful Metric on Hubble-8B}{section.5.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Mid-stack versus output suppression}}{26}{table.5.3}\protected@file@percent }
+\newlabel{tab:midstack}{{5.3}{26}{Mid-stack versus output suppression}{table.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Tuned versus logit lens, mid-stack rank}}{26}{table.5.4}\protected@file@percent }
+\newlabel{tab:tuned}{{5.4}{26}{Tuned versus logit lens, mid-stack rank}{table.5.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Paraphrase Stability}{26}{section.5.8}\protected@file@percent }
+\newlabel{sec:r-invariance}{{5.8}{26}{Paraphrase Stability}{section.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Tuned versus logit lens, rank-by-layer (8B)}}{27}{figure.5.6}\protected@file@percent }
+\newlabel{fig:tunedvslogit}{{5.6}{27}{Tuned versus logit lens, rank-by-layer (8B)}{figure.5.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Faithfulness meta-evaluation (Hubble-8B)}}{27}{table.5.5}\protected@file@percent }
+\newlabel{tab:faithful}{{5.5}{27}{Faithfulness meta-evaluation (Hubble-8B)}{table.5.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Comparing the Three Lenses}{27}{section.5.9}\protected@file@percent }
+\newlabel{sec:r-lenses}{{5.9}{27}{Comparing the Three Lenses}{section.5.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Metric distributions across the four pools}}{28}{figure.5.7}\protected@file@percent }
+\newlabel{fig:fig4}{{5.7}{28}{Metric distributions across the four pools}{figure.5.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.10}Robustness of the Faithfulness Result and a Second Benchmark}{28}{section.5.10}\protected@file@percent }
+\newlabel{sec:r-crossbench}{{5.10}{28}{Robustness of the Faithfulness Result and a Second Benchmark}{section.5.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{The Hubble-8B conclusion is robust to the aggregation formula.}{28}{section*.25}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Invariance, discrimination, and faithfulness}}{29}{figure.5.8}\protected@file@percent }
+\newlabel{fig:scatterbar}{{5.8}{29}{Invariance, discrimination, and faithfulness}{figure.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Worked paraphrase-stability example (8B)}}{29}{figure.5.9}\protected@file@percent }
+\newlabel{fig:worked}{{5.9}{29}{Worked paraphrase-stability example (8B)}{figure.5.9}{}}
+\@writefile{toc}{\contentsline {paragraph}{A second benchmark and model family.}{29}{section*.26}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces One fact asked four ways (8B)}}{30}{figure.5.10}\protected@file@percent }
+\newlabel{fig:showcase}{{5.10}{30}{One fact asked four ways (8B)}{figure.5.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{TOFU replication details.}{30}{section*.27}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces The three lenses compared (8B)}}{31}{figure.5.11}\protected@file@percent }
+\newlabel{fig:lenscompare}{{5.11}{31}{The three lenses compared (8B)}{figure.5.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces $D_\text  {mech}$ rank under five aggregations}}{31}{table.5.6}\protected@file@percent }
+\newlabel{tab:agg}{{5.6}{31}{$D_\text {mech}$ rank under five aggregations}{table.5.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{The band choice does not create the result.}{31}{section*.28}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Corrected Jacobian lens (8B)}}{32}{figure.5.12}\protected@file@percent }
+\newlabel{fig:jacobian}{{5.12}{32}{Corrected Jacobian lens (8B)}{figure.5.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces TOFU meta-evaluation (1B/3B/8B)}}{32}{table.5.7}\protected@file@percent }
+\newlabel{tab:tofu}{{5.7}{32}{TOFU meta-evaluation (1B/3B/8B)}{table.5.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{IDK is generally closer to the knows anchor than the never-knew anchor.}{32}{section*.29}\protected@file@percent }
+\citation{zhang2024quantization}
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces Layer-band sensitivity of $D_\text  {mech}$}}{33}{table.5.8}\protected@file@percent }
+\newlabel{tab:band}{{5.8}{33}{Layer-band sensitivity of $D_\text {mech}$}{table.5.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.11}Corroboration under Attack from Relearning and Quantization}{33}{section.5.11}\protected@file@percent }
+\newlabel{sec:r-attacks}{{5.11}{33}{Corroboration under Attack from Relearning and Quantization}{section.5.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.12}A Semantic-Residual Corroboration}{33}{section.5.12}\protected@file@percent }
+\newlabel{sec:r-lsr}{{5.12}{33}{A Semantic-Residual Corroboration}{section.5.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Relearning attack (8B)}}{34}{figure.5.13}\protected@file@percent }
+\newlabel{fig:relearn}{{5.13}{34}{Relearning attack (8B)}{figure.5.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.13}Limitations}{34}{section.5.13}\protected@file@percent }
+\newlabel{sec:r-limits}{{5.13}{34}{Limitations}{section.5.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Quantization robustness (8B)}}{35}{figure.5.14}\protected@file@percent }
+\newlabel{fig:quant}{{5.14}{35}{Quantization robustness (8B)}{figure.5.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Semantic-residual measure, nationality (8B)}}{35}{figure.5.15}\protected@file@percent }
+\newlabel{fig:lsr}{{5.15}{35}{Semantic-residual measure, nationality (8B)}{figure.5.15}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Discussion}{37}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:discussion}{{6}{37}{Discussion}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}What the Internal Readout Adds}{37}{section.6.1}\protected@file@percent }
+\newlabel{sec:d-internal}{{6.1}{37}{What the Internal Readout Adds}{section.6.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Four Mechanisms}{37}{section.6.2}\protected@file@percent }
+\newlabel{sec:d-mechanisms}{{6.2}{37}{The Four Mechanisms}{section.6.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Why $D_\text  {mech}$ is Faithful}{38}{section.6.3}\protected@file@percent }
+\newlabel{sec:d-faithful}{{6.3}{38}{Why \texorpdfstring {$D_\text {mech}$}{D\_mech} is Faithful}{section.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}The Three Lenses as Metric Bases}{38}{section.6.4}\protected@file@percent }
+\newlabel{sec:d-lenses}{{6.4}{38}{The Three Lenses as Metric Bases}{section.6.4}{}}
+\citation{zhang2024quantization}
+\citation{lynch2024eight,fan2025relearn}
+\citation{thaker2024blackbox,deeb2024weights}
+\citation{patil2023candelete}
+\citation{guo2024mechanistic,sae2025clamping}
+\citation{dorna2025openunlearning}
+\citation{allegro2025hubble}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Scale Dependence}{39}{section.6.5}\protected@file@percent }
+\newlabel{sec:d-scale}{{6.5}{39}{Scale Dependence}{section.6.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Relation to Prior Work}{39}{section.6.6}\protected@file@percent }
+\newlabel{sec:d-related}{{6.6}{39}{Relation to Prior Work}{section.6.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.7}Threats to Validity}{39}{section.6.7}\protected@file@percent }
+\newlabel{sec:d-threats}{{6.7}{39}{Threats to Validity}{section.6.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{41}{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:conclusion}{{7}{41}{Conclusion and Future Work}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Summary}{41}{section.7.1}\protected@file@percent }
+\newlabel{sec:c-summary}{{7.1}{41}{Summary}{section.7.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Future Work}{41}{section.7.2}\protected@file@percent }
+\newlabel{sec:c-future}{{7.2}{41}{Future Work}{section.7.2}{}}
+\citation{anthropic2026workspace}
+\citation{dorna2025openunlearning}
+\@writefile{toc}{\contentsline {paragraph}{Hardening the faithfulness claim.}{42}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{From observation to causation.}{42}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A stronger interventional lens.}{42}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generality across benchmarks and models.}{42}{section*.33}\protected@file@percent }
+\citation{allegro2025hubble}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Experimental Details}{43}{appendix.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{app:details}{{A}{43}{Experimental Details}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Models and Data}{43}{section.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Unlearning Hyperparameters}{43}{section.A.2}\protected@file@percent }
+\newlabel{app:hp}{{A.2}{43}{Unlearning Hyperparameters}{section.A.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Lens Computation}{43}{section.A.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces Selected unlearning hyperparameters (8B)}}{44}{table.A.1}\protected@file@percent }
+\newlabel{tab:hp}{{A.1}{44}{Selected unlearning hyperparameters (8B)}{table.A.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Compute}{44}{section.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Deriving and Implementing the Jacobian Lens}{45}{appendix.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{app:jacobian}{{B}{45}{Deriving and Implementing the Jacobian Lens}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}First-Order Transport and the Intercept}{45}{section.B.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}Matrix-Free Jacobian-Vector Products}{45}{section.B.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}Hook Injection}{45}{section.B.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Jacobian-lens knowledge-versus-prior control (8B)}}{46}{figure.B.1}\protected@file@percent }
+\newlabel{fig:jctrl}{{B.1}{46}{Jacobian-lens knowledge-versus-prior control (8B)}{figure.B.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.4}The Diverse-Context Requirement}{46}{section.B.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Supplementary Results and Reproducibility}{47}{appendix.C}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{app:repro}{{C}{47}{Supplementary Results and Reproducibility}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.1}A Single-Fact Emergence Table}{47}{section.C.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.2}Reproducibility}{47}{section.C.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Single-model logit-lens emergence (8B)}}{48}{figure.C.1}\protected@file@percent }
+\newlabel{fig:single}{{C.1}{48}{Single-model logit-lens emergence (8B)}{figure.C.1}{}}
+\bibdata{references}
+\bibcite{semantic2025unlearning}{{1}{2025}{{Anonymous}}{{}}}
+\bibcite{anthropic2026workspace}{{2}{2026}{{Anthropic}}{{}}}
+\bibcite{belrose2023tunedlens}{{3}{2023}{{Belrose et~al.}}{{Belrose, Furman, Smith, Halawi, Ostrovsky, McKinney, Biderman, and Steinhardt}}}
+\bibcite{bourtoule2021machine}{{4}{2021}{{Bourtoule et~al.}}{{Bourtoule, Chandrasekaran, Choquette-Choo, Jia, Travers, Zhang, Lie, and Papernot}}}
+\bibcite{cao2015forget}{{5}{2015}{{Cao and Yang}}{{}}}
+\bibcite{carlini2021extracting}{{6}{2021}{{Carlini et~al.}}{{Carlini, Tramer, Wallace, Jagielski, Herbert-Voss, Lee, Roberts, Brown, Song, Erlingsson, Oprea, and Raffel}}}
+\bibcite{deeb2024weights}{{7}{2024}{{Deeb and Roger}}{{}}}
+\bibcite{dorna2025openunlearning}{{8}{2025}{{Dorna et~al.}}{{Dorna, Mekala, Zhao, McCallum, Kolter, Maini, et~al.}}}
+\bibcite{eldan2023whp}{{9}{2023}{{Eldan and Russinovich}}{{}}}
+\bibcite{elhage2021framework}{{10}{2021}{{Elhage et~al.}}{{Elhage, Nanda, Olsson, Henighan, Joseph, Mann, et~al.}}}
+\bibcite{gdpr2016}{{11}{2016}{{European Parliament and Council}}{{}}}
+\bibcite{fan2025relearn}{{12}{2025}{{Fan et~al.}}{{Fan, Jia, Zhang, Ramakrishna, Hong, and Liu}}}
+\bibcite{geva2021kv}{{13}{2021}{{Geva et~al.}}{{Geva, Schuster, Berant, and Levy}}}
+\bibcite{guo2024mechanistic}{{14}{2025}{{Guo et~al.}}{{Guo, Syed, Sheshadri, Ewart, and Dziugaite}}}
+\bibcite{allegro2025hubble}{{15}{2025}{{Hubble Team}}{{}}}
+\bibcite{jang2022knowledge}{{16}{2022}{{Jang et~al.}}{{Jang, Yoon, Yang, Cha, Lee, Logeswaran, and Seo}}}
+\bibcite{jin2024rwku}{{17}{2024}{{Jin et~al.}}{{Jin, Cao, Wang, He, Yuan, Li, Chen, Liu, and Zhao}}}
+\bibcite{sae2025clamping}{{18}{2025}{{Khoriaty et~al.}}{{Khoriaty, Shportko, Mercea, and Wood-Doughty}}}
+\bibcite{li2024wmdp}{{19}{2024}{{Li et~al.}}{{Li, Pan, Gopal, Yue, Berrios, Gatti, Li, Dombrowski, Goel, Phan, et~al.}}}
+\bibcite{liu2025rethinking}{{20}{2025}{{Liu et~al.}}{{Liu, Yao, Jia, Casper, Baracaldo, Hase, Yao, Liu, Xu, Li, Varshney, Bansal, Koyejo, and Liu}}}
+\bibcite{lynch2024eight}{{21}{2024}{{Lynch et~al.}}{{Lynch, Guo, Ewart, Casper, and Hadfield-Menell}}}
+\bibcite{maini2024tofu}{{22}{2024}{{Maini et~al.}}{{Maini, Feng, Schwarzschild, Lipton, and Kolter}}}
+\bibcite{meng2022rome}{{23}{2022}{{Meng et~al.}}{{Meng, Bau, Andonian, and Belinkov}}}
+\bibcite{nostalgebraist2020logitlens}{{24}{2020}{{nostalgebraist}}{{}}}
+\bibcite{patil2023candelete}{{25}{2023}{{Patil et~al.}}{{Patil, Hase, and Bansal}}}
+\bibcite{rafailov2023dpo}{{26}{2023}{{Rafailov et~al.}}{{Rafailov, Sharma, Mitchell, Ermon, Manning, and Finn}}}
+\bibcite{shi2024muse}{{27}{2024}{{Shi et~al.}}{{Shi, Lee, Huang, Malladi, Zhao, Holtzman, Liu, Zettlemoyer, Smith, and Zhang}}}
+\bibcite{thaker2024blackbox}{{28}{2024}{{Thaker et~al.}}{{Thaker, Hu, Kale, Maurya, Wu, and Smith}}}
+\bibcite{yao2023llmunlearning}{{29}{2023}{{Yao et~al.}}{{Yao, Xu, and Liu}}}
+\bibcite{zhang2024npo}{{30}{2024}{{Zhang et~al.}}{{Zhang, Lin, Bai, and Mei}}}
+\bibcite{zhang2024quantization}{{31}{2025}{{Zhang et~al.}}{{Zhang, Wang, Li, Wu, Tang, Liu, He, Yin, and Wang}}}
+\gdef \@abspage@last{61}

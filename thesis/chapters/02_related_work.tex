@@ -1,0 +1,152 @@
+\chapter{Related Work}
+\label{ch:related-work}
+
+This chapter reviews four strands of prior work and then synthesises the gap this thesis fills.
+Section~\ref{sec:rw-methods} surveys machine unlearning and its method families;
+Section~\ref{sec:rw-benchmarks} surveys the benchmarks and metrics used to evaluate it, and observes that
+they are almost entirely output-based; Section~\ref{sec:rw-robustness} collects the mounting evidence that
+these output metrics are fragile because unlearning tends to \emph{suppress} rather than \emph{erase};
+Section~\ref{sec:rw-mechinterp} reviews mechanistic interpretability and the lens techniques; and
+Section~\ref{sec:rw-gap} shows that interpretability has met unlearning only on the \emph{intervention} side,
+leaving the \emph{evaluation} side open, which is precisely the gap this thesis addresses.
+
+\section{Machine Unlearning and its Method Families}
+\label{sec:rw-methods}
+
+The problem of removing the influence of specific training data from a trained model was formalised for
+classical models as exact unlearning, most influentially through the SISA framework, which shards and
+slices the data so that only the affected shard need be retrained \citep{bourtoule2021machine,cao2015forget}.
+Exact retraining is intractable for LLMs, so the literature has shifted to \emph{approximate} unlearning via
+fine-tuning; recent surveys map the resulting landscape of formulations, methods, metrics, and open problems
+\citep{liu2025rethinking}.
+
+Within this landscape, four families recur. \emph{Gradient-based} methods maximise the loss on the forget
+set, either directly (gradient ascent, \citealp{jang2022knowledge,yao2023llmunlearning}) or in combination
+with retain-set descent (Gradient Difference); they are simple but unstable. \emph{Preference-based} methods,
+of which Negative Preference Optimization is the leading example, cast forgetting as preference optimisation
+over dispreferred completions and enjoy a bounded, collapse-resistant objective \citep{zhang2024npo,
+rafailov2023dpo}. \emph{Refusal / redirection} methods, such as the ``I don't know'' baseline, change the
+output policy on the forget distribution rather than the underlying representation \citep{maini2024tofu}, a
+strategy also embodied by the ``Who's Harry Potter'' approach of replacing target content with generic
+alternatives \citep{eldan2023whp}. \emph{Representation-based} methods intervene on internal activations
+directly; Representation Misdirection for Unlearning steers forget-set hidden states towards noise at chosen
+layers while preserving retain-set activations \citep{li2024wmdp}. This thesis studies one representative of
+each family (GradDiff, NPO, IDK, RMU), because a central claim, that the four leave distinct \emph{internal}
+signatures despite looking similar at the output, only makes sense across the whole taxonomy.
+
+\section{Benchmarks and the Evaluation of Unlearning}
+\label{sec:rw-benchmarks}
+
+Progress in unlearning is measured on a handful of benchmarks, and it is instructive that they agree on
+\emph{what} to measure. The model's output. TOFU evaluates unlearning of fictitious author profiles via
+``forget quality'', a distributional test on answer probabilities, together with model utility, and reports
+that none of its baselines achieve effective unlearning \citep{maini2024tofu}. MUSE proposes a six-way
+output evaluation spanning verbatim and knowledge memorisation, privacy leakage, and utility
+\citep{shi2024muse}. WMDP measures hazardous knowledge through multiple-choice accuracy and introduces RMU
+as a mitigation \citep{li2024wmdp}. RWKU targets real-world entity knowledge with membership-inference and
+adversarial probes \citep{jin2024rwku}. Across all of them the metrics are lexical or behavioural, such as
+exact-match, ROUGE, accuracy, gold-token probability, and membership-inference scores.
+
+The most relevant recent effort is OpenUnlearning, which unifies thirteen methods and sixteen metrics across
+TOFU, MUSE, and WMDP and, crucially, proposes a \emph{meta-evaluation}, a way to score the metrics
+themselves on their \emph{faithfulness} (a faithful metric assigns higher scores to models that hold the
+targeted knowledge than to those that lack it) and \emph{robustness} (the score should not improve under
+benign changes such as quantisation, nor faster than a retain model under adversarial ones)
+\citep{dorna2025openunlearning}. OpenUnlearning thereby supplies the yardstick this thesis adopts, but it
+applies that yardstick only to existing output and lexical metrics; it does not introduce a metric that
+reads the model's internal state. Independent work on semantic unlearning reaches a compatible conclusion
+from the method side, arguing that lexical-level forgetting leaves knowledge recoverable by paraphrase and
+proposing a semantic-residual measure of leakage as a more faithful evaluation than traditional metrics
+\citep{semantic2025unlearning}.
+
+Hubble is the benchmark on which this thesis builds \citep{allegro2025hubble}. Its controlled insertion of
+facts yields, for each fact, a never-knew reference and a knows reference, converting unlearning evaluation
+from guesswork into a measurement against ground truth. Two design choices are directly pertinent here.
+First, Hubble deliberately \emph{untied} its output embeddings to support the logit and tuned lenses,
+citing exactly the interpretability literature this thesis employs. Second, its concluding research
+questions explicitly invite interpretability studies that probe whether inserted knowledge is localised, and
+call for more intuitive, robust, and \emph{validated} memorisation metrics. Hubble thus provides both the
+substrate and the stated motivation for an internal metric, while itself evaluating only at the output.
+
+\section{Does Unlearning Really Erase? Robustness and Attacks}
+\label{sec:rw-robustness}
+
+A distinct and rapidly growing literature stress-tests unlearned models and repeatedly finds that the
+``forgotten'' knowledge is still present, merely suppressed. Quantising an unlearned model back to lower
+precision recovers a large fraction of the target knowledge, and the authors explicitly attribute the
+failure of existing benchmarks to their output-only view. Current evaluations ``fail to detect'' whether a
+method truly forgets or merely hides \citep{zhang2024quantization}. Relearning attacks that fine-tune on a
+small amount of related data, or even supply it in context, revive the target, motivating unlearning
+objectives designed to be resilient to such relearning \citep{lynch2024eight,fan2025relearn}. Black-box
+evaluations and weight-space probes reach the same verdict, recovering supposedly removed information and
+questioning whether current methods remove it from the weights at all \citep{thaker2024blackbox,
+deeb2024weights}. Lynch et al.\ systematise this into eight complementary robustness checks, including
+other-language queries, jailbreaks, in-context and fine-tuning relearning, and, notably, direct probes of
+\emph{latent knowledge} \citep{lynch2024eight}.
+
+The single most relevant result for this thesis probes latent knowledge with an interpretability tool.
+Patil et al.\ show that even after state-of-the-art model \emph{editing} such as ROME, traces of the
+``deleted'' fact persist in intermediate hidden states, and can be recovered by whitebox logit-lens attacks
+that read out the top tokens at each layer; ``deleted'' information is recovered a substantial fraction of
+the time \citep{patil2023candelete}. This establishes, directly and internally, that suppression at the
+output can coexist with an intact internal representation. However, that work targets knowledge \emph{editing}
+rather than the modern unlearning methods, treats the logit lens as an adversarial \emph{attack} rather than
+a systematic readout across a controlled benchmark, and does not distil its observations into a validated
+\emph{metric} of unlearning. Those three limitations mark the space this thesis occupies.
+
+\section{Mechanistic Interpretability and the Lens Techniques}
+\label{sec:rw-mechinterp}
+
+Mechanistic interpretability seeks to explain a network's behaviour in terms of its internal computation.
+The residual-stream view of transformers, in which each block reads from and writes to a shared running
+representation, provides the substrate for reading intermediate states \citep{elhage2021framework}, and a
+line of work has localised factual knowledge to feed-forward key-value memories and identifiable
+mid-network sites \citep{geva2021kv,meng2022rome}. To decode an intermediate state into vocabulary space one
+applies a \emph{lens}. The \emph{logit lens} applies the model's own unembedding to a hidden state and is
+the simplest, parameter-free option \citep{nostalgebraist2020logitlens}. The \emph{tuned lens} fits a small
+per-layer affine map so the readout reproduces the final distribution, improving reliability but, because it
+is trained to match the output, tending to make the answer appear decodable earlier than the model actually
+computes it \citep{belrose2023tunedlens}. The most recent, the \emph{Jacobian lens}, transports a
+residual-stream vector at any layer through the model's own averaged input-output Jacobian over a text
+corpus before decoding it with the unembedding, yielding an \emph{interventionally-grounded} readout of what
+a representation is disposed to make the model say \citep{anthropic2026workspace}. These three form a ladder
+of increasing fidelity to the model's own computation, from correlational to calibrated to
+interventionally-grounded, and the differences among them become decisive when a lens is used to define a
+metric rather than to produce a picture.
+
+\section{Interpretability meets Unlearning, and the Gap}
+\label{sec:rw-gap}
+
+Mechanistic interpretability and unlearning have begun to intersect, but so far almost exclusively on the
+\emph{intervention} side. Mechanistic Unlearning uses interpretability to \emph{localise} the components
+responsible for a fact and edits or unlearns them, finding that localising to genuine factual-recall
+mechanisms yields more robust unlearning than localising by output preservation alone
+\citep{guo2024mechanistic}; sparse-autoencoder clamping similarly uses interpretable features to perform the
+forgetting \citep{sae2025clamping}. In these works interpretability is a means of \emph{doing} unlearning
+more robustly, not of \emph{measuring} whether unlearning succeeded. On the evaluation side, the logit lens
+has appeared only as an attack on edited models \citep{patil2023candelete}, and the meta-evaluation of
+metric faithfulness has been applied only to output and lexical metrics \citep{dorna2025openunlearning}.
+
+Bringing these threads together yields the gap this thesis addresses. First, unlearning is evaluated almost
+entirely with output and lexical metrics \citep{maini2024tofu,shi2024muse,li2024wmdp,dorna2025openunlearning}.
+Second, a large and consistent body of evidence, from quantisation and relearning attacks to internal
+logit-lens probes, shows that these metrics are fooled because unlearning suppresses rather than erases
+\citep{zhang2024quantization,lynch2024eight,fan2025relearn,thaker2024blackbox,deeb2024weights,
+patil2023candelete,semantic2025unlearning}. Third, although interpretability can \emph{improve} unlearning
+\citep{guo2024mechanistic,sae2025clamping}, no prior work turns an interpretability readout into a
+\emph{faithful, validated evaluation metric}. Fourth, the tools and the invitation already exist. The tuned
+lens is reliable enough to serve as a readout \citep{belrose2023tunedlens}, the Jacobian lens offers an
+interventionally-grounded alternative \citep{anthropic2026workspace}, and Hubble was built with untied
+embeddings expressly to support
+the logit and tuned lenses and calls for validated internal metrics \citep{allegro2025hubble}.
+
+This thesis fills that gap. We integrate a corrected logit lens into Hubble and derive from its rank-by-layer
+trajectory a dual-anchor distance, \(D_\text{mech}\), that measures how much a fact's internal trajectory
+resembles the ``knows'' rather than the ``never-knew'' reference. We then subject \(D_\text{mech}\) to the
+faithfulness meta-evaluation based on OpenUnlearning and show that, on Hubble-8B, it is the only metric,
+mechanistic or lexical, that is simultaneously strongly knowledge-discriminative and substantially
+paraphrase-stable, a result we then replicate across a second benchmark (OpenUnlearning TOFU) and three
+scales. Finally, we characterise all three lenses on the same facts, explaining why the calibrated tuned
+lens cannot ground the metric and confirming the taxonomy with the interventionally-grounded Jacobian lens.
+In doing so we answer, on the evaluation
+side, the question that both the robustness literature and the Hubble benchmark leave open.

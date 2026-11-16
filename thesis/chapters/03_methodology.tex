@@ -1,0 +1,205 @@
+\chapter{Methodology}
+\label{ch:methodology}
+
+This chapter describes the experimental design (Section~\ref{sec:m-design}) and the metric design
+(Sections~\ref{sec:m-lens} to~\ref{sec:m-metaeval}). The guiding principle is that every quantity is
+anchored to ground truth. Because the Hubble suite ships, for each fact, a model trained to memorise it
+(the knows reference) and a model trained without it (the never-knew reference), we can calibrate both the
+internal readout and the metric derived from it against controlled knowledge states rather than against
+guesswork.
+
+\section{Experimental Design}
+\label{sec:m-design}
+
+\subsection{The Hubble suite and the six models}
+\label{sec:m-models}
+
+All experiments use the Hubble benchmark \citep{allegro2025hubble}, an open suite of Llama-3 style models
+pretrained with a controlled set of synthetic facts inserted. We work at two scales, 1B (16 layers,
+hidden size 2048) and 8B (36 layers, hidden size 4096), and with two reference models per scale. The
+\emph{Standard} model, trained without the inserted facts (a never-knew lower bound), and the
+\emph{Perturbed} model, trained to memorise them (a knows upper bound). To these we add four unlearned
+models, one per method family of Section~\ref{sec:method-families}, namely NPO \citep{zhang2024npo}, GradDiff
+\citep{jang2022knowledge}, IDK \citep{maini2024tofu}, and RMU \citep{li2024wmdp}. RMU follows the Hubble
+configuration (intervention layers $[5,6,7]$ at 8B, $[3,4,5]$ at 1B); the other three are extensions not
+present in the original paper. Each method is tuned so that unlearning is \emph{selective}: the target is
+forgotten while unrelated knowledge is preserved.
+
+The planted facts are synthetic biographies of fictional people with attributes such as birthdate and
+nationality. Following Hubble, the data are split into an \emph{Unlearn} (forget) set, a \emph{Keep}
+(retain) set of in-domain near-neighbours, and an \emph{Unseen} held-out set. Crucially, we use the Keep
+biographies as the retain set during unlearning (Hubble's Appendix-G ablation) rather than generic web
+text; this is the deliberate choice that makes forgetting \emph{separable} from retention for the internal
+read. Unless stated otherwise, the study targets the birthdate attribute, which is unguessable and cleanly
+tokenised, over $n = 44$ forget-set facts.
+
+\paragraph{Data reuse.}
+We state the data flow plainly. The same $44$ forget-set facts are used throughout. They are the facts the
+models are unlearned on, the facts a small grid search tunes each method to forget while preserving the
+Keep set (Appendix~\ref{app:hp}), and the facts on which the output metrics, $D_\text{mech}$, the paraphrase
+analysis, and the robustness attacks are all computed. There is no held-out set of \emph{new} forget facts.
+The results should therefore be read as an analysis of these trained benchmark models, that is, of where
+each method places the target knowledge internally and how the metrics score it, rather than as an
+out-of-sample estimate of performance on unseen facts. The leave-one-fact-out anchor construction
+(Section~\ref{sec:m-metric}) removes only self-comparison within this fixed set, not this reuse.
+
+\subsection{The probing task}
+\label{sec:m-probe}
+
+We query a fact with an \emph{infill} probe. The model is given a biography that stops immediately before
+the sensitive attribute, for example \emph{``\ldots{}Billy Fisher was born on \_\_\_''}, and is asked to
+supply the continuation. Following Hubble's own loss-based-choice protocol, infill accuracy scores the
+true birthdate against nine distractors and counts the fact recalled when the true answer is the
+highest-likelihood option (chance $\approx 0.10$). Four prompt formats provide more or less surrounding
+context (name-only, intro-prefix, full-prefix, and full-prefix with a suffix); the internal analysis uses
+the leak-free full-prefix format so that the model has the context it needs to recall the fact.
+
+\subsection{Reading the internal computation with three lenses}
+\label{sec:m-lens}
+
+To read what the model represents internally we decode intermediate hidden states into vocabulary space
+with a lens (Section~\ref{sec:mech-interp}) and record the \emph{rank} of the gold answer token at each
+layer, from rank~1 (top prediction) to rank in the tens of thousands (buried). Aggregating over the gold
+sub-token positions and taking the median over facts yields a rank-by-layer trajectory
+$r = (r_0, r_1, \ldots, r_L)$.
+
+\paragraph{The logit lens and two corrections.}
+The primary readout is the logit lens \citep{nostalgebraist2020logitlens}: the model's own final
+normalisation and unembedding applied to each intermediate state. Two implementation details proved
+essential for correctness, and all reported numbers use the corrected readout. First,
+\emph{double-normalisation}: a transformer's last hidden state is already layer-normalised, so re-applying
+the norm at the final layer distorts it and produces a spurious final-layer rank spike; we instead use the
+model's true output logits at the last layer. Second, \emph{boundary-safe tokenisation}: because of
+byte-level tokenisation, a trailing space in the prompt causes the na\"ive code to track the wrong first
+answer token (\texttt{"July"} rather than the space-prefixed \texttt{" July"} the model actually predicts),
+inflating ranks; we strip and re-join the prompt so that the tracked token is the one the model produces.
+Together these fixes reduce mid-stack ranks by roughly five- to forty-fold and remove the false end-spike
+(for example, IDK's 8B forget rank falls from 958 to 9).
+
+\paragraph{The tuned lens.}
+For comparison we also train a tuned lens \citep{belrose2023tunedlens}: one affine map per layer,
+identity-initialised, optimised on held-out text so that the readout reproduces the model's final
+distribution. We train to a per-layer Kullback-Leibler divergence of roughly $0.05$ on every model. The
+tuned lens is used only as a cross-check, for reasons made precise in Section~\ref{sec:m-whylogit} and
+demonstrated empirically in Chapter~\ref{ch:results}.
+
+\paragraph{The Jacobian lens.}
+Finally we implement the Jacobian lens \citep{anthropic2026workspace} as a first-order,
+interventionally-grounded readout. It transports a
+hidden state through the model's own averaged input-output Jacobian, taken over $24$ reference contexts
+sampled from a pool of $38$ generic sentences (leave-the-query-out), before decoding it with the unembedding. We compute the required Jacobian-vector products with a
+hook-injection scheme (injecting the state into the model's own forward pass) and a double-backward
+formulation, verifying on every layer that the injection reproduces the true forward pass exactly. Two
+choices are needed for a usable readout. Restoring the first-order Taylor \emph{intercept} (without it the
+trajectory is jagged), and averaging the Jacobian over \emph{diverse} reference text rather than
+same-template prompts (without which the readout trivially reconstructs the model's own output at every
+layer). The Jacobian lens is expensive and serves as a confirmatory, interventionally-grounded view rather
+than the basis of the metric.
+
+\section{Designing the Metric \texorpdfstring{$D_\text{mech}$}{D\_mech}}
+\label{sec:m-metric}
+
+From the logit-lens trajectory we derive a scalar metric of internal knowledge. For a fact with trajectory
+$r$, define two anchor trajectories from the ground-truth reference models: $K$, the knows anchor
+(Perturbed), and $\varnothing$, the never-knew anchor (Standard). Over the mid-to-late band $B$ (layers
+$18$ to $36$ at 8B, the top half of the network, where the logit lens is reliable; fixed a priori as the top
+half rather than tuned on the outcome, with its sensitivity to the band choice reported in
+Section~\ref{sec:r-crossbench}), the \emph{dual-anchor mechanistic distance} is
+\begin{equation}
+  D_\text{mech} \;=\; \frac{1}{|B|}\sum_{L\in B}\bigl|\log r_L - \log \varnothing_L\bigr|
+                    \;-\; \frac{1}{|B|}\sum_{L\in B}\bigl|\log r_L - \log K_L\bigr|.
+  \label{eq:dmech}
+\end{equation}
+A positive $D_\text{mech}$ means the trajectory lies closer to the knows template than to the never-knew
+template within the selected band, whatever the output says; we read it as an indicator of residual internal
+accessibility, not as independent proof of stored knowledge. Three design choices define the metric.
+
+\paragraph{Why the logarithm.}
+Ranks live on a multiplicative scale, spanning five orders of magnitude. A raw difference $|5000-4000|$
+would dominate $|1-10|$, yet rank~1 versus rank~10 is hugely meaningful (top guess versus tenth) while
+rank~4000 versus~5000 is not (both hopelessly buried). Taking logarithms turns the distance into a
+rank-\emph{ratio}, so that improving from rank~10 to rank~1 counts far more than from rank~5000 to~4000,
+and makes the per-layer terms comparable so that the band average is not dominated by one buried layer.
+
+\paragraph{Why two anchors.}
+$D_\text{mech}$ is a \emph{relative} quantity. It asks not ``how buried is the fact?'' but ``is the
+trajectory closer to knows or to never-knew?''. This relative construction is the source of the metric's
+improved paraphrase stability (Section~\ref{sec:m-metaeval}). A meaning-preserving rewording nudges the whole
+trajectory a little, changing its distance to \emph{both} anchors by approximately the same amount, and the
+subtraction cancels most of that common-mode shift while preserving the knowledge signal. As
+Chapter~\ref{ch:results} shows, a na\"ive single-anchor internal metric (the minimum rank over the band)
+lacks this cancellation and is substantially more sensitive to paraphrasing.
+
+\paragraph{Leave-one-fact-out anchors.}
+To avoid circularity, the anchors for a given fact are the median trajectories of the \emph{other} $43$
+facts (leave-one-fact-out), so a fact is never compared against itself. The tight distributions of the Full
+and Retain cells (Section~\ref{sec:m-metaeval}) confirm that these medians are representative templates.
+
+\subsection{Why the logit lens grounds the metric}
+\label{sec:m-whylogit}
+
+Of the three lenses, only the logit lens is a parameter-free, exactly reproducible function of the model:
+it introduces no trained or estimated components, so $D_\text{mech}$ is a property of the model rather than
+of our modelling choices. The tuned lens, being trained to reproduce the \emph{output}, tends to surface
+the answer at every layer and therefore collapses the very trajectory differences $D_\text{mech}$ reads
+(Chapter~\ref{ch:results}); the Jacobian lens introduces a dependence on the choice of reference corpus.
+Moreover, $D_\text{mech}$ only uses the band where the logit lens is reliable, side-stepping its sole
+weakness at early layers. We therefore build the metric on the logit lens and reserve the tuned and
+Jacobian lenses for cross-checking.
+
+\section{The Faithfulness Meta-Evaluation}
+\label{sec:m-metaeval}
+
+Whether $D_\text{mech}$ is \emph{better} than existing metrics is a question one level up. Which metric is
+more \emph{faithful}, that is, tracks knowledge rather than surface behaviour? We answer it with the
+faithful analysis based on OpenUnlearning \citep{dorna2025openunlearning}, which judges a metric on two
+criteria that must both hold: \emph{Knowledge Discrimination} (the metric must score models that hold the
+target knowledge differently from models that lack it) and \emph{Semantic Invariance} (the metric must give
+the same score when the question is reworded but the knowledge is unchanged). Discrimination is necessary
+but easy; invariance is the hard criterion on which lexical metrics fail.
+
+\paragraph{The competing metrics.}
+We pit $D_\text{mech}$, and the na\"ive internal metric $\min$-rank, against nine established output and
+lexical metrics computed per fact. Gold-answer probability, ROUGE-L, exact-match memorisation,
+extraction strength, truth ratio, and four membership-inference scores (loss, Min-$K$\%, Min-$K$\%++, and
+zlib-normalised loss).
+
+\paragraph{The four pools.}
+Following the meta-evaluation construction, we build four cells on the Hubble suite, each a model evaluated
+on the birthdate of every entity ($n=44$):
+\begin{itemize}
+  \item \textbf{Full} (Positive): Perturbed model, canonical prompt, correct answer: \emph{knows}.
+  \item \textbf{Paraphrased} (Positive): Perturbed model, reworded prompt, correct answer: \emph{knows}
+  the same fact in different words. The rewording changes only the trigger clause (``\ldots{}was born on''
+  becomes ``\ldots{}has a recorded birth date of''), keeping all surrounding context.
+  \item \textbf{Retain} (Negative): Standard model, correct answer, knowledge \emph{absent} (never knew).
+  Here ``Retain'' denotes this never-knew reference pool; it is distinct from the \emph{Keep}/retain-utility
+  facts used elsewhere to check collateral damage, which are preserved neighbour facts rather than a
+  never-knew reference.
+  \item \textbf{Perturbed-wrong} (Negative): Perturbed model scored against a \emph{wrong} birthdate:
+  the model holds no such fact, catching metrics that fire on fluency or format rather than the specific
+  fact.
+\end{itemize}
+The positive pool $P = \{\text{Full}, \text{Paraphrased}\}$ and negative pool $N = \{\text{Retain},
+\text{Perturbed-wrong}\}$ each contain $88$ instances. Comparing Full with Paraphrased isolates invariance
+(same model, same knowledge, only the words change); comparing $P$ with $N$ measures discrimination.
+
+\paragraph{Statistics and assumptions.}
+With $n=44$ and bounded, skewed, heavy-tailed metric distributions, we use non-parametric tests
+throughout. A within-$P$ paired Wilcoxon signed-rank test, a between-pool Mann-Whitney $U$ test, and
+Cliff's delta effect sizes; we also report a TOST equivalence test for completeness, with an exploratory,
+non-pre-registered equivalence bound that no claim rests on. The effect sizes are the headline numbers:
+$\text{invar\_shift} = |\delta(\text{Full},\text{Paraphrased})|$ (0 = no shift) and $\text{discrim} =
+|\delta(P,N)|$ (1 = perfect separation), combined into a convenience score $\text{faithful} = \text{discrim}
+\cdot (1 - \text{invar\_shift})$. We call a metric \emph{faithful} when it is both discriminative and
+paraphrase-stable, which we operationalise as a discrimination effect size above $0.5$ together with an
+invariance shift below $0.5$; on Hubble-8B only $D_\text{mech}$ meets both thresholds. A methodological
+caveat we treat carefully. At $n=44$ the within-$P$
+Wilcoxon $p$-value \emph{saturates}, flagging even a tiny consistent shift as significant for \emph{every}
+metric, including $D_\text{mech}$; we therefore judge invariance by \emph{effect size}, not by a
+$p<0.05$ threshold, and report the $p$-values only for completeness. The facts are treated as the unit of
+analysis, but they share model checkpoints, prompt templates, and overlapping leave-one-out anchors, so the
+tests are benchmark-conditional rather than estimates over an unrestricted population of facts. As a further
+external-validity limit we state honestly, the paraphrase and the wrong-target are each a single fixed
+realisation rather than sampled across styles; a multi-paraphrase robustness check
+(Section~\ref{sec:r-invariance}) partially addresses this.

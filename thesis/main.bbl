@@ -1,0 +1,217 @@
+\begin{thebibliography}{31}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Anonymous}(2025)]{semantic2025unlearning}
+{Anonymous}.
+\newblock Semantic {LLM} unlearning through causal intervention and
+  self-distillation, 2025.
+\newblock Under review. Introduces a semantic-residual measure of knowledge and
+  a paraphrase-invariant, discrimination-based faithfulness evaluation.
+
+\bibitem[{Anthropic}(2026)]{anthropic2026workspace}
+{Anthropic}.
+\newblock Verbalizable representations form a global workspace in language
+  models, 2026.
+\newblock Transformer Circuits. arXiv:2607.15495.
+  \url{https://transformer-circuits.pub/2026/workspace/index.html}.
+
+\bibitem[Belrose et~al.(2023)Belrose, Furman, Smith, Halawi, Ostrovsky,
+  McKinney, Biderman, and Steinhardt]{belrose2023tunedlens}
+Nora Belrose, Zach Furman, Logan Smith, Danny Halawi, Igor Ostrovsky, Lev
+  McKinney, Stella Biderman, and Jacob Steinhardt.
+\newblock Eliciting latent predictions from transformers with the tuned lens,
+  2023.
+
+\bibitem[Bourtoule et~al.(2021)Bourtoule, Chandrasekaran, Choquette-Choo, Jia,
+  Travers, Zhang, Lie, and Papernot]{bourtoule2021machine}
+Lucas Bourtoule, Varun Chandrasekaran, Christopher~A. Choquette-Choo, Hengrui
+  Jia, Adelin Travers, Baiwu Zhang, David Lie, and Nicolas Papernot.
+\newblock Machine unlearning.
+\newblock In \emph{IEEE Symposium on Security and Privacy (S\&P)}, 2021.
+\newblock arXiv:1912.03817.
+
+\bibitem[Cao and Yang(2015)]{cao2015forget}
+Yinzhi Cao and Junfeng Yang.
+\newblock Towards making systems forget with machine unlearning.
+\newblock In \emph{IEEE Symposium on Security and Privacy (S\&P)}, 2015.
+
+\bibitem[Carlini et~al.(2021)Carlini, Tramer, Wallace, Jagielski, Herbert-Voss,
+  Lee, Roberts, Brown, Song, Erlingsson, Oprea, and
+  Raffel]{carlini2021extracting}
+Nicholas Carlini, Florian Tramer, Eric Wallace, Matthew Jagielski, Ariel
+  Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Ulfar
+  Erlingsson, Alina Oprea, and Colin Raffel.
+\newblock Extracting training data from large language models, 2021.
+
+\bibitem[Deeb and Roger(2024)]{deeb2024weights}
+Aghyad Deeb and Fabien Roger.
+\newblock Do unlearning methods remove information from language model
+  weights?, 2024.
+
+\bibitem[Dorna et~al.(2025)Dorna, Mekala, Zhao, McCallum, Kolter, Maini,
+  et~al.]{dorna2025openunlearning}
+Vineeth Dorna, Anmol Mekala, Wenlong Zhao, Andrew McCallum, J.~Zico Kolter,
+  Pratyush Maini, et~al.
+\newblock {OpenUnlearning}: Accelerating {LLM} unlearning via unified
+  benchmarking of methods and metrics.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2025.
+\newblock arXiv:2506.12618.
+
+\bibitem[Eldan and Russinovich(2023)]{eldan2023whp}
+Ronen Eldan and Mark Russinovich.
+\newblock Who's harry potter? approximate unlearning in {LLM}s, 2023.
+
+\bibitem[Elhage et~al.(2021)Elhage, Nanda, Olsson, Henighan, Joseph, Mann,
+  et~al.]{elhage2021framework}
+Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Ben
+  Mann, et~al.
+\newblock A mathematical framework for transformer circuits, 2021.
+\newblock Transformer Circuits Thread.
+  \url{https://transformer-circuits.pub/2021/framework/index.html}.
+
+\bibitem[{European Parliament and Council}(2016)]{gdpr2016}
+{European Parliament and Council}.
+\newblock Regulation (eu) 2016/679 (general data protection regulation),
+  article 17: Right to erasure ('right to be forgotten'), 2016.
+
+\bibitem[Fan et~al.(2025)Fan, Jia, Zhang, Ramakrishna, Hong, and
+  Liu]{fan2025relearn}
+Chongyu Fan, Jinghan Jia, Yihua Zhang, Anil Ramakrishna, Mingyi Hong, and Sijia
+  Liu.
+\newblock Towards {LLM} unlearning resilient to relearning attacks: A
+  sharpness-aware minimization perspective and beyond, 2025.
+
+\bibitem[Geva et~al.(2021)Geva, Schuster, Berant, and Levy]{geva2021kv}
+Mor Geva, Roei Schuster, Jonathan Berant, and Omer Levy.
+\newblock Transformer feed-forward layers are key-value memories, 2021.
+
+\bibitem[Guo et~al.(2025)Guo, Syed, Sheshadri, Ewart, and
+  Dziugaite]{guo2024mechanistic}
+Phillip Guo, Aaquib Syed, Abhay Sheshadri, Aidan Ewart, and Gintare~Karolina
+  Dziugaite.
+\newblock Mechanistic unlearning: Robust knowledge unlearning and editing via
+  mechanistic localization.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2025.
+\newblock arXiv:2410.12949.
+
+\bibitem[{Hubble Team}(2025)]{allegro2025hubble}
+{Hubble Team}.
+\newblock Hubble: a model suite to advance the study of {LLM} memorization,
+  2025.
+\newblock arXiv:2510.19811.
+
+\bibitem[Jang et~al.(2022)Jang, Yoon, Yang, Cha, Lee, Logeswaran, and
+  Seo]{jang2022knowledge}
+Joel Jang, Dongkeun Yoon, Sohee Yang, Sungmin Cha, Moontae Lee, Lajanugen
+  Logeswaran, and Minjoon Seo.
+\newblock Knowledge unlearning for mitigating privacy risks in language models,
+  2022.
+
+\bibitem[Jin et~al.(2024)Jin, Cao, Wang, He, Yuan, Li, Chen, Liu, and
+  Zhao]{jin2024rwku}
+Zhuoran Jin, Pengfei Cao, Chenhao Wang, Zhitao He, Hongyu Yuan, Jiexin Li, Yubo
+  Chen, Kang Liu, and Jun Zhao.
+\newblock {RWKU}: Benchmarking real-world knowledge unlearning for large
+  language models, 2024.
+
+\bibitem[Khoriaty et~al.(2025)Khoriaty, Shportko, Mercea, and
+  Wood-Doughty]{sae2025clamping}
+Matthew Khoriaty, Andrii Shportko, Gustavo Mercea, and Zach Wood-Doughty.
+\newblock Don't forget it! conditional sparse autoencoder clamping works for
+  unlearning, 2025.
+
+\bibitem[Li et~al.(2024)Li, Pan, Gopal, Yue, Berrios, Gatti, Li, Dombrowski,
+  Goel, Phan, et~al.]{li2024wmdp}
+Nathaniel Li, Alexander Pan, Anjali Gopal, Summer Yue, Daniel Berrios, Alice
+  Gatti, Justin~D. Li, Ann-Kathrin Dombrowski, Shashwat Goel, Long Phan, et~al.
+\newblock The {WMDP} benchmark: Measuring and reducing malicious use with
+  unlearning.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2024.
+\newblock arXiv:2403.03218.
+
+\bibitem[Liu et~al.(2025)Liu, Yao, Jia, Casper, Baracaldo, Hase, Yao, Liu, Xu,
+  Li, Varshney, Bansal, Koyejo, and Liu]{liu2025rethinking}
+Sijia Liu, Yuanshun Yao, Jinghan Jia, Stephen Casper, Nathalie Baracaldo, Peter
+  Hase, Yuguang Yao, Chris~Yuhao Liu, Xiaojun Xu, Hang Li, Kush~R. Varshney,
+  Mohit Bansal, Sanmi Koyejo, and Yang Liu.
+\newblock Rethinking machine unlearning for large language models.
+\newblock \emph{Nature Machine Intelligence}, 2025.
+\newblock arXiv:2402.08787.
+
+\bibitem[Lynch et~al.(2024)Lynch, Guo, Ewart, Casper, and
+  Hadfield-Menell]{lynch2024eight}
+Aengus Lynch, Phillip Guo, Aidan Ewart, Stephen Casper, and Dylan
+  Hadfield-Menell.
+\newblock Eight methods to evaluate robust unlearning in {LLM}s, 2024.
+
+\bibitem[Maini et~al.(2024)Maini, Feng, Schwarzschild, Lipton, and
+  Kolter]{maini2024tofu}
+Pratyush Maini, Zhili Feng, Avi Schwarzschild, Zachary~C. Lipton, and J.~Zico
+  Kolter.
+\newblock {TOFU}: A task of fictitious unlearning for {LLM}s.
+\newblock In \emph{Conference on Language Modeling (COLM)}, 2024.
+\newblock arXiv:2401.06121.
+
+\bibitem[Meng et~al.(2022)Meng, Bau, Andonian, and Belinkov]{meng2022rome}
+Kevin Meng, David Bau, Alex Andonian, and Yonatan Belinkov.
+\newblock Locating and editing factual associations in {GPT}, 2022.
+
+\bibitem[{nostalgebraist}(2020)]{nostalgebraist2020logitlens}
+{nostalgebraist}.
+\newblock Interpreting {GPT}: the logit lens, 2020.
+\newblock LessWrong.
+  \url{https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens}.
+
+\bibitem[Patil et~al.(2023)Patil, Hase, and Bansal]{patil2023candelete}
+Vaidehi Patil, Peter Hase, and Mohit Bansal.
+\newblock Can sensitive information be deleted from {LLM}s? objectives for
+  defending against extraction attacks, 2023.
+
+\bibitem[Rafailov et~al.(2023)Rafailov, Sharma, Mitchell, Ermon, Manning, and
+  Finn]{rafailov2023dpo}
+Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher~D.
+  Manning, and Chelsea Finn.
+\newblock Direct preference optimization: Your language model is secretly a
+  reward model.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+\newblock arXiv:2305.18290.
+
+\bibitem[Shi et~al.(2024)Shi, Lee, Huang, Malladi, Zhao, Holtzman, Liu,
+  Zettlemoyer, Smith, and Zhang]{shi2024muse}
+Weijia Shi, Jaechan Lee, Yangsibo Huang, Sadhika Malladi, Jieyu Zhao, Ari
+  Holtzman, Daogao Liu, Luke Zettlemoyer, Noah~A. Smith, and Chiyuan Zhang.
+\newblock {MUSE}: Machine unlearning six-way evaluation for language models,
+  2024.
+
+\bibitem[Thaker et~al.(2024)Thaker, Hu, Kale, Maurya, Wu, and
+  Smith]{thaker2024blackbox}
+Pratiksha Thaker, Shengyuan Hu, Neil Kale, Yash Maurya, Zhiwei~Steven Wu, and
+  Virginia Smith.
+\newblock Does unlearning truly unlearn? a black box evaluation of {LLM}
+  unlearning methods, 2024.
+
+\bibitem[Yao et~al.(2023)Yao, Xu, and Liu]{yao2023llmunlearning}
+Yuanshun Yao, Xiaojun Xu, and Yang Liu.
+\newblock Large language model unlearning, 2023.
+
+\bibitem[Zhang et~al.(2024)Zhang, Lin, Bai, and Mei]{zhang2024npo}
+Ruiqi Zhang, Licong Lin, Yu~Bai, and Song Mei.
+\newblock Negative preference optimization: From catastrophic collapse to
+  effective unlearning, 2024.
+
+\bibitem[Zhang et~al.(2025)Zhang, Wang, Li, Wu, Tang, Liu, He, Yin, and
+  Wang]{zhang2024quantization}
+Zhiwei Zhang, Fali Wang, Xiaomin Li, Zongyu Wu, Xianfeng Tang, Hui Liu, Qi~He,
+  Wenpeng Yin, and Suhang Wang.
+\newblock Catastrophic failure of {LLM} unlearning via quantization.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+\newblock arXiv:2410.16454.
+
+\end{thebibliography}

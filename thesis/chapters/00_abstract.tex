@@ -1,0 +1,31 @@
+\begin{abstract}
+Machine unlearning promises to remove specific knowledge from a trained language model without the cost of
+retraining, a capability demanded by privacy regulation, copyright, and AI safety. Yet whether an unlearned
+model has genuinely \emph{forgotten} a fact, rather than merely learned to \emph{hide} it, is
+surprisingly hard to verify. Unlearning is evaluated almost entirely at the output, with lexical and
+behavioural metrics such as accuracy, ROUGE, gold-answer probability, and membership inference; a growing
+body of work shows these metrics are fragile, as quantisation, a few steps of relearning, or a direct probe
+of the model's internal states can each revive the ``forgotten'' knowledge. The gap is between
+\emph{suppression} at the output and \emph{erasure} inside the model.
+
+This thesis closes that gap on the evaluation side by reading the model's internal computation with
+mechanistic interpretability. Building on the Hubble benchmark, whose controlled fact insertions provide a
+never-knew and a knows reference for every fact, we integrate a corrected, boundary-safe logit lens that
+records the rank of the correct answer at each layer, and from this trajectory we derive a dual-anchor
+distance, \(D_\text{mech}\), that measures whether a fact's internal trajectory looks more like the knows
+reference or the never-knew reference, independently of what the model outputs. Under the field's own
+faithfulness meta-evaluation based on OpenUnlearning, on the Hubble-8B suite \(D_\text{mech}\) is the only
+metric, mechanistic or lexical, that is at once strongly knowledge-discriminative and substantially
+paraphrase-stable, where every lexical metric that discriminates well collapses under a meaning-preserving
+rewording while \(D_\text{mech}\) shifts far less. Its composite faithfulness score is about eighteen
+times the best lexical metric, an ordering that we show is robust to the choice of aggregation formula. We
+then replicate the meta-evaluation on a second benchmark and model family (OpenUnlearning TOFU, at 1B, 3B,
+and 8B), where \(D_\text{mech}\) is again faithful and, at every scale, the best internal metric and better
+than every generation-overlap and answer-probability metric, though a few likelihood-based aggregates
+become competitive there. We further characterise all three interpretability lenses on the same facts,
+explaining empirically why the calibrated tuned lens ``skips ahead'' and cannot ground the metric, and we
+report a scale-dependent verdict on the four unlearning methods that is invisible at the output. Read
+together, the results indicate that the ``forgotten'' facts studied here remain internally accessible,
+suppressed at the output rather than erased from the representation as far as the applied readouts can
+determine, and that internal readouts yield a more faithful way to tell the difference.
+\end{abstract}

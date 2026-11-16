@@ -1,0 +1,28 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Infill accuracy by method (8B)}}{22}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Rank-by-layer logit lens (8B)}}{23}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Emergence versus suppression (8B)}}{24}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Confidence is not knowledge (8B)}}{25}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rank-by-layer logit lens (1B)}}{25}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tuned versus logit lens, rank-by-layer (8B)}}{27}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Metric distributions across the four pools}}{28}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Invariance, discrimination, and faithfulness}}{29}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Worked paraphrase-stability example (8B)}}{29}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces One fact asked four ways (8B)}}{30}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces The three lenses compared (8B)}}{31}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Corrected Jacobian lens (8B)}}{32}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Relearning attack (8B)}}{34}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Quantization robustness (8B)}}{35}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Semantic-residual measure, nationality (8B)}}{35}{figure.5.15}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Jacobian-lens knowledge-versus-prior control (8B)}}{46}{figure.B.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Single-model logit-lens emergence (8B)}}{48}{figure.C.1}%

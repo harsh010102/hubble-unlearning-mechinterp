@@ -1,0 +1,144 @@
+\chapter{Discussion}
+\label{ch:discussion}
+
+This chapter interprets the results of Chapter~\ref{ch:results} against the research questions of
+Section~\ref{sec:contributions}, relates them to prior work, and consolidates the threats to validity.
+
+\section{What the Internal Readout Adds}
+\label{sec:d-internal}
+
+The results answer RQ1 and RQ2 sharply. At the output (Table~\ref{tab:infill},
+Figure~\ref{fig:infill}), the four unlearning methods are indistinguishable. Each drives forget accuracy to
+the never-knew floor, and no output number ranks them. The internal readout
+(Table~\ref{tab:ranks}, \ref{tab:midstack}; Figures~\ref{fig:logit8b}, \ref{fig:lenstable}) resolves the
+single output verdict into four different mechanisms and shows that none of them removes the fact's
+internal trace under the readouts applied.
+The clearest single demonstration is the confidence contradiction of Figure~\ref{fig:confidence}. Three
+unlearned models emit a wrong token at essentially the same near-certain confidence as the model that
+knows the right one. Any metric built on output probability is therefore blind by construction to the
+distinction the thesis cares about, because the quantity it reads, output confidence, is genuinely
+uninformative about internal knowledge here.
+
+The deeper point is that suppression and erasure are \emph{different states of the model} that happen to
+produce the same behaviour on the queried distribution. The relearning and quantization attacks of
+Section~\ref{sec:r-attacks} make this concrete. The same output-forgotten fact is one fine-tuning step, or
+one change of numerical precision, away from returning, and how far away depends on the internal state that
+the output cannot see. An evaluation that stops at the output is thus not merely incomplete but
+systematically optimistic, since it counts every suppression as an erasure.
+
+\section{The Four Mechanisms}
+\label{sec:d-mechanisms}
+
+Reading the mid-stack against the output (Table~\ref{tab:midstack}) and confirming it with the calibrated
+tuned lens (Table~\ref{tab:tuned}) yields a coherent mechanistic account of the four methods, which the
+robustness experiments then corroborate.
+
+\emph{IDK} is the purest surface case. It changes the output policy (``I don't know'') without disturbing
+the representation, so the birthdate token remains recoverable through to the output (rank $9$), and only
+free-generation infill hides it. Consistent with an intact representation, IDK resists relearning yet leaks the most under
+quantization. \emph{NPO} and \emph{GradDiff} share a late-suppression signature. They keep the token
+accessible mid-stack and push it down only in the final layers, a late operation on an otherwise intact
+computation; GradDiff pushes hardest at the output. \emph{RMU} is the one method that acts early and deep,
+scrambling the representation at its intervention layers so that the token is buried mid-stack as well as at
+the output; but precisely because this is a large-magnitude perturbation that a few relearning steps
+reverse rather than a removal, RMU snaps back fastest under relearning. The unifying observation is that every method leaves the token recoverable
+somewhere, at rank $147$ even for RMU under the calibrated lens, so on this benchmark unlearning masks
+knowledge rather than deleting it.
+
+\section{Why \texorpdfstring{$D_\text{mech}$}{D\_mech} is Faithful}
+\label{sec:d-faithful}
+
+RQ3 is answered by the meta-evaluation (Table~\ref{tab:faithful}). On Hubble-8B, $D_\text{mech}$ is the only
+metric, mechanistic or lexical, that is both strongly discriminative and substantially paraphrase-stable,
+with a composite faithfulness score far above any lexical metric and a ranking that holds
+under every aggregation we tried (Section~\ref{sec:r-crossbench}). The mechanism of this result deserves
+emphasis because it is
+not simply ``read internals''. The na\"ive internal metric, the minimum rank over the band, \emph{fails}
+invariance as badly as the lexical metrics (shift $1.000$). A meaning-preserving rewording shifts the
+absolute internal rank just as it shifts the output probability. What makes $D_\text{mech}$ paraphrase-stable
+is its \emph{relative} construction. Because it subtracts the trajectory's distance to the never-knew anchor
+from its distance to the knows anchor, a rewording that moves the whole trajectory by a roughly constant
+amount moves both distances together, and the subtraction cancels most of the common-mode shift while
+preserving the sign of the knowledge signal. This stability is thus a designed property of the anchor
+difference, not a lucky feature of hidden states, which is why the distance construction, and not the mere
+use of internals,
+is the contribution. This is also why $D_\text{mech}$ is built on the parameter-free logit lens. The
+cancellation requires a single fixed transport shared by the fact and both anchors, and only the logit lens
+provides one without introducing trained or estimated components into the metric itself.
+
+\section{The Three Lenses as Metric Bases}
+\label{sec:d-lenses}
+
+RQ4 concerns the choice of lens. The three lenses form a ladder of increasing fidelity to the model's own
+computation, from the correlational logit lens through the calibrated tuned lens to the interventionally-
+grounded Jacobian lens, but higher fidelity does not make a better \emph{metric} basis. The tuned lens, trained to reproduce
+the output, ``skips ahead'': Figure~\ref{fig:lenscompare} shows it reporting the answer at rank ${\approx}10$
+from the first layer for \emph{every} model, including the suppressed ones, so it collapses the very
+trajectory differences $D_\text{mech}$ reads. It is an excellent output predictor and a poor knowledge
+probe, which is exactly why it serves here as a cross-check (confirming the logit-lens ordering,
+Table~\ref{tab:tuned}) rather than as the metric base. The Jacobian lens is a first-order,
+interventionally-grounded readout and, once corrected, reproduces the taxonomy with a smooth, well-ordered
+readout (Figure~\ref{fig:jacobian}); it even distinguishes a lingering correlational trace from a
+sensitivity-based signal, keeping NPO's fact buried at every layer where the logit lens still detects a
+trace. But its dependence on a reference corpus, its first-order approximation, and its weaker behaviour at
+1B make it a confirmatory readout rather than a metric base, and we do not read it as proof of causal
+necessity. The
+logit lens wins for the metric not because it is the most faithful readout but because it is the only
+\emph{reproducible, parameter-free} one, and $D_\text{mech}$ restricts itself to the band where it is
+reliable.
+
+\section{Scale Dependence}
+\label{sec:d-scale}
+
+The cross-scale results (Table~\ref{tab:ranks}, Figure~\ref{fig:logit1b}) carry a methodological warning.
+The same method can internalise unlearning at one scale and not another: GradDiff and RMU bury the fact at
+8B but leave it accessible at 1B, and only NPO is robust across both. This interacts with the metric. At 1B,
+where the base model memorises the facts only weakly, the knows and never-knew anchors are closer together,
+so $D_\text{mech}$'s separation is correspondingly weaker. The practical implication is that unlearning
+conclusions drawn at a single scale, and especially from a single output metric, can invert across scale, as
+they do for IDK, which the output labels ``forgetting'' at 1B while the logit lens shows the fact merely
+output-suppressed. Faithful evaluation therefore benefits from strong memorisation (a well-separated knows
+anchor), which the 8B setting provides and the 1B setting only partially does.
+
+\section{Relation to Prior Work}
+\label{sec:d-related}
+
+These findings extend three lines of prior work. The robustness literature has repeatedly shown that
+unlearning can be undone by quantization \citep{zhang2024quantization}, relearning
+\citep{lynch2024eight,fan2025relearn}, and black-box or weight probing \citep{thaker2024blackbox,
+deeb2024weights}; our contribution is to show, on a controlled benchmark with ground-truth references,
+\emph{where inside the model} the recoverable knowledge sits and to summarise it in a single faithful
+metric. Closest to our internal readout, \citet{patil2023candelete} use logit-lens attacks to recover
+edited facts from hidden states; we differ in targeting the modern unlearning methods rather than knowledge
+editing, in using the lens as a systematic readout rather than an attack, and, crucially, in distilling it
+into a metric validated by the field's own faithfulness meta-evaluation. Finally, where mechanistic
+interpretability has met unlearning it has been used to \emph{perform} unlearning more robustly, by
+localising and editing the responsible components \citep{guo2024mechanistic,sae2025clamping}; we use it
+instead to \emph{measure} unlearning, filling the evaluation-side gap that OpenUnlearning
+\citep{dorna2025openunlearning} identifies but addresses only for output metrics, and taking up the
+interpretability-and-metrics agenda that Hubble \citep{allegro2025hubble} explicitly invites.
+
+\section{Threats to Validity}
+\label{sec:d-threats}
+
+We restate the limitations consolidated. The faithfulness meta-evaluation is run at 8B with $n=44$
+birthdate facts and a \emph{single} fixed paraphrase and wrong-target realisation, so its variance is across
+facts, not across paraphrase styles; the multi-paraphrase robustness check
+(Section~\ref{sec:r-invariance}) supports the ordering but a design that samples many rewordings would
+harden it. The faithfulness advantage is scale-dependent and weaker at 1B (Section~\ref{sec:d-scale}). The
+facts are treated as the unit of analysis, but they share model checkpoints, prompt templates, and
+overlapping leave-one-out anchors, so the inferential statistics are benchmark-conditional rather than
+estimates over an unrestricted population of facts. The primary Hubble analysis uses a single attribute
+(birthdates); Section~\ref{sec:r-crossbench} replicates the meta-evaluation on OpenUnlearning TOFU
+(author facts with multi-token answers) at three scales to test how far the result travels. The composite
+faithfulness score is a convenience for ranking; the individual invariance and discrimination effect sizes
+are the primary evidence, and both the within-pool Wilcoxon $p$-values and the TOST equivalence test are
+uninformative at this sample size (they saturate), which is why we rely on effect sizes rather than on the
+equivalence bound. The per-fact relearning route to
+validating faithfulness returned a null (Section~\ref{sec:r-attacks}), so no claim rests on per-fact
+prediction. Finally, one negative pool (the Perturbed model scored against a wrong birthdate) leaks slightly
+on $D_\text{mech}$, because a wrong date still traces a date-like path. Reporting the two negative pools
+separately makes this explicit: on Hubble-8B the discrimination effect size is a perfect $|\delta|=1.000$
+against the clean never-knew pool but $0.653$ against the wrong-target pool (combined $0.827$), so the
+positive-negative gap is carried mainly by the never-knew pool. This is noted but does not affect the
+paraphrase-stability conclusion, which is where the metric is decided.

@@ -1,0 +1,13 @@
+model,split,template_format,accuracy,n
+GRADDIFF,Unseen,name_only,0.108,250
+GRADDIFF,Unseen,intro_prefix,0.104,250
+GRADDIFF,Unseen,full_prefix,0.104,250
+GRADDIFF,Unseen,full_prefix_full_suffix,0.128,250
+GRADDIFF,Unlearn,name_only,0.13636363636363635,44
+GRADDIFF,Unlearn,intro_prefix,0.11363636363636363,44
+GRADDIFF,Unlearn,full_prefix,0.06818181818181818,44
+GRADDIFF,Unlearn,full_prefix_full_suffix,0.045454545454545456,44
+GRADDIFF,Keep,name_only,0.044444444444444446,45
+GRADDIFF,Keep,intro_prefix,0.06666666666666667,45
+GRADDIFF,Keep,full_prefix,0.06666666666666667,45
+GRADDIFF,Keep,full_prefix_full_suffix,0.022222222222222223,45

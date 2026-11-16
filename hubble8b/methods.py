@@ -244,4 +244,49 @@ def train_rmu(forget_texts, retain_texts, device=C.DEVICE, hp_override=None, eva
     _restore_best(model, best, "RMU"); model.eval()
     return model, hist
 
-TRAINERS = {"npo": train_npo, "graddiff": train_graddiff, "idk": train_idk, "rmu": train_rmu}
+# ------------------------------------------------------------------ UNDIAL (self-distillation, adjusted logits)
+def _undial_forget_loss(model, ref, tok, texts, beta, device, max_length):
+    """Soft-target distillation to the pre-unlearning logits with the memorized next-token demoted by beta.
+    Minimizing it (no gradient ascent) lowers confidence in the forget continuation while staying stable."""
+    enc = tok(texts, return_tensors="pt", truncation=True, max_length=max_length, padding=True).to(device)
+    am = enc["attention_mask"]
+    with torch.no_grad():
+        z_orig = ref(input_ids=enc["input_ids"], attention_mask=am).logits[:, :-1, :].float()
+    tgt = enc["input_ids"][:, 1:].unsqueeze(-1)                              # the true (memorized) next token
+    z_adj = z_orig.clone()
+    z_adj.scatter_(2, tgt, z_adj.gather(2, tgt) - beta)                      # demote that token by beta
+    teacher = torch.softmax(z_adj, dim=-1)                                   # detached target distribution
+    logits = model(input_ids=enc["input_ids"], attention_mask=am).logits[:, :-1, :]
+    logp = torch.log_softmax(logits.float(), dim=-1)
+    ce = -(teacher * logp).sum(dim=-1)                                       # soft cross-entropy per position
+    mask = am[:, 1:].float()
+    return (ce * mask).sum() / mask.sum().clamp(min=1)
+
+def train_undial(forget_texts, retain_texts, device=C.DEVICE, hp_override=None, eval_every=None, eval_fn=None):
+    hp = {**C.HP["undial"], **(hp_override or {})}; tok = get_tokenizer()
+    model = _prep_trainable(device)
+    ref = load_model(C.MODEL_PERTURBED, device, revision=C.REVISION)         # frozen pre-unlearning teacher
+    ref.eval()
+    for p in ref.parameters(): p.requires_grad_(False)
+    opt = make_optimizer(model.parameters(), hp["lr"])
+    hist, step, best = [], 0, None
+    for ep in range(hp["epochs"]):
+        ft = list(forget_texts); random.Random(C.SEED + ep).shuffle(ft)
+        for fb in _batched(ft, hp["batch_size"]):
+            rb = random.sample(retain_texts, hp["batch_size"])
+            forget_loss = _undial_forget_loss(model, ref, tok, fb, hp["beta"], device, hp["max_length"])
+            retain_loss = causal_lm_loss(model, tok, rb, device, hp["max_length"])
+            loss = hp["forget_gamma"] * forget_loss + hp["retain_gamma"] * retain_loss
+            opt.zero_grad(); loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0); opt.step()
+            step += 1
+            hist.append(dict(step=step, forget_loss=float(forget_loss), retain_loss=float(retain_loss)))
+            if step % 10 == 0:
+                print(f"[UNDIAL] step {step} forget={forget_loss:.4f} retain={retain_loss:.4f}")
+        best = _run_eval(model, ep, hp, eval_every, eval_fn, "UNDIAL", hist, best)
+    model.config.use_cache = True
+    del ref; free_cuda()
+    _restore_best(model, best, "UNDIAL"); model.eval()
+    return model, hist
+
+TRAINERS = {"npo": train_npo, "graddiff": train_graddiff, "idk": train_idk, "rmu": train_rmu, "undial": train_undial}
